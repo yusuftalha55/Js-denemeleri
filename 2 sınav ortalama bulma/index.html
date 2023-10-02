@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="Main-write">
+        <h2>Ders Ortlaması Bulma</h2>
+    </div>
+    <div class="exam">
+        <div>
+            <h3>1.sınav</h3>
+            <input id="exam1" type="number">
+        </div>
+        <div>
+            <h3>2.sınav</h3>
+            <input id="exam2" type="number">
+        </div>
+        <div>
+            <h3>3.sınav</h3>
+            <input id="exam3" type="number">
+        </div>
+
+        <div class="button">
+            <button onclick="hesapla()">Ortalama hesapla</button>
+
+        </div>
+
+        <div class="result">
+            <h3>Ders Ortalamanız: </h3>
+            <h3 id="result"></h3>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

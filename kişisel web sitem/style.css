@@ -1,0 +1,248 @@
+/* NAVBAR BAŞLANGIÇ */
+
+.navbar-container .navbar {
+    font-size: x-large;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+    
+
+/* NAVBAR BİTİŞ */
+
+/* FOOTER BAŞLANGIÇ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* Diğer CSS kuralları buraya eklenir */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #333;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 10vh;
+}
+
+.footer-container .footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container .social-icon,
+.footer-container .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.footer-container .social-icon__item,
+.footer-container .menu__item {
+    list-style: none;
+}
+
+.footer-container .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.footer-container .social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.footer-container .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.footer-container .menu__link:hover {
+    opacity: 1;
+}
+
+.footer-container .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-container .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+}
+
+.footer-container .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.footer-container .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.footer-container .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.footer-container .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+/* FOOTER BİTİŞ */
+
+/* İÇERİK BAŞLANGIÇ */
+
+
+
+
+
+.card-container {
+    position: absolute;
+    top: 60px; /* Navbar yüksekliği kadar boşluk bırakır */
+    bottom: 150px; /* Footer yüksekliği kadar boşluk bırakır */
+    left: 0;
+    right: 0;
+    overflow-y: auto; /* İçerik fazlaysa kaydırma çubuğunu gösterir */
+    display: flex;
+    background-color:#ccc !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    max-width: 90%; /* Maksimum kart genişliği */
+    background-color: #03a4ee !important; /* Kartın arka plan rengi */
+    border: 3px solid #ccc; /* Kartın kenarlık rengi */
+    border-radius: 10px; /* Kartın köşe yuvarlama miktarı */
+    padding: 20px; /* Kart içeriği ile kenarlar arasındaki boşluk */
+    box-shadow:8px 8px 8px #333; /* Kartın gölgelendirme efekti */
+    text-align: center;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 2%;    
+    
+}
+
+/* Kart başlığı stillemesi */
+.card h1 {
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+/* Kart metni stillemesi */
+.card p {
+    font-size: 20px;
+    color: #333;
+}
+
+.card-img {
+    max-width: 200px;
+    max-height: 300px;
+    float: left; /* Resmi sola hizala */
+    margin-right: 20px;
+    box-shadow: 8px 8px 8px #333;
+}
+
+.contact {
+    width: 100%;
+    max-width: 90%; /* Maksimum kart genişliği */
+    background-color: #03a4ee !important; /* Kartın arka plan rengi */
+    border: 3px solid #ccc; /* Kartın kenarlık rengi */
+    border-radius: 10px; /* Kartın köşe yuvarlama miktarı */
+    padding: 20px; /* Kart içeriği ile kenarlar arasındaki boşluk */
+    box-shadow:8px 8px 8px #333; /* Kartın gölgelendirme efekti */
+    text-align: center;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-top: 1%;
+    margin-left: 7%;
+    margin-right: 2%;  
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10% !important;
+}
+
+
+
+
+
+/* İÇERİK BİTİŞ */
