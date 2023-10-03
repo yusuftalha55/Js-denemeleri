@@ -37,18 +37,19 @@ let gunler =[gun1,gun2,gun3,gun4,gun5,gun6,gun7];
 
 function buttonClick(){
     let gelenVeri = document.getElementById("input").value.toUpperCase(); 
+    let filtreliUrunler =[];
     let icerik = document.getElementById("day");
-    let bulundu = false;
 
-    for (let i = 0; i < gunler.length; i++) {
-        if (gunler[i].sayi.toString() === gelenVeri || gunler[i].sayi.toString().includes(gelenVeri)) {
-            icerik.innerHTML = gunler[i].isim;
-            bulundu = true;
-            break;
+    gunler.forEach(function(gun) {
+        if(gun.sayi.toString().includes(gelenVeri)){
+            filtreliUrunler.push(gun);
         }
-    }
+    });
 
-    if (!bulundu) {
-        icerik.innerHTML = "Geçersiz gün numarası";
-    }
+    // Diziyi HTML içeriğine dönüştür
+    icerik.innerHTML = "";
+    filtreliUrunler.forEach(function(gun) {
+        icerik.innerHTML += "Gün: " + gun.isim + "<br>";
+    });
 }
+
