@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Haftanın Günlerini Seçip Ekrana Yazdır</h1>
+    </div>
+
+    <div class="main-content">
+        <div>
+            <ol>1-Pazartesi</ol>
+            <ol>2-Salı</ol>
+            <ol>3-Çarşamba</ol>
+            <ol>4-Perşembe</ol>
+            <ol>5-Cuma</ol>
+            <ol>6-Cumartesi</ol>
+            <ol>7-Pazar</ol>
+        </div>
+    </div>
+
+    <div class="write-content">
+        <div class="input">
+            <h3>Seçmek istediğiniz günün rakamını giriniz</h3>
+            <input id="input" type="number" placeholder="1 ile 7 arasında bir rakam">
+            <button onclick="buttonClick()">Basınız</button>
+        </div>
+    </div>
+
+    <div class="main-output">
+        <div class="outpot">
+            <h3 id="day">Seçtiğiniz gün: </h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

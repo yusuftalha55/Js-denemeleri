@@ -36,7 +36,7 @@ let gun7 = {
 let gunler =[gun1,gun2,gun3,gun4,gun5,gun6,gun7];
 
 function buttonClick(){
-    let gelenVeri = document.getElementById("input").value.toUpperCase(); 
+    let gelenVeri = document.getElementById("input").value; 
     let filtreliUrunler =[];
     let icerik = document.getElementById("day");
 
