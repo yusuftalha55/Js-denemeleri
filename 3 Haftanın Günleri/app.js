@@ -35,7 +35,7 @@ let gun7 = {
 
 let gunler = [gun1, gun2, gun3, gun4, gun5, gun6, gun7];
 
-function buttonClick(){
+function buttonClick() {
     let gelenVeri = document.getElementById("input").value;
     let filtreliUrunler = [];
     let icerik = document.getElementById("day");
@@ -46,14 +46,10 @@ function buttonClick(){
         }
     });
 
-    icerik.innerHTML="";
+    icerik.innerHTML = "";
     filtreliUrunler.forEach(function (gun) {
-        icerik.innerHTML += gun.isim;
-
-
+        icerik.innerHTML += "Seçtiğiniz gün: " + gun.isim;
 
     });
-
-
 
 };
