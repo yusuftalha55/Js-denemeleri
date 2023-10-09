@@ -1,8 +1,11 @@
-let bakiye = 15000;
+let bakiye = parseFloat(localStorage.getItem("bakiye")) || 15000;
+
+function updateLocalStorage() {
+    localStorage.setItem("bakiye", bakiye.toString());
+}
 
 document.getElementById("yazdır").innerHTML = " Bakiye Görüntüleme: " + bakiye;
-// let paraCek = parseFloat(document.getElementById("money-out").value);
-// let paraYatır = parseFloat(document.getElementById("money-in").value);
+
 
 
 function getMoney() {
@@ -11,6 +14,7 @@ function getMoney() {
 
     if (bakiye >= paraCek) {
         bakiye -= paraCek;
+        updateLocalStorage();
     }
     else {
         alert("Lütfen paranızdan fazla çekim yapmaya çalışmayın!!!")
@@ -21,6 +25,7 @@ function getMoney() {
 function setMoney() {
     let paraYatır = parseFloat(document.getElementById("money-in").value);
     bakiye = bakiye + paraYatır;
+    updateLocalStorage();
     document.getElementById("yazdır").innerHTML = " Bakiye Görüntüleme: " + bakiye;
 
 }
