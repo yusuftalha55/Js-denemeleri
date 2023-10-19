@@ -1,0 +1,28 @@
+.title{
+    text-align: center;
+}
+
+.counter{
+    text-align: center;
+    margin-top: 8%;
+}
+
+.action{
+    text-align: center;
+    margin-top: 8%;
+}
+
+#button1{
+    font-size: 25px;
+    margin: 25px;
+}
+
+#button2{
+    font-size: 25px;
+    margin: 25px;
+}
+
+#button3{
+    font-size: 25px;
+    margin: 25px;
+}
