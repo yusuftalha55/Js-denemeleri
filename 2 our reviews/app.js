@@ -30,3 +30,44 @@ let araba4 = {
      şarj edilmesinde kullanılabiliyor. Bu durum, arabaların çevre
       üzerindeki etkisini azaltarak enerji verimliliğini artırıyor.`
 };
+
+let arabalar = [araba1, araba2, araba3, araba4];
+let arabalarIndex = 0;
+let notElementId = document.getElementById("notElementId");
+let imgElementId = document.getElementById("imgElementId");
+
+function forword() {
+    if (arabalarIndex < arabalar.length - 1) {
+        arabalarIndex++;
+        arabalar.forEach(function (araba) {
+            notElementId.innerHTML = arabalar[arabalarIndex].not;
+            imgElementId.src = arabalar[arabalarIndex].img;
+
+        })
+
+    }
+}
+
+function back() {
+    if (arabalarIndex > 0) {
+        arabalarIndex--;
+        arabalar.forEach(function (araba) {
+            notElementId.innerHTML = arabalar[arabalarIndex].not;
+            imgElementId.src = arabalar[arabalarIndex].img;
+
+
+        })
+
+    }
+
+}
+
+function random() {
+    arabalar.forEach(function (araba) {
+        arabalarIndex = Math.floor(Math.random() * arabalar.length);
+        notElementId.innerHTML = arabalar[arabalarIndex].not;
+        imgElementId.src = arabalar[arabalarIndex].img;
+
+
+    })
+}
