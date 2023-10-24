@@ -1,0 +1,26 @@
+#button1{
+    margin-left: 85%;
+    margin-top: -58%;
+    font-size: 20px;
+    z-index: -1;
+}
+
+.navbar{
+    width: 100%;
+    height: 300px;
+}
+
+#open1, #open2, #open3, #open4 {
+    display: block;
+    font-size: 20px;
+    margin: 2%;
+    border: 2px solid #06740f;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+
+}
+
+.open {
+    display: none;
+}
