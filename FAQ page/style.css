@@ -1,0 +1,50 @@
+.title {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.questions {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-left: 20%;
+    background-color: aliceblue;
+    width: 60%;
+    padding: 20px;
+}
+
+.card1, .card2, .card3 {
+    border: 2px solid red; 
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.button {
+    margin-right: 10px; /* Buton ile içerik arasında boşluk bırakmak için sağ marj ekleyin */
+    background-color: #4CAF50; /* Arka plan rengi */
+    border: none; /* Kenarlık olmasın */
+    color: white; /* Yazı rengi */
+    padding: 10px 20px; /* Yatay ve dikey dolgular */
+    text-align: center; /* Yazıyı ortala */
+    text-decoration: none; /* Altçizgi kaldırma */
+    display: inline-block; /* Butonları yanyana yerleştir */
+    font-size: 16px; /* Yazı boyutu */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    cursor: pointer; /* Üzerine geldiğinde el işareti göster */
+    transition: background-color 0.3s ease; /* Renk değişimi animasyonu */
+}
+
+.button:hover {
+    background-color: #45a049; /* Üzerine gelindiğinde arka plan rengini değiştir */
+}
+
+
+#pOne,#pTwo,#pThree{
+    display: none;
+}
+
+body {
+    background-color: antiquewhite;
+}
