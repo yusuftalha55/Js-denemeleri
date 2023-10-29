@@ -1,5 +1,14 @@
+let pOne = document.getElementById("pOne");
+pOne.style.display = "none"
+
+let ptwo = document.getElementById("ptwo");
+pTwo.style.display = "none"
+
+let pThree = document.getElementById("pThree");
+pThree.style.display = "none"
+
 function buttonOneClick(){
-    let pOne = document.getElementById("pOne");
+
     if(pOne.style.display === "none"){
         pOne.style.display = "block";
     }
@@ -9,7 +18,7 @@ function buttonOneClick(){
 }
 
 function buttonTwoClick(){
-    let pTwo = document.getElementById("pTwo");
+
     if(pTwo.style.display === "none"){
         pTwo.style.display = "block";
     }
@@ -19,7 +28,7 @@ function buttonTwoClick(){
 }
 
 function buttonThreeClick(){
-    let pThree = document.getElementById("pThree");
+    
     if(pThree.style.display === "none"){
         pThree.style.display = "block";
     }
