@@ -11,6 +11,9 @@ function buttonOneClick(){
 
     if(pOne.style.display === "none"){
         pOne.style.display = "block";
+        pThree.style.display = "none"
+        pTwo.style.display = "none"
+
     }
     else{
         pOne.style.display = "none"
@@ -21,6 +24,8 @@ function buttonTwoClick(){
 
     if(pTwo.style.display === "none"){
         pTwo.style.display = "block";
+        pThree.style.display = "none"
+        pOne.style.display = "none"
     }
     else{
         pTwo.style.display = "none"
@@ -28,9 +33,11 @@ function buttonTwoClick(){
 }
 
 function buttonThreeClick(){
-    
+
     if(pThree.style.display === "none"){
         pThree.style.display = "block";
+        pOne.style.display = "none"
+        pTwo.style.display = "none"
     }
     else{
         pThree.style.display = "none"
