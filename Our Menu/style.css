@@ -13,18 +13,21 @@ body {
 }
 
 .contents {
-
-
-    
+    display: flex;
+    flex-wrap: wrap; /* Elemanlar sığmazsa bir alt satıra geçmelerini sağlar */
+    justify-content: space-between; /* Elemanlar arasına boşluk bırakarak yan yana yerleştirir */
 }
-
 
 .yumurta, .menemen, .meyveSalatası, .gununCorbasi,
  .cay, .portakalSuyu, .mercimekCorbası, .biftek {
-    width: 50%;
+    width: calc(50% - 80px); /* Genişliği hesaplanarak bir alt satıra geçmesi önlenir */
     background-color: rgb(4, 156, 156);
-    height: 200px;
+    height: 250px;
     margin: 25px;
+    box-sizing: border-box; /* Padding ve border genişliğini hesaplamak için içeriği sarmalar */
+    
+}
 
-
+.img{
+    text-align: end;
 }
