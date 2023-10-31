@@ -20,11 +20,13 @@ body {
 
 .yumurta, .menemen, .meyveSalatası, .gununCorbasi,
  .cay, .portakalSuyu, .mercimekCorbası, .biftek {
-    width: calc(50% - 80px); /* Genişliği hesaplanarak bir alt satıra geçmesi önlenir */
+    width: calc(45% - 45px);
     background-color: rgb(4, 156, 156);
     height: 250px;
-    margin: 25px;
-    box-sizing: border-box; /* Padding ve border genişliğini hesaplamak için içeriği sarmalar */
+    margin-top: 50px;
+    margin-right: 100px; /* Yatay boşluğu ayarlayın */
+    margin-bottom: 50px; /* Dikey boşluğu ayarlamak istiyorsanız ekleyebilirsiniz */
+    display: inline-block;
     
 }
 
