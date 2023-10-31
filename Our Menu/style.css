@@ -7,29 +7,39 @@ body {
     margin-top: 150px;
 }
 
-.options{
+.options {
     text-align: center;
     margin-top: 5%;
 }
 
 .contents {
     display: flex;
-    flex-wrap: wrap; /* Elemanlar sığmazsa bir alt satıra geçmelerini sağlar */
-    justify-content: space-between; /* Elemanlar arasına boşluk bırakarak yan yana yerleştirir */
+    flex-wrap: wrap;
+    /* Elemanlar sığmazsa bir alt satıra geçmelerini sağlar */
+    justify-content: space-between;
+    /* Elemanlar arasına boşluk bırakarak yan yana yerleştirir */
 }
 
-.yumurta, .menemen, .meyveSalatası, .gununCorbasi,
- .cay, .portakalSuyu, .mercimekCorbası, .biftek {
+.yumurta,
+.menemen,
+.meyveSalatası,
+.gununCorbasi,
+.cay,
+.portakalSuyu,
+.mercimekCorbası,
+.biftek {
     width: calc(45% - 45px);
     background-color: rgb(4, 156, 156);
     height: 250px;
     margin-top: 50px;
-    margin-right: 100px; /* Yatay boşluğu ayarlayın */
-    margin-bottom: 50px; /* Dikey boşluğu ayarlamak istiyorsanız ekleyebilirsiniz */
+    margin-right: 100px;
+    /* Yatay boşluğu ayarlayın */
+    margin-bottom: 50px;
+    /* Dikey boşluğu ayarlamak istiyorsanız ekleyebilirsiniz */
     display: inline-block;
-    
+
 }
 
-.img{
+.img {
     text-align: end;
 }
