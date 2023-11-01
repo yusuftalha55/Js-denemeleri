@@ -18,7 +18,7 @@ body {
     /* Elemanlar sığmazsa bir alt satıra geçmelerini sağlar */
     justify-content: space-between;
     /* Elemanlar arasına boşluk bırakarak yan yana yerleştirir */
-    display: none;
+    
 }
 
 .yumurta,
@@ -38,6 +38,11 @@ body {
     margin-bottom: 50px;
     /* Dikey boşluğu ayarlamak istiyorsanız ekleyebilirsiniz */
     display: inline-block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+
+    
 
 
 }

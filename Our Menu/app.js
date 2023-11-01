@@ -1,40 +1,64 @@
-let yumurta = document.getElementsByClassName("yumurta");
-let menemen = document.getElementsByClassName("menemen");
-let meyveSalatası = document.getElementsByClassName("meyveSalatası");
-let gununCorbasi = document.getElementsByClassName("gununCorbasi");
-let cay = document.getElementsByClassName("cay");
-let portakalSuyu = document.getElementsByClassName("portakalSuyu");
-let mercimekCorbası = document.getElementsByClassName("mercimekCorbası");
-let biftek = document.getElementsByClassName("biftek");
-let contents = document.getElementsByClassName("contents");
+let yumurta = document.getElementById("yumurta");
+let menemen = document.getElementById("menemen");
+let meyveSalatası = document.getElementById("meyveSalatası");
+let gununCorbasi = document.getElementById("gununCorbasi");
+let cay = document.getElementById("cay");
+let portakalSuyu = document.getElementById("portakalSuyu");
+let mercimekCorbası = document.getElementById("mercimekCorbası");
+let biftek = document.getElementById("biftek");
+let contents = document.getElementById("contents");
 
 let hepsi =[yumurta,menemen,meyveSalatası,gununCorbasi,
 cay,portakalSuyu,mercimekCorbası,biftek];
 
 
+yumurta.style.display="none";
+menemen.style.display="none";
+meyveSalatası.style.display="none";
+gununCorbasi.style.display="none";
+cay.style.display="none";
+portakalSuyu.style.display="none";
+mercimekCorbası.style.display="none";
+biftek.style.display="none";
+
+
+
 function allClick(){
-    let contentsArray = Array.from(contents);
-    contentsArray.forEach(function(content) {
-        content.style.display = "block";
-    });
+    yumurta.style.display="block";
+    menemen.style.display="block";
+    meyveSalatası.style.display="block";
+    gununCorbasi.style.display="block";
+    cay.style.display="block";
+    portakalSuyu.style.display="block";
+    mercimekCorbası.style.display="block";
+    biftek.style.display="block";
     
-}
-
-function breakfastClick(){
-    yumurta.style.display ="block";
-    menemen.style.display ="block";
-
 
 }
+
+function breakfastClick() {
+    yumurta.style.display="block";
+    menemen.style.display="block";
+
+
+}
+
 
 function lunchClick(){
+    meyveSalatası.style.display="block";
+    gununCorbasi.style.display="block";
+
 
 }
 
 function shakesClick(){
+    cay.style.display="block";
+    portakalSuyu.style.display="block";
 
 }
 
 function dinnerClick(){
+    mercimekCorbası.style.display="block";
+    biftek.style.display="block";
 
 }
