@@ -15,10 +15,7 @@ body {
 .contents {
     display: flex;
     flex-wrap: wrap;
-    /* Elemanlar sığmazsa bir alt satıra geçmelerini sağlar */
-    justify-content: space-between;
-    /* Elemanlar arasına boşluk bırakarak yan yana yerleştirir */
-    flex-direction: row; /* İçerikleri yatayda sıralamak için eklenen stil */
+    justify-content: space-around;
 }
 
 .yumurta,
@@ -29,17 +26,23 @@ body {
 .portakalSuyu,
 .mercimekCorbası,
 .biftek {
-    width: calc(45% - 45px);
+    width: 45%; /* Tablo genişliği */
     background-color: rgb(4, 156, 156);
     height: 250px;
     margin-top: 50px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    display: inline-block;
+    /* Diğer stillendirmeleri ekleyin */
+    text-align: center;
 }
 
-
-
-.img {
-    text-align: end;
+.yumurta img,
+.menemen img,
+.meyveSalatası img,
+.gununCorbasi img,
+.cay img,
+.portakalSuyu img,
+.mercimekCorbası img,
+.biftek img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
 }
