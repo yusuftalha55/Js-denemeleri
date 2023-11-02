@@ -1,0 +1,28 @@
+body {
+    background-color: aliceblue;
+}
+
+.title {
+    text-align: center;
+}
+
+.main {
+text-align: center;
+}
+
+.mainContent {
+    margin-left: 500px;
+    margin-top: -250px;
+    
+    
+    max-width: 600px;
+}
+
+#image {
+    width: 400px;
+    height: 400px;
+    border: 15px red;
+    border-radius: 15px;
+    margin-left: -800px;
+    
+}
