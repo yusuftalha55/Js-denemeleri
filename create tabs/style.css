@@ -18,6 +18,11 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin: 15%;
+    border: 6px solid red;
+    border-radius: 15px;
+    width: 1000px;
+    height: 750px;
 }
 
 .picture {
@@ -27,12 +32,15 @@ body {
 #image {
     width: 400px;
     height: 400px;
+    margin: 2%;
 }
 
 .selectionBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2%;
 }
 
 button {
