@@ -14,4 +14,14 @@ function newYear(){
     let m = Math.floor((result % hour) / minute);
     let s = Math.floor((result % minute) / second);
 
+    document.getElementById("day").innerText = d;
+    document.getElementById("hour").innerText = h;
+    document.getElementById("minute").innerText = m;
+    document.getElementById("second").innerText = s;
+
 }
+
+setInterval(function(){
+    newYear();
+
+},1000)
