@@ -1,0 +1,9 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#paragraphs {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
