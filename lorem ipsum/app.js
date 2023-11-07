@@ -12,7 +12,7 @@ const lorem = [
 
 ]
 
-let input = parseInt(document.getElementById("input").value);
+
 
 
 
