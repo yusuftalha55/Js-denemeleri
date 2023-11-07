@@ -13,15 +13,19 @@ const lorem = [
 ]
 
 let input = parseInt(document.getElementById("input").value);
-let lorems=[one,two,three,four,five,six,seven,eight,nine,ten];
-lorems.index=0;
 
-function generateClick(){
-    for (let i = 1; i <= 10; i++) {
-        lorems.index++;
-    
+
+
+function generateClick() {
+    let input = parseInt(document.getElementById("input").value);
+
+    if (input > 0 && input <= 10) {
+        let selectedLorem = lorem.slice(0, input); 
+        let paragraphs = selectedLorem.join('<br><br>'); 
+        document.getElementById("paragraphs").innerHTML = paragraphs; 
+    } else {
+        alert("Lütfen 1 ile 10 arası bir değer giriniz.");
     }
-
 }
 
 
