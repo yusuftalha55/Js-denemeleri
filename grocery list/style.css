@@ -4,8 +4,13 @@ body {
 }
 
 .main {
-    margin-top: 15%;
-    
-    
-    
+    margin-top: 15%;   
+    background-color: white;
+    max-width: 750px;    
+    margin-left: 35%;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
 }
