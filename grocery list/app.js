@@ -12,20 +12,22 @@ function submitClick() {
     inputLi.textContent = input;
     ul.appendChild(inputLi);
     ul.appendChild(button);
-    // let data = inputLi.textContent;
-    // localStorage.setItem("userData",data);
 
     function deleteBtn() {
         inputLi.remove();
         button.remove();
     }
+
+    localStorage.setItem("liData",inputLi.textContent);
+
 }
 
+let getLiData = localStorage.getItem("liData");
 
 
 function clearClick() {
     let ulChildren = Array.from(ul.children);
-    ulChildren.forEach(function(childer){
+    ulChildren.forEach(function (childer) {
         childer.remove();
 
     })
