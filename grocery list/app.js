@@ -14,17 +14,14 @@ function submitClick(){
     ul.appendChild(button);
     // let data = inputLi.textContent;
     // localStorage.setItem("userData",data);
+
+    function deleteBtn() {
+        inputLi.remove();
+        button.remove();
+    }
 }
 
-function deleteBtn() {
-    // butona tıklanınca butondan bir önceki elemente ulaşıyor
-    let listItem = this.parentElement;
 
-    // ulaşılan elementi siliyor
-    listItem.remove();
-    
-
-}
 
 function clearClick(){
     
