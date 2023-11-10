@@ -3,7 +3,7 @@ let clearBtn = document.getElementById("clearBtn");
 let container = document.querySelector(".container");
 let ul = document.getElementById("ul");
 
-function submitClick(){
+function submitClick() {
     let input = document.getElementById("input").value;
     let inputLi = document.createElement("li");
     let button = document.createElement("button");
@@ -23,7 +23,12 @@ function submitClick(){
 
 
 
-function clearClick(){
-    
+function clearClick() {
+    let ulChildren = Array.from(ul.children);
+    ulChildren.forEach(function(childer){
+        childer.remove();
+
+    })
+
 }
 
