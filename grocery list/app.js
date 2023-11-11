@@ -18,12 +18,7 @@ function submitClick() {
         button.remove();
     }
 
-    localStorage.setItem("liData",inputLi.textContent);
-
 }
-
-let getLiData = localStorage.getItem("liData");
-
 
 function clearClick() {
     let ulChildren = Array.from(ul.children);
