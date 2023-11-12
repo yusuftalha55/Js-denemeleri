@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // sayfa içeriği yüklendiğinde çalışacak kod
+    getLocalStorage();
+});
+
+
+
 let ul = document.getElementById("ul");
 
 input.addEventListener("keydown" , function(event){
@@ -35,5 +42,5 @@ function clearClick(){
 function getLocalStorage(){
     let resultValue = localStorage.getItem("liData");
     resultLi.textContent = resultValue;
-
+  
 }
