@@ -21,10 +21,10 @@ function submitClick(){
     function deleteBtn(){
         resultBtn.remove();
         resultLi.remove();
-        localStorage.removeItem("liData");
+        // localStorage.removeItem("liData");
     }
 
-    let localStorage = localStorage.setItem("liData");
+    localStorage.setItem("liData",resultLi.textContent);
 
 }
 
@@ -33,6 +33,7 @@ function clearClick(){
 }
 
 function getLocalStorage(){
-    resultLi.textContent = localStorage;
+    let resultValue = localStorage.getItem("liData");
+    resultLi.textContent = resultValue;
 
 }
