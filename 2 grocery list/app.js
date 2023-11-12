@@ -21,10 +21,18 @@ function submitClick(){
     function deleteBtn(){
         resultBtn.remove();
         resultLi.remove();
+        localStorage.removeItem("liData");
     }
+
+    let localStorage = localStorage.setItem("liData");
 
 }
 
 function clearClick(){
     ul.innerHTML ="";
+}
+
+function getLocalStorage(){
+    resultLi.textContent = localStorage;
+
 }
