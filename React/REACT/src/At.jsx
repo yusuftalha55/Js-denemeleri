@@ -28,7 +28,6 @@ function At() {
 }
 
 function LookAt() {
-  alert("At göründü");
   return (
     <img
       src="https://vetrehberi.com/wp-content/uploads/2021/05/arap-at-irki-ve-ozellikleri-1100x570.jpg"
