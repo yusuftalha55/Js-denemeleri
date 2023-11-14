@@ -7,7 +7,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
-    <AboutPage></AboutPage>
+    {/* <AboutPage></AboutPage> */}
 
     {/* <h1>Welcome to my app</h1>
     <MyButton></MyButton> */}
