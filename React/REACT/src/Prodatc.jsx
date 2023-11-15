@@ -16,4 +16,4 @@ function Products() {
   return <ul>{listItems}</ul>;
 }
 
-export default Products;
+// export default Products;
