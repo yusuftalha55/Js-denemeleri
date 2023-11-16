@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-function MyButton() {
+
+function MyButton() { 
   const [sayac, setSayac] = useState(0);
   function handleClick() {
     setSayac(sayac + 1);
@@ -8,3 +9,5 @@ function MyButton() {
 
   return <button onClick={handleClick}>{sayac} kere bastınız</button>;
 }
+
+export default MyButton;
