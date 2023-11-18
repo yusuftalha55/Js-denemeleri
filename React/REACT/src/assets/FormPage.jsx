@@ -1,7 +1,7 @@
 import React from "react";
 
 function Form() {
-    return(  <div style={{ width: 750 , textAlign:"center", backgroundColor:"green" }}>
+    return(  <div style={{ width: 750 , textAlign:"center", backgroundColor:"green", margin:300 }}>
         <div className="header">
           <h2>Form in React</h2>
         </div>
