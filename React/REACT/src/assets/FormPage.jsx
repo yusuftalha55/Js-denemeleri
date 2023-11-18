@@ -5,7 +5,7 @@ function Form() {
         <div className="header">
           <h2>Form in React</h2>
         </div>
-        <div className="main">
+        <div style={{backgroundColor:"lightblue"}} className="main">
           <div className="container">
             <div className="mainInput">
               <h3>First Name*</h3>
