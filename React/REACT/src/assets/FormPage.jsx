@@ -1,4 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
+
+function HandleCheck() {
+  const MaleCheckboxRef = useRef();
+  const FemaleCheckRef = useRef();
+  const OtherCheckRef = useRef();
+}
 
 function Form() {
     return(  <div style={{ width: 750 , textAlign:"center", backgroundColor:"green", margin:300 }}>
@@ -26,7 +32,7 @@ function Form() {
             </div>
     
             <div className="checkBox">
-              <input type="checkbox" name="Male" />
+              <input type="checkbox" name="Male" ref={maleCheckboxRef} />
               <p>Male</p>
               <input type="checkbox" name="Female" />
               <p>Female</p>
