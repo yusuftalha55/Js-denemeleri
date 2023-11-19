@@ -4,6 +4,19 @@ function HandleCheck() {
   const MaleCheckboxRef = useRef();
   const FemaleCheckRef = useRef();
   const OtherCheckRef = useRef();
+
+  if(maleCheckboxRef.current.checked === true){
+    FemaleCheckRef.current.checked=false;
+    OtherCheckRef.current.checked=false;
+  }
+  else if(FemaleCheckRef.current.checked === true){
+    OtherCheckRef.current.checked=false;
+    MaleCheckboxRef.current.checked=false;
+  }
+  else{
+    FemaleCheckRef.current.checked=false;
+    MaleCheckboxRef.current.checked=false;
+  }
 }
 
 function Form() {
@@ -32,11 +45,11 @@ function Form() {
             </div>
     
             <div className="checkBox">
-              <input type="checkbox" name="Male" ref={maleCheckboxRef} />
+              <input type="checkbox" name="Male" ref={MaleCheckboxRef} />
               <p>Male</p>
-              <input type="checkbox" name="Female" />
+              <input type="checkbox" name="Female" ref={FemaleCheckRef} />
               <p>Female</p>
-              <input type="checkbox" name="Other" />
+              <input type="checkbox" name="Other" ref={OtherCheckRef} />
               <p>Other</p>
             </div>
           </div>
