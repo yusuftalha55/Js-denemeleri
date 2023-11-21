@@ -14,16 +14,18 @@ function JokeGenerator() {
   };
 
   return (
-    <div style={{ margin:350 }}>
+    <div style={{ margin: 400 }}>
       <div className="title">
-        <h1>JokeGenerator</h1>
+        <h1>JokeGenarator</h1>
       </div>
+
       <div className="button">
-        <button onClick={fetchApi}>Click to generate a joke.</button>
+        <button onClick={fetchApi}>Click to generate a joke</button>
       </div>
+
       <h3 ref={jokeHtml} className="joke"></h3>
     </div>
   );
 }
 
-// export default JokeGenerator;
+export default JokeGenerator;
