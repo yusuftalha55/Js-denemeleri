@@ -28,4 +28,4 @@ function JokeGenerator() {
   );
 }
 
-export default JokeGenerator;
+// export default JokeGenerator;
