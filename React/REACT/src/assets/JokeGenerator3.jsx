@@ -13,7 +13,7 @@ function JokeGenarator() {
         
     }
   return (
-    <div className="main">
+    <div style={{margin:500}} className="main">
       <div className="header">
         <h1>Joke Generator Using React and Joke API</h1>
       </div>
