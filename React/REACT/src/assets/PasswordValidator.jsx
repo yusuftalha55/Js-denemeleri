@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function PasswordCheck() {
+    const inputOut = useRef("");
+    const [password, setPassword] = useState(""); 
     function inputCheck(){
         
+
     }
   return (
     <div className="main">
@@ -13,7 +16,9 @@ function PasswordCheck() {
         <h3>Enter Password: </h3>
         <input type="text" />
       </div>
-      <div ref={inputCheck} className="check"></div>
+      <div className="check">
+        <h3 ref={inputOut} style={{color:"red"}}></h3>
+      </div>
     </div>
   );
 }
