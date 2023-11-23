@@ -1,15 +1,13 @@
 import React, { useState, useRef } from "react";
 
 function PasswordCheck() {
-    const inputOut = useRef("");
-    const outPut = useRef("");
     const [password, setPassword] = useState(""); 
     function inputCheck(){
-        if(inputOut.current.length >=6 && typeof inputOut.current === "string" && typeof inputOut.current === "number" ){
-            outPut.current.innerText = "Is strong password"
+        if(password.current.length >=6 && typeof password.current === "string" && typeof password.current === "number" ){
+            "Is strong password"
         }
         else{
-            outPut.current.innerText = "Is not strong password"
+           "Is not strong password"
         }
 
 
@@ -21,10 +19,12 @@ function PasswordCheck() {
       </div>
       <div className="input">
         <h3>Enter Password: </h3>
-        <input ref={inputOut}  type="text" />
+        <input onChange={(e) => {
+            setPassword(e.target.value)
+        }} type="text" />
       </div>
       <div className="check">
-        <h3  ref={outPut}  style={{color:"red"}}></h3>
+        <h3 style={{color:"red"}}>{inputCheck()}</h3>
       </div>
     </div>
   );
