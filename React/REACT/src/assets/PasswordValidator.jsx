@@ -4,7 +4,10 @@ function PasswordCheck() {
     const inputOut = useRef("");
     const [password, setPassword] = useState(""); 
     function inputCheck(){
-        
+        if(inputOut.current.length >=6 && typeof inputOut.current === "string" && typeof inputOut.current === "number" ){
+            
+        }
+
 
     }
   return (
