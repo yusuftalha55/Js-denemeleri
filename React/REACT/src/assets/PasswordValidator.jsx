@@ -1,36 +1,41 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
+import validator from 'validator'
 
-function PasswordCheck() {
-  const [password, setPassword] = useState(""); 
+const App = () => { 
 
-  function inputCheck() {
-    if (password.length >= 6 && typeof password === "number" && typeof password === "string") {
-      return "Is strong password";
-    } else {
-      return "Is not strong password";
-    }
-  }
+	const [errorMessage, setErrorMessage] = useState('') 
 
-  return (
-    <div className="main">
-      <div className="title">
-        <h1>Checking Password Strength in ReactJS</h1>
-      </div>
-      <div className="input">
-        <h3>Enter Password: </h3>
-        <input 
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }} 
-          type="text" 
-        />
-      </div>
-      <div className="check">
-        <h3 style={{ color: "red" }}>{inputCheck()}</h3>
-      </div>
-    </div>
-  );
-}
+	const validate = (value) => { 
 
-export default PasswordCheck;
+		if (validator.isStrongPassword(value, { 
+			minLength: 8, minLowercase: 1, 
+			minUppercase: 1, minNumbers: 1, minSymbols: 1 
+		})) { 
+			setErrorMessage('Is Strong Password') 
+		} else { 
+			setErrorMessage('Is Not Strong Password') 
+		} 
+	} 
+
+	return ( 
+		<div style={{ 
+			marginLeft: '200px', 
+		}}> 
+			<pre> 
+				<h2>Checking Password Strength in ReactJS</h2> 
+				<span>Enter Password: </span><input type="text"
+					onChange={(e) => validate(e.target.value)}></input> <br /> 
+				{errorMessage === '' ? null : 
+					<span style={{ 
+						fontWeight: 'bold', 
+						color: 'red', 
+					}}>{errorMessage}</span>} 
+			</pre> 
+		</div> 
+	); 
+} 
+
+export default App
+
+
 
