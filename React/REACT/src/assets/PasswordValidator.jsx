@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function App() {
   const [sifre, setSifre] = useState("");
   return (
-    <div className="App">
+    <div style={{margin:500}} className="App">
       <h3>
         Sifre gir
         <input
