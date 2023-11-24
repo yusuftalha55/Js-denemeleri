@@ -1,41 +1,25 @@
-import React, { useState } from "react"; 
-import validator from 'validator'
+import { useState } from "react";
 
-const App = () => { 
 
-	const [errorMessage, setErrorMessage] = useState('') 
+export default function App() {
+  const [sifre, setSifre] = useState("");
+  return (
+    <div className="App">
+      <h3>
+        Sifre gir
+        <input
+          value={sifre}
+          onChange={(e) => {
+            setSifre(e.target.value);
+          }}
+        />
+      </h3>
+      <h3>{sifre.length >= 6 ? "sifre guclu" : "sifre gucsuz"}</h3>
+    </div>
+  );
+}
 
-	const validate = (value) => { 
 
-		if (validator.isStrongPassword(value, { 
-			minLength: 8, minLowercase: 1, 
-			minUppercase: 1, minNumbers: 1, minSymbols: 1 
-		})) { 
-			setErrorMessage('Is Strong Password') 
-		} else { 
-			setErrorMessage('Is Not Strong Password') 
-		} 
-	} 
-
-	return ( 
-		<div style={{ 
-			marginLeft: '200px', 
-		}}> 
-			<pre> 
-				<h2>Checking Password Strength in ReactJS</h2> 
-				<span>Enter Password: </span><input type="text"
-					onChange={(e) => validate(e.target.value)}></input> <br /> 
-				{errorMessage === '' ? null : 
-					<span style={{ 
-						fontWeight: 'bold', 
-						color: 'red', 
-					}}>{errorMessage}</span>} 
-			</pre> 
-		</div> 
-	); 
-} 
-
-export default App
 
 
 
