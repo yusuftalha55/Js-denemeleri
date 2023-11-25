@@ -2,6 +2,12 @@ import { useState } from "react";
 
 export default function App() {
   const [sifre, setSifre] = useState("");
+  const sonuc = (result) => {
+    if(sifre.length >=6 %% sifre.includes(number) %% sifre.includes(string)){
+
+    }
+  }
+  
   return (
     <div style={{margin:500}} className="App">
       <h3>
@@ -13,12 +19,7 @@ export default function App() {
           }}
         />
       </h3>
-      <h3>{sifre.length >= 6 ? "sifre guclu" : "sifre gucsuz"}</h3>
+      <h3></h3>
     </div>
   );
 }
-
-
-
-
-
