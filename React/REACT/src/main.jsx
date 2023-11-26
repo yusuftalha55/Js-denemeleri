@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PasswordControl from "./assets/PasswordValidator2";
+import PasswordControl from "./assets/PasswordValidator3";
 import "./index.css";
 
 
