@@ -3,8 +3,11 @@ import { useState } from "react";
 export default function App() {
   const [sifre, setSifre] = useState("");
   const sonuc = (result) => {
-    if(sifre.length >=6 %% sifre.includes(number) %% sifre.includes(string)){
-
+    if(sifre.length >=6 && sifre.includes(number) && sifre.includes(string)){
+      result.innerHTML = "şifre güçlü" 
+    }
+    else{
+      result.innerHTML = "şifre güçsüz"
     }
   }
   
@@ -19,7 +22,7 @@ export default function App() {
           }}
         />
       </h3>
-      <h3></h3>
+      <h3>{result}</h3>
     </div>
   );
 }
