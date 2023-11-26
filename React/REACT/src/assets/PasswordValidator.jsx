@@ -36,4 +36,4 @@ const PasswordStrengthChecker = () => {
   );
 };
 
-export default PasswordStrengthChecker;
+// export default PasswordStrengthChecker;
