@@ -2,12 +2,18 @@ import React, {useState, useRef} from "react";
 
 const TodoList = () =>{
 	const listRef = useRef("");
+	const inputValue = useRef("");
 
 	const adToDo = () => {
 		const newTask = document.createElement("li");
 		const newTaskDel = document.createElement("button");
 		newTaskDel.addEventListener("click", delClick);
 		newTaskDel.textContent = "Sil";
+		newTask.appendChild(newTaskDel);
+
+		newTask.innerHTML = inputValue.current.value;
+
+		listRef.appendChild(newTask);
 
 	}
 }
@@ -19,7 +25,7 @@ return(
         </div>
 
         <div className="inputArea">
-            <input type="text" style={{width:500 , height:175}}/>
+            <input ref={inputValue} type="text" style={{width:500 , height:175}}/>
         </div>
 
         <div className="addArea">
@@ -36,4 +42,4 @@ return(
     </div>
 ) 
   
-//   export default TodoList;
+  export default TodoList;
