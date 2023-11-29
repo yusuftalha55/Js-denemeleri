@@ -1,46 +1,31 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 
-const TodoList = () => {
-    const [task, setTask] = useState("");
-    const [tasks, setTasks] = useState([]);
-  
-    const addTask = () => {
-      if (task.trim() !== "") {
-        setTasks([...tasks, task]);
-        setTask("");
-      }
-    };
-  
-    return (
-      <div className="main">
+const TodoList = () =>{
+	const listRef = useRef("");
+}
+
+return(
+    <div className="main">
         <div className="title">
-          <h1>TODO LIST</h1>
+            <h1>TODO LIST</h1>
         </div>
-  
+
         <div className="inputArea">
-          <input
-            type="text"
-            style={{ width: 500, height: 30 }}
-            value={task}
-            onChange={(e) => setTask(e.target.value)}
-          />
+            <input type="text" style={{width:500 , height:175}}/>
         </div>
-  
+
         <div className="addArea">
-          <button style={{ backgroundColor: "black" }} onClick={addTask}>
-            ADD
-          </button>
+            <button onClick={adToDo} style={{backgroundColor:"black"}}>ADD</button>
         </div>
-  
+
         <div className="data">
-          <ul>
-            {tasks.map((task, index) => (
-              <li key={index}>{task}</li>
-            ))}
-          </ul>
+			<ul ref={listRef}>
+
+			</ul>
+
         </div>
-      </div>
-    );
-  };
+
+    </div>
+) 
   
-  export default TodoList;
+//   export default TodoList;
