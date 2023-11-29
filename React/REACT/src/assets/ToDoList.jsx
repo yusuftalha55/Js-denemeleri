@@ -2,6 +2,14 @@ import React, {useState, useRef} from "react";
 
 const TodoList = () =>{
 	const listRef = useRef("");
+
+	const adToDo = () => {
+		const newTask = document.createElement("li");
+		const newTaskDel = document.createElement("button");
+		newTaskDel.addEventListener("click", delClick);
+		newTaskDel.textContent = "Sil";
+
+	}
 }
 
 return(
