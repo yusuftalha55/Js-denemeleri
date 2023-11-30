@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const TodoList = () => {
   const listRef = useRef(null);
   const inputValue = useRef(null);
+  const [tasks, setTasks] = useState([]);
 
   const adToDo = () => {
     const newTask = document.createElement("li");
@@ -14,6 +15,8 @@ const TodoList = () => {
     newTask.appendChild(newTaskDel);
 
     listRef.current.appendChild(newTask);
+
+
   };
 
   const delClick = (e) => {
