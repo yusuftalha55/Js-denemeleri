@@ -10,7 +10,7 @@ const QuizApp = () => {
 
 
   return (
-    <div className="main">
+    <div style={{textAlign: "center", marginTop: 150, backgroundColor: "CadetBlue", width: 750, margin: "0 auto"}} className="main">
       <div className="title">
         <h1>QUIZ APP</h1>
       </div>
@@ -23,7 +23,7 @@ const QuizApp = () => {
           checked={selectedOption === "option1"}
           onChange={() => setSelectedOption("option1")}
         />
-        <button onClick={submitClick} style={{width:45, height:25}}>Submit</button>
+        <button  onClick={submitClick} style={{margin:30,width:150, height:45, backgroundColor:"aliceblue"}}>Submit</button>
       </div>
     </div>
   );
