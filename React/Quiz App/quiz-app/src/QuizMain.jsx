@@ -1,6 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 
 const QuizApp = () => {
+  const [selectedOption,setSelectedOption] = useState("");
+
+
+  const submitClick =() =>{
+
+  }
+
+
   return (
     <div className="main">
       <div className="title">
@@ -15,7 +23,7 @@ const QuizApp = () => {
           checked={selectedOption === "option1"}
           onChange={() => setSelectedOption("option1")}
         />
-        <button style={{width:45, height:25}}>Submit</button>
+        <button onClick={submitClick} style={{width:45, height:25}}>Submit</button>
       </div>
     </div>
   );
