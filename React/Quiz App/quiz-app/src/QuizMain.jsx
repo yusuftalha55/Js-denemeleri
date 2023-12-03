@@ -15,6 +15,7 @@ const QuizApp = () => {
           checked={selectedOption === "option1"}
           onChange={() => setSelectedOption("option1")}
         />
+        <button style={{width:45, height:25}}>Submit</button>
       </div>
     </div>
   );
