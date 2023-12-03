@@ -17,13 +17,16 @@ const QuizApp = () => {
       <div className="questions-title">
         <h3>Question 1</h3>
         <h2 className="questions">What is the capital of Haryana?</h2>
+        <label>
         <input
           type="radio"
           value="option1"
           checked={selectedOption === "option1"}
           onChange={() => setSelectedOption("option1")}
         />
-        <button  onClick={submitClick} style={{margin:30,width:150, height:45, backgroundColor:"aliceblue"}}>Submit</button>
+        <h3>Yamunanagar</h3>
+      </label>
+        <button  onClick={submitClick} style={{margin:30,width:150, height:45, backgroundColor:"aliceblue" }}>Submit</button>
       </div>
     </div>
   );
