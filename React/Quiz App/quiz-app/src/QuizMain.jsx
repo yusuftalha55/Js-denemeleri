@@ -10,6 +10,7 @@ const QuizApp = () => {
   const answerRef3 = useRef();
   const answerRef4 = useRef();
   const [score, setScore] = useState(0);
+  const [whichQuestion, setWhichQuestion] = useState(0);
   const option4 = "option4";
 
 
@@ -18,7 +19,13 @@ const QuizApp = () => {
       setScore(score + 1);
     }
 
-    
+    qBank.map((question) => {
+      if(){
+        
+      }
+
+    }
+    )
 
 
     
