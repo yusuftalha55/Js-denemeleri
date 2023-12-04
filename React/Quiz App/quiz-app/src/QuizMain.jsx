@@ -15,27 +15,26 @@ const QuizApp = () => {
 
 
   const submitClick = () => {
-    if(selectedOption === option4){
+    if (selectedOption === option4) {
       setScore(score + 1);
     }
 
-    setWhichQuestion(whichQuestion +1);
+    // Bir sonraki soruya geçelim
+    setWhichQuestion(whichQuestion + 1);
 
-    qBank.map((question) => {
-      if(question.id === 1 ){
-        setWhichQuestion(whichQuestion +1);
-      }
-      else if(){
-        
-      }
-      
+    // Eğer tüm sorular gösterildiyse, sonuçları göster
+    if (whichQuestion >= qBank.length) {
+      console.log("Quiz completed! Your score is:", score);
+    } else {
+      // Soruları ref ve state'ler aracılığıyla ekrana yerleştirelim
+      const currentQuestion = qBank[whichQuestion];
+      questionRef.current.innerText = `Question ${currentQuestion.id}`;
+      questinContentRef.current.innerText = currentQuestion.question;
+      answerRef1.current.innerText = currentQuestion.options[0];
+      answerRef2.current.innerText = currentQuestion.options[1];
+      answerRef3.current.innerText = currentQuestion.options[2];
+      answerRef4.current.innerText = currentQuestion.options[3];
     }
-    )
-
-
-
-
-    
   };
 
   return (
