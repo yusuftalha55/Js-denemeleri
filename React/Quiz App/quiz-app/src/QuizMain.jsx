@@ -20,14 +20,14 @@ const QuizApp = () => {
       setScore(score + 1);
     }
 
-    // Bir sonraki soruya geçelim
+    
     setWhichQuestion(whichQuestion + 1);
 
-    // Eğer tüm sorular gösterildiyse, sonuçları göster
+    
     if (whichQuestion >= qBank.length) {
       resultRef.current.innerText = "RESULT:" + score;
     } else {
-      // Soruları ref ve state'ler aracılığıyla ekrana yerleştirelim
+      
       const currentQuestion = qBank[whichQuestion];
       questionRef.current.innerText = `Question ${currentQuestion.id}`;
       questinContentRef.current.innerText = currentQuestion.question;
