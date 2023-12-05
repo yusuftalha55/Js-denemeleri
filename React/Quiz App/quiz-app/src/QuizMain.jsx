@@ -12,6 +12,7 @@ const QuizApp = () => {
   const [score, setScore] = useState(0);
   const [whichQuestion, setWhichQuestion] = useState(1);
   const option4 = "option4";
+  const resultRef = useRef();
 
 
   const submitClick = () => {
@@ -24,7 +25,7 @@ const QuizApp = () => {
 
     // Eğer tüm sorular gösterildiyse, sonuçları göster
     if (whichQuestion >= qBank.length) {
-      console.log("Quiz completed! Your score is:", score);
+      resultRef.current.innerText = "RESULT:" + score;
     } else {
       // Soruları ref ve state'ler aracılığıyla ekrana yerleştirelim
       const currentQuestion = qBank[whichQuestion];
@@ -101,6 +102,9 @@ const QuizApp = () => {
         >
           Submit
         </button>
+        <div className="result">
+          <h1 ref={resultRef}></h1>
+        </div>
       </div>
     </div>
   );
