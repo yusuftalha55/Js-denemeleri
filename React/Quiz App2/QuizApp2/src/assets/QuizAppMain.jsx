@@ -6,6 +6,7 @@ const QuizApp = () => {
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [score, setScore] = useState("0");
   const [selectedQuestionId, setSelectedQuestionId] = useState("");
+  const [whichQNumber, setWhichQNumber] = useState(0);
   const currentQuestionValues = questionValues();
   const whichQ = useRef();
   const questionRef = useRef();
@@ -16,6 +17,12 @@ const QuizApp = () => {
 
   const submitClick = () => {
     setSelectedQuestionId(currentQuestionValues.id);
+    setWhichQNumber(whichQNumber + 1);
+    whichQ.current.innerText = `Question ${whichQNumber}`;
+    
+    
+
+    
   
 
     
