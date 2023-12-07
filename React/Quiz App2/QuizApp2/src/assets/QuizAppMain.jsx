@@ -4,12 +4,17 @@ import questionValues from "./QuestionsValue";
 
 const QuizApp = () => {
   const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [score, setScore] = useState("0");
   const whichQ = useRef();
   const questionRef = useRef();
   const answer1Ref = useRef();
   const answer2Ref = useRef();
   const answer3Ref = useRef();
   const answer4Ref = useRef();
+
+  const submitClick = () => {
+    
+  }
 
   return (
     <div className="main">
@@ -55,6 +60,9 @@ const QuizApp = () => {
             onChange={() => setSelectedAnswer("answer4")}
           />
           <h4 ref={answer4Ref}></h4>
+        </div>
+        <div className="submit">
+          <button onClick={submitClick}>SUBMIT</button>
         </div>
       </div>
     </div>
