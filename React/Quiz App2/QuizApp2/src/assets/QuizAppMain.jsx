@@ -5,6 +5,8 @@ import questionValues from "./QuestionsValue";
 const QuizApp = () => {
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [score, setScore] = useState("0");
+  const [selectedQuestionId, setSelectedQuestionId] = useState("");
+  const currentQuestionValues = questionValues();
   const whichQ = useRef();
   const questionRef = useRef();
   const answer1Ref = useRef();
@@ -13,6 +15,9 @@ const QuizApp = () => {
   const answer4Ref = useRef();
 
   const submitClick = () => {
+    setSelectedQuestionId(currentQuestionValues.id);
+  
+
     
   }
 
