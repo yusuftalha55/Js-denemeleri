@@ -20,6 +20,8 @@ const QuizApp = () => {
     setWhichQNumber(whichQNumber + 1);
     whichQ.current.innerText = `Question ${whichQNumber}`;
     
+    const currentQuestion = questionValues(currentQuestionValues.id);
+    questionRef.current.innerText = currentQuestion.questionText;
     
 
     
