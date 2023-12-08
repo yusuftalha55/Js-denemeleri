@@ -19,9 +19,14 @@ const QuizApp = () => {
     setSelectedQuestionId(currentQuestionValues.id);
     setWhichQNumber(whichQNumber + 1);
     whichQ.current.innerText = `Question ${whichQNumber}`;
-    
+
     const currentQuestion = questionValues(currentQuestionValues.id);
     questionRef.current.innerText = currentQuestion.questionText;
+
+    answer1Ref.current.innerText = currentQuestion.options[0];
+    answer2Ref.current.innerText = currentQuestion.options[1];
+    answer3Ref.current.innerText = currentQuestion.options[2];
+    answer4Ref.current.innerText = currentQuestion.options[3];
     
 
     
