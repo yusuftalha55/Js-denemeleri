@@ -15,6 +15,7 @@ const QuizApp = () => {
   const answer2Ref = useRef();
   const answer3Ref = useRef();
   const answer4Ref = useRef();
+  const scoreRef = useRef();
 
   const submitClick = () => {
     setSelectedQuestionId(selectedQuestionId + 1);
@@ -28,6 +29,16 @@ const QuizApp = () => {
     answer2Ref.current.innerText = currentQuestion.options[1];
     answer3Ref.current.innerText = currentQuestion.options[2];
     answer4Ref.current.innerText = currentQuestion.options[3];
+
+    if(selectedAnswer === currentQuestionValues.options[currentQuestionValues.answerIndex]){
+      setScore(score + 1)
+      scoreRef.current.innerText = score;
+      
+    }
+
+
+
+
   };
 
   return (
@@ -86,6 +97,10 @@ const QuizApp = () => {
         <div className="submit">
           <button onClick={submitClick}>SUBMIT</button>
         </div>
+      </div>
+      <div className="score">
+        <h1 ref={scoreRef}></h1>
+
       </div>
     </div>
   );
