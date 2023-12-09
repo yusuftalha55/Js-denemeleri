@@ -43,7 +43,7 @@ const QuizApp = () => {
           <h3 ref={questionRef}>What is the capital of Haryana?</h3>
         </div>
         <div className="answers">
-          <div style={{ display: "inline-block" }} className="answersOne">
+          <div style={{ display: "inline-block", width:150 }} className="answersOne">
             <input
               type="radio"
               value="answer1"
@@ -53,7 +53,7 @@ const QuizApp = () => {
             <h4 ref={answer1Ref}>Yamunanagar</h4>
           </div>
 
-          <div style={{ display: "inline-block" }} className="answersTwo">
+          <div style={{ display: "inline-block", width:150 }} className="answersTwo">
             <input
               type="radio"
               value="answer2"
@@ -63,7 +63,7 @@ const QuizApp = () => {
             <h4 ref={answer2Ref}>Panipat</h4>
           </div>
 
-          <div style={{ display: "inline-block" }} className="answersThree">
+          <div style={{ display: "inline-block", width:150 }} className="answersThree">
             <input
               type="radio"
               value="answer3"
@@ -73,7 +73,7 @@ const QuizApp = () => {
             <h4 ref={answer3Ref}>Gurgaon</h4>
           </div>
 
-          <div style={{ display: "inline-block" }} className="answersFor">
+          <div style={{ display: "inline-block", width:150 }} className="answersFor">
             <input
               type="radio"
               value="answer4"
