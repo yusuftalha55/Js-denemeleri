@@ -18,7 +18,8 @@ const QuizApp = () => {
   const scoreRef = useRef();
 
   const submitClick = () => {
-    setSelectedQuestionId(selectedQuestionId + 1);
+    if(selectedQuestionId <=5) {
+      setSelectedQuestionId(selectedQuestionId + 1);
     setWhichQNumber(whichQNumber + 1);
     whichQ.current.innerText = `Question ${whichQNumber}`;
 
@@ -30,11 +31,19 @@ const QuizApp = () => {
     answer3Ref.current.innerText = currentQuestion.options[2];
     answer4Ref.current.innerText = currentQuestion.options[3];
 
-    if(selectedAnswer === currentQuestionValues.options[currentQuestionValues.answerIndex]){
-      setScore(score + 1)
-      scoreRef.current.innerText = score;
-      
     }
+
+    else{
+      if(selectedAnswer === currentQuestionValues.options[currentQuestionValues.answerIndex]){
+        setScore(score + 1)
+        scoreRef.current.innerText = score;
+        
+      }
+
+    }
+  
+
+    
 
 
 
