@@ -98,7 +98,7 @@ const QuizApp = () => {
           <button onClick={submitClick}>SUBMIT</button>
         </div>
       </div>
-      <div className="score">
+      <div className="result">
         <h1 ref={scoreRef}></h1>
 
       </div>
