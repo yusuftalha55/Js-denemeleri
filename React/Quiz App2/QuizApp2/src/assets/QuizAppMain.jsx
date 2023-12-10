@@ -31,14 +31,17 @@ const QuizApp = () => {
     answer3Ref.current.innerText = currentQuestion.options[2];
     answer4Ref.current.innerText = currentQuestion.options[3];
 
+    if(selectedAnswer === currentQuestionValues.options[currentQuestionValues.answerIndex]){
+      setScore(score + 1)        
+    }
+
     }
 
     else{
-      if(selectedAnswer === currentQuestionValues.options[currentQuestionValues.answerIndex]){
-        setScore(score + 1)
+      
+    
         scoreRef.current.innerText = score;
-        
-      }
+      
 
     }
   
