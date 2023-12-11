@@ -11,7 +11,7 @@ const qBank = [
     id: 2,
     question: "What is the capital of Punjab?",
     options: ["Patiala", "Ludhiana", "Amritsar", "Chandigarh"],
-    answer: "Patiala",
+    answer: "Amritsar",
   },
   {
     id: 3,
