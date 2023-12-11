@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import qBank from "./Qbank";
 import questionValues from "./QuestionsValue";
 
 const QuizApp = () => {
@@ -18,39 +17,28 @@ const QuizApp = () => {
   const scoreRef = useRef();
 
   const submitClick = () => {
-    if(selectedQuestionId <=5) {
+    if (selectedQuestionId <= 5) {
       setSelectedQuestionId(selectedQuestionId + 1);
-    setWhichQNumber(whichQNumber + 1);
-    whichQ.current.innerText = `Question ${whichQNumber}`;
+      setWhichQNumber(whichQNumber + 1);
+      whichQ.current.innerText = `Question ${whichQNumber}`;
 
-    const currentQuestion = questionValues(selectedQuestionId + 1);
-    questionRef.current.innerText = currentQuestion.questionText;
+      const currentQuestion = questionValues(selectedQuestionId + 1);
+      questionRef.current.innerText = currentQuestion.questionText;
 
-    answer1Ref.current.innerText = currentQuestion.options[0];
-    answer2Ref.current.innerText = currentQuestion.options[1];
-    answer3Ref.current.innerText = currentQuestion.options[2];
-    answer4Ref.current.innerText = currentQuestion.options[3];
+      answer1Ref.current.innerText = currentQuestion.options[0];
+      answer2Ref.current.innerText = currentQuestion.options[1];
+      answer3Ref.current.innerText = currentQuestion.options[2];
+      answer4Ref.current.innerText = currentQuestion.options[3];
 
-    if(selectedAnswer === currentQuestionValues.options[currentQuestionValues.answerIndex]){
-      setScore(score + 1)        
+      if (
+        selectedAnswer ===
+        currentQuestionValues.options[currentQuestionValues.answerIndex]
+      ) {
+        setScore(score + 1);
+      }
+    } else {
+      scoreRef.current.innerText = score;
     }
-
-    }
-
-    else{
-      
-    
-        scoreRef.current.innerText = score;
-      
-
-    }
-  
-
-    
-
-
-
-
   };
 
   return (
@@ -66,17 +54,23 @@ const QuizApp = () => {
           <h3 ref={questionRef}>What is the capital of Haryana?</h3>
         </div>
         <div className="answers">
-          <div style={{ display: "inline-block", width:150 }} className="answersOne">
+          <div
+            style={{ display: "inline-block", width: 150 }}
+            className="answersOne"
+          >
             <input
               type="radio"
               value="answer1"
               checked={selectedAnswer === "answer1"}
               onChange={() => setSelectedAnswer("answer1")}
             />
-            <h4 ref={answer1Ref}>Yamunanagar</h4>
+            <h4 ref={answer1Ref}>{selectedAnswer}</h4>
           </div>
 
-          <div style={{ display: "inline-block", width:150 }} className="answersTwo">
+          <div
+            style={{ display: "inline-block", width: 150 }}
+            className="answersTwo"
+          >
             <input
               type="radio"
               value="answer2"
@@ -86,7 +80,10 @@ const QuizApp = () => {
             <h4 ref={answer2Ref}>Panipat</h4>
           </div>
 
-          <div style={{ display: "inline-block", width:150 }} className="answersThree">
+          <div
+            style={{ display: "inline-block", width: 150 }}
+            className="answersThree"
+          >
             <input
               type="radio"
               value="answer3"
@@ -96,7 +93,10 @@ const QuizApp = () => {
             <h4 ref={answer3Ref}>Gurgaon</h4>
           </div>
 
-          <div style={{ display: "inline-block", width:150 }} className="answersFor">
+          <div
+            style={{ display: "inline-block", width: 150 }}
+            className="answersFor"
+          >
             <input
               type="radio"
               value="answer4"
@@ -112,7 +112,6 @@ const QuizApp = () => {
       </div>
       <div className="result">
         <h1 ref={scoreRef}></h1>
-
       </div>
     </div>
   );
