@@ -10,10 +10,10 @@ const QuizApp = () => {
   const currentQuestionValues = questionValues(selectedQuestionId);
   const whichQ = useRef();
   const questionRef = useRef();
-  const answer1Ref = useRef();
-  const answer2Ref = useRef();
-  const answer3Ref = useRef();
-  const answer4Ref = useRef();
+  const [answer1, setAnswer1] = useState("Yamunanagar");
+  const [answer2, setAnswer2] = useState("Panipat");
+  const [answer3, setAnswer3] = useState("Gurgaon");
+  const [answer4, setAnswer4] = useState("Chandigarh");
   const scoreRef = useRef();
 
   const submitClick = () => {
@@ -25,10 +25,10 @@ const QuizApp = () => {
       const currentQuestion = questionValues(selectedQuestionId + 1);
       questionRef.current.innerText = currentQuestion.questionText;
 
-      answer1Ref.current.innerText = currentQuestion.options[0];
-      answer2Ref.current.innerText = currentQuestion.options[1];
-      answer3Ref.current.innerText = currentQuestion.options[2];
-      answer4Ref.current.innerText = currentQuestion.options[3];
+      setAnswer1(currentQuestion.options[0]);
+      setAnswer2(currentQuestion.options[1]);
+      setAnswer3(currentQuestion.options[2]);
+      setAnswer4(currentQuestion.options[3]);
 
       if (
         selectedAnswer ===
@@ -36,8 +36,6 @@ const QuizApp = () => {
       ) {
         setScore(score + 1);
       }
-    } else {
-      scoreRef.current.innerText = score;
     }
   };
 
@@ -64,7 +62,7 @@ const QuizApp = () => {
               checked={selectedAnswer === "answer1"}
               onChange={() => setSelectedAnswer("answer1")}
             />
-            <h4 ref={answer1Ref}>{selectedAnswer}</h4>
+            <h4>{answer1}</h4>
           </div>
 
           <div
@@ -77,7 +75,7 @@ const QuizApp = () => {
               checked={selectedAnswer === "answer2"}
               onChange={() => setSelectedAnswer("answer2")}
             />
-            <h4 ref={answer2Ref}>Panipat</h4>
+            <h4>{answer2}</h4>
           </div>
 
           <div
@@ -90,7 +88,7 @@ const QuizApp = () => {
               checked={selectedAnswer === "answer3"}
               onChange={() => setSelectedAnswer("answer3")}
             />
-            <h4 ref={answer3Ref}>Gurgaon</h4>
+            <h4>{answer3}</h4>
           </div>
 
           <div
@@ -103,7 +101,7 @@ const QuizApp = () => {
               checked={selectedAnswer === "answer4"}
               onChange={() => setSelectedAnswer("answer4")}
             />
-            <h4 ref={answer4Ref}>Chandigarh</h4>
+            <h4>{answer4}</h4>
           </div>
         </div>
         <div className="submit">
@@ -111,7 +109,7 @@ const QuizApp = () => {
         </div>
       </div>
       <div className="result">
-        <h1 ref={scoreRef}></h1>
+        <h1>{score}</h1>
       </div>
     </div>
   );
