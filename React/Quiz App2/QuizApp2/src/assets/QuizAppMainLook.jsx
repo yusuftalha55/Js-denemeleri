@@ -29,12 +29,10 @@ const QuizApp = () => {
       setAnswer3(currentQuestion.options[2]);
       setAnswer4(currentQuestion.options[3]);
 
-      if(selectedAnswer === currentQuestionValues.answer) {
-        setScore(score +1);
+      if (selectedAnswer === currentQuestionValues.answer) {
+        setScore(score + 1);
       }
-
-
-    } 
+    }
   };
 
   return (
@@ -114,3 +112,4 @@ const QuizApp = () => {
 };
 
 export default QuizApp;
+
