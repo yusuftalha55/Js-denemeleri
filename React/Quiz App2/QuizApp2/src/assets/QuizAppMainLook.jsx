@@ -3,9 +3,9 @@ import questionValues from "./QuestionsValue";
 
 const QuizApp = () => {
   const [selectedAnswer, setSelectedAnswer] = useState("");
-  const [score, setScore] = useState("0");
+  const [score, setScore] = useState(0);
   const [selectedQuestionId, setSelectedQuestionId] = useState(1);
-  const [whichQNumber, setWhichQNumber] = useState(2);
+  const [whichQNumber, setWhichQNumber] = useState(1);
 
   const currentQuestionValues = questionValues(selectedQuestionId);
   const whichQ = useRef();
@@ -14,13 +14,12 @@ const QuizApp = () => {
   const [answer2, setAnswer2] = useState("Panipat");
   const [answer3, setAnswer3] = useState("Gurgaon");
   const [answer4, setAnswer4] = useState("Chandigarh");
-  const scoreRef = useRef();
 
   const submitClick = () => {
-    if (selectedQuestionId <= 5) {
+    if (selectedQuestionId < 5) {
       setSelectedQuestionId(selectedQuestionId + 1);
       setWhichQNumber(whichQNumber + 1);
-      whichQ.current.innerText = `Question ${whichQNumber}`;
+      whichQ.current.innerText = `Question ${whichQNumber + 1}`;
 
       const currentQuestion = questionValues(selectedQuestionId + 1);
       questionRef.current.innerText = currentQuestion.questionText;
@@ -30,13 +29,12 @@ const QuizApp = () => {
       setAnswer3(currentQuestion.options[2]);
       setAnswer4(currentQuestion.options[3]);
 
-      if (
-        selectedAnswer ===
-        currentQuestionValues.options[currentQuestionValues.answerIndex]
-      ) {
-        setScore(score + 1);
+      if(selectedAnswer === currentQuestionValues.answer) {
+        setScore(score +1);
       }
-    }
+
+
+    } 
   };
 
   return (
@@ -46,7 +44,7 @@ const QuizApp = () => {
       </div>
       <div className="questions">
         <div className="whichQ">
-          <h2 ref={whichQ}>Questions 1</h2>
+          <h2 ref={whichQ}>Question {whichQNumber}</h2>
         </div>
         <div className="question">
           <h3 ref={questionRef}>What is the capital of Haryana?</h3>
@@ -109,7 +107,7 @@ const QuizApp = () => {
         </div>
       </div>
       <div className="result">
-        <h1>{score}</h1>
+        <h1>Score: {score}</h1>
       </div>
     </div>
   );
