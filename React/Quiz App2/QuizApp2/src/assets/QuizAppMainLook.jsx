@@ -60,7 +60,7 @@ const QuizApp = () => {
               type="radio"
               value="answer1"
               checked={selectedAnswer === "answer1"}
-              onChange={() => setSelectedAnswer("answer1")}
+              onChange={(e) => setSelectedAnswer(e.target.value)}
             />
             <h4>{answer1}</h4>
           </div>
@@ -73,7 +73,7 @@ const QuizApp = () => {
               type="radio"
               value="answer2"
               checked={selectedAnswer === "answer2"}
-              onChange={() => setSelectedAnswer("answer2")}
+              onChange={(e) => setSelectedAnswer(e.target.value)}
             />
             <h4>{answer2}</h4>
           </div>
@@ -86,7 +86,7 @@ const QuizApp = () => {
               type="radio"
               value="answer3"
               checked={selectedAnswer === "answer3"}
-              onChange={() => setSelectedAnswer("answer3")}
+              onChange={(e) => setSelectedAnswer(e.target.value)}
             />
             <h4>{answer3}</h4>
           </div>
@@ -99,7 +99,7 @@ const QuizApp = () => {
               type="radio"
               value="answer4"
               checked={selectedAnswer === "answer4"}
-              onChange={() => setSelectedAnswer("answer4")}
+              onChange={(e) => setSelectedAnswer(e.target.value)}
             />
             <h4>{answer4}</h4>
           </div>
