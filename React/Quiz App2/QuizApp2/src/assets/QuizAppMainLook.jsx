@@ -6,6 +6,7 @@ const QuizApp = () => {
   const [score, setScore] = useState(0);
   const [selectedQuestionId, setSelectedQuestionId] = useState(1);
   const [whichQNumber, setWhichQNumber] = useState(1);
+  const selectedAnswerValue = selectedAnswer.current;
 
   const currentQuestionValues = questionValues(selectedQuestionId);
   const whichQ = useRef();
@@ -16,6 +17,7 @@ const QuizApp = () => {
   const [answer4, setAnswer4] = useState("Chandigarh");
 
   const submitClick = () => {
+    console.log(selectedAnswer);
     if (selectedQuestionId < 5) {
       setSelectedQuestionId(selectedQuestionId + 1);
       setWhichQNumber(whichQNumber + 1);
@@ -29,7 +31,7 @@ const QuizApp = () => {
       setAnswer3(currentQuestion.options[2]);
       setAnswer4(currentQuestion.options[3]);
 
-      if(selectedAnswer === currentQuestionValues.answer) {
+      if(selectedAnswerValue === currentQuestionValues.answer) {
         setScore(score +1);
       }
 
