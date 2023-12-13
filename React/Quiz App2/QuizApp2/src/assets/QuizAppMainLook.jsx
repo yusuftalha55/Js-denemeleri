@@ -18,26 +18,38 @@ const QuizApp = () => {
 
   const submitClick = () => {
     console.log(selectedAnswer);
+  
+    // selectedAnswer'ın güncellenmiş değerini bir değişkene atayın
+    const updatedAnswer = selectedAnswer;
+  
     if (selectedQuestionId < 5) {
       setSelectedQuestionId(selectedQuestionId + 1);
       setWhichQNumber(whichQNumber + 1);
       whichQ.current.innerText = `Question ${whichQNumber + 1}`;
-
+  
       const currentQuestion = questionValues(selectedQuestionId + 1);
       questionRef.current.innerText = currentQuestion.questionText;
-
+  
       setAnswer1(currentQuestion.options[0]);
       setAnswer2(currentQuestion.options[1]);
       setAnswer3(currentQuestion.options[2]);
       setAnswer4(currentQuestion.options[3]);
-
-      if(selectedAnswerValue === currentQuestionValues.answer) {
-        setScore(score +1);
+  
+      // Değişkeni kullanarak işlemlerinizi gerçekleştirin
+      if (selectedQuestionId === 1 && updatedAnswer === answer4) {
+        setScore(score + 1);
+      } else if (selectedQuestionId === 2 && updatedAnswer === answer3) {
+        setScore(score + 1);
+      } else if (selectedQuestionId === 3 && updatedAnswer === answer1) {
+        setScore(score + 1);
+      } else if (selectedQuestionId === 4 && updatedAnswer === answer3) {
+        setScore(score + 1);
+      } else if (selectedQuestionId === 5 && updatedAnswer === answer2) {
+        setScore(score + 1);
       }
-
-
-    } 
+    }
   };
+  
 
   return (
     <div style={{ textAlign: "center", marginLeft: 500 }} className="main">
