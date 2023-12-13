@@ -19,7 +19,7 @@ const QuizApp = () => {
   const submitClick = () => {
     console.log(selectedAnswer);
   
-    // selectedAnswer'ın güncellenmiş değerini bir değişkene atayın
+    
     const updatedAnswer = selectedAnswer;
   
     if (selectedQuestionId < 5) {
@@ -35,7 +35,7 @@ const QuizApp = () => {
       setAnswer3(currentQuestion.options[2]);
       setAnswer4(currentQuestion.options[3]);
   
-      // Değişkeni kullanarak işlemlerinizi gerçekleştirin
+      
       if (selectedQuestionId === 1 && updatedAnswer === answer4) {
         setScore(score + 1);
       } else if (selectedQuestionId === 2 && updatedAnswer === answer3) {
