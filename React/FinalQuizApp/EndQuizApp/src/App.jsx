@@ -1,8 +1,9 @@
 import React from "react";
+import qBank from "./Qbank";
 
 const App = () => {
   const submitClick = () => {
-    
+
   }
 
 
