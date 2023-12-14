@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import qBank from "./Qbank";
 
 const App = () => {
   const submitClick = () => {
-
+    const [whichQuestionState, setWhichQuestionState] = useState("Questions 1");
+    const [questionState, setQuestionState] = useState("What is the capital of Haryana?");
+    const [option1State, setoption1State] = useState ("Yamunanagar");
+    const [option2State, setoption2State] = useState ("Panipat");
+    const [option3State, setoption3State] = useState ("Gurgaon");
+    const [option4State, setoption4State] = useState ("Chandigarh");
+    
   }
 
 
@@ -13,27 +19,27 @@ const App = () => {
       <div className="title">QUIZ APP</div>
       <div className="questions">
         <div className="whichQuestion">
-          <h2></h2>
+          <h2>{whichQuestionState}</h2>
         </div>
         <div className="contentQuestion">
-          <h3></h3>
+          <h3>{questionState}</h3>
         </div>
         <div className="answers">
           <div className="answer1">
             <input type="radio" />
-            <h4></h4>
+            <h4>{option1State}</h4>
           </div>
           <div className="answer2">
             <input type="radio" />
-            <h4></h4>
+            <h4>{option2State}</h4>
           </div>
           <div className="answer3">
             <input type="radio" />
-            <h4></h4>
+            <h4>{option3State}</h4>
           </div>
           <div className="answer4">
             <input type="radio" />
-            <h4></h4>
+            <h4>{option4State}</h4>
           </div>
         </div>
         <div className="submit">
