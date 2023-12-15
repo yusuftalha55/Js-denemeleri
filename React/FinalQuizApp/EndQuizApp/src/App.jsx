@@ -15,6 +15,11 @@ const App = () => {
 
   const submitClick = () => {
     setWhichQuestionState(whichQuestionState +1);
+    setQuestionState(question.question);
+    setoption1State(question.options[0]);
+    setoption2State(question.options[1]);
+    setoption3State(question.options[2]);
+    setoption4State(question.options[3]);
 
 
     
