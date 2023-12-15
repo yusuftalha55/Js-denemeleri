@@ -26,19 +26,31 @@ const App = () => {
         </div>
         <div className="answers">
           <div className="answer1">
-            <input type="radio" />
+            <input type="radio"
+             value="option1"
+             checked={selectedOption === "option1"}
+             />
             <h4>{option1State}</h4>
           </div>
           <div className="answer2">
-            <input type="radio" />
+          <input type="radio"
+             value="option2"
+             checked={selectedOption === "option2"}
+             />
             <h4>{option2State}</h4>
           </div>
           <div className="answer3">
-            <input type="radio" />
+          <input type="radio"
+             value="option3"
+             checked={selectedOption === "option3"}
+             />
             <h4>{option3State}</h4>
           </div>
           <div className="answer4">
-            <input type="radio" />
+          <input type="radio"
+             value="option4"
+             checked={selectedOption === "option4"}
+             />
             <h4>{option4State}</h4>
           </div>
         </div>
