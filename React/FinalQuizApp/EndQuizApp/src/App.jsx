@@ -8,7 +8,11 @@ const App = () => {
     const [option2State, setoption2State] = useState ("Panipat");
     const [option3State, setoption3State] = useState ("Gurgaon");
     const [option4State, setoption4State] = useState ("Chandigarh");
-    
+  const getQuestionById = (id) => {
+    const question = qBank.find(item => item.id === id);
+    return;
+  }  
+
   const submitClick = () => {
     
     
