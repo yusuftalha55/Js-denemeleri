@@ -2,18 +2,21 @@ import React, { useState } from "react";
 import qBank from "./Qbank";
 
 const App = () => {
-  const [whichQuestionState, setWhichQuestionState] = useState("Questions 1");
-    const [questionState, setQuestionState] = useState("What is the capital of Haryana?");
-    const [option1State, setoption1State] = useState ("Yamunanagar");
-    const [option2State, setoption2State] = useState ("Panipat");
-    const [option3State, setoption3State] = useState ("Gurgaon");
-    const [option4State, setoption4State] = useState ("Chandigarh");
+  const [whichQuestionState, setWhichQuestionState] = useState(1);
+  const [questionState, setQuestionState] = useState("What is the capital of Haryana?");
+  const [option1State, setoption1State] = useState ("Yamunanagar");
+  const [option2State, setoption2State] = useState ("Panipat");
+  const [option3State, setoption3State] = useState ("Gurgaon");
+  const [option4State, setoption4State] = useState ("Chandigarh"); 
   const getQuestionById = (id) => {
     const question = qBank.find(item => item.id === id);
     return;
   }  
 
   const submitClick = () => {
+    setWhichQuestionState(whichQuestionState +1);
+
+
     
     
   }
@@ -25,7 +28,7 @@ const App = () => {
       <div className="title">QUIZ APP</div>
       <div className="questions">
         <div className="whichQuestion">
-          <h2>{whichQuestionState}</h2>
+          <h2>{"Question" + whichQuestionState}</h2>
         </div>
         <div className="contentQuestion">
           <h3>{questionState}</h3>
