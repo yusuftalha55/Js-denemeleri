@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import qBank from "./Qbank";
 
 const App = () => {
-  const submitClick = () => {
-    const [whichQuestionState, setWhichQuestionState] = useState("Questions 1");
+  const [whichQuestionState, setWhichQuestionState] = useState("Questions 1");
     const [questionState, setQuestionState] = useState("What is the capital of Haryana?");
     const [option1State, setoption1State] = useState ("Yamunanagar");
     const [option2State, setoption2State] = useState ("Panipat");
     const [option3State, setoption3State] = useState ("Gurgaon");
     const [option4State, setoption4State] = useState ("Chandigarh");
+    
+  const submitClick = () => {
+    
     
   }
 
