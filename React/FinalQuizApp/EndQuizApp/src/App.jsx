@@ -16,10 +16,15 @@ const App = () => {
       setWhichQuestionState(whichQuestionState + 1);
 
     }
+
     
-    
-    
+    if (question && question.id >= 1) {
       setQuestionState(question.question);
+    }
+    
+    
+    
+      
       setOption1State(question.options[0]);
       setOption2State(question.options[1]);
       setOption3State(question.options[2]);
