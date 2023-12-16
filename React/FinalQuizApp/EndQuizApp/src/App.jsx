@@ -11,26 +11,23 @@ const App = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const submitClick = () => {
-    const question = getQuestionById(whichQuestionState);
-    if(whichQuestionState <=4) {
-      setWhichQuestionState(whichQuestionState + 1);
+    if (whichQuestionState <= 4) {
+      const nextQuestionId = whichQuestionState + 1;
+      const nextQuestion = getQuestionById(nextQuestionId);
 
-    }
+      setWhichQuestionState(nextQuestionId);
 
-    
-    if (question && question.id >= 1) {
-      setQuestionState(question.question);
+      if (nextQuestion) {
+        setQuestionState(nextQuestion.question);
+        setOption1State(nextQuestion.options[0]);
+        setOption2State(nextQuestion.options[1]);
+        setOption3State(nextQuestion.options[2]);
+        setOption4State(nextQuestion.options[3]);
+        setSelectedOption(null); 
+      }
+    } else {
+      
     }
-    
-    
-    
-      
-      setOption1State(question.options[0]);
-      setOption2State(question.options[1]);
-      setOption3State(question.options[2]);
-      setOption4State(question.options[3]);
-      
-    
   };
 
   const getQuestionById = (id) => {
@@ -43,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "Bisque", textAlign:"center", width:500, marginLeft:"100%" }}>
+    <div style={{ backgroundColor: "Bisque", textAlign: "center", width: 500, marginLeft: "100%" }}>
       <div className="title">QUIZ APP</div>
       <div className="questions">
         <div className="whichQuestion">
