@@ -10,30 +10,53 @@ const App = () => {
   const [option4State, setOption4State] = useState("Chandigarh");
   const [selectedOption, setSelectedOption] = useState(null);
   const [score, setScore] = useState(0);
+  const option1 = "option1";
+  const option2 = "option2";
+  const option3 = "option3";
+  const option4 = "option4";
 
   const submitClick = () => {
+    if(selectedOption === option4 && whichQuestionState ===1){
+      setScore(score + 1);
+    }
+    else if(selectedOption === option4 && whichQuestionState ===2){
+      setScore(score + 1);
+    }
+    else if(selectedOption === option1 && whichQuestionState ===3){
+      setScore(score + 1);
+    }
+    else if(selectedOption === option3 && whichQuestionState ===4){
+      setScore(score + 1);
+    }
+    else if(selectedOption === option2 && whichQuestionState ===5){
+      setScore(score + 1);
+    }
+
+
     if (whichQuestionState <= 4) {
       const nextQuestionId = whichQuestionState + 1;
       const nextQuestion = getQuestionById(nextQuestionId);
-
+  
       setWhichQuestionState(nextQuestionId);
 
+      console.log(selectedOption)
+  
       if (nextQuestion) {
         setQuestionState(nextQuestion.question);
         setOption1State(nextQuestion.options[0]);
         setOption2State(nextQuestion.options[1]);
         setOption3State(nextQuestion.options[2]);
         setOption4State(nextQuestion.options[3]);
-        setSelectedOption(null); 
-        if(selectedOption === nextQuestion.answer){
-          setScore(score +1)
-        }
+        setSelectedOption(null);
+  
+        
+        
       }
     } else {
-
       
     }
   };
+  
 
   const getQuestionById = (id) => {
     const question = qBank.find(item => item.id === id);
