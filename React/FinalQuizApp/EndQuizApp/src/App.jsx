@@ -9,6 +9,7 @@ const App = () => {
   const [option3State, setOption3State] = useState("Gurgaon");
   const [option4State, setOption4State] = useState("Chandigarh");
   const [selectedOption, setSelectedOption] = useState(null);
+  const [score, setScore] = useState(0);
 
   const submitClick = () => {
     if (whichQuestionState <= 4) {
@@ -24,8 +25,12 @@ const App = () => {
         setOption3State(nextQuestion.options[2]);
         setOption4State(nextQuestion.options[3]);
         setSelectedOption(null); 
+        if(selectedOption === nextQuestion.answer){
+          setScore(score +1)
+        }
       }
     } else {
+
       
     }
   };
@@ -89,6 +94,9 @@ const App = () => {
         </div>
         <div className="submit">
           <button onClick={submitClick}>Submit</button>
+        </div>
+        <div className="showScore">
+          <h3>{score}</h3>
         </div>
       </div>
     </div>
