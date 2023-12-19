@@ -5,11 +5,14 @@ function App() {
   const [flipNumber, setFlipNumber] = useState(0);
   const [yaziNumber, setYaziNumber] = useState(0);
   const [turaNumber, setTuraNumber] = useState(0);
+  const [coinSide, setCoinSide] = useState();
 
 
 
 
   const flipClick = () => {
+    
+
 
   }
   return(
