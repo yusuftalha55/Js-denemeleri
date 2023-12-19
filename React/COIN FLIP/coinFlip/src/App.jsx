@@ -6,12 +6,20 @@ function App() {
   const [yaziNumber, setYaziNumber] = useState(0);
   const [turaNumber, setTuraNumber] = useState(0);
   const [coinSide, setCoinSide] = useState();
+  const binaryValue = Math.round(Math.random());
   const [image, setImage] = useState('src/assets/img/1TL_reverse.png')
 
 
 
-
   const flipClick = () => {
+    setCoinSide(binaryValue);
+    if (coinSide === 1) {
+      setImage('src/assets/img/1TL_obverse.png')
+    }
+    else{
+      setImage('src/assets/img/1TL_reverse.png')
+    }
+
     
   }
   return(
