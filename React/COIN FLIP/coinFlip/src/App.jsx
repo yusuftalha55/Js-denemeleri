@@ -2,6 +2,16 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [flipNumber, setFlipNumber] = useState(0);
+  const [yaziNumber, setYaziNumber] = useState(0);
+  const [turaNumber, setTuraNumber] = useState(0);
+
+
+
+
+  const flipClick = () => {
+
+  }
   return(
     <div className='main'>
       <div className='title'>
@@ -11,10 +21,10 @@ function App() {
         <img src="src\assets\img\1TL_obverse.png" alt="para gösterilemedi" />
       </div>
       <div className='button'>
-        <button>Bas ve Gör</button>
+        <button onClick={flipClick}>Bas ve Gör</button>
       </div>
       <div className='result'>
-        <p>{}  kere yazı tura atıldı, {} kere yazı geldi, {} kere tura geldi.</p>
+        <p>{flipNumber}  kere yazı tura atıldı, {yaziNumber} kere yazı geldi, {turaNumber} kere tura geldi.</p>
 
       </div>
 
