@@ -6,14 +6,13 @@ function App() {
   const [yaziNumber, setYaziNumber] = useState(0);
   const [turaNumber, setTuraNumber] = useState(0);
   const [coinSide, setCoinSide] = useState();
+  const [image, setImage] = useState('src/assets/img/1TL_reverse.png')
 
 
 
 
   const flipClick = () => {
     
-
-
   }
   return(
     <div className='main'>
@@ -21,7 +20,7 @@ function App() {
         <h2>Hadi Yazı Tura Atalım</h2>
       </div>
       <div className='image'>
-        <img src="src\assets\img\1TL_obverse.png" alt="para gösterilemedi" />
+        <img src={image} alt="para gösterilemedi" />
       </div>
       <div className='button'>
         <button onClick={flipClick}>Bas ve Gör</button>
