@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Container from './Container'
 
 function App() {
   
@@ -9,7 +10,9 @@ function App() {
       <div className='search'>
         <input className='input' type="text" />
         <button className='button'>Ara</button>
-
+      </div>
+      <div className='containers'>
+        <Container></Container>
       </div>
     </div>
   
