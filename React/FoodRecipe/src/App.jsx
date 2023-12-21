@@ -13,6 +13,7 @@ function App() {
       </div>
       <div className='containers'>
         <Container></Container>
+        <Container></Container>
       </div>
     </div>
   
