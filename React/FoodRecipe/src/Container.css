@@ -5,6 +5,7 @@
       box-shadow: 5px 10px #888888;
       padding: 15px;
       margin: 30px;
+      display: inline-block;
 }
 
 .title {
