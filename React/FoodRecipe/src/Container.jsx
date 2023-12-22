@@ -12,7 +12,7 @@ const Container = () => {
                 <li>Mükemmel Protein Kaynağı: Sahanda yumurta, yüksek kaliteli protein içerir ve vücut için gerekli olan amino asitleri sağlar.</li>
                 <li>Çeşitli Sunum Olanakları: Sahanda yumurta, çeşitli malzemeler ve baharatlar eklenerek farklı lezzetler elde edilebilecek esnek bir temel yemektir.</li>
             </ul>
-            <img src={makarna} alt="Resim gösterilemedi" />
+            <img className="image" src={makarna} alt="Resim gösterilemedi" />
         </div>
     )
 }
