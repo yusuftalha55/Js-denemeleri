@@ -15,6 +15,8 @@ function App() {
       <div className='containers'>
         <ContainerBreakfast></ContainerBreakfast>
         <ContainerDrinks></ContainerDrinks>
+        <ContainerBreakfast></ContainerBreakfast>
+        <ContainerDrinks></ContainerDrinks>
         
       </div>
     </div>
