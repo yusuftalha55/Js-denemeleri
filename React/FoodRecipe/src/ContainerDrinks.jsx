@@ -1,12 +1,13 @@
 import React from "react";
 import "./Container.css";
-import makarna from "./assets/img/makarna.jpg";
+import portakalsuyu from "./assets/img/portakalsuyu.jpg";
+import kola from "./assets/img/kola.jpg";
 
 const ContainerDrinks = () => {
   return (
     <div>
       <div className="mainContainer">
-        <h2 className="title">Drinks</h2>
+        <h2 className="title">Portakal Suyu</h2>
         <ul>
           <li>
             Lezzetli: Sahanda yumurta, yumurtanın doğal lezzetini korur ve altın
@@ -26,11 +27,11 @@ const ContainerDrinks = () => {
             temel yemektir.
           </li>
         </ul>
-        <img className="image" src={makarna} alt="Resim gösterilemedi" />
+        <img className="image" src={portakalsuyu} alt="Resim gösterilemedi" />
       </div>
 
       <div className="mainContainer">
-        <h2 className="title">Drinks</h2>
+        <h2 className="title">Kola</h2>
         <ul>
           <li>
             Lezzetli: Sahanda yumurta, yumurtanın doğal lezzetini korur ve altın
@@ -50,7 +51,7 @@ const ContainerDrinks = () => {
             temel yemektir.
           </li>
         </ul>
-        <img className="image" src={makarna} alt="Resim gösterilemedi" />
+        <img className="image" src={kola} alt="Resim gösterilemedi" />
       </div>
     </div>
   );
