@@ -2,10 +2,10 @@ import React from "react";
 import './Container.css'
 import makarna from './assets/img/makarna.jpg'; 
 
-const Container = () => {
+const ContainerDrinks= () => {
     return(
         <div className="mainContainer">
-            <h2 className="title">Some Meal</h2>
+            <h2 className="title">Drinks</h2>
             <ul>
                 <li>Lezzetli: Sahanda yumurta, yumurtanın doğal lezzetini korur ve altın renginde kızarmış kenarlarıyla lezzetli bir seçenektir.</li>
                 <li>Kolay ve Hızlı Hazırlık: Sahanda yumurta, hızlı bir kahvaltı veya pratik bir öğle yemeği seçeneği olarak kolayca hazırlanabilir.</li>
@@ -17,4 +17,4 @@ const Container = () => {
     )
 }
 
-export default Container
+export default ContainerDrinks

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Container from './Container'
+import ContainerDrinks from './ContainerDrinks'
+import ContainerBreakfast from './ContainerBreakfast'
 
 function App() {
   
@@ -12,14 +13,9 @@ function App() {
         <button className='button'>Ara</button>
       </div>
       <div className='containers'>
-        <Container></Container>
-        <Container></Container>
-        <Container></Container>
-        <Container></Container>
-        <Container></Container>
-        <Container></Container>
-        <Container></Container>
-        <Container></Container>
+        <ContainerBreakfast></ContainerBreakfast>
+        <ContainerDrinks></ContainerDrinks>
+        
       </div>
     </div>
   
