@@ -1,6 +1,7 @@
 import React from "react";
 import "./Container.css";
 import yumurta from "./assets/img/yumurta.jpg";
+import peynir from "./assets/img/peynir.jpg";
 
 const ContainerBreakfast = () => {
   return (
@@ -30,7 +31,7 @@ const ContainerBreakfast = () => {
       </div>
 
       <div className="mainContainer">
-        <h2 className="title">Yumurta</h2>
+        <h2 className="title">Peynir</h2>
         <ul>
           <li>
             Lezzetli: Sahanda yumurta, yumurtanın doğal lezzetini korur ve altın
@@ -50,7 +51,7 @@ const ContainerBreakfast = () => {
             temel yemektir.
           </li>
         </ul>
-        <img className="image" src={yumurta} alt="Resim gösterilemedi" />
+        <img className="image" src={peynir} alt="Resim gösterilemedi" />
       </div>
     </div>
   );
