@@ -5,7 +5,18 @@ import ContainerBreakfast from "./ContainerBreakfast";
 import ContainerDinner from "./ContainerDinner";
 
 function App() {
-  const [showScreen, setShowScreen] = useState("");
+  const [showScreen, setShowScreen] = useState();
+  
+  const All = () => {
+    return(
+      <div> 
+      <ContainerBreakfast></ContainerBreakfast>
+      <ContainerDrinks></ContainerDrinks>
+      <ContainerDinner></ContainerDinner>
+      </div>
+      
+    )
+  } 
   
 
 
@@ -23,9 +34,7 @@ function App() {
         </button>
       </div>
       <div className="containers">
-        <ContainerBreakfast></ContainerBreakfast>
-        <ContainerDrinks></ContainerDrinks>
-        <ContainerDinner></ContainerDinner>
+        <p>{showScreen}</p>        
       </div>
     </div>
   );
