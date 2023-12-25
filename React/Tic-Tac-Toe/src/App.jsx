@@ -1,56 +1,42 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
 
+function Square({ value }) {
+  return <button className="square">{value}</button>;
+}
 function App() {
-  const Square = () => {
-    return (
-      <button className="square">1</button>
-    )
-  }
-
-
-
-
-
-
   return (
     <div>
-      <div className='main'>
-        <div className='title'>
+      <div className="main">
+        <div className="title">
           <h1>Tic Tac Toe Game</h1>
         </div>
-        <div className='game'>
+        <div className="game">
           <h3>Next Player: {}</h3>
-          <div className='boardRow'>
-            <Square></Square>
-            <Square></Square>
-            <Square></Square>
+          <div className="boardRow">
+            <Square value="1" />
+            <Square value="2" />
+            <Square value="3" />
           </div>
-          <div className='boardRow'>
-            <Square></Square>
-            <Square></Square>
-            <Square></Square>
+          <div className="boardRow">
+            <Square value="4" />
+            <Square value="5" />
+            <Square value="6" />
           </div>
-          <div className='boardRow'>
-            <Square></Square>
-            <Square></Square>
-            <Square></Square>
-          </div>
-
-          <div className='score'>
-            <h2>Winning Player: {}</h2> 
-
+          <div className="boardRow">
+            <Square value="7" />
+            <Square value="8" />
+            <Square value="9" />
           </div>
 
-          
-
-
+          <div className="score">
+            <h2>Winning Player: {}</h2>
+          </div>
         </div>
-
       </div>
     </div>
-  )
-
+  );
 }
 
-export default App
+export default App;
+
