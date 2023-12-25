@@ -2,6 +2,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const Square = () => {
+    return (
+      <button className="square">1</button>
+    )
+  }
+
+
+
+
+
+
   return (
     <div>
       <div className='main'>
@@ -11,19 +22,19 @@ function App() {
         <div className='game'>
           <h3>Next Player: {}</h3>
           <div className='boardRow'>
-            <button className="square">1</button>
-            <button className="square">2</button>
-            <button className="square">3</button>
+            <Square></Square>
+            <Square></Square>
+            <Square></Square>
           </div>
           <div className='boardRow'>
-            <button className="square">4</button>
-            <button className="square">5</button>
-            <button className="square">6</button>
+            <Square></Square>
+            <Square></Square>
+            <Square></Square>
           </div>
           <div className='boardRow'>
-            <button className="square">7</button>
-            <button className="square">8</button>
-            <button className="square">9</button>
+            <Square></Square>
+            <Square></Square>
+            <Square></Square>
           </div>
 
           <div className='score'>
