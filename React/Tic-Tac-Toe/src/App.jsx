@@ -4,27 +4,39 @@ import './App.css'
 function App() {
   return (
     <div>
-      <div className="status">{getStatus()}</div>
-      <div className="board">
-        <div className="board-row">
-          {renderSquare(0)}
-          {renderSquare(1)}
-          {renderSquare(2)}
+      <div className='main'>
+        <div className='title'>
+          <h1>Tic Tac Toe Game</h1>
         </div>
-        <div className="board-row">
-          {renderSquare(3)}
-          {renderSquare(4)}
-          {renderSquare(5)}
+        <div className='game'>
+          <h3>Next Player: {}</h3>
+          <div className='boardRow'>
+            <button className="square">1</button>
+            <button className="square">2</button>
+            <button className="square">3</button>
+          </div>
+          <div className='boardRow'>
+            <button className="square">4</button>
+            <button className="square">5</button>
+            <button className="square">6</button>
+          </div>
+          <div className='boardRow'>
+            <button className="square">7</button>
+            <button className="square">8</button>
+            <button className="square">9</button>
+          </div>
+
+          <div className='score'>
+            <h2>Winning Player: {}</h2> 
+
+          </div>
+
+          
+
+
         </div>
-        <div className="board-row">
-          {renderSquare(6)}
-          {renderSquare(7)}
-          {renderSquare(8)}
-        </div>
+
       </div>
-      <button className="reset-button" onClick={resetGame}>
-        Oyunu Sıfırla
-      </button>
     </div>
   )
 
