@@ -2,7 +2,15 @@ import React from 'react';
 import './App.css';
 
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  function handleClick() {
+    console.log(`Tıklandı! Değer: ${value}`);
+  }
+
+  return (
+    <button className="kare" onClick={handleClick}>
+      
+    </button>
+  );
 }
 function App() {
   return (
