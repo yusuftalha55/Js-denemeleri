@@ -1,30 +1,24 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
-function Square({ value }) {
+function Square() {
   const [whichPlayer, setWhichPlayer] = useState("X");
-  const [value, setvalue] = useState("");
+  const [value, setValue] = useState("");
 
-  
-   
   function handleClick() {
-    if (whichPlayer === "X") {
-      setWhichPlayer("O")
-      setvalue(whichPlayer);
-    }
-    else{
-      setWhichPlayer("X")
-      setvalue(whichPlayer);
+    if (value === "") {
+      setValue(whichPlayer);
+      setWhichPlayer((prevPlayer) => (prevPlayer === "X" ? "O" : "X"));
     }
   }
-  
 
   return (
     <button className="kare" onClick={handleClick}>
-      {value}     
+      {value}
     </button>
   );
 }
+
 function App() {
   return (
     <div>
@@ -35,19 +29,19 @@ function App() {
         <div className="game">
           <h3>Next Player: {}</h3>
           <div className="boardRow">
-            <Square value="" />
-            <Square value="" />
-            <Square value="" />
+            <Square />
+            <Square />
+            <Square />
           </div>
           <div className="boardRow">
-            <Square value="" />
-            <Square value="" />
-            <Square value="" />
+            <Square />
+            <Square />
+            <Square />
           </div>
           <div className="boardRow">
-            <Square value="" />
-            <Square value="" />
-            <Square value="" />
+            <Square />
+            <Square />
+            <Square />
           </div>
 
           <div className="score">
