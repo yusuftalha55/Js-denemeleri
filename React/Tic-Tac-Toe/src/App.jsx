@@ -8,7 +8,7 @@ function Square({ value }) {
 
   return (
     <button className="kare" onClick={handleClick}>
-      <h3>Sıra{} </h3>
+      
     </button>
   );
 }
