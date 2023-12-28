@@ -6,10 +6,7 @@ function Square() {
   const [value, setValue] = useState("");
 
   function handleClick() {
-    if (value === "") {
-      setValue(whichPlayer);
-      setWhichPlayer((prevPlayer) => (prevPlayer === "X" ? "O" : "X"));
-    }
+    
   }
 
   return (
