@@ -9,12 +9,10 @@ function Square({ value }) {
    
   function handleClick() {
     if (whichPlayer === "X") {
-      whichPlayer = "O";
-      value = whichPlayer;
+      setWhichPlayer("O")
     }
     else{
-      whichPlayer = "X"
-      value = whichPlayer;
+      setWhichPlayer("X")
     }
   }
   
