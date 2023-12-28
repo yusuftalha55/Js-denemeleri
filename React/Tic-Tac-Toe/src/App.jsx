@@ -2,15 +2,25 @@ import React from 'react';
 import './App.css';
 
 function Square({ value }) {
+  const whichPlayer = "X";
+
   
    
   function handleClick() {
-    console.log(`Tıklandı! Değer: ${value}`);
+    if (whichPlayer === "X") {
+      whichPlayer = "O";
+      value = whichPlayer;
+    }
+    else{
+      whichPlayer = "X"
+      value = whichPlayer;
+    }
   }
+  
 
   return (
     <button className="kare" onClick={handleClick}>
-      
+      {value}     
     </button>
   );
 }
@@ -24,19 +34,19 @@ function App() {
         <div className="game">
           <h3>Next Player: {}</h3>
           <div className="boardRow">
-            <Square value="1" />
-            <Square value="2" />
-            <Square value="3" />
+            <Square value="" />
+            <Square value="" />
+            <Square value="" />
           </div>
           <div className="boardRow">
-            <Square value="4" />
-            <Square value="5" />
-            <Square value="6" />
+            <Square value="" />
+            <Square value="" />
+            <Square value="" />
           </div>
           <div className="boardRow">
-            <Square value="7" />
-            <Square value="8" />
-            <Square value="9" />
+            <Square value="" />
+            <Square value="" />
+            <Square value="" />
           </div>
 
           <div className="score">
