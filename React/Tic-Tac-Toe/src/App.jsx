@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 function Square({ value }) {
+  
+  const whichPlayer = 
   function handleClick() {
     console.log(`Tıklandı! Değer: ${value}`);
   }
