@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function Square({ value }) {
-  const whichPlayer = "X";
+  const [whichPlayer, setWhichPlayer] = useState("X");
+  const [value, setvalue] = useState("");
 
   
    
