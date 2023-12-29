@@ -7,6 +7,9 @@ function Square() {
 
   function handleClick() {
     
+    setValue("X");
+
+    
   }
 
   return (
