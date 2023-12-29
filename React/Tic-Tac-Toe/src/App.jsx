@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 import './App.css';
 
 function Square() {
-  const [whichPlayer, setWhichPlayer] = useState("X");
+  const [whichPlayer, setWhichPlayer] = useState(0);
   const [value, setValue] = useState("");
 
   function handleClick() {
-    if (whichPlayer ==="X") {
-      setValue("O")
-      setWhichPlayer("O")
-      
-    }
-    else {
+    if (whichPlayer === 0) {
       setValue("X");
-      setWhichPlayer("X")
+      setWhichPlayer(whichPlayer + 1);
+    } else if (whichPlayer === 1) {
+      setValue("O");
+      setWhichPlayer(0); 
     }
+  
+
+    
     
 
     
