@@ -8,12 +8,12 @@ function Square() {
   function handleClick() {
     if (whichPlayer === 0 && value === "") {
       setValue("X");
-      setWhichPlayer(whichPlayer +1);
+      setWhichPlayer(1);
+      console.log(whichPlayer); 
     } else if (whichPlayer === 1 && value === "") {
       setValue("O");
       setWhichPlayer(0); 
     }
-    
   }
 
   return (
@@ -58,3 +58,4 @@ function App() {
 }
 
 export default App;
+
