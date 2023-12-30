@@ -9,7 +9,7 @@ function Square() {
     if (whichPlayer === 0 && value === "") {
       setValue("X");
       setWhichPlayer(1);
-      console.log(whichPlayer); 
+      console.log(whichPlayer) 
     } else if (whichPlayer === 1 && value === "") {
       setValue("O");
       setWhichPlayer(0); 
