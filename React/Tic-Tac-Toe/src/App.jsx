@@ -8,7 +8,7 @@ function Square() {
   function handleClick() {
     if (whichPlayer === 0 && value === "") {
       setValue("X");
-      setWhichPlayer(1);
+      setWhichPlayer(whichPlayer +1);
     } else if (whichPlayer === 1 && value === "") {
       setValue("O");
       setWhichPlayer(0); 
