@@ -3,10 +3,9 @@ import "./App.css";
 
 function App() {
   const [whichPlayer, setWhichPlayer] = useState(0);
-  const [value, setValue] = useState("");
-
   
   function Square() {
+    const [value, setValue] = useState("");
     function handleClick() {
       console.log(whichPlayer);
       console.log(value);
