@@ -1,31 +1,30 @@
-import React, { useState } from 'react';
-import './App.css';
-
-function Square() {
-  const [whichPlayer, setWhichPlayer] = useState(0);
-  const [value, setValue] = useState("");
-
-  function handleClick() {
-    console.log(whichPlayer);
-    console.log(value);
-    if (whichPlayer === 0 && value === "") {
-      setValue("X");
-      setWhichPlayer(1);
-      console.log(whichPlayer) 
-    } else if (whichPlayer === 1 && value === "") {
-      setValue("O");
-      setWhichPlayer(0); 
-    }
-  }
-
-  return (
-    <button className="kare" onClick={handleClick}>
-      {value}
-    </button>
-  );
-}
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [whichPlayer, setWhichPlayer] = useState(0);
+  const [value, setValue] = useState("");
+  function Square() {
+    function handleClick() {
+      console.log(whichPlayer);
+      console.log(value);
+      if (whichPlayer === 0 && value === "") {
+        setValue("X");
+        setWhichPlayer(1);
+        console.log(whichPlayer);
+      } else if (whichPlayer === 1 && value === "") {
+        setValue("O");
+        setWhichPlayer(0);
+      }
+    }
+
+    return (
+      <button className="kare" onClick={handleClick}>
+        {value}
+      </button>
+    );
+  }
+
   return (
     <div>
       <div className="main">
@@ -60,4 +59,3 @@ function App() {
 }
 
 export default App;
-
