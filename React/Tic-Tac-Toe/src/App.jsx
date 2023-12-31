@@ -5,9 +5,10 @@ function App() {
   const [whichPlayer, setWhichPlayer] = useState(0);
 
   useEffect(() => {
-    // Bu işlev, whichPlayer güncellendiğinde çalışacak
     console.log("Next Player:", whichPlayer);
   }, [whichPlayer]);
+
+  
 
   function Square() {
     const [value, setValue] = useState("");
