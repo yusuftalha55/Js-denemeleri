@@ -4,6 +4,8 @@ import "./App.css";
 function App() {
   const [whichPlayer, setWhichPlayer] = useState(0);
   const [value, setValue] = useState("");
+
+  
   function Square() {
     function handleClick() {
       console.log(whichPlayer);
