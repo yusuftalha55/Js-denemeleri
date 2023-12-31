@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [whichPlayer, setWhichPlayer] = useState(0);
-  
+
+  useEffect(() => {
+    // Bu işlev, whichPlayer güncellendiğinde çalışacak
+    console.log("Next Player:", whichPlayer);
+  }, [whichPlayer]);
+
   function Square() {
     const [value, setValue] = useState("");
+
     function handleClick() {
-      // console.log(whichPlayer);
-      // console.log(value);
       if (whichPlayer === 0 && value === "") {
         setValue("X");
         setWhichPlayer(1);
-        console.log(whichPlayer);
       } else if (whichPlayer === 1 && value === "") {
         setValue("O");
         setWhichPlayer(0);
@@ -33,7 +36,7 @@ function App() {
           <h1>Tic Tac Toe Game</h1>
         </div>
         <div className="game">
-          <h3>Next Player: {}</h3>
+          <h3>Next Player: {whichPlayer}</h3>
           <div className="boardRow">
             <Square />
             <Square />
