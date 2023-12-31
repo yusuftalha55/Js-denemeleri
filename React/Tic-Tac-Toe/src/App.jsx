@@ -7,8 +7,8 @@ function App() {
   function Square() {
     const [value, setValue] = useState("");
     function handleClick() {
-      console.log(whichPlayer);
-      console.log(value);
+      // console.log(whichPlayer);
+      // console.log(value);
       if (whichPlayer === 0 && value === "") {
         setValue("X");
         setWhichPlayer(1);
