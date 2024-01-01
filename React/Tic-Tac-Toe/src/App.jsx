@@ -1,35 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
+function Square({ onClick, value }) {
+  return (
+    <button className="kare" onClick={onClick}>
+      {value}
+    </button>
+  );
+}
+
 function App() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
   const [whichPlayer, setWhichPlayer] = useState(0);
 
-  useEffect(() => {
-    // console.log("Next Player:", whichPlayer);
-  }, [whichPlayer]);
-
-  
-
-  function Square() {
-    const [value, setValue] = useState("");
-
-    function handleClick() {
-      if (whichPlayer === 0 && value === "") {
-        setValue("X");
-        setWhichPlayer(1);
-        console.log(value);
-      } else if (whichPlayer === 1 && value === "") {
-        setValue("O");
-        setWhichPlayer(0);
-      }
+  const handleClick = (i) => {
+    if (squares[i] === null) {
+      const newSquares = squares.slice();
+      newSquares[i] = whichPlayer === 0 ? "X" : "O";
+      setSquares(newSquares);
+      setWhichPlayer((prevPlayer) => (prevPlayer === 0 ? 1 : 0));
     }
-
-    return (
-      <button className="kare" onClick={handleClick}>
-        {value}
-      </button>
-    );
-  }
+  };
 
   return (
     <div>
@@ -40,21 +31,10 @@ function App() {
         <div className="game">
           <h3>Next Player: {whichPlayer}</h3>
           <div className="boardRow">
-            <Square />
-            <Square />
-            <Square />
+            {squares.map((square, i) => (
+              <Square key={i} value={square} onClick={() => handleClick(i)} />
+            ))}
           </div>
-          <div className="boardRow">
-            <Square />
-            <Square />
-            <Square />
-          </div>
-          <div className="boardRow">
-            <Square />
-            <Square />
-            <Square />
-          </div>
-
           <div className="score">
             <h2>Winning Player: {}</h2>
           </div>
@@ -65,3 +45,4 @@ function App() {
 }
 
 export default App;
+
