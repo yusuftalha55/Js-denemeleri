@@ -29,15 +29,12 @@ function App() {
           <h1>Tic Tac Toe Game</h1>
         </div>
         <div className="game">
-          <h3>Next Player: {whichPlayer}</h3>
-          <div className="boardRow">
-            {squares.map((square, i) => (
-              <Square key={i} value={square} onClick={() => handleClick(i)} />
-            ))}
-          </div>
-          <div className="score">
-            <h2>Winning Player: {}</h2>
-          </div>
+          {squares.map((square, i) => (
+            <Square key={i} value={square} onClick={() => handleClick(i)} />
+          ))}
+        </div>
+        <div className="score">
+          <h2>Winning Player: {}</h2>
         </div>
       </div>
     </div>
@@ -45,4 +42,5 @@ function App() {
 }
 
 export default App;
+
 
