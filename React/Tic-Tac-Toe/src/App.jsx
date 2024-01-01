@@ -5,7 +5,7 @@ function App() {
   const [whichPlayer, setWhichPlayer] = useState(0);
 
   useEffect(() => {
-    console.log("Next Player:", whichPlayer);
+    // console.log("Next Player:", whichPlayer);
   }, [whichPlayer]);
 
   
@@ -17,6 +17,7 @@ function App() {
       if (whichPlayer === 0 && value === "") {
         setValue("X");
         setWhichPlayer(1);
+        console.log(value);
       } else if (whichPlayer === 1 && value === "") {
         setValue("O");
         setWhichPlayer(0);
