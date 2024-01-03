@@ -88,9 +88,8 @@ export default function Game () {
       <li key={move}>
         <button onClick={() => jumpTo(move)}>{descripton}</button>
       </li>
-    )
-
-  })
+    );
+  });
 
 
 
