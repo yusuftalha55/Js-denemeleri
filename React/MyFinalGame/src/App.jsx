@@ -15,7 +15,22 @@ function App() {
             <h3>Next Player</h3>
           </div>
           <div className="gameBoard">
-            <Square/>
+            <div className="boardRow"> 
+               <Square/>
+               <Square/>
+               <Square/>
+            </div>
+            <div className="boardRow"> 
+               <Square/>
+               <Square/>
+               <Square/>
+            </div>
+            <div className="boardRow"> 
+               <Square/>
+               <Square/>
+               <Square/>
+            </div>
+            
           </div>
 
         </div>
