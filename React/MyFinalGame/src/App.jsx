@@ -10,7 +10,11 @@ function App() {
           <h1>Tic Tac Toe Game</h1>
         </div>
         <div className="Game">
-          <div className="">
+          <div className="whichPlayer">
+            <h3>Next Player</h3>
+          </div>
+          <div className="gameBoard">
+            
 
           </div>
 
