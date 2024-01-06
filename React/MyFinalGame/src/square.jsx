@@ -5,3 +5,5 @@ function Square () {
         </button>
     ); 
 }
+
+export default Square

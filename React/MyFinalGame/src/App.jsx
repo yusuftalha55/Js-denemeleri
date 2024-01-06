@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Square from "./square";
 
 import "./App.css";
 
@@ -14,8 +15,7 @@ function App() {
             <h3>Next Player</h3>
           </div>
           <div className="gameBoard">
-            
-
+            <Square/>
           </div>
 
         </div>
