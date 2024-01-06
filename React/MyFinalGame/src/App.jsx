@@ -3,6 +3,16 @@ import Square from "./square";
 
 import "./App.css";
 
+
+function whichPlayer () {
+
+};
+
+function squareClick () {
+    
+
+};
+
 function App() {
   return (
     <div >
@@ -11,8 +21,8 @@ function App() {
           <h1>Tic Tac Toe Game</h1>
         </div>
         <div className="Game">
-          <div className="whichPlayer">
-            <h3>Next Player</h3>
+          <div className="whichPlayerClass">
+            <h3>Next Player: {}</h3>
           </div>
           <div className="gameBoard">
             <div className="boardRow"> 
