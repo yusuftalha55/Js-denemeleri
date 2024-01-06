@@ -29,8 +29,7 @@ function App() {
                <Square/>
                <Square/>
                <Square/>
-            </div>
-            
+            </div>      
           </div>
 
         </div>
