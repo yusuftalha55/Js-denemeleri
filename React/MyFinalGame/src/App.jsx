@@ -10,6 +10,11 @@ function App() {
   const [whichPlayer, setWhichPlayer] = useState(playerX);
 
   function squareClick() {
+    if (whichPlayer === playerX) {
+      setWhichPlayer(playerO);
+    } else if (whichPlayer === playerO) {
+      setWhichPlayer(playerX);
+    }
 
   }
 
