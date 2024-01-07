@@ -42,6 +42,11 @@ function App() {
             </div>      
           </div>
 
+          <div className="winning player">
+            <h3>Winning Player: {}</h3>
+
+          </div>
+
         </div>
       </div>
     </div>
