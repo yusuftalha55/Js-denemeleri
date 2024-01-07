@@ -9,7 +9,9 @@ function App() {
 
   const [whichPlayer, setWhichPlayer] = useState(playerX);
 
-  function squareClick() {}
+  function squareClick() {
+
+  }
 
   return (
     <div>
@@ -23,19 +25,19 @@ function App() {
           </div>
           <div className="gameBoard">
             <div className="boardRow">
-              <Square />
-              <Square />
-              <Square />
+              <Square value={whichPlayer} />
+              <Square value={whichPlayer} />
+              <Square value={whichPlayer} />
             </div>
             <div className="boardRow">
-              <Square />
-              <Square />
-              <Square />
+              <Square value={whichPlayer} />
+              <Square value={whichPlayer} />
+              <Square value={whichPlayer} />
             </div>
             <div className="boardRow">
-              <Square />
-              <Square />
-              <Square />
+              <Square value={whichPlayer} />
+              <Square value={whichPlayer} />
+              <Square value={whichPlayer} />
             </div>
           </div>
 
