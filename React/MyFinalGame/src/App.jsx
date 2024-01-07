@@ -1,6 +1,7 @@
-import { useState } from "react";
-import Square from "./square";
+// App.jsx
+import React, { useState } from "react"; // useState'i React'ten içe aktar
 
+import Square from "./Square";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,6 @@ function App() {
     } else if (whichPlayer === playerO) {
       setWhichPlayer(playerX);
     }
-
   }
 
   return (
@@ -26,23 +26,23 @@ function App() {
         </div>
         <div className="Game">
           <div className="whichPlayerClass">
-            <h3>Next Player: {}</h3>
+            <h3>Next Player: {whichPlayer}</h3>
           </div>
           <div className="gameBoard">
             <div className="boardRow">
-              <Square value={whichPlayer} />
-              <Square value={whichPlayer} />
-              <Square value={whichPlayer} />
+              <Square value={playerX} onClick={squareClick} />
+              <Square value={playerO} onClick={squareClick} />
+              <Square value={playerX} onClick={squareClick} />
             </div>
             <div className="boardRow">
-              <Square value={whichPlayer} />
-              <Square value={whichPlayer} />
-              <Square value={whichPlayer} />
+              <Square value={playerO} onClick={squareClick} />
+              <Square value={playerX} onClick={squareClick} />
+              <Square value={playerO} onClick={squareClick} />
             </div>
             <div className="boardRow">
-              <Square value={whichPlayer} />
-              <Square value={whichPlayer} />
-              <Square value={whichPlayer} />
+              <Square value={playerX} onClick={squareClick} />
+              <Square value={playerO} onClick={squareClick} />
+              <Square value={playerX} onClick={squareClick} />
             </div>
           </div>
 
@@ -56,3 +56,4 @@ function App() {
 }
 
 export default App;
+

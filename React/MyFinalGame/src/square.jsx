@@ -1,9 +1,12 @@
-function Square ({value}) {
-    return (
-        <button className="square" onClick={squareClick}>
-            {value}
-        </button>
-    ); 
+// Square.jsx
+import React from "react";
+
+function Square({ value, onClick }) {
+  return (
+    <button className="square" onClick={onClick}>
+      {value}
+    </button>
+  );
 }
 
-export default Square
+export default Square;
