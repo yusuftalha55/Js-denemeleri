@@ -7,7 +7,7 @@ import "./App.css";
 const playerX = "X";
 const playerO = "O";
 
-const whichPlayer = useState (playerX);
+const [whichPlayer, setWhichPlayer] = useState(playerX);
 
 function squareClick () {
     
