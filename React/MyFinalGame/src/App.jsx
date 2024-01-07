@@ -4,9 +4,8 @@ import Square from "./square";
 import "./App.css";
 
 
-function whichPlayer () {
-
-};
+const playerX = "X";
+const playerO = "O";
 
 function squareClick () {
     
