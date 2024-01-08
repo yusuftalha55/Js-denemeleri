@@ -1,9 +1,11 @@
 // Square.jsx
-import React from "react";
+import React, { useState } from "react";
 
-function Square({ value, onClick }) {
+function Square({ onClick }) {
+  const [value, setValue] = useState(null);
+
   return (
-    <button className="square" onClick={onClick}>
+    <button className="square" onClick={() => onClick(setValue)}>
       {value}
     </button>
   );

@@ -12,8 +12,10 @@ function App() {
   function squareClick() {
     if (whichPlayer === playerX) {
       setWhichPlayer(playerO);
+      setValue(playerX);
     } else if (whichPlayer === playerO) {
       setWhichPlayer(playerX);
+      setValue(playerO);
     }
   }
 
