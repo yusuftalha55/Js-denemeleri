@@ -1,5 +1,4 @@
-// App.jsx
-import React, { useState } from "react"; // useState'i React'ten içe aktar
+import React, { useState } from "react"; 
 
 import Square from "./square";
 import "./App.css";
@@ -30,19 +29,19 @@ function App() {
           </div>
           <div className="gameBoard">
             <div className="boardRow">
-              <Square value={playerX} onClick={squareClick} />
-              <Square value={playerO} onClick={squareClick} />
-              <Square value={playerX} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
             </div>
             <div className="boardRow">
-              <Square value={playerO} onClick={squareClick} />
-              <Square value={playerX} onClick={squareClick} />
-              <Square value={playerO} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
             </div>
             <div className="boardRow">
-              <Square value={playerX} onClick={squareClick} />
-              <Square value={playerO} onClick={squareClick} />
-              <Square value={playerX} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
+              <Square value={whichPlayer} onClick={squareClick} />
             </div>
           </div>
 
