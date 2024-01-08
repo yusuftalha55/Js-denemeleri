@@ -1,5 +1,6 @@
 // Square.jsx
 import React, { useState } from "react";
+import "./App.css";
 
 function Square({ onClick }) {
   const [value, setValue] = useState(null);
