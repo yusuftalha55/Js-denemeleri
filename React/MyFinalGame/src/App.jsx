@@ -19,7 +19,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div style={{}}>
       <div className="main">
         <div className="title">
           <h1>Tic Tac Toe Game</h1>
