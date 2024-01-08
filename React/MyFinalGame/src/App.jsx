@@ -1,7 +1,7 @@
 // App.jsx
 import React, { useState } from "react"; // useState'i React'ten içe aktar
 
-import Square from "./Square";
+import Square from "./square";
 import "./App.css";
 
 function App() {
