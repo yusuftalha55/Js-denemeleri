@@ -1,6 +1,6 @@
 // App.jsx
 import React, { useState } from "react";
-import Square from "./Square";
+import Square from "./square";
 import "./App.css";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <div style={{}}>
+    <div>
       <div className="main">
         <div className="title">
           <h1>Tic Tac Toe Game</h1>
