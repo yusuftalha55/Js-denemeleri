@@ -1,6 +1,6 @@
-import React, { useState } from "react"; 
-
-import Square from "./square";
+// App.jsx
+import React, { useState } from "react";
+import Square from "./Square";
 import "./App.css";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   const [whichPlayer, setWhichPlayer] = useState(playerX);
 
-  function squareClick() {
+  function squareClick(setValue) {
     if (whichPlayer === playerX) {
       setWhichPlayer(playerO);
       setValue(playerX);
@@ -31,19 +31,19 @@ function App() {
           </div>
           <div className="gameBoard">
             <div className="boardRow">
-              <Square value={whichPlayer} onClick={squareClick} />
-              <Square value={whichPlayer} onClick={squareClick} />
-              <Square value={whichPlayer} onClick={squareClick} />
+              <Square onClick={(value) => squareClick(value)} />
+              <Square onClick={(value) => squareClick(value)} />
+              <Square onClick={(value) => squareClick(value)} />
             </div>
             <div className="boardRow">
-              <Square value={whichPlayer} onClick={squareClick} />
-              <Square value={whichPlayer} onClick={squareClick} />
-              <Square value={whichPlayer} onClick={squareClick} />
+              <Square onClick={(value) => squareClick(value)} />
+              <Square onClick={(value) => squareClick(value)} />
+              <Square onClick={(value) => squareClick(value)} />
             </div>
             <div className="boardRow">
-              <Square value={whichPlayer} onClick={squareClick} />
-              <Square value={whichPlayer} onClick={squareClick} />
-              <Square value={whichPlayer} onClick={squareClick} />
+              <Square onClick={(value) => squareClick(value)} />
+              <Square onClick={(value) => squareClick(value)} />
+              <Square onClick={(value) => squareClick(value)} />
             </div>
           </div>
 
@@ -57,4 +57,3 @@ function App() {
 }
 
 export default App;
-
