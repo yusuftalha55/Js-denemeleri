@@ -6,7 +6,17 @@ function App() {
 
   return (
     <>
-      
+      <div className='main'>
+        <div className='search-bar'>
+
+        </div>
+
+        <div className='product-table'>
+          
+
+        </div>
+
+      </div>
     </>
   )
 }
