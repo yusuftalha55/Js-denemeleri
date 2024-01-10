@@ -15,7 +15,6 @@ function App() {
           <div className='name-price'>
             <h2>Name</h2>
             <h2>Price</h2>
-
           </div>
 
         </div>

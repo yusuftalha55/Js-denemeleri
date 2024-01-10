@@ -1,4 +1,14 @@
 #root {
-  
+  background-color: antiquewhite;
+}
+
+.main {
+    width: 350px; ;
+}
+
+.name-price h2 {
+    display: inline-block;
+    margin-left: 15%;
+
 }
 
