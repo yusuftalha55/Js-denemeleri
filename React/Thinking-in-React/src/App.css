@@ -17,6 +17,9 @@
 #buttonId {
   width: 45px;
   height: 45px;
+  color: blue;
+  font-size: larger;
+  
 }
 
 .button {
