@@ -30,6 +30,16 @@ function App() {
             <h2>Price</h2>
           </div>
         </div>
+
+        <div className="content">
+          <div className="fruits">
+            <title>
+              <h2>Fruits</h2>
+            </title>
+
+          </div>
+
+        </div>
       </div>
     </>
   );
