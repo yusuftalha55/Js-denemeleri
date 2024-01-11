@@ -5,6 +5,7 @@ function App() {
   const [click, setClick] = useState(null)
 
   const buttonClick = () => {
+    
     if (click === null) {
       setClick("X")
     }
@@ -21,8 +22,9 @@ function App() {
       <div className='main'>
         <div className='search-bar'>
           <input type="text" placeholder='Search...'/>
-          <button style={{color:'blue', width:45, height:45, margin:15}} onClick={buttonClick}>{click}</button>
-
+        </div>
+        <div className='button'>
+          <button id='buttonId' onClick={buttonClick}>{click}</button>
         </div>
 
         <div className='product-table'>
