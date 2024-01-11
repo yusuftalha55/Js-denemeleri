@@ -21,10 +21,12 @@
 
 .button {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 200px;
 }
 
 .search-bar {
   display: inline-block;
-  
+  position: fixed;
+  margin-top: 15px;
+
 }
