@@ -19,3 +19,12 @@
   height: 45px;
 }
 
+.button {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.search-bar {
+  display: inline-block;
+  
+}

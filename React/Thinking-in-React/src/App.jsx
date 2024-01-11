@@ -6,6 +6,7 @@ function App() {
 
   const buttonClick = () => {
     
+    
     if (click === null) {
       setClick("X")
     }
@@ -21,7 +22,7 @@ function App() {
     <>
       <div className='main'>
         <div className='search-bar'>
-          <input type="text" placeholder='Search...'/>
+          <input id='searchId' type="text" placeholder='Search...'/>
         </div>
         <div className='button'>
           <button id='buttonId' onClick={buttonClick}>{click}</button>
