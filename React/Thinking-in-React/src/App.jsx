@@ -2,10 +2,15 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [click, setClick] = useState()
+  const [click, setClick] = useState(null)
 
   const buttonClick = () => {
-    setClick("X")
+    if (click === null) {
+      setClick("X")
+    }
+    else if (click === "X") {
+      setClick(null)
+    }
 
 
   }
