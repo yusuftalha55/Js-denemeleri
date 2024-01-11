@@ -21,7 +21,7 @@ function App() {
       <div className='main'>
         <div className='search-bar'>
           <input type="text" placeholder='Search...'/>
-          <button style={{color:'blue', width:45, height:45}} onClick={buttonClick}>{click}</button>
+          <button style={{color:'blue', width:45, height:45, margin:15}} onClick={buttonClick}>{click}</button>
 
         </div>
 
