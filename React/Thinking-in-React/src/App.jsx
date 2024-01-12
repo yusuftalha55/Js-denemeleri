@@ -44,7 +44,20 @@ function App() {
               <p>PassionFruit</p> 
               <p>2$</p> 
             </div>
+          </div>
 
+          <div className="Vegetables">
+            <div style={{textAlign:"center", marginLeft:-70}} className="title">
+              <h2>Vegetables</h2>
+            </div>
+            <div className="list1">
+              <p>Apple</p>
+              <p>1$</p> 
+              <p>Dragonfruit</p>
+              <p>1$</p> 
+              <p>PassionFruit</p> 
+              <p>2$</p> 
+            </div>
           </div>
 
         </div>
