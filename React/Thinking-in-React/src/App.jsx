@@ -28,6 +28,7 @@ function App() {
           <input id="searchId" type="text" placeholder="Search..." />
         </div>
         <div className="button">
+          <h3>Only show products in stock</h3>
           <button id="buttonId" onClick={buttonClick}>
             {click}
           </button>
