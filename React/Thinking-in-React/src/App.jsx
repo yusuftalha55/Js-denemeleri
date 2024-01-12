@@ -33,9 +33,17 @@ function App() {
 
         <div className="content">
           <div className="fruits">
-            <title>
+            <div style={{textAlign:"center", marginLeft:-70}} className="title">
               <h2>Fruits</h2>
-            </title>
+            </div>
+            <div className="list1">
+              <p>Apple</p>
+              <p>1$</p> 
+              <p>Dragonfruit</p>
+              <p>1$</p> 
+              <p>PassionFruit</p> 
+              <p>2$</p> 
+            </div>
 
           </div>
 

@@ -32,3 +32,8 @@
   position: fixed;
   margin-top: 15px;
 }
+
+.list1 p {
+  display: inline-block;
+  width: 150px;
+}
