@@ -36,7 +36,7 @@ function App() {
             <div style={{textAlign:"center", marginLeft:-70}} className="title">
               <h2>Fruits</h2>
             </div>
-            <div className="list1">
+            <div className="list">
               <p>Apple</p>
               <p>1$</p> 
               <p>Dragonfruit</p>
@@ -50,7 +50,7 @@ function App() {
             <div style={{textAlign:"center", marginLeft:-70}} className="title">
               <h2>Vegetables</h2>
             </div>
-            <div className="list1">
+            <div className="list">
               <p>Apple</p>
               <p>1$</p> 
               <p>Dragonfruit</p>
