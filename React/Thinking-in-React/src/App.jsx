@@ -51,12 +51,12 @@ function App() {
               <h2>Vegetables</h2>
             </div>
             <div className="list">
-              <p>Apple</p>
-              <p>1$</p> 
-              <p>Dragonfruit</p>
-              <p>1$</p> 
-              <p>PassionFruit</p> 
+              <p>Spinach</p>
               <p>2$</p> 
+              <p>Pumpkin</p>
+              <p>4$</p> 
+              <p>Peas</p> 
+              <p>1$</p> 
             </div>
           </div>
 
