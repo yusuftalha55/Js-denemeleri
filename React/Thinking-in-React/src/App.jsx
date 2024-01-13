@@ -19,6 +19,7 @@ function App() {
     } else if (click === "X") {
       setClick(null);
     }
+    
   };
 
   return (
@@ -43,32 +44,22 @@ function App() {
 
         <div className="content">
           <div className="fruits">
-            <div style={{textAlign:"center", marginLeft:-70}} className="title">
-              <h2>Fruits</h2>
-            </div>
+            
             <div className="list">
-              <p>Apple</p>
-              <p>1$</p> 
-              <p>Dragonfruit</p>
-              <p>1$</p> 
-              <p>PassionFruit</p> 
-              <p>2$</p> 
+              <table>
+              {PRODUCTS.map(product => {
+                return (
+                  <tr key={product.name}>
+                    <td>{product.name}</td>
+                    <td>{product.price}</td>
+                  </tr>
+                );
+              })}
+              </table>
             </div>
           </div>
 
-          <div className="Vegetables">
-            <div style={{textAlign:"center", marginLeft:-70}} className="title">
-              <h2>Vegetables</h2>
-            </div>
-            <div className="list">
-              <p>Spinach</p>
-              <p>2$</p> 
-              <p>Pumpkin</p>
-              <p>4$</p> 
-              <p>Peas</p> 
-              <p>1$</p> 
-            </div>
-          </div>
+          
 
         </div>
       </div>
