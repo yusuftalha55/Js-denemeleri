@@ -25,11 +25,13 @@
 .button {
   display: inline-block;
   margin-left: 200px;
+  margin-top: -50px;
+  width: 100px;
 }
 
 .search-bar {
   display: inline-block;
-  position: fixed;
+  /* position: fixed; */
   margin-top: 15px;
 }
 
