@@ -13,6 +13,8 @@ function App() {
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
 
+  
+
   const buttonClick = () => {
     if (click === null) {
       setClick("X");
@@ -46,6 +48,12 @@ function App() {
             <div className="list">
               <table className="table-style">
                 {PRODUCTS.map((product) => {
+                  if (product.stocked === false) {
+                    <span style={{color:"red"}}>
+                      {product.name}
+                    </span>
+
+                  }
                   return (
                     <tr key={product.name}>
                       <td>{product.name}</td>
