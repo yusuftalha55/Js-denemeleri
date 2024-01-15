@@ -39,3 +39,7 @@
   display: inline-block;
   width: 150px;
 }
+
+.table {
+  padding: 25px;
+}
