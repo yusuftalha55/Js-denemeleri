@@ -44,7 +44,7 @@ function App() {
         <div className="content">
           <div className="fruits">
             <div className="list">
-              <table>
+              <table className="table-style">
                 {PRODUCTS.map((product) => {
                   return (
                     <tr key={product.name}>

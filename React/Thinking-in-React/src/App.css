@@ -40,6 +40,12 @@
   width: 150px;
 }
 
-.table {
-  padding: 25px;
+
+
+.table-style {
+  border-collapse: collapse; /* Tablo hücreleri arasındaki sınırları birleştirir */
+  width: 70%; /* Tablonun genişliği, ihtiyacınıza göre ayarlayabilirsiniz */
 }
+
+
+
