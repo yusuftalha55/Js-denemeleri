@@ -5,12 +5,12 @@ function App() {
   const [click, setClick] = useState(null);
 
   const PRODUCTS = [
-    {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
-    {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
-    {category: "Fruits", price: "$2", stocked: false, name: "Passionfruit"},
-    {category: "Vegetables", price: "$2", stocked: true, name: "Spinach"},
-    {category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin"},
-    {category: "Vegetables", price: "$1", stocked: true, name: "Peas"}
+    { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+    { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+    { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+    { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+    { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+    { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
 
   const buttonClick = () => {
@@ -19,7 +19,6 @@ function App() {
     } else if (click === "X") {
       setClick(null);
     }
-    
   };
 
   return (
@@ -44,23 +43,19 @@ function App() {
 
         <div className="content">
           <div className="fruits">
-            
             <div className="list">
               <table>
-              {PRODUCTS.map(product => {
-                return (
-                  <tr key={product.name}>
-                    <td>{product.name}</td>
-                    <td>{product.price}</td>
-                  </tr>
-                );
-              })}
+                {PRODUCTS.map((product) => {
+                  return (
+                    <tr key={product.name}>
+                      <td>{product.name}</td>
+                      <td>{product.price}</td>
+                    </tr>
+                  );
+                })}
               </table>
             </div>
           </div>
-
-          
-
         </div>
       </div>
     </>
