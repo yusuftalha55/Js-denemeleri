@@ -3,6 +3,11 @@ import "./App.css";
 
 function App() {
   const [click, setClick] = useState(null);
+  const [filteredContent, setFilteredContent] = useState(PRODUCTS.map((product) => {
+    if (product.stocked === true) {
+      setFilteredContent(product);
+    }
+  }));
 
   const PRODUCTS = [
     { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
@@ -15,6 +20,7 @@ function App() {
 
   const buttonClick = () => {
     if (click === null) {
+
       setClick("X");
     } else if (click === "X") {
       setClick(null);
