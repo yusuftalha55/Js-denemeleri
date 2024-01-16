@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [click, setClick] = useState(null);
-  const [showOnlyStocked, setShowOnlyStocked] = useState(false);
+  const [name, setName] = useState(PRODUCTS);
 
   const PRODUCTS = [
     { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
@@ -15,12 +15,17 @@ function App() {
   ];
 
   const buttonClick = () => {
-    setShowOnlyStocked(!showOnlyStocked);
-  };
+    {PRODUCTS.map((product) => {
+      setName(product.stocked(false))    
+    })}
 
-  const filteredProducts = showOnlyStocked
-    ? PRODUCTS.filter((product) => product.stocked)
-    : PRODUCTS;
+
+    if (click === null) {
+      setClick("X");
+    } else if (click === "X") {
+      setClick(null);
+    }
+  };
 
   return (
     <>
@@ -31,7 +36,7 @@ function App() {
         <div className="button">
           <h3>Only show products in stock</h3>
           <button id="buttonId" onClick={buttonClick}>
-            {showOnlyStocked ? "X" : ""}
+            {click}
           </button>
         </div>
 
@@ -46,18 +51,24 @@ function App() {
           <div className="fruits">
             <div className="list">
               <table className="table-style">
-                {filteredProducts.map((product) => (
-                  <tr key={product.name}>
-                    <td>
-                      {product.stocked ? (
-                        product.name
-                      ) : (
-                        <span style={{ color: "red" }}>{product.name}</span>
-                      )}
-                    </td>
-                    <td>{product.price}</td>
-                  </tr>
-                ))}
+                {PRODUCTS.map((product) => {
+                  if (product.stocked === false) {
+                    return (
+                      <tr key={product.name}>
+                        <td>
+                          <span style={{ color: "red" }}>{product.name}</span>
+                        </td>
+                        <td>{product.price}</td>
+                      </tr>
+                    );
+                  }
+                  return (
+                    <tr key={product.name}>
+                      <td>{product.name}</td>
+                      <td>{product.price}</td>
+                    </tr>
+                  );
+                })}
               </table>
             </div>
           </div>
