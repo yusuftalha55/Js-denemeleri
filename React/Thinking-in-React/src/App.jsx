@@ -3,11 +3,7 @@ import "./App.css";
 
 function App() {
   const [click, setClick] = useState(null);
-  const [filteredContent, setFilteredContent] = useState(PRODUCTS.map((product) => {
-    if (product.stocked === true) {
-      setFilteredContent(product);
-    }
-  }));
+  const [showOnlyStocked, setShowOnlyStocked] = useState(false);
 
   const PRODUCTS = [
     { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
@@ -19,13 +15,12 @@ function App() {
   ];
 
   const buttonClick = () => {
-    if (click === null) {
-
-      setClick("X");
-    } else if (click === "X") {
-      setClick(null);
-    }
+    setShowOnlyStocked(!showOnlyStocked);
   };
+
+  const filteredProducts = showOnlyStocked
+    ? PRODUCTS.filter((product) => product.stocked)
+    : PRODUCTS;
 
   return (
     <>
@@ -36,7 +31,7 @@ function App() {
         <div className="button">
           <h3>Only show products in stock</h3>
           <button id="buttonId" onClick={buttonClick}>
-            {click}
+            {showOnlyStocked ? "X" : ""}
           </button>
         </div>
 
@@ -51,24 +46,18 @@ function App() {
           <div className="fruits">
             <div className="list">
               <table className="table-style">
-                {PRODUCTS.map((product) => {
-                  if (product.stocked === false) {
-                    return (
-                      <tr key={product.name}>
-                        <td>
-                          <span style={{ color: "red" }}>{product.name}</span>
-                        </td>
-                        <td>{product.price}</td>
-                      </tr>
-                    );
-                  }
-                  return (
-                    <tr key={product.name}>
-                      <td>{product.name}</td>
-                      <td>{product.price}</td>
-                    </tr>
-                  );
-                })}
+                {filteredProducts.map((product) => (
+                  <tr key={product.name}>
+                    <td>
+                      {product.stocked ? (
+                        product.name
+                      ) : (
+                        <span style={{ color: "red" }}>{product.name}</span>
+                      )}
+                    </td>
+                    <td>{product.price}</td>
+                  </tr>
+                ))}
               </table>
             </div>
           </div>
