@@ -19,7 +19,13 @@ function Pokemon() {
       <div className="container">
         <div className="title">
           {pokemonList.map((pokemon, index) => (
-            <h2 key={index}>{pokemon.name}</h2>
+            <div key={index}>
+              <h2>{pokemon.name}</h2>
+              <img
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
+                alt={pokemon.name}
+              />
+            </div>
           ))}
         </div>
         <div className="attributes"></div>
