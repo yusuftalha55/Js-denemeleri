@@ -18,9 +18,9 @@ function Pokemon() {
   return (
     <div className="main">
       <div className="container">
-        <div className="title">
+        <div className="pokemonContent">
           {pokemonList.map((pokemon, index) => (
-            <div key={index}>
+            <div className="content-inside" key={index}>
               <img
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
                 alt={pokemon.name}
@@ -29,7 +29,6 @@ function Pokemon() {
             </div>
           ))}
         </div>
-        <div className="attributes"></div>
       </div>
     </div>
   );
