@@ -8,6 +8,7 @@ function Pokemon() {
     const fetchData = async () => {
       const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
       const data = await response.json();
+      console.log(data);
       const firstTenPokemon = data.results.slice(0, 10);
       setPokemonList(firstTenPokemon);
     };
@@ -26,6 +27,8 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
+              <h3>{"https://pokeapi.co/api/v2/ability/1/"}</h3>
+              {console.log(pokemon.height)}
             </div>
           ))}
         </div>
