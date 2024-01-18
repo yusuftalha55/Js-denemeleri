@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./App.css";
 
 function Pokemon() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -20,11 +21,11 @@ function Pokemon() {
         <div className="title">
           {pokemonList.map((pokemon, index) => (
             <div key={index}>
-              <h2>{pokemon.name}</h2>
               <img
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
                 alt={pokemon.name}
               />
+              <h2 className="name">{pokemon.name}</h2>
             </div>
           ))}
         </div>
