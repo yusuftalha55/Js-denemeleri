@@ -27,6 +27,7 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
+              <h3>{PokeAbilities}</h3>
             </div>
           ))}
         </div>

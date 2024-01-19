@@ -11,6 +11,7 @@ function PokeAbilities() {
       const firstTenPokemonAbilities = data.results.url;
       setPokemonAbilities(firstTenPokemonAbilities);
     };
+    fetchData();
   }, []);
 }
 
