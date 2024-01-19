@@ -27,7 +27,6 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
-              <h3>{"https://pokeapi.co/api/v2/ability/1/"}</h3>
               {console.log(pokemon.height)}
             </div>
           ))}
