@@ -27,7 +27,6 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
-              {console.log(pokemon.height)}
             </div>
           ))}
         </div>
