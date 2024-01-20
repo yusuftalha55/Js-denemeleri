@@ -6,9 +6,9 @@ function PokeAbilities() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/1/");
       const data = await response.json();
-      const firstTenPokemonAbilities = data.results.url;
+      const firstTenPokemonAbilities = data.abilities.ability;
       setPokemonAbilities(firstTenPokemonAbilities);
     };
     fetchData();
