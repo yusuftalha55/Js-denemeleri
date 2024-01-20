@@ -4,7 +4,13 @@ import "./App.css";
 function PokeAbilities() {
   return (
     <div className="main">
+      <div className="table">
+        <li>
+          <ol>
 
+          </ol>
+        </li>
+      </div>
     </div>
   )
   
