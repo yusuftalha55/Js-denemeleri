@@ -32,7 +32,7 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
-              <button onClick={() => handleButtonClick(pokemon.url)}>Go to Abilities</button>
+              <button onClick={() => handleButtonClick(pokemon.url.name)}>Go to Abilities</button>
             </div>
           ))}
         </div>
