@@ -16,6 +16,11 @@ function Pokemon() {
     fetchData();
   }, []);
 
+  const handleButtonClick = (url) => {
+    // Burada belirtilen URL'ye gitmek için window.location.href kullanılabilir
+    window.location.href = url;
+  };
+
 
   return (
     <div className="main">
@@ -28,7 +33,7 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
-              <button onClick={pokemonClick}>Abilities</button>
+              <button onClick={() => handleButtonClick(pokemon.url)}>Go to URL</button>
             </div>
           ))}
         </div>
