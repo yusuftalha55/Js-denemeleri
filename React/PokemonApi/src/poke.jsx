@@ -16,6 +16,7 @@ function Pokemon() {
     fetchData();
   }, []);
 
+
   return (
     <div className="main">
       <div className="container">
@@ -27,7 +28,7 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
-              <h3>{PokeAbilities}</h3>
+              <button onClick={pokemonClick}>Abilities</button>
             </div>
           ))}
         </div>
