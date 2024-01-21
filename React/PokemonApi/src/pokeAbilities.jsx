@@ -7,6 +7,7 @@ function PokeAbilities() {
       <div className="table">
         <li>
           <ol>
+            <h2>asfasf</h2>
 
           </ol>
         </li>
