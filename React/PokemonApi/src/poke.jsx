@@ -16,8 +16,8 @@ function Pokemon() {
     fetchData();
   }, []);
 
-  const handleButtonClick = (url) => {
-    window.location.href = url;
+  const handleButtonClick = () => {
+    
   };
 
 
