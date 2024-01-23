@@ -11,6 +11,7 @@ function Pokemon() {
       const data = await response.json();
       const firstTenPokemon = data.results.slice(0, 10);
       setPokemonList(firstTenPokemon);
+      console.log(pokemonList);
     };
 
     fetchData();
@@ -32,6 +33,7 @@ function Pokemon() {
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
+              <p>{}</p>
               <button onClick={() => handleButtonClick(pokemon.url.name)}>Go to Abilities</button>
             </div>
           ))}
