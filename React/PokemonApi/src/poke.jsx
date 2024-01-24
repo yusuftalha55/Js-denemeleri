@@ -21,7 +21,7 @@ function Pokemon() {
     
   };
 
-  
+  PokeAbilities();
 
 
   return (
