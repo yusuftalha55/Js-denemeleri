@@ -21,6 +21,8 @@ function Pokemon() {
     
   };
 
+  
+
 
   return (
     <div className="main">
