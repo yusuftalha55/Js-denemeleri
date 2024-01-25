@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import PokeAbilities from "./pokeAbilities";
+
 
 function Pokemon() {
   const [pokemonList, setPokemonList] = useState([]);
+  const [pokemonAbility, setPokemonAbility] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,19 +21,29 @@ function Pokemon() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch ("https://pokeapi.co/api/v2/pokemon/bulbasaur");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/bulbasaur");
       const data = await response.json();
-      
-
+  
+      // "abilities" dizisinden ilk yeteneği alalım
+      const firstAbility = data.abilities[0];
+  
+      // İlk yeteneğin "ability" nesnesinden "name" özelliğini alalım
+      const abilityName = firstAbility.ability.name;
+      setPokemonAbility(abilityName);
+  
+      console.log("Ability Name:", abilityName);
     };
-
+  
+    fetchData();
   }, []);
+  
+  
 
   const handleButtonClick = () => {
     
   };
 
-  PokeAbilities();
+  
 
 
   return (
