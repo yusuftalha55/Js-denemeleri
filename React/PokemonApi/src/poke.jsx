@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-
 function Pokemon() {
   const [pokemonList, setPokemonList] = useState([]);
   const [pokemonAbility, setPokemonAbility] = useState([]);
@@ -18,34 +17,29 @@ function Pokemon() {
     fetchData();
   }, []);
 
-
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/bulbasaur");
+      const response = await fetch(
+        "https://pokeapi.co/api/v2/pokemon/bulbasaur"
+      );
       const data = await response.json();
-  
+
       // "abilities" dizisinden ilk yeteneği alalım
       const firstAbility = data.abilities[0];
-  
+
       // İlk yeteneğin "ability" nesnesinden "name" özelliğini alalım
       const abilityName = firstAbility.ability.name;
       setPokemonAbility(abilityName);
-  
+
       console.log("Ability Name:", abilityName);
     };
-  
+
     fetchData();
   }, []);
-  
-  
 
   const handleButtonClick = () => {
-    pokemonAbility
-    
+    pokemonAbility;
   };
-
-  
-
 
   return (
     <div className="main">
@@ -54,12 +48,16 @@ function Pokemon() {
           {pokemonList.map((pokemon, index) => (
             <div className="content-inside" key={index}>
               <img
-                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+                  index + 1
+                }.png`}
                 alt={pokemon.name}
               />
               <h2 className="name">{pokemon.name}</h2>
-              <p>{}</p>
               <button onClick={handleButtonClick}>Go to Abilities</button>
+              <div className="abilitesContent">
+                <p>{pokemonAbility}</p>
+              </div>
             </div>
           ))}
         </div>
