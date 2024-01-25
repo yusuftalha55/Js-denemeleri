@@ -20,7 +20,7 @@ function Pokemon() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon/bulbasaur"
+        "https://pokeapi.co/api/v2/pokemon/1/"
       );
       const data = await response.json();
 
