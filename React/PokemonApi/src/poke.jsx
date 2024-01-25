@@ -17,6 +17,17 @@ function Pokemon() {
     fetchData();
   }, []);
 
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch ("https://pokeapi.co/api/v2/pokemon/bulbasaur");
+      const data = await response.json();
+      
+
+    };
+
+  }, []);
+
   const handleButtonClick = () => {
     
   };
