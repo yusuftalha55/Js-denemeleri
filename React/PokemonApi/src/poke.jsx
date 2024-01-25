@@ -40,6 +40,7 @@ function Pokemon() {
   
 
   const handleButtonClick = () => {
+    pokemonAbility
     
   };
 
@@ -58,7 +59,7 @@ function Pokemon() {
               />
               <h2 className="name">{pokemon.name}</h2>
               <p>{}</p>
-              <button onClick={() => handleButtonClick(pokemon.url.name)}>Go to Abilities</button>
+              <button onClick={handleButtonClick}>Go to Abilities</button>
             </div>
           ))}
         </div>
