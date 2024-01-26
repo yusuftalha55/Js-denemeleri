@@ -4,6 +4,7 @@ import "./App.css";
 function Pokemon() {
   const [pokemonList, setPokemonList] = useState([]);
   const [pokemonAbility, setPokemonAbility] = useState([]);
+  const [formsListObject, setFormsListObject] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,15 +26,19 @@ function Pokemon() {
 
       
       const firstAbility = data.abilities[0];
+      const forms = data.forms[0];
 
       
 
-      const baseExperience = firstAbility.base_experience;
+      const formsName = forms.name;
 
-      console.log(baseExperience);
+
+      console.log(formsName);
 
       const abilityName = firstAbility.ability.name;
       setPokemonAbility(abilityName);
+
+      setFormsListObject(formsName);
 
       
     };
@@ -61,6 +66,7 @@ function Pokemon() {
               <button onClick={handleButtonClick}>Go to Abilities</button>
               <div className="abilitesContent">
                 <p>{pokemonAbility}</p>
+                <p>{formsListObject}</p>
               </div>
             </div>
           ))}
