@@ -19,19 +19,13 @@ function Pokemon() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon/1/"
-      );
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/1/");
       const data = await response.json();
 
-      
       const firstAbility = data.abilities[0];
       const forms = data.forms[0];
 
-      
-
       const formsName = forms.name;
-
 
       console.log(formsName);
 
@@ -39,8 +33,6 @@ function Pokemon() {
       setPokemonAbility(abilityName);
 
       setFormsListObject(formsName);
-
-      
     };
 
     fetchData();
