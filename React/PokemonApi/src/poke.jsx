@@ -31,7 +31,7 @@ function Pokemon() {
       const abilityName = firstAbility.ability.name;
       setPokemonAbility(abilityName);
 
-      console.log("Ability Name:", abilityName);
+      
     };
 
     fetchData();
