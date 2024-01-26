@@ -24,10 +24,9 @@ function Pokemon() {
       );
       const data = await response.json();
 
-      // "abilities" dizisinden ilk yeteneği alalım
+      
       const firstAbility = data.abilities[0];
 
-      // İlk yeteneğin "ability" nesnesinden "name" özelliğini alalım
       const abilityName = firstAbility.ability.name;
       setPokemonAbility(abilityName);
 
