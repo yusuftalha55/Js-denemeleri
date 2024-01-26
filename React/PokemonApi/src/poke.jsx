@@ -11,7 +11,6 @@ function Pokemon() {
       const data = await response.json();
       const firstTenPokemon = data.results.slice(0, 10);
       setPokemonList(firstTenPokemon);
-      console.log(pokemonList);
     };
 
     fetchData();
@@ -26,6 +25,12 @@ function Pokemon() {
 
       
       const firstAbility = data.abilities[0];
+
+      
+
+      const baseExperience = firstAbility.base_experience;
+
+      console.log(baseExperience);
 
       const abilityName = firstAbility.ability.name;
       setPokemonAbility(abilityName);
