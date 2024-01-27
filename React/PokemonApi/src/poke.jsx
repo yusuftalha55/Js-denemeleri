@@ -26,12 +26,9 @@ function Pokemon() {
       const forms = data.forms[0];
 
       const formsName = forms.name;
-
-      console.log(formsName);
-
       const abilityName = firstAbility.ability.name;
-      setPokemonAbility(abilityName);
 
+      setPokemonAbility(abilityName);
       setFormsListObject(formsName);
     };
 
