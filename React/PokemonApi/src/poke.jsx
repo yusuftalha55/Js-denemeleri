@@ -34,6 +34,7 @@ function Pokemon() {
       const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
       const data = await response.json();
       const firstTenPokemon = data.results.slice(0, 10);
+      const firstTenUrl = data.results.slice(0, 10);
       setPokemonList(firstTenPokemon);
     };
 
