@@ -5,6 +5,7 @@ function Pokemon() {
   const [pokemonList, setPokemonList] = useState([]);
   const [pokemonAbility, setPokemonAbility] = useState("");
   const [formsListObject, setFormsListObject] = useState("");
+  const [baseExperience, setBaseExperience] = useState("");
 
   const fetchData = async (url) => {
     const response = await fetch(url);
@@ -12,12 +13,16 @@ function Pokemon() {
     
     const firstAbility = data.abilities[0];
     const forms = data.forms[0];
+    const experience = data.base_experience;
 
     const formsName = forms.name;
     const abilityName = firstAbility.ability.name;
+    
 
     setPokemonAbility(abilityName);
     setFormsListObject(formsName);
+    setBaseExperience(experience);
+    
   };
 
   const handleButtonClick = async (url) => {
@@ -50,6 +55,7 @@ function Pokemon() {
               <div className="abilitesContent">
                 <p>{pokemonAbility}</p>
                 <p>{formsListObject}</p>
+                <p>{baseExperience}</p>
               </div>
             </div>
           ))}
