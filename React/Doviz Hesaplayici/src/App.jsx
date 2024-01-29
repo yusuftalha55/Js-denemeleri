@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'; // useEffect eklenmiş
+import { useState, useEffect } from 'react'; 
 
 function App() {
   useEffect(() => {
@@ -21,12 +21,12 @@ function App() {
       }
     };
 
-    fetchData(); // fetchData fonksiyonunu çağır
-  }, []); // useEffect'i bağımlılıksız olarak tanımla
+    fetchData(); 
+  }, []); 
 
   return (
     <div>
-      {/* JSX içeriği buraya ekleyebilirsiniz */}
+      {}
     </div>
   );
 }
