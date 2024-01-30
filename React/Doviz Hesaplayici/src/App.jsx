@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [moneyList, setMoneyList] = useState([""]);
+  const [resultState, setResultState] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,6 +20,8 @@ function App() {
         const response = await fetch(url, options);
         const result = await response.json();
         setMoneyList(result);
+        setResultState(result[3]);
+        console.log(result[3]);
         console.log(result);
       } catch (error) {
         console.error(error);
@@ -30,6 +33,10 @@ function App() {
 
   return (
     <div>
+      <div className="usdDiv">
+        <h2>{resultState}</h2>
+
+      </div>
       {moneyList.map((money, index) => (
         <h2 key={index}>{money}</h2>
       ))}
