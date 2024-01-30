@@ -38,7 +38,7 @@ function App() {
 
       </div>
       {moneyList.map((money, index) => (
-        <h2 key={index}>{money}</h2>
+        <p key={index}>{money}</p>
       ))}
     </div>
   );
