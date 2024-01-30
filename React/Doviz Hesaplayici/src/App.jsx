@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [moneyList, setMoneyList] = useState([""]);
   const [resultState, setResultState] = useState();
+  const TRY = (resultState / 30);
+  
 
   useEffect(() => {
     const fetchData = async () => {
