@@ -40,7 +40,9 @@ function App() {
     <div>
       <p>Base Currency: {baseCurrency}</p>
       {allMoney.map((money, index) => (
+        
         <div key={index}>
+          {console.log(money)}
           <p>
            {baseCurrency} = {money.rate} :{money.currency} 
           </p>
