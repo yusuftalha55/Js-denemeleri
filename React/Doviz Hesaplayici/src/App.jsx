@@ -42,7 +42,7 @@ function App() {
       {allMoney.map((money, index) => (
         <div key={index}>
           <p>
-            {money.currency}: {money.rate}
+           {baseCurrency} = {money.rate} :{money.currency} 
           </p>
         </div>
       ))}
