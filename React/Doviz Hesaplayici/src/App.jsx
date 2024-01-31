@@ -22,15 +22,12 @@ function App() {
         const response = await fetch(url, options);
         const result = await response.json();
 
-        // rates nesnesine erişip, diziye çevir
-        const resultArray = Object.entries(result.rates).map(([currency, rate]) => ({ currency, rate }));
+        const resultArray = Object.entries(result.rates).map(
+          ([currency, rate]) => ({ currency, rate })
+        );
         setAllMoney(resultArray);
-        
-        // base para birimini ayarla
-        setBaseCurrency(result.base);
 
-        console.log(resultArray);
-        console.log(result);
+        setBaseCurrency(result.base);
       } catch (error) {
         console.error(error);
       }
@@ -44,7 +41,9 @@ function App() {
       <p>Base Currency: {baseCurrency}</p>
       {allMoney.map((money, index) => (
         <div key={index}>
-          <p>{money.currency}: {money.rate}</p>
+          <p>
+            {money.currency}: {money.rate}
+          </p>
         </div>
       ))}
     </div>
@@ -52,5 +51,3 @@ function App() {
 }
 
 export default App;
-
-
