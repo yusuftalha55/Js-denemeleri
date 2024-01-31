@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [allMoney, setAllMoney] = useState([]);
+  const [baseCurrency, setBaseCurrency] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,8 +20,16 @@ function App() {
 
       try {
         const response = await fetch(url, options);
-        const result = await response.json(); 
-        setAllMoney(result);
+        const result = await response.json();
+
+        // rates nesnesine erişip, diziye çevir
+        const resultArray = Object.entries(result.rates).map(([currency, rate]) => ({ currency, rate }));
+        setAllMoney(resultArray);
+        
+        // base para birimini ayarla
+        setBaseCurrency(result.base);
+
+        console.log(resultArray);
         console.log(result);
       } catch (error) {
         console.error(error);
@@ -32,11 +41,16 @@ function App() {
 
   return (
     <div>
+      <p>Base Currency: {baseCurrency}</p>
       {allMoney.map((money, index) => (
-        <p key={index}>{money}</p>
+        <div key={index}>
+          <p>{money.currency}: {money.rate}</p>
+        </div>
       ))}
     </div>
   );
 }
 
 export default App;
+
+
