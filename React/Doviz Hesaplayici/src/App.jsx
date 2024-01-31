@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 
 function App() {
-  const [moneyList, setMoneyList] = useState([""]);
-  const [resultState, setResultState] = useState();
-  const TRY = (resultState / 30);
+  
+  
   
 
   useEffect(() => {
@@ -32,10 +31,6 @@ function App() {
 
   return (
     <div>
-      <div className="usdDiv">
-        <h2>{resultState}</h2>
-
-      </div>
       {moneyList.map((money, index) => (
         <p key={index}>{money}</p>
       ))}
