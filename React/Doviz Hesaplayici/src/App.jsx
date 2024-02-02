@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [allMoney, setAllMoney] = useState([]);
   const [baseCurrency, setBaseCurrency] = useState("");
+  const [inputValue, setInputValue] = useState("");
+  const [convertedValue, setConvertedValue] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,6 +38,12 @@ function App() {
     fetchData();
   }, []);
 
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+    
+     setConvertedValue(Number(e.target.value) * money.rate);
+  };
+
   return (
     <div>
       <p>Base Currency: {baseCurrency}</p>
@@ -46,8 +54,12 @@ function App() {
             <div key={index}>
               {money.currency === "USD" && (
                 <p>
-                  <input type="number" />
-                  EUR = {money.rate} USD
+                  <input
+                    type="number"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                  />
+                  EUR = {Number(inputValue) * money.rate} USD
                 </p>
               )}
             </div>
@@ -57,8 +69,7 @@ function App() {
       </div>
 
       {allMoney.map((money, index) => (
-        <div key={index[0]}>
-          {console.log(money)}
+        <div key={index}>
           <p>
             {baseCurrency} = {money.rate} :{money.currency}
           </p>
