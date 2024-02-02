@@ -40,39 +40,27 @@ function App() {
     <div>
       <p>Base Currency: {baseCurrency}</p>
 
-
       <div className="converter">
-  <div className="usdConverter">
-    {allMoney.map((money, index) => (
-      <div key={index}>
-        {money.currency === "USD" && (
-          // Eğer para birimi USD ise buraya gelecek JSX
-          <p>EUR = {money.rate} USD</p>
-        )}
+        <div className="usdConverter">
+          {allMoney.map((money, index) => (
+            <div key={index}>
+              {money.currency === "USD" && (
+                <p>
+                  <input type="number" />
+                  EUR = {money.rate} USD
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+        <div className="eurConverter"></div>
       </div>
-    ))}
-  </div>
-  <div className="eurConverter"></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
       {allMoney.map((money, index) => (
-        
         <div key={index[0]}>
           {console.log(money)}
           <p>
-           {baseCurrency} = {money.rate} :{money.currency} 
+            {baseCurrency} = {money.rate} :{money.currency}
           </p>
         </div>
       ))}
