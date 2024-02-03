@@ -58,6 +58,7 @@ function App() {
                 <h3>
                   Sayı Giriniz:
                   <input
+                  style={{margin:10}}
                     type="number"
                     value={inputValue}
                     onChange={handleInputChange}
