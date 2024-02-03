@@ -88,6 +88,26 @@ function App() {
             </div>
           ))}
         </div>
+        <div className="jpyConverter">
+          <h2>Euro To Jpy</h2>
+          {allMoney.map((money, index) => (
+            <div key={index}>
+              {money.currency === "JPY" && (
+                <h3>
+                  Sayı Giriniz:
+                  <input
+                    style={{ margin: 10 }}
+                    type="number"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                    min="0"
+                  />
+                  {inputValue} EUR = {Number(inputValue) * money.rate} JPY
+                </h3>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {allMoney.map((money, index) => (
