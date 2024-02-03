@@ -62,6 +62,7 @@ function App() {
                     type="number"
                     value={inputValue}
                     onChange={handleInputChange}
+                    min="0"
                   />
                   {inputValue} EUR = {Number(inputValue) * money.rate} USD
                 </h3>
