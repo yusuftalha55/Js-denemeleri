@@ -54,14 +54,15 @@ function App() {
           {allMoney.map((money, index) => (
             <div key={index}>
               {money.currency === "USD" && (
-                <p> 
+                <h3> 
+                  Sayı Giriniz:
                   <input
                     type="number"
                     value={inputValue}
                     onChange={handleInputChange}
                   />
                  {inputValue} EUR = {Number(inputValue) * money.rate} USD
-                </p>
+                </h3>
               )}
             </div>
           ))}
