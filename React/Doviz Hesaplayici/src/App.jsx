@@ -47,8 +47,6 @@ function App() {
 
   return (
     <div>
-      
-
       <div className="converter">
         <div className="usdConverter">
           <h2>Euro To Usd</h2>
