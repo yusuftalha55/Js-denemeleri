@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div>
-      <p>Base Currency: {baseCurrency}</p>
+      
 
       <div className="converter">
         <div className="usdConverter">
@@ -58,7 +58,7 @@ function App() {
                 <h3>
                   Sayı Giriniz:
                   <input
-                  style={{margin:10}}
+                    style={{ margin: 10 }}
                     type="number"
                     value={inputValue}
                     onChange={handleInputChange}
@@ -70,7 +70,26 @@ function App() {
             </div>
           ))}
         </div>
-        <div className="eurConverter"></div>
+        <div className="tryConverter">
+          <h2>Euro To Try</h2>
+          {allMoney.map((money, index) => (
+            <div key={index}>
+              {money.currency === "TRY" && (
+                <h3>
+                  Sayı Giriniz:
+                  <input
+                    style={{ margin: 10 }}
+                    type="number"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                    min="0"
+                  />
+                  {inputValue} TRY = {Number(inputValue) * money.rate} USD
+                </h3>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {allMoney.map((money, index) => (
