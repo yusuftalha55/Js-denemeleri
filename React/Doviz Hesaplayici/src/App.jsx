@@ -84,7 +84,7 @@ function App() {
                     onChange={handleInputChange}
                     min="0"
                   />
-                  {inputValue} TRY = {Number(inputValue) * money.rate} USD
+                  {inputValue} EUR = {Number(inputValue) * money.rate} TRY
                 </h3>
               )}
             </div>
