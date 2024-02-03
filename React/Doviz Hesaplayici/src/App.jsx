@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./App.css";
 
 function App() {
   const [allMoney, setAllMoney] = useState([]);
@@ -53,13 +54,13 @@ function App() {
           {allMoney.map((money, index) => (
             <div key={index}>
               {money.currency === "USD" && (
-                <p>
+                <p> 
                   <input
                     type="number"
                     value={inputValue}
                     onChange={handleInputChange}
                   />
-                  EUR = {Number(inputValue) * money.rate} USD
+                 {inputValue} EUR = {Number(inputValue) * money.rate} USD
                 </p>
               )}
             </div>
