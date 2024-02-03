@@ -41,8 +41,8 @@ function App() {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
-    
-     setConvertedValue(Number(e.target.value) * money.rate);
+
+    setConvertedValue(Number(e.target.value) * money.rate);
   };
 
   return (
@@ -51,17 +51,18 @@ function App() {
 
       <div className="converter">
         <div className="usdConverter">
+          <h2>Euro To Usd</h2>
           {allMoney.map((money, index) => (
             <div key={index}>
               {money.currency === "USD" && (
-                <h3> 
+                <h3>
                   Sayı Giriniz:
                   <input
                     type="number"
                     value={inputValue}
                     onChange={handleInputChange}
                   />
-                 {inputValue} EUR = {Number(inputValue) * money.rate} USD
+                  {inputValue} EUR = {Number(inputValue) * money.rate} USD
                 </h3>
               )}
             </div>
