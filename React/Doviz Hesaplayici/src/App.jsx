@@ -128,8 +128,6 @@ function App() {
             </div>
           ))}
         </div>
-
-
       </div>
 
       {allMoney.map((money, index) => (
