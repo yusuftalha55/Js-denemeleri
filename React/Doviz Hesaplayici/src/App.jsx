@@ -128,12 +128,33 @@ function App() {
             </div>
           ))}
         </div>
+
+        <div className="eurConverter">
+          <h2>Euro To Usd</h2>
+          {allMoney.map((money, index) => (
+            <div key={index}>
+              {money.currency === "EUR" && (
+                <h3>
+                  Sayı Giriniz:
+                  <input
+                    style={{ margin: 10 }}
+                    type="number"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                    min="0"
+                  />
+                  {inputValue} USD = {Number(inputValue) * money.rate} EUR
+                </h3>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {allMoney.map((money, index) => (
         <div key={index}>
           <p>
-           1 {baseCurrency} = {money.rate} :{money.currency}
+            1 {baseCurrency} = {money.rate} :{money.currency}
           </p>
         </div>
       ))}
