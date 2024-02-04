@@ -46,10 +46,20 @@ function App() {
   };
 
   const handleInputChangeUsd = (e) => {
-    setInputValue(e.target.value);
-
-    setConvertedValue(Number(e.target.value) * money.currency==="USD");
+    setInputValue(e.target.value)
+    
+    // moneyUsd'nin tanımlı olduğunu ve input değerinin bir sayı olduğunu kontrol et
+    if (moneyUsd && !isNaN(e.target.value)) {
+      setConvertedValue(Number(e.target.value) / moneyUsd.rate);
+    } else {
+      // Eğer NaN ise ya da moneyUsd tanımlı değilse, convertedValue'yi sıfırla
+      setConvertedValue(null);
+    }
   };
+  
+  
+   
+  const moneyUsd = allMoney.find((money) => money.currency === "USD");
 
   return (
     <div>
@@ -139,7 +149,7 @@ function App() {
           <h2>Usd To Euro</h2>
           {allMoney.map((money, index) => (
             <div key={index}>
-              {money.currency === "EUR" && (
+              {money.currency === baseCurrency && (
                 <h3>
                   Sayı Giriniz:
                   <input
@@ -149,7 +159,7 @@ function App() {
                     onChange={handleInputChangeUsd}
                     min="0"
                   />
-                  {inputValue} USD = {Number(inputValue) * money.rate} EUR
+                  {inputValue} USD = {Number(inputValue) / moneyUsd} EUR
                 </h3>
               )}
             </div>
