@@ -46,19 +46,15 @@ function App() {
   };
 
   const handleInputChangeUsd = (e) => {
-    setInputValue(e.target.value)
-    
-    // moneyUsd'nin tanımlı olduğunu ve input değerinin bir sayı olduğunu kontrol et
+    setInputValue(e.target.value);
+
     if (moneyUsd && !isNaN(e.target.value)) {
       setConvertedValue(Number(e.target.value) / moneyUsd.rate);
     } else {
-      // Eğer NaN ise ya da moneyUsd tanımlı değilse, convertedValue'yi sıfırla
       setConvertedValue(null);
     }
   };
-  
-  
-   
+
   const moneyUsd = allMoney.find((money) => money.currency === "USD");
 
   return (
@@ -179,4 +175,3 @@ function App() {
 }
 
 export default App;
-
