@@ -45,17 +45,19 @@ function App() {
     setConvertedValue(Number(e.target.value) * money.rate);
   };
 
+  const moneyUsd = allMoney.find((money) => money.currency === "USD");
+
   const handleInputChangeUsd = (e) => {
     setInputValue(e.target.value);
 
     if (moneyUsd && !isNaN(e.target.value)) {
-      setConvertedValue(Number(e.target.value) / moneyUsd.rate);
+      setConvertedValue(Number(e.target.value) / moneyUsd);
     } else {
       setConvertedValue(null);
     }
   };
 
-  const moneyUsd = allMoney.find((money) => money.currency === "USD");
+
 
   return (
     <div>
