@@ -1,22 +1,31 @@
-import { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 
 function App() {
   useEffect(() => {
-    fetch("https://api.collectapi.com/gasPrice/stateUsaPrice?state=WA", {
-      method: "GET",
-      headers: {
-        "content-type": "application/json",
-        authorization: "apikey your_token",
-      },
-      credentials: "include",
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error("Error:", error));
+    const fetchData = async () => {
+      const url = 'https://gas-price.p.rapidapi.com/europeanCountries';
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': '2dab30615cmshc5b0542dbd9da36p1f0fd6jsn4fc63c166db4',
+          'X-RapidAPI-Host': 'gas-price.p.rapidapi.com'
+        }
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        console.log(result);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
   }, []);
 
-  return <></>;
+  return <div></div>;
 }
 
 export default App;
