@@ -4,18 +4,19 @@ import "./App.css";
 function App() {
   useEffect(() => {
     const fetchData = async () => {
-      const url = 'https://gas-price.p.rapidapi.com/europeanCountries';
+      const url = "https://free-images-api.p.rapidapi.com/images/wallpaper";
       const options = {
-        method: 'GET',
+        method: "GET",
         headers: {
-          'X-RapidAPI-Key': '2dab30615cmshc5b0542dbd9da36p1f0fd6jsn4fc63c166db4',
-          'X-RapidAPI-Host': 'gas-price.p.rapidapi.com'
-        }
+          "X-RapidAPI-Key":
+            "2dab30615cmshc5b0542dbd9da36p1f0fd6jsn4fc63c166db4",
+          "X-RapidAPI-Host": "free-images-api.p.rapidapi.com",
+        },
       };
 
       try {
         const response = await fetch(url, options);
-        const result = await response.json();
+        const result = await response.text();
         console.log(result);
       } catch (error) {
         console.error(error);
@@ -25,7 +26,11 @@ function App() {
     fetchData();
   }, []);
 
-  return <div></div>;
+  return <div>
+    <div className="main">
+
+    </div>
+  </div>;
 }
 
 export default App;
