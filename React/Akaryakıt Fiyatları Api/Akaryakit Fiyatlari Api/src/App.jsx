@@ -20,8 +20,8 @@ function App() {
       try {
         const response = await fetch(url, options);
         const data = await response.json();
-        const firstTenPokemon = data.results.slice(0, 10);
-        console.log(data);
+        const firstTenimage = data.results.slice(0, 10);
+        console.log(firstTenimage);
       } catch (error) {
         console.error(error);
       }
@@ -31,14 +31,14 @@ function App() {
   }, []);
 
   return <div>
-    {/* <div className="main">
-      {result.map(()=>{
+    <div className="main">
+      {firstTenimage.map((images)=>{
         <h2 key={index}>
-          {result}
+          {images}
         </h2>
       })}
 
-    </div> */}
+    </div>
   </div>;
 }
 
