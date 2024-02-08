@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const [images, setImages] = useState([]);
+
+
   useEffect(() => {
     const fetchData = async () => {
       const url = "https://free-images-api.p.rapidapi.com/images/wallpaper";
@@ -16,8 +19,9 @@ function App() {
 
       try {
         const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
+        const data = await response.json();
+        const firstTenPokemon = data.results.slice(0, 10);
+        console.log(data);
       } catch (error) {
         console.error(error);
       }
@@ -27,15 +31,18 @@ function App() {
   }, []);
 
   return <div>
-    <div className="main">
+    {/* <div className="main">
       {result.map(()=>{
         <h2 key={index}>
           {result}
         </h2>
       })}
 
-    </div>
+    </div> */}
   </div>;
 }
 
 export default App;
+
+
+
