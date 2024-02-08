@@ -28,6 +28,11 @@ function App() {
 
   return <div>
     <div className="main">
+      {result.map(()=>{
+        <h2 key={index}>
+          {result}
+        </h2>
+      })}
 
     </div>
   </div>;
