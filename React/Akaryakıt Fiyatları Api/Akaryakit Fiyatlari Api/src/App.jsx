@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [images, setImages] = useState([]);
-
+  const [firstTenimage, setFirstTenimage] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,8 +20,9 @@ function App() {
       try {
         const response = await fetch(url, options);
         const data = await response.json();
-        const firstTenimage = data.results.slice(0, 10);
-        console.log(firstTenimage);
+        const firstTenImage = data.results.slice(0, 10);
+        setFirstTenimage(firstTenImage);
+        console.log(firstTenImage);
       } catch (error) {
         console.error(error);
       }
@@ -30,19 +31,19 @@ function App() {
     fetchData();
   }, []);
 
-  return <div>
-    <div className="main">
-      {firstTenimage.map((images, index)=>{
-        <h2 key={index}>
-          {images.image}
-        </h2>
-      })}
-
+  return (
+    <div>
+      <div className="main">
+        {firstTenimage.map((image, index) => (
+          <h2 key={index}>{image.image}</h2>
+        ))}
+      </div>
     </div>
-  </div>;
+  );
 }
 
 export default App;
+
 
 
 
