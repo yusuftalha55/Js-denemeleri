@@ -32,9 +32,9 @@ function App() {
 
   return <div>
     <div className="main">
-      {firstTenimage.map((images)=>{
+      {firstTenimage.map((images, index)=>{
         <h2 key={index}>
-          {images}
+          {images.image}
         </h2>
       })}
 
