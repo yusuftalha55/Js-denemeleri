@@ -35,7 +35,7 @@ function App() {
     <div>
       <div className="main">
         {firstTenimage.map((image, index) => (
-          <h2 key={index}>{image.image}</h2>
+          <img key={index} src={image.image} alt="" />
         ))}
       </div>
     </div>
@@ -43,6 +43,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
