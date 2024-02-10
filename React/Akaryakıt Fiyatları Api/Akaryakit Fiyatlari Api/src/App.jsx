@@ -36,6 +36,11 @@ function App() {
         {firstTenimage.map((image, index) => (
           <img key={index} className="image" src={image.image} alt="" />
         ))}
+        {firstTenimage.map((image, index) => (
+          <div key={index}>
+            <h2>{image.id}</h2>
+          </div>
+        ))}
       </div>
     </div>
   );
