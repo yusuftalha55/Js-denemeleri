@@ -10,5 +10,7 @@
   display: inline;
   height: 750px;
   margin: 5%;
+  border: 2px solid red;
+  border-radius: 25px;
 }
 
