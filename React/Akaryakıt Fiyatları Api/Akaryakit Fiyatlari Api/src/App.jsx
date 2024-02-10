@@ -34,16 +34,15 @@ function App() {
     <div>
       <div className="main">
         {firstTenimage.map((image, index) => (
-          <img key={index} className="image" src={image.image} alt="" />
-        ))}
-        {firstTenimage.map((image, index) => (
           <div key={index}>
+            <img className="image" src={image.image} alt="" />
             <h2>{image.id}</h2>
           </div>
         ))}
       </div>
     </div>
   );
+  
 }
 
 export default App;
