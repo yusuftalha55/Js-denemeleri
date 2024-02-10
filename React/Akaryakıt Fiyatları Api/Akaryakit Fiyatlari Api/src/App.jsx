@@ -36,7 +36,7 @@ function App() {
         {firstTenimage.map((image, index) => (
           <div key={index}>
             <img className="image" src={image.image} alt="" />
-            <h2>{image.id}</h2>
+            <h2 className="h2Id">Resmin Id'si: {image.id}</h2>
           </div>
         ))}
       </div>
