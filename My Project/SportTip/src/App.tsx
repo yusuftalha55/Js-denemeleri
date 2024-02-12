@@ -5,7 +5,7 @@ import DataPage from './data'
 function App() {
 
   return (
-    <div>
+    <div className='main'>
       <DataPage></DataPage>
     </div>
   )

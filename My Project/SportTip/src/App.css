@@ -1,8 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
   text-align: center;
+  background-color: antiquewhite;
+}
+
+.container {
+  background-color: rgb(215, 250, 238);
+  margin-left: 40%;
+  margin-top: 15%;
+  width: 350px;
+  height: 350px;
+  border-radius: 25px;
+  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
 }
 
 
