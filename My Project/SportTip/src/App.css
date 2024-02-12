@@ -1,4 +1,4 @@
-body{
+body {
   text-align: center;
   background-color: antiquewhite;
 }
@@ -13,4 +13,18 @@ body{
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
 }
 
+.save-button {
+  background-color: rgb(215, 250, 238);
+  border-radius: 15px;
+  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
+  color: #18c208;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin: 2%;
+  margin-left: 25%;
+}
 
+.save-button:hover {
+  color: #163c64;
+}
