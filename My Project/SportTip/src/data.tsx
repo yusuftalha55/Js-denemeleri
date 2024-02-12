@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css'
+import SavePage from "./save";
 
 interface DataItem {
   id: number;
@@ -39,6 +40,7 @@ const DataPage: React.FC = () => {
             <h2>{item.title}</h2>
             <p>{item.description}</p>
           </div>
+          <SavePage></SavePage>
         </div>
       ))}
     </div>
