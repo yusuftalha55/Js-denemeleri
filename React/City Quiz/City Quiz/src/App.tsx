@@ -2,6 +2,11 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [answer, setAnswer] = useState("");
+
+  function textAreaValue(e) {
+    setAnswer(e.target.value);
+  }
   return (
     <div>
       <div className="title">
@@ -14,7 +19,7 @@ function App() {
         </p>
       </div>
       <div className="inputArea">
-        <textarea />
+        <textarea value={answer} onChange={textAreaValue} />
       </div>
       <div className="submitButton">
         <button style={{ margin: 15 }}>Submit</button>
