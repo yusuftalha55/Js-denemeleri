@@ -3,12 +3,13 @@ import "./App.css";
 
 function App() {
   const [answer, setAnswer] = useState("");
+  const [result, setResult] = useState(null);
 
   function submitClick() {
     if (answer === "lima") {
-      return <h2>Answer is True</h2>;
+      setResult(<h2>Answer is True</h2>);
     } else if (answer !== "lima") {
-      return <h1>Answer is False</h1>;
+      setResult(<h1>Answer is False</h1>);
     }
   }
 
