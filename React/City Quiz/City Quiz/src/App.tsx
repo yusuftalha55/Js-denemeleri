@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent, ReactElement } from "react";
 import "./App.css";
 
-function App() {
-  const [answer, setAnswer] = useState("");
-  const [result, setResult] = useState(null);
+function App(): ReactElement {
+  const [answer, setAnswer] = useState<string>("");
+  const [result, setResult] = useState<ReactElement | null>(null);
 
-  function submitClick() {
+  function submitClick(): void {
     if (answer === "lima") {
       setResult(<h2>Answer is True</h2>);
     } else {
-      setResult(<h1>Answer is False</h1>);
+      setResult(<h2>Answer is False</h2>);
     }
   }
 
-  function textAreaValue(e) {
+  function textAreaValue(e: ChangeEvent<HTMLTextAreaElement>): void {
     setAnswer(e.target.value);
   }
 
@@ -42,3 +42,4 @@ function App() {
 }
 
 export default App;
+
