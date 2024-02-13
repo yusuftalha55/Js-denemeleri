@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   function submitClick() {
     if (answer === "lima") {
       setResult(<h2>Answer is True</h2>);
-    } else if (answer !== "lima") {
+    } else {
       setResult(<h1>Answer is False</h1>);
     }
   }
@@ -16,6 +16,7 @@ function App() {
   function textAreaValue(e) {
     setAnswer(e.target.value);
   }
+
   return (
     <div>
       <div className="title">
@@ -35,8 +36,10 @@ function App() {
           Submit
         </button>
       </div>
+      <div className="result">{result}</div>
     </div>
   );
 }
 
 export default App;
+
