@@ -11,11 +11,14 @@ function App(): ReactElement {
     } else {
       setResult(<h2>Answer is False</h2>);
     }
+    setAnswer("");
   }
 
   function textAreaValue(e: ChangeEvent<HTMLTextAreaElement>): void {
-    setAnswer(e.target.value);
+    const newValue = e.target.value.toLocaleLowerCase(); 
+    setAnswer(newValue); 
   }
+  
 
   return (
     <div>
