@@ -14,11 +14,7 @@ function App() {
         </p>
       </div>
       <div className="inputArea">
-        <textarea
-          value={answer}
-          onChange={handleTextareaChange}
-          disabled={status === "submitting"}
-        />
+        <textarea />
       </div>
       <div className="submitButton">
         <button style={{ margin: 15 }}>Submit</button>
