@@ -4,6 +4,14 @@ import "./App.css";
 function App() {
   const [answer, setAnswer] = useState("");
 
+  function submitClick() {
+    if (answer === "lima") {
+      return <h2>Answer is True</h2>;
+    } else if (answer !== "lima") {
+      return <h1>Answer is False</h1>;
+    }
+  }
+
   function textAreaValue(e) {
     setAnswer(e.target.value);
   }
@@ -22,7 +30,9 @@ function App() {
         <textarea value={answer} onChange={textAreaValue} />
       </div>
       <div className="submitButton">
-        <button style={{ margin: 15 }}>Submit</button>
+        <button onClick={submitClick} style={{ margin: 15 }}>
+          Submit
+        </button>
       </div>
     </div>
   );
