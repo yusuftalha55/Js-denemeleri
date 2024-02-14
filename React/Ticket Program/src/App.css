@@ -4,3 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+
+.pClass {
+  display: inline;
+  margin: 1%;
+}
+
+.input {
+  margin-top: 1%;
+}
