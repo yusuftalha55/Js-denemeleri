@@ -2,6 +2,17 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+
+  function firstNameChange(e) {
+    setFirstName(e.target.value);
+  }
+
+  function lastNameChange(e) {
+    setLastName(e.target.value);
+  }
+
   return (
     <div>
       <div className="title">
@@ -9,16 +20,16 @@ function App() {
       </div>
       <div className="inputArea">
         <div>
-          <p className="pClass">Fİrst Name:</p>
-          <input type="text" />
+          <p className="pClass">First Name:</p>
+          <input value={firstName} onChange={firstNameChange} type="text" />
         </div>
         <div>
           <p className="pClass">Last Name:</p>
-          <input className="input" type="text" />
+          <input value={lastName} onChange={lastNameChange} className="input" type="text" />
         </div>
       </div>
       <div className="resultArea">
-        <p>Your ticket will be issued to: {}</p>
+        <p>Your ticket will be issued to: {firstName} {lastName}</p>
       </div>
     </div>
   );
