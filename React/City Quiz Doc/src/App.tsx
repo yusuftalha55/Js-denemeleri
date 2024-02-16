@@ -42,6 +42,11 @@ export default function Form() {
         <button disabled={answer.length === 0 || status === "submitting"}>
           Submit
         </button>
+        {error !== null && 
+        <p className="Error">
+          {error.message}
+        </p>
+        }
       </form>
     </div>
   );
