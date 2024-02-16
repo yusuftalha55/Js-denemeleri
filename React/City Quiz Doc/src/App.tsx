@@ -38,6 +38,10 @@ export default function Form() {
           onChange={handleTextareaChange}
           disabled={status === "submitting"}
         />
+        <br />
+        <button disabled={answer.length === 0 || status === "submitting"}>
+          Submit
+        </button>
       </form>
     </div>
   );
