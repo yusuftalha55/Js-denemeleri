@@ -1,24 +1,19 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
-  
-
-  return (
+export default function Accordion() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  return(
     <div>
-      <div className='title'>
-        <h1>Almaty, Kazakhstan</h1>
-      </div>
-      <div className='mainContainer'>
-        <div className='about'>
-          <h1>About</h1>
-          <button>Show</button>
-        </div>
+      <h2>Almaty, Kazakhstan</h2>
+      <Panel
+        title="about"
+        isActive={activeIndex ===0}
+        onShow={()=> setActiveIndex(0)}
+      >
 
-      </div>
+      </Panel>
+
     </div>
-  
   )
 }
-
-export default App
