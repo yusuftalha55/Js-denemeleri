@@ -5,7 +5,7 @@ export default function ContactList(
   return (
     <section className="contact-list">
       <ul>
-        {contacts.map((contact) => (
+        {contacts.map((contact) => 
           <li key={contact.email}>
             <button
               onClick={() => {
@@ -14,7 +14,7 @@ export default function ContactList(
               {contact.name}
             </button>
           </li>
-        ))}
+        )}
       </ul>
     </section>
   );
