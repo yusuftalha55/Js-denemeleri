@@ -10,8 +10,7 @@ export default function ContactList(
             <button
               onClick={() => {
                 onSelect(contact);
-              }}
-            >
+              }}>
               {contact.name}
             </button>
           </li>
