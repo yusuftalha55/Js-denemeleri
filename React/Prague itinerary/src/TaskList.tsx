@@ -5,7 +5,17 @@ export default function TaskList({
   onChangeTask,
   onDleteTask
 }) {
-
-    return ()
-
+    return (
+        <ul>
+            {tasks.map(task =>(
+                <li key={task.id}>
+                    <task
+                      task = {task}
+                      onChange = {onChangeTask}
+                      onDelete = {onDeleteTask}
+                    />
+                </li>
+            ))}
+        </ul>
+    );
 }
