@@ -14,4 +14,24 @@ export default function TaskApp() {
             text: text,
         });
     }
+
+    function handleChangeTask(task) {
+        dispatch({
+            type: "changed",
+            task: task
+        });
+    }
+
+    function handleDeleteTask(taskId) {
+        dispatch({
+            type: "delted",
+            id: taskId
+        });
+    }
+
+    return(
+        <div>
+            
+        </div>
+    )
 }
