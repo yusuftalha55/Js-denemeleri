@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-export default function TaskList({ tasks, onChangeTask, onDleteTask }) {
+export default function TaskList({
+  tasks,
+  onChangeTask,
+  onDeleteTask
+}) {
   return (
     <ul>
-      {tasks.map((task) => (
+      {tasks.map(task => (
         <li key={task.id}>
-          <task task={task} onChange={onChangeTask} onDelete={onDeleteTask} />
+          <Task
+            task={task}
+            onChange={onChangeTask}
+            onDelete={onDeleteTask}
+          />
         </li>
       ))}
     </ul>
@@ -17,17 +25,46 @@ function Task({ task, onChange, onDelete }) {
   let taskContent;
   if (isEditing) {
     taskContent = (
-      <div>
+      <>
         <input
           value={task.text}
-          onChange={(e) => {
+          onChange={e => {
             onChange({
               ...task,
-              text: e.target.value,
+              text: e.target.value
             });
-          }}
-        />
-      </div>
+          }} />
+        <button onClick={() => setIsEditing(false)}>
+          Save
+        </button>
+      </>
+    );
+  } else {
+    taskContent = (
+      <>
+        {task.text}
+        <button onClick={() => setIsEditing(true)}>
+          Edit
+        </button>
+      </>
     );
   }
+  return (
+    <label>
+      <input
+        type="checkbox"
+        checked={task.done}
+        onChange={e => {
+          onChange({
+            ...task,
+            done: e.target.checked
+          });
+        }}
+      />
+      {taskContent}
+      <button onClick={() => onDelete(task.id)}>
+        Delete
+      </button>
+    </label>
+  );
 }
