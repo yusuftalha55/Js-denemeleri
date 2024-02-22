@@ -22,5 +22,7 @@ export default function Heading({ children }) {
 
     case 6:
       return <h1>{children}</h1>;
+    default:
+        throw Error ("Unkown level: " + level);  
   }
 }
