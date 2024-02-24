@@ -13,3 +13,7 @@ export default function TaskList() {
         </ul>
     );
 }
+
+function Task ({ task }) {
+    
+}
