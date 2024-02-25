@@ -61,8 +61,16 @@ function Task ({ task }) {
                     }
                 });
                }}
-               />
+            />
+            {task.Content}
+            <button onClick={()=> {
+                dispatch({
+                    type: "deleted",
+                    id: task.id
+                  });
+            }}>
+                Delete
+            </button>
         </label>
-    )
-    
+    );    
 }
