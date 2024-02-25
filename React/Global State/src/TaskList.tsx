@@ -32,6 +32,9 @@ function Task ({ task }) {
                         }
                     });
                    }}/>
+                <button onClick={()=> setIsEditing(false)}>
+                    Save
+                </button>   
             </div>
         )
 
