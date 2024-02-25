@@ -50,7 +50,14 @@ function Task ({ task }) {
     return (
         <label>
             <input
-               type=""
+               type="checkbox"
+               checked={task.done}
+               onChange={e => {
+                dispatch({
+                    type: "changed",
+                    task:
+                })
+               }}
                />
         </label>
     )
