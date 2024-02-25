@@ -55,8 +55,11 @@ function Task ({ task }) {
                onChange={e => {
                 dispatch({
                     type: "changed",
-                    task:
-                })
+                    task: {
+                        ...task,
+                        done: e.target.checked
+                    }
+                });
                }}
                />
         </label>
