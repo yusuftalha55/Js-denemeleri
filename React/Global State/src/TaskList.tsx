@@ -18,5 +18,23 @@ function Task ({ task }) {
     const [isEditing, setIsEditing] = useState(false);
     const dispatch = useTasksDispatch();
     let taskContent;
+    if (isEditing) {
+        taskContent = (
+            <div>
+                <input 
+                   value={task.text}
+                   onChange={e => {
+                    dispatch({
+                        type: "changed",
+                        task: {
+                            ...task,
+                            text: e.target.value
+                        }
+                    });
+                   }}/>
+            </div>
+        )
+
+    }
     
 }
