@@ -47,5 +47,12 @@ function Task ({ task }) {
             </div>
         );
     }
+    return (
+        <label>
+            <input
+               type=""
+               />
+        </label>
+    )
     
 }
