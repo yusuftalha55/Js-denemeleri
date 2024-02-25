@@ -36,8 +36,16 @@ function Task ({ task }) {
                     Save
                 </button>   
             </div>
-        )
-
+        );
+    } else {
+        taskContent = (
+            <div>
+                {task.text}
+                <button onClick={()=> setIsEditing(true)}>
+                    Edit
+                </button>
+            </div>
+        );
     }
     
 }
