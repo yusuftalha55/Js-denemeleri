@@ -8,4 +8,10 @@ export default function TasksProvider({ children }) {
         tasksReducer,
         initialTasks
     );
+
+    return (
+        <TasksContext.Provider value={tasks}>
+            {children}
+        </TasksContext.Provider>
+    )
 }
