@@ -11,7 +11,9 @@ export default function TasksProvider({ children }) {
 
     return (
         <TasksContext.Provider value={tasks}>
-            {children}
+            <TasksDispatchContext.Provider value={dispatch}>
+               {children} 
+            </TasksDispatchContext.Provider>
         </TasksContext.Provider>
-    )
+    );
 }
