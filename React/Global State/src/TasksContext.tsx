@@ -17,3 +17,12 @@ export default function TasksProvider({ children }) {
         </TasksContext.Provider>
     );
 }
+
+export function useTasks() {
+    return useContext(TasksContext);
+}
+
+export function useTasksDispatch() {
+    return useContext(TasksDispatchContext);
+}
+
