@@ -31,20 +31,20 @@ const data: DataItem[] = [
   { id: 20, title: "Uyku Düzeni", description: "Stres yönetimi tekniklerini uygulayarak uyku kalitesini artırın. Stres, uyku kalitesini olumsuz etkiler, bu nedenle yoga, meditasyon veya masaj gibi stres azaltıcı aktiviteleri deneyin." },
 ];
 
-type DataPageProps = {
-  title: string;
-  description: string;
-}
-
-function DataPage(props: DataPageProps) {
-  const { title, description } = props;
-
+const DataPage: React.FC = () => {
   return (
     <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+      {data.map((item) => (
+        <div key={item.id}>
+          <div className="container">
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+          </div>
+          <SavePage></SavePage>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
 export default DataPage;
