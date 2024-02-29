@@ -1,4 +1,5 @@
 import React from "react";
+import { useDarkMode } from './DarkModeContext';
 import './App.css'
 import SavePage from "./save";
 
@@ -31,9 +32,13 @@ const data: DataItem[] = [
   { id: 20, title: "Uyku Düzeni", description: "Stres yönetimi tekniklerini uygulayarak uyku kalitesini artırın. Stres, uyku kalitesini olumsuz etkiler, bu nedenle yoga, meditasyon veya masaj gibi stres azaltıcı aktiviteleri deneyin." },
 ];
 
+
+
 const DataPage: React.FC = () => {
+  const { darkMode } = useDarkMode();
+
   return (
-    <div>
+    <div className={darkMode ? 'data-page dark-mode' : 'data-page'}>
       {data.map((item) => (
         <div key={item.id}>
           <div className="container">
@@ -48,3 +53,5 @@ const DataPage: React.FC = () => {
 };
 
 export default DataPage;
+
+
