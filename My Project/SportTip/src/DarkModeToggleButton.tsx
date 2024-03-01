@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 const ToggleButton: React.FC = () => {
   const [backGroundColor, setBackGroundColor] = useState("#faebd7");
-  const [ChangeButtonName, setChangeButtonName] = useState("Karanlıık Mod");
+  const [ChangeButtonName, setChangeButtonName] = useState("Aydınlık Mod");
 
-  function ChangeBackgroundFunction () {
-    setChangeButtonName("Aydınlık Mod");
-    setBackGroundColor("#a9a9a9");
+  function ChangeBackgroundFunction() {
+    setChangeButtonName(ChangeButtonName === "Karanlık Mod" ? "Aydınlık Mod" : "Karanlık Mod");
+    setBackGroundColor(backGroundColor === "#faebd7" ? "#a9a9a9" : "#faebd7");
   }
 
   return (
