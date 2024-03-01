@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
 import DataPage from './data';
-import DarkModeToggleButton from './DarkModeToggleButton'; 
+import ToggleButton from './DarkModeToggleButton';
 
 function App() {
   return (
-    <DarkModeProvider>
+    
       <div className='main'>
-        <DataPage />
-        <DarkModeToggleButton />
+        <DataPage/>
+        <ToggleButton/>
       </div>
-    </DarkModeProvider>
+    
   );
 }
 

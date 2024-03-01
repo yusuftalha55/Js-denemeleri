@@ -1,5 +1,4 @@
 import React from "react";
-import { useDarkMode } from './DarkModeContext';
 import './App.css'
 import SavePage from "./save";
 
@@ -35,10 +34,10 @@ const data: DataItem[] = [
 
 
 const DataPage: React.FC = () => {
-  const { darkMode } = useDarkMode();
+ 
 
   return (
-    <div className={darkMode ? 'data-page dark-mode' : 'data-page'}>
+    <div>
       {data.map((item) => (
         <div key={item.id}>
           <div className="container">
