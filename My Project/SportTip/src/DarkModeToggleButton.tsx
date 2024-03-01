@@ -6,12 +6,12 @@ const ToggleButton: React.FC = () => {
 
   function ChangeBackgroundFunction() {
     setChangeButtonName(ChangeButtonName === "Karanlık Mod" ? "Aydınlık Mod" : "Karanlık Mod");
-    setBackGroundColor(backGroundColor === "#faebd7" ? "#a9a9a9" : "#faebd7");
+    setBackGroundColor(backGroundColor === "#faebd7" ? "#212121" : "#faebd7");
   }
 
   return (
     <div>
-      <button onClick={ChangeBackgroundFunction} style={{ backgroundColor: backGroundColor }}>
+      <button onClick={ChangeBackgroundFunction} style={{ backgroundColor: backGroundColor, color: 'blue' }}>
         {ChangeButtonName}
       </button>
     </div>
