@@ -5,9 +5,13 @@ export default function ToggleButton = () {
   const [backGroundColor, setBackGroundColor] = useContext("#a9a9a9");
   const [ChangeButtonName, setChangeButtonName] = ("Karanlıık Mod")
 
+  function ChangeBackgroundFunction () {
+    setChangeButtonName("Aydınlık Mod");
+  }
+
   return (
     <div>
-      <button>
+      <button onClick={ChangeBackgroundFunction}>
         {ChangeButtonName}
       </button>
     </div>
