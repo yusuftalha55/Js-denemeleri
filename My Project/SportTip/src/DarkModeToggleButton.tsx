@@ -13,7 +13,8 @@ const ToggleButton: React.FC = () => {
 
   return (
     <div>
-      <button onClick={ChangeBackgroundFunction} style={{ backgroundColor: backGroundColor, color: textColor, height:50 }}>
+      <button onClick={ChangeBackgroundFunction} 
+              style={{ backgroundColor: backGroundColor, color: textColor, height:50, borderRadius:15, boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)"}}>
         {ChangeButtonName}
       </button>
     </div>
