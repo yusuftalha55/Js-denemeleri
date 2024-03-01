@@ -7,6 +7,7 @@ export default function ToggleButton = () {
 
   function ChangeBackgroundFunction () {
     setChangeButtonName("Aydınlık Mod");
+    setBackGroundColor("#faebd7");
   }
 
   return (
