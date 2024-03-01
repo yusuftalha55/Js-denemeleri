@@ -1,10 +1,7 @@
-// App.tsx
-
 import React from 'react';
 import './App.css';
 import DataPage from './data';
-import { DarkModeProvider } from './DarkModeContext';
-import DarkModeToggleButton from './DarkModeToggleButton'; // Koyu modu açıp kapatan düğmeyi içe aktarın
+import DarkModeToggleButton from './DarkModeToggleButton'; 
 
 function App() {
   return (
