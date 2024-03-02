@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, createContext, useContext } from 'react';
+
+const  backGroundContext = createContext<string>("#faebd7");
+
+// export default backGroundContext;
 
 const ToggleButton: React.FC = () => {
   const [backGroundColor, setBackGroundColor] = useState("#faebd7");
@@ -7,7 +11,7 @@ const ToggleButton: React.FC = () => {
 
   function ChangeBackgroundFunction() {
     setChangeButtonName(ChangeButtonName === "Karanlık Mod" ? "Aydınlık Mod" : "Karanlık Mod");
-    setBackGroundColor(backGroundColor === "#faebd7" ? "#212121" : "#faebd7");
+    setBackGroundColor(backGroundColor === "#faebd7" ? "#404040" : "#faebd7");
     setTextColor(textColor === "black" ? "white" : "black" );
   }
 
@@ -22,3 +26,7 @@ const ToggleButton: React.FC = () => {
 }
 
 export default ToggleButton;
+
+
+
+
