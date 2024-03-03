@@ -14,7 +14,9 @@ const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      {children}
+      <div className={`app ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 };
@@ -34,29 +36,29 @@ const ToggleButton = () => {
 const App = () => {
   return (
     <ThemeProvider>
-      <div className={`app`}>
-        <header>
-          <h1>Dark Mode / Light Mode Toggle</h1>
-          <ToggleButton />
-        </header>
-        <main>
-          <p>This is a simple website with dark mode and light mode toggle.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis, justo sit amet pulvinar
-            vehicula, enim quam sollicitudin lectus, ac cursus nisi mi et nunc.
-          </p>
-          <p>
-            Vestibulum efficitur eros sit amet ipsum malesuada, et vehicula leo convallis. Pellentesque scelerisque
-            scelerisque consectetur. Integer hendrerit justo at ipsum tincidunt, sed tempor odio fermentum.
-          </p>
-        </main>
-        <footer>
-          <p>&copy; 2024 Simple Website</p>
-        </footer>
-      </div>
+      <header>
+        <h1>Dark Mode / Light Mode Toggle</h1>
+        <ToggleButton />
+      </header>
+      <main>
+        <p>This is a simple website with dark mode and light mode toggle.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis, justo sit amet pulvinar
+          vehicula, enim quam sollicitudin lectus, ac cursus nisi mi et nunc.
+        </p>
+        <p>
+          Vestibulum efficitur eros sit amet ipsum malesuada, et vehicula leo convallis. Pellentesque scelerisque
+          scelerisque consectetur. Integer hendrerit justo at ipsum tincidunt, sed tempor odio fermentum.
+        </p>
+      </main>
+      <footer>
+        <p>&copy; 2024 Simple Website</p>
+      </footer>
     </ThemeProvider>
   );
 }
 
 export default App;
+
+
 
