@@ -1,14 +1,11 @@
-import React from 'react';
-import { useTheme } from './ThemeContext';
+import React, { Children, createContext, useContext, useState} from 'react';
+import './App.css'
 
-const ToggleButton = () => {
-  const { darkMode, toggleTheme, backgroundColor } = useTheme();
+const ThemeContext = createContext();
 
-  return (
-    <button onClick={toggleTheme} style={{ backgroundColor: backgroundColor }}>
-      {darkMode ? 'Aydınlık Mod' : 'Karanlık Mod'}
-    </button>
-  );
-};
+const ThemeProvider = ({ children }) => {
+  const [darkMode, setDarkMode] = useState(false);
 
-export default ToggleButton;
+  const 
+}
+
