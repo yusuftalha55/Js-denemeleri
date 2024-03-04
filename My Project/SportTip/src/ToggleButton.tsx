@@ -6,6 +6,12 @@ const ThemeContext = createContext();
 const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
 
-  const 
+  const toggleDarkMode = () => {
+    setDarkMode(prevMode => !prevMode);
+  };
+
+  return (
+    
+  )
 }
 
