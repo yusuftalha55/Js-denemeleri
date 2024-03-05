@@ -8,23 +8,19 @@ export const useGlobalContext = () => useContext(GlobalContext);
 
 // GlobalStateProvider bileşeni, tüm uygulamaya global state sağlar
 export const GlobalStateProvider = ({ children }) => {
-  const [backGroundColor, setBackGroundColor] = useState("#faebd7");
+  const [backgroundColor, setBackgroundColor] = useState("#faebd7");
 
-  const increment = () => {
-    setBackGroundColor("#404040");
-  };
-
-  const decrement = () => {
-    setCount(count - 1);
+  const changeBackgroundColor = (color) => {
+    setBackgroundColor(color);
   };
 
   // Değerlerin sağlanması
   const value = {
-    count,
-    increment,
-    decrement
+    backgroundColor,
+    changeBackgroundColor
   };
 
   // Global context sağlanıyor
   return <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>;
 };
+
