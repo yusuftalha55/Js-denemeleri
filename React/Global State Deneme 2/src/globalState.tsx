@@ -8,7 +8,7 @@ export const useGlobalContext = () => useContext(GlobalContext);
 
 // GlobalStateProvider bileşeni, tüm uygulamaya global state sağlar
 export const GlobalStateProvider = ({ children }) => {
-  const [count, setCount] = useState(0);
+  const [backGroundColor, setBackGroundColor] = useState("");
 
   const increment = () => {
     setCount(count + 1);
