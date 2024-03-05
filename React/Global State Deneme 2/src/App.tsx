@@ -6,19 +6,19 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [backGroundColor, setBackGorundColor] = useState("#faebd7");
+  const [backGroundColor, setBackGroundColor] = useState("#faebd7");
 
   function changeButton() {
-    if(backGroundColor==="faebd7") {
-      setBackGorundColor("")
+    if (backGroundColor === "#faebd7") {
+      setBackGroundColor("#404040");
+    } else {
+      setBackGroundColor("#faebd7");
     }
   }
 
   return (
-    <ChangeBackGroundColor.Provider
-      value={{ backGroundColor, setBackGorundColor }}
-    >
-      <div style={{backgroundColor:backGroundColor}}>
+    <ChangeBackGroundColor.Provider value={{ backGroundColor, setBackGroundColor }}>
+      <div style={{ backgroundColor: backGroundColor }}>
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -40,7 +40,7 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
         <div>
-          <button onClick={changeButton}>Karanlık mod aç / kapa</button>
+          <button onClick={changeButton}>Toggle Dark Mode</button>
         </div>
       </div>
     </ChangeBackGroundColor.Provider>
@@ -48,3 +48,4 @@ function App() {
 }
 
 export default App;
+
