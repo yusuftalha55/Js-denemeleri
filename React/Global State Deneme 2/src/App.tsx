@@ -9,7 +9,9 @@ function App() {
   const [backGroundColor, setBackGorundColor] = useState("#faebd7");
 
   function changeButton() {
-    setBackGorundColor("#404040");
+    if(backGroundColor==="faebd7") {
+      setBackGorundColor("")
+    }
   }
 
   return (
