@@ -1,6 +1,13 @@
-import React,{ useState, createContext, useContext } from "react";
+import React, { useState, createContext, useContext } from "react";
 import './App.css'
 import SavePage from "./save";
+import ThemeProvider from "./ThemeProvider"; // ThemeProvider bileşeninin import edildiğinden emin olun
+
+interface DataItem {
+  id: number;
+  title: string;
+  description: string;
+}
 
 interface DataItem {
   id: number;
@@ -34,8 +41,6 @@ const data: DataItem[] = [
 
 
 const DataPage: React.FC = () => {
- 
-
   return (
     <div>
       {data.map((item) => (

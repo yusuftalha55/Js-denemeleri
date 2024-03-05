@@ -1,7 +1,6 @@
-import React, { Children, createContext, useContext, useState} from 'react';
-import './App.css'
+import React, { createContext, useState } from 'react';
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext(); // ThemeContext'i export ettiğinizden emin olun
 
 const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,13 +18,5 @@ const ThemeProvider = ({ children }) => {
   );
 };
 
-const ToggleButton = () => {
-  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
-
-  return (
-    <button onClick={toggleDarkMode}>
-      {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-    </button>
-  );
-};
+export default ThemeProvider;
 
