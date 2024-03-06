@@ -4,6 +4,7 @@ import { Routes, Route, Link, NavLink } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Deneme from "./denemeSayfası";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,10 +19,17 @@ function App() {
   }
 
   return (
-    <ChangeBackGroundColor.Provider value={{ backGroundColor, setBackGroundColor }}>
+    <ChangeBackGroundColor.Provider
+      value={{ backGroundColor, setBackGroundColor }}
+    >
       <div style={{ backgroundColor: backGroundColor }}>
         <div className="Navbar">
-
+          <nav>
+            <NavLink to={"/denemeSayfası"}>Deneme</NavLink>
+          </nav>
+          <Routes>
+            <Route path="/denemeSayfası" element={<Deneme />} />
+          </Routes>
         </div>
         <div>
           <a href="https://vitejs.dev" target="_blank">
@@ -52,4 +60,3 @@ function App() {
 }
 
 export default App;
-
