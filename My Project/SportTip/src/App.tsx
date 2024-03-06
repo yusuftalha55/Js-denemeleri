@@ -1,17 +1,30 @@
 // App.tsx
-import React from 'react';
+import { useState } from "react";
 import './App.css';
 import DataPage from './data';
-import ThemeProvider from './ToggleButton'; // ThemeProvider'ı doğru şekilde import edin
+import { ChangeBackGroundColor } from './DarkModeToggleButton';
 
 function App() {
+  const [backGroundColor, setBackGroundColor] = useState("#faebd7");
+
+  function changeButton() {
+    if (backGroundColor === "#faebd7") {
+      setBackGroundColor("#404040");
+    } else {
+      setBackGroundColor("#faebd7");
+    }
+  }
   return (
-    <ThemeProvider> {/* ThemeProvider'ı burada kullanın */}
-      <div className='main'>
+    <ChangeBackGroundColor.Provider
+      value={{ backGroundColor, setBackGroundColor }}
+    >
+      <div className='main' style={{ backgroundColor: backGroundColor }}>
         <DataPage/>
-        {/* <ToggleDarkModeButton/> */}
+        <div>
+          <button onClick={changeButton}>Toggle Dark Mode</button>
+        </div>
       </div>
-    </ThemeProvider>
+      </ChangeBackGroundColor.Provider>
   );
 }
 

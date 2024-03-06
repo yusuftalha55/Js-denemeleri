@@ -1,7 +1,7 @@
 import React, { useState, createContext, useContext } from "react";
 import './App.css'
 import SavePage from "./save";
-import ThemeProvider from "./ThemeProvider"; // ThemeProvider bileşeninin import edildiğinden emin olun
+
 
 interface DataItem {
   id: number;
@@ -41,17 +41,19 @@ const data: DataItem[] = [
 
 
 const DataPage: React.FC = () => {
+  // Sadece ilk öğeyi almak için data[0]'ı kullanın
+  const firstItem = data[0];
+
   return (
     <div>
-      {data.map((item) => (
-        <div key={item.id}>
-          <div className="container">
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-          </div>
-          <SavePage></SavePage>
+      {/* Sadece ilk öğeyi görüntüle */}
+      <div key={firstItem.id}>
+        <div className="container">
+          <h2>{firstItem.title}</h2>
+          <p>{firstItem.description}</p>
         </div>
-      ))}
+        <SavePage></SavePage>
+      </div>
     </div>
   );
 };
