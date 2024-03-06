@@ -20,6 +20,9 @@ function App() {
   return (
     <ChangeBackGroundColor.Provider value={{ backGroundColor, setBackGroundColor }}>
       <div style={{ backgroundColor: backGroundColor }}>
+        <div className="Navbar">
+
+        </div>
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
