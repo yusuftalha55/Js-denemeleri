@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChangeBackGroundColor } from "./globalState";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
