@@ -6,13 +6,13 @@ import { ChangeBackGroundColor } from './DarkModeToggleButton';
 
 function App() {
   const [backGroundColor, setBackGroundColor] = useState("#faebd7");
+  const [ChangeButtonName, setChangeButtonName] = useState("Aydınlık Mod");
+  const [textColor ,setTextColor] = useState("black");
 
   function changeButton() {
-    if (backGroundColor === "#faebd7") {
-      setBackGroundColor("#404040");
-    } else {
-      setBackGroundColor("#faebd7");
-    }
+    setChangeButtonName(ChangeButtonName === "Karanlık Mod" ? "Aydınlık Mod" : "Karanlık Mod");
+    setBackGroundColor(backGroundColor === "#faebd7" ? "#404040" : "#faebd7");
+    setTextColor(textColor === "black" ? "white" : "black" );
   }
   return (
     <ChangeBackGroundColor.Provider
@@ -21,7 +21,7 @@ function App() {
       <div className='main' style={{ backgroundColor: backGroundColor }}>
         <DataPage/>
         <div>
-          <button onClick={changeButton}>Toggle Dark Mode</button>
+          <button onClick={changeButton}  style={{ backgroundColor: backGroundColor, color: textColor, height:50, borderRadius:15, boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)", fontSize:15, fontWeight:"bold" }}>Toggle Dark Mode</button>
         </div>
       </div>
       </ChangeBackGroundColor.Provider>
