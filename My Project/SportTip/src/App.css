@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: antiquewhite;
+  background-color: var(--background-color); /* CSS değişkeni kullanılıyor */
 }
 
 .container {
