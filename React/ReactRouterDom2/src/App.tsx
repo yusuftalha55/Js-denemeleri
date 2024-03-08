@@ -7,9 +7,9 @@ function App() {
   return (
     <div>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
       </nav>
 
       <Routes>
