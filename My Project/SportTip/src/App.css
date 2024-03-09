@@ -41,5 +41,11 @@ body {
   color: #fff; /* Karanlık mod metin rengi */
 }
 
+.navbar {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 
