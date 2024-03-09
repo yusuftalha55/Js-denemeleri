@@ -22,7 +22,10 @@ body {
   font-weight: bold;
   transition: color 0.3s ease;
   margin: 2%;
-  margin-left: 25%;
+  margin-left: 35%;
+  width: 85px;
+  height: 30px;
+  font-size: medium;
 }
 
 .save-button:hover {
