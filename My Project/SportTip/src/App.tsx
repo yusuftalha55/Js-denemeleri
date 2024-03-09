@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import DataPage from "./data";
-import { ChangeBackGroundColor } from "./DarkModeToggleButton";
+import {
+  ChangeBackGroundColor,
+  DarkModeToggleButton,
+} from "./DarkModeToggleButton";
 import Root from "./pages/Root";
 
 function App() {
@@ -29,10 +32,10 @@ function App() {
         <nav>
           <NavLink to="/root">Kaydedilen Öneriler</NavLink>
         </nav>
-
         <Routes>
           <Route path="/root" element={<Root />} />
         </Routes>
+        <DarkModeToggleButton />
       </div>
       <div className="main" style={{ backgroundColor: backGroundColor }}>
         <DataPage />
