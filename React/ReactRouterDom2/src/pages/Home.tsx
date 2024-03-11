@@ -19,7 +19,18 @@ export default function Home() {
         <h1>Home Page</h1>
       </div>
       <div className="active">
-        <button onClick={changeButton}>Change Background Color</button>
+        <button
+          onClick={changeButton}
+          style={{
+            height: 50,
+            borderRadius: 15,
+            boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
+            fontSize: 15,
+            fontWeight: "bold",
+          }}
+        >
+          Change Background Color
+        </button>
       </div>
     </div>
   );
