@@ -11,7 +11,7 @@ export default function Home() {
              <h1>Home Page</h1>
            </div>
            <div className="active">
-            <button>Change Background Color</button>
+            <button onClick={change}>Change Background Color</button>
            </div>
         </div>
     )
