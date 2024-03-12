@@ -1,6 +1,17 @@
+import React, { useContext } from "react";
+import { ChangeBackGroundColor } from "../DarkModeToggleButton";
+
 export default function Root() {
+  const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
+  function changeButton() {
+    if (BackGroundColor === "#faebd7") {
+      setBackGroundColor("#404040");
+    } else {
+      setBackGroundColor("#faebd7");
+    }
+  }
   return (
-    <div>
+    <div style={{ backgroundColor: BackGroundColor }}>
       <div id="sidebar">
         <h1>React Router Contacts</h1>
         <div>
@@ -31,6 +42,20 @@ export default function Root() {
         </nav>
       </div>
       <div id="detail"></div>
+      <div className="active">
+        <button
+          onClick={changeButton}
+          style={{
+            height: 50,
+            borderRadius: 15,
+            boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
+            fontSize: 15,
+            fontWeight: "bold",
+          }}
+        >
+          Change Background Color
+        </button>
+      </div>
     </div>
   );
 }
