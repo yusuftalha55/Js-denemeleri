@@ -139,19 +139,17 @@ const data: DataItem[] = [
 ];
 
 const DataPage: React.FC = () => {
-  // Sadece ilk öğeyi almak için data[0]'ı kullanın
   const firstItem = data[0];
   const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
+
   function changeButton() {
-    if (BackGroundColor === "#faebd7") {
-      setBackGroundColor("#404040");
-    } else {
-      setBackGroundColor("#faebd7");
-    }
+    const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
+    document.body.style.backgroundColor = newColor; 
+    setBackGroundColor(newColor); 
   }
+
   return (
     <div style={{ backgroundColor: BackGroundColor }}>
-      {/* Sadece ilk öğeyi görüntüle */}
       <div key={firstItem.id}>
         <div className="container">
           <h2>{firstItem.title}</h2>
