@@ -1,6 +1,7 @@
 body {
   text-align: center;
-  background-color: var(--background-color); /* CSS değişkeni kullanılıyor */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -32,16 +33,16 @@ body {
   color: #163c64;
 }
 
-/* Light mode için stil kuralları */
+
 .light-mode {
-  background-color: #faebd7; /* Aydınlık mod arka plan rengi */
-  color: #000; /* Aydınlık mod metin rengi */
+  background-color: #faebd7; 
+  color: #000; 
 }
 
-/* Dark mode için stil kuralları */
+
 .dark-mode {
-  background-color: #404040; /* Karanlık mod arka plan rengi */
-  color: #fff; /* Karanlık mod metin rengi */
+  background-color: #404040; 
+  color: #fff; 
 }
 
 .navbar {
