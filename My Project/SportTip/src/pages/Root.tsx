@@ -4,11 +4,9 @@ import { ChangeBackGroundColor } from "../DarkModeToggleButton";
 export default function Root() {
   const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
   function changeButton() {
-    if (BackGroundColor === "#faebd7") {
-      setBackGroundColor("#404040");
-    } else {
-      setBackGroundColor("#faebd7");
-    }
+    const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
+    document.body.style.backgroundColor = newColor; 
+    setBackGroundColor(newColor); 
   }
   return (
     <div style={{ backgroundColor: BackGroundColor }}>
