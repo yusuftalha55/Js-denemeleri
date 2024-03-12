@@ -34,7 +34,7 @@ body {
 }
 
 
-.light-mode {
+/* .light-mode {
   background-color: #faebd7; 
   color: #000; 
 }
@@ -43,7 +43,7 @@ body {
 .dark-mode {
   background-color: #404040; 
   color: #fff; 
-}
+} */
 
 .navbar {
   font-weight: bold;
