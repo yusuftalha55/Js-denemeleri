@@ -167,9 +167,7 @@ const DataPage: React.FC = () => {
       </div>
       <div className="active">
         <button
-          onClick={() => {
-            getRandomData(); // Her tıklamada yeni veri seç
-          }}
+          onClick={getRandomData}
           style={{
             height: 50,
             borderRadius: 15,
