@@ -139,25 +139,47 @@ const data: DataItem[] = [
 ];
 
 const DataPage: React.FC = () => {
-  const firstItem = data[0];
-  const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
+  const [currentData, setCurrentData] = useState<DataItem>(data[0]);
+  const { BackGroundColor, setBackGroundColor } = useContext(
+    ChangeBackGroundColor
+  );
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
-    document.body.style.backgroundColor = newColor; 
-    setBackGroundColor(newColor); 
+    document.body.style.backgroundColor = newColor;
+    setBackGroundColor(newColor);
+  }
+
+  // Rastgele bir veriyi seçen işlev
+  function getRandomData() {
+    const randomIndex = Math.floor(Math.random() * data.length);
+    setCurrentData(data[randomIndex]);
   }
 
   return (
     <div style={{ backgroundColor: BackGroundColor }}>
-      <div key={firstItem.id}>
+      <div key={currentData.id}>
         <div className="container">
-          <h2>{firstItem.title}</h2>
-          <p>{firstItem.description}</p>
+          <h2>{currentData.title}</h2>
+          <p>{currentData.description}</p>
         </div>
-        <SavePage></SavePage>
+        <SavePage />
       </div>
       <div className="active">
+        <button
+          onClick={() => {
+            getRandomData(); // Her tıklamada yeni veri seç
+          }}
+          style={{
+            height: 50,
+            borderRadius: 15,
+            boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
+            fontSize: 15,
+            fontWeight: "bold",
+          }}
+        >
+          Random Öneri
+        </button>
         <button
           onClick={changeButton}
           style={{
