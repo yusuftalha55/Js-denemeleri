@@ -51,12 +51,14 @@ body {
   font-weight: bold;
   margin-top: 15%;
   color: rgb(76, 150, 7);
+  text-decoration: none;
 }
 
 .navlinkContact {
   font-weight: bold;
   margin-top: 15%;
   color: rgb(76, 150, 7);
+  text-decoration: none;
 }
 
 .contactPage {
