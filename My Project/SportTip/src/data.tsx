@@ -150,7 +150,6 @@ const DataPage: React.FC = () => {
     setBackGroundColor(newColor);
   }
 
-  // Rastgele bir veriyi seçen işlev
   function getRandomData() {
     const randomIndex = Math.floor(Math.random() * data.length);
     setCurrentData(data[randomIndex]);
