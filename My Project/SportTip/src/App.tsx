@@ -12,8 +12,8 @@ function App() {
   return (
     <ChangeBackGroundColor.Provider value={{ BackGroundColor, setBackGroundColor }}>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink className="navlinkHome" to="/">Home</NavLink>
+        <NavLink className="navlinkContact" to="/contact">Contact</NavLink>
       </nav>
 
       <Routes>

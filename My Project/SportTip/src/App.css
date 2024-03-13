@@ -46,10 +46,15 @@ body {
   color: #fff; 
 } */
 
-.navbar {
+.navlinkHome {
+  margin-right: 20%;
   font-weight: bold;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15%;
+}
+
+.navlinkContact{
+  font-weight: bold;
+  margin-top: 15%;
 }
 
 
