@@ -9,7 +9,7 @@ export default function Root() {
     setBackGroundColor(newColor); 
   }
   return (
-    <div style={{ backgroundColor: BackGroundColor }}>
+    <div className="contactPage" style={{ backgroundColor: BackGroundColor }}>
       <div id="sidebar">
         <h1>React Router Contacts</h1>
         <div>

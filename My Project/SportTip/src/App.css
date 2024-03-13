@@ -47,15 +47,18 @@ body {
 } */
 
 .navlinkHome {
-  margin-right: 20%;
+  margin-right: 15%;
   font-weight: bold;
   margin-top: 15%;
 }
 
-.navlinkContact{
+.navlinkContact {
   font-weight: bold;
   margin-top: 15%;
 }
 
+.contactPage {
+  margin-top: 15%;
+}
 
 
