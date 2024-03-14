@@ -2,44 +2,30 @@ import React, { useContext } from "react";
 import { ChangeBackGroundColor } from "../DarkModeToggleButton";
 
 export default function Root() {
-  const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
+  // const [currentData, setCurrentData] = useState<DataItem>(data[0]);
+  const { BackGroundColor, setBackGroundColor } = useContext(
+    ChangeBackGroundColor
+  );
+
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
-    document.body.style.backgroundColor = newColor; 
-    setBackGroundColor(newColor); 
+    document.body.style.backgroundColor = newColor;
+    setBackGroundColor(newColor);
   }
+
+  // function getRandomData() {
+  //   const randomIndex = Math.floor(Math.random() * data.length);
+  //   setCurrentData(data[randomIndex]);
+  // }
+
   return (
-    <div className="contactPage" style={{ backgroundColor: BackGroundColor }}>
-      <div id="sidebar">
-        <h1>React Router Contacts</h1>
-        <div>
-          <form id="search-form" role="search">
-            <input
-              id="q"
-              aria-label="Search contacts"
-              placeholder="Search"
-              type="search"
-              name="q"
-            />
-            <div id="search-spinner" aria-hidden hidden={true} />
-            <div className="sr-only" aria-live="polite"></div>
-          </form>
-          <form method="post">
-            <button type="submit">New</button>
-          </form>
+    <div style={{ backgroundColor: BackGroundColor }}>
+      {/* <div key={currentData.id}>
+        <div className="container">
+          <h2>{currentData.title}</h2>
+          <p>{currentData.description}</p>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href={`/contacts/1`}>Your Name</a>
-            </li>
-            <li>
-              <a href={`/contacts/2`}>Your Friend</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div id="detail"></div>
+      </div> */}
       <div className="active">
         <button
           onClick={changeButton}
@@ -49,6 +35,7 @@ export default function Root() {
             boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
             fontSize: 15,
             fontWeight: "bold",
+            marginLeft:15,
           }}
         >
           Change Background Color
