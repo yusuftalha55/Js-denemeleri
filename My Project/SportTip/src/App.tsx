@@ -12,13 +12,13 @@ function App() {
   return (
     <ChangeBackGroundColor.Provider value={{ BackGroundColor, setBackGroundColor }}>
       <nav>
-        <NavLink className="navlinkHome" to="/">Home</NavLink>
-        <NavLink className="navlinkContact" to="/contact">Contact</NavLink>
+        <NavLink className="navlinkHome" to="/">Ana Sayfa</NavLink>
+        <NavLink className="navlinkContact" to="/save">Kaydedilenler</NavLink>
       </nav>
 
       <Routes>
         <Route path="/" element={<DataPage />} />
-        <Route path="/contact" element={<Root />} />
+        <Route path="/save" element={<Root />} />
       </Routes>
     </ChangeBackGroundColor.Provider>
   );
