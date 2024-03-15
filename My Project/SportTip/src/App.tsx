@@ -4,10 +4,12 @@ import "./App.css";
 import DataPage from "./data";
 import Root from "./pages/SavedSuggestions";
 import { ChangeBackGroundColor } from "./DarkModeToggleButton";
+import { SavedInformations } from "./DarkModeToggleButton";
 
 function App() {
 
   const [BackGroundColor, setBackGroundColor] = useState("#faebd7");
+  const [savedInformationsData , setSavedInformationsData] = useState()
 
   return (
     <ChangeBackGroundColor.Provider value={{ BackGroundColor, setBackGroundColor }}>
