@@ -4,31 +4,27 @@ import "./App.css";
 import DataPage from "./data";
 import Root from "./pages/SavedSuggestions";
 import { ChangeBackGroundColor } from "./DarkModeToggleButton";
-import { SavedInformations } from "./DarkModeToggleButton";
 
 function App() {
   const [BackGroundColor, setBackGroundColor] = useState("#faebd7");
-  const [savedInformationsData, setSavedInformationsData] = useState();
 
   return (
     <ChangeBackGroundColor.Provider
       value={{ BackGroundColor, setBackGroundColor }}
     >
-      <SavedInformations.Provider value={{ savedInformationsData, setSavedInformationsData }}>
-        <nav>
-          <NavLink className="navlinkHome" to="/">
-            Ana Sayfa
-          </NavLink>
-          <NavLink className="navlinkContact" to="/save">
-            Kaydedilenler
-          </NavLink>
-        </nav>
+      <nav>
+        <NavLink className="navlinkHome" to="/">
+          Ana Sayfa
+        </NavLink>
+        <NavLink className="navlinkContact" to="/save">
+          Kaydedilenler
+        </NavLink>
+      </nav>
 
-        <Routes>
-          <Route path="/" element={<DataPage />} />
-          <Route path="/save" element={<Root />} />
-        </Routes>
-      </SavedInformations.Provider>
+      <Routes>
+        <Route path="/" element={<DataPage />} />
+        <Route path="/save" element={<Root />} />
+      </Routes>
     </ChangeBackGroundColor.Provider>
   );
 }

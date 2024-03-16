@@ -3,17 +3,12 @@ import "./App.css";
 import SavePage from "./save";
 import { ChangeBackGroundColor } from "./DarkModeToggleButton";
 
-interface DataItem {
+export interface DataItem {
   id: number;
   title: string;
   description: string;
 }
 
-interface DataItem {
-  id: number;
-  title: string;
-  description: string;
-}
 
 const data: DataItem[] = [
   {
@@ -162,7 +157,7 @@ const DataPage: React.FC = () => {
           <h2>{currentData.title}</h2>
           <p>{currentData.description}</p>
         </div>
-        <SavePage />
+        <SavePage data={currentData} />
       </div>
       <div className="active">
         <button
