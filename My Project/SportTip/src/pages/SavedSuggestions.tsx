@@ -3,9 +3,7 @@ import { ChangeBackGroundColor } from "../DarkModeToggleButton";
 
 export default function Root() {
   // const [currentData, setCurrentData] = useState<DataItem>(data[0]);
-  const { BackGroundColor, setBackGroundColor } = useContext(
-    ChangeBackGroundColor
-  );
+  const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
