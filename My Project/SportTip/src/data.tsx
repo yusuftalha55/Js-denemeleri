@@ -1,7 +1,7 @@
 import React, { useState, createContext, useContext } from "react";
 import "./App.css";
 import SavePage from "./save";
-import { ChangeBackGroundColor } from "./DarkModeToggleButton";
+import { ChangeBackGroundColor, SavedInformations } from "./DarkModeToggleButton";
 
 export interface DataItem {
   id: number;
@@ -138,6 +138,8 @@ const DataPage: React.FC = () => {
   const { BackGroundColor, setBackGroundColor } = useContext(
     ChangeBackGroundColor
   );
+  const { savedCurrentData, setSavedCurrentData} = useContext(SavedInformations);
+  
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
