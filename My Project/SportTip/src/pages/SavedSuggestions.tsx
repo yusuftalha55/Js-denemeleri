@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { ChangeBackGroundColor } from "../DarkModeToggleButton";
+import SavePage from "../save";
+
 
 export default function Root() {
-  // const [currentData, setCurrentData] = useState<DataItem>(data[0]);
+  
   const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
 
   function changeButton() {
@@ -11,13 +13,11 @@ export default function Root() {
     setBackGroundColor(newColor);
   }
 
-  // function getRandomData() {
-  //   const randomIndex = Math.floor(Math.random() * data.length);
-  //   setCurrentData(data[randomIndex]);
-  // }
+ 
 
   return (
     <div style={{ backgroundColor: BackGroundColor }}>
+      
       {/* <div key={currentData.id}>
         <div className="container">
           <h2>{currentData.title}</h2>
