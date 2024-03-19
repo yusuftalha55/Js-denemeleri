@@ -21,7 +21,7 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
     <div style={{ backgroundColor: BackGroundColor }}>
       
       <div>
-        <div className="container">
+        <div className="containerSaved">
           
         </div>
       </div>
