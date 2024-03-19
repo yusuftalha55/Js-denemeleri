@@ -20,9 +20,10 @@ const SavePage: React.FC<{ data: DataItem }> = (props) => {
         <h1>Kaydedilen Veriler:</h1>
         <ul>
           {savedData.map((item, index) => (
-            <li key={index}>
+            <h3 key={index}>
               {item.id}: {item.title}
-            </li>
+              <p>{item.description}</p>
+            </h3>
           ))}
         </ul>
       </div>
