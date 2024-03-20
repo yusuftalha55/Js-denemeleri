@@ -5,9 +5,11 @@ import { SavedInformations } from "./DarkModeToggleButton";
 
 const SavePage: React.FC<{ data: DataItem }> = (props) => {
   const [savedData, setSavedData] = useState<DataItem[]>([]);
+  const { savedCurrentData, setSavedCurrentData} = useContext(SavedInformations);
 
   function dataSave() {
     setSavedData([...savedData, props.data]);
+    setSavedCurrentData()
   }
 
   return (
