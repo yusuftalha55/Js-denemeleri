@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { ChangeBackGroundColor } from "../DarkModeToggleButton";
+import { ChangeBackGroundColor, SavedInformations } from "../DarkModeToggleButton";
 import SavePage from "../save";
 import { DataItem } from "../data";
 
@@ -8,6 +8,7 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
   
   const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
   const [savedData, setSavedData] = useState<DataItem[]>([]);
+  const { savedCurrentData, setSavedCurrentData} = useContext(SavedInformations);
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
