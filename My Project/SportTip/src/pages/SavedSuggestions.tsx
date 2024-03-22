@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { ChangeBackGroundColor, SavedInformations } from "../DarkModeToggleButton";
 import SavePage from "../save";
 import { DataItem } from "../data";
+import { MainSavedData } from "../DarkModeToggleButton";
 
 
 const Root: React.FC<{ data: DataItem }> = (props) => {
@@ -23,7 +24,14 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
       
       <div>
         <div className="containerSaved">
-         <h3>{savedCurrentData}</h3>
+        <ul>
+          {savedData.map((item, index) => (
+            <h3 key={index}>
+              {item.id}: {item.title}
+              <p>{item.description}</p>
+            </h3>
+          ))}
+        </ul>
         </div>
       </div>
       <div className="active">
