@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import "./App.css";
 import { DataItem } from "./data";
 import { SavedInformations } from "./DarkModeToggleButton";
+import { MainSavedData } from "./DarkModeToggleButton";
 
 const SavePage: React.FC<{ data: DataItem }> = (props) => {
   const [savedData, setSavedData] = useState<DataItem[]>([]);

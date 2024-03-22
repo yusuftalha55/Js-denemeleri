@@ -15,7 +15,7 @@ function App() {
     <ChangeBackGroundColor.Provider
       value={{ BackGroundColor, setBackGroundColor }}
     >
-      <MainSavedData.Provider value={}>
+      <MainSavedData.Provider value={{ savedData, setSavedData }}>
         <SavedInformations.Provider value={(savedCurrentData, setSavedCurrentData)}>
           <nav>
             <NavLink className="navlinkHome" to="/">
