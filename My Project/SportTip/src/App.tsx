@@ -10,6 +10,7 @@ import { MainSavedData } from "./DarkModeToggleButton";
 function App() {
   const [BackGroundColor, setBackGroundColor] = useState("#faebd7");
   const [savedCurrentData, setSavedCurrentData] = useState();
+  const [savedData, setSavedData] = useState();
 
   return (
     <ChangeBackGroundColor.Provider
