@@ -4,5 +4,7 @@ export const ChangeBackGroundColor = createContext({});
 
 export const SavedInformations = createContext({});
 
+export const MainSavedData = createContext({});
+
 
 
