@@ -42,19 +42,8 @@ body {
 }
 
 .deleteButton {
-  background-color: rgb(215, 250, 238);
-  border-radius: 15px;
-  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
-  color: #0c6d03;
-  cursor: pointer;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  margin: 2%;
-  margin-left: 65%;
-  margin-top: 20%;
-  width: 100px;
-  height: 30px;
-  font-size: medium;
+  margin-left: 35%;
+  margin-top: -2%;
 }
 
 .save-button:hover {
