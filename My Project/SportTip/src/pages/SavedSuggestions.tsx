@@ -26,10 +26,10 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
         <div className="containerSaved">
         <ul>
           {savedData.map((item, index) => (
-            <h3 key={index}>
-              {item.id}: {item.title}
+            <p key={index}>
+              <h3>{item.id}: {item.title}</h3>
               <p>{item.description}</p>
-            </h3>
+            </p>
           ))}
         </ul>
         </div>
