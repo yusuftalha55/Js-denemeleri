@@ -8,7 +8,8 @@ import { MainSavedData } from "../DarkModeToggleButton";
 const Root: React.FC<{ data: DataItem }> = (props) => {
   
   const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
-  const [savedData, setSavedData] = useState<DataItem[]>([]);
+  const { savedData, setSavedData} = useContext(MainSavedData);
+  // const [savedData, setSavedData] = useState<DataItem[]>([]);
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
