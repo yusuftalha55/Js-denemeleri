@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { ChangeBackGroundColor, SavedInformations } from "../DarkModeToggleButton";
-import SavePage from "../save";
 import { DataItem } from "../data";
 import { MainSavedData } from "../DarkModeToggleButton";
 
