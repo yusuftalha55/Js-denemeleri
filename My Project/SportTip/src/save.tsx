@@ -18,17 +18,6 @@ const SavePage: React.FC<{ data: DataItem }> = (props) => {
           Kaydet {props.data.id}
         </button>
       </div>
-      <div>
-        <h1>Kaydedilen Veriler:</h1>
-        <ul>
-          {savedData.map((item, index) => (
-            <h3 key={index}>
-              {item.id}: {item.title}
-              <p>{item.description}</p>
-            </h3>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };
