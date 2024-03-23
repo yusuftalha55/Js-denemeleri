@@ -24,14 +24,14 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
       
       <div>
         <div className="containerSaved">
-        <ul>
+        <div>
           {savedData.map((item, index) => (
             <p key={index}>
               <h3>{item.id}: {item.title}</h3>
               <p>{item.description}</p>
             </p>
           ))}
-        </ul>
+        </div>
         </div>
       </div>
       <div className="active">
