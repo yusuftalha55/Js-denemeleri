@@ -9,7 +9,6 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
   
   const { BackGroundColor, setBackGroundColor } = useContext(ChangeBackGroundColor);
   const [savedData, setSavedData] = useState<DataItem[]>([]);
-  const { savedCurrentData, setSavedCurrentData} = useContext(SavedInformations);
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";

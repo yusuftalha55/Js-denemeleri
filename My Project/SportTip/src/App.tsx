@@ -4,8 +4,7 @@ import "./App.css";
 import DataPage from "./data";
 import Root from "./pages/SavedSuggestions";
 import { ChangeBackGroundColor } from "./DarkModeToggleButton";
-import { SavedInformations } from "./DarkModeToggleButton";
-import { MainSavedData } from "./DarkModeToggleButton";
+import { SavedInformations, MainSavedData } from "./DarkModeToggleButton";
 
 function App() {
   const [BackGroundColor, setBackGroundColor] = useState("#faebd7");
@@ -13,11 +12,9 @@ function App() {
   const [savedData, setSavedData] = useState();
 
   return (
-    <ChangeBackGroundColor.Provider
-      value={{ BackGroundColor, setBackGroundColor }}
-    >
+    <ChangeBackGroundColor.Provider value={{ BackGroundColor, setBackGroundColor }}>
       <MainSavedData.Provider value={{ savedData, setSavedData }}>
-        <SavedInformations.Provider value={(savedCurrentData, setSavedCurrentData)}>
+        <SavedInformations.Provider value={{ savedCurrentData, setSavedCurrentData }}>
           <nav>
             <NavLink className="navlinkHome" to="/">
               Ana Sayfa
@@ -37,3 +34,4 @@ function App() {
 }
 
 export default App;
+
