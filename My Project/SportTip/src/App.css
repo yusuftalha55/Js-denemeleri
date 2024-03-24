@@ -26,6 +26,16 @@ body {
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
 }
 
+.containerItem {
+  background-color: rgb(215, 250, 238);
+  margin-top: 25%;
+  margin-bottom: 5%;
+  width: 350px;
+  height: 150px;
+  border-radius: 25px;
+  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
+}
+
 .save-button {
   background-color: rgb(215, 250, 238);
   border-radius: 15px;
@@ -43,14 +53,12 @@ body {
 
 .deleteButton {
   margin-left: 35%;
-  margin-top: -2%;
+  margin-top: 15%;
 }
 
 .save-button:hover {
   color: #163c64;
 }
-
-
 
 .navlinkHome {
   margin-right: 15%;

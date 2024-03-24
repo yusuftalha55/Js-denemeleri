@@ -23,34 +23,32 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
     <div style={{ backgroundColor: BackGroundColor }}>
       <div>
         <div className="containerSaved">
-          <div>
-            {savedData.map((item, index) => (
-              <p key={index}>
-                <h3>
-                  {item.id}: {item.title}
-                </h3>
-                <p>{item.description}</p>
-              </p>
-            ))}
-          </div>
-        </div>
-        <div className="deleteButton">
-          <button
-            style={{
-              color: "#18c208",
-              cursor: "pointer",
-              backgroundColor: "rgb(215, 250, 238)",
-              fontWeight: "bold",
-              boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
-              fontSize: "medium",
-              borderRadius: 15,
-              transition: "color 0.3s ease",
-              width:120,
-              height:50,
-            }}
-          >
-            Kaydedileni sil
-          </button>
+          {savedData.map((item, index) => (
+            <div key={index} className="containerItem">
+              <h3>
+                {item.id}: {item.title}
+              </h3>
+              <p>{item.description}</p>
+              <div className="deleteButton">
+                <button
+                  style={{
+                    color: "#18c208",
+                    cursor: "pointer",
+                    backgroundColor: "rgb(215, 250, 238)",
+                    fontWeight: "bold",
+                    boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
+                    fontSize: "medium",
+                    borderRadius: 15,
+                    transition: "color 0.3s ease",
+                    width: 120,
+                    height: 50,
+                  }}
+                >
+                  Kaydedileni sil
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="active">
@@ -62,7 +60,7 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
             boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
             fontSize: 15,
             fontWeight: "bold",
-            marginLeft: 15,
+            marginLeft: 750,
           }}
         >
           Change Background Color

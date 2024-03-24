@@ -174,7 +174,7 @@ const DataPage: React.FC = () => {
         >
           Random Öneri
         </button>
-        <button
+        <button className="backgroundColorButton"
           onClick={changeButton}
           style={{
             height: 50,
@@ -182,7 +182,7 @@ const DataPage: React.FC = () => {
             boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
             fontSize: 15,
             fontWeight: "bold",
-            marginLeft:15,
+            marginLeft: 750,
           }}
         >
           Change Background Color
