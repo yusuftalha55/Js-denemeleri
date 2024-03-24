@@ -18,6 +18,9 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
     document.body.style.backgroundColor = newColor;
     setBackGroundColor(newColor);
   }
+  function DeleteToSavedData() {
+    
+  }
 
   return (
     <div style={{ backgroundColor: BackGroundColor }}>
@@ -30,7 +33,7 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
               </h3>
               <p>{item.description}</p>
               <div className="deleteButton">
-                <button
+                <button onClick={DeleteToSavedData}
                   style={{
                     color: "#18c208",
                     cursor: "pointer",
