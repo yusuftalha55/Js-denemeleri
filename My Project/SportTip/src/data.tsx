@@ -153,7 +153,7 @@ const DataPage: React.FC = () => {
   }
 
   return (
-    <div style={{ backgroundColor: BackGroundColor }}>
+    <div className="dataMain" style={{ backgroundColor: BackGroundColor }}>
       <div key={currentData.id}>
         <div className="container">
           <h2>{currentData.title}</h2>
