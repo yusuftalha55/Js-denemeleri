@@ -95,8 +95,17 @@ body {
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5) ;
   font-size: 15px;
   font-weight: bold;
-  position: fixed;
   text-align: center;
+}
+
+.backgroundColorButton {
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5) ;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 15px;
 }
 
 
