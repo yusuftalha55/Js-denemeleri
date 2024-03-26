@@ -162,15 +162,8 @@ const DataPage: React.FC = () => {
         <SavePage data={currentData} />
       </div>
       <div className="active">
-        <button
+        <button className="randomSuggestionsButton"
           onClick={getRandomData}
-          style={{
-            height: 50,
-            borderRadius: 15,
-            boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
-            fontSize: 15,
-            fontWeight: "bold",
-          }}
         >
           Random Öneri
         </button>
