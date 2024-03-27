@@ -46,16 +46,8 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
         </div>
       </div>
       <div className="active">
-        <button
+        <button className="backgroundColorButton"
           onClick={changeButton}
-          style={{
-            height: 50,
-            borderRadius: 15,
-            boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
-            fontSize: 15,
-            fontWeight: "bold",
-            marginLeft: 750,
-          }}
         >
           Change Background Color
         </button>
