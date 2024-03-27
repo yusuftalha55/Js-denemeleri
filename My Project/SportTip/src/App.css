@@ -40,6 +40,10 @@ body {
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
 }
 
+.containerItem p {
+  height: 100px;
+}
+
 .save-button {
   background-color: rgb(215, 250, 238);
   border-radius: 15px;
@@ -57,7 +61,7 @@ body {
 
 .deleteButton {
   margin-left: 35%;
-  margin-top: 10%;
+  margin-top: 2%;
   cursor: pointer;
   background-color: rgb(215, 250, 238);
   font-weight: bold;
