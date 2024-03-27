@@ -37,18 +37,6 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
               <p>{item.description}</p>
               <div className="deleteButtonMain">
                 <button className="deleteButton" onClick={() => DeleteToSavedData(index)}
-                  // style={{
-                  //   color: "#18c208",
-                  //   cursor: "pointer",
-                  //   backgroundColor: "rgb(215, 250, 238)",
-                  //   fontWeight: "bold",
-                  //   boxShadow: "5px 3px 15px rgba(209, 1, 1, 0.5)",
-                  //   fontSize: "medium",
-                  //   borderRadius: 15,
-                  //   transition: "color 0.3s ease",
-                  //   width: 120,
-                  //   height: 50,
-                  // }}
                 >
                   Kaydedileni sil
                 </button>
