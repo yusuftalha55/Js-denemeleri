@@ -257,6 +257,7 @@ const data: DataItem[] = [
 
 const DataPage: React.FC = () => {
   const [currentData, setCurrentData] = useState<DataItem>(data[0]);
+  const [currentDataTwo, setCurrentDataTwo] = useState<DataItem>(data[1]);
   const { BackGroundColor, setBackGroundColor } = useContext(
     ChangeBackGroundColor
   );
@@ -277,6 +278,13 @@ const DataPage: React.FC = () => {
   return (
     <div className="dataMain" style={{ backgroundColor: BackGroundColor }}>
       <div key={currentData.id}>
+        <div className="container">
+          <h2>{currentData.title}</h2>
+          <p>{currentData.description}</p>
+        </div>
+        <SavePage data={currentData} />
+      </div>
+      <div key={currentDataTwo.id}>
         <div className="container">
           <h2>{currentData.title}</h2>
           <p>{currentData.description}</p>
