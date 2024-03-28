@@ -31,7 +31,7 @@ body {
   margin-bottom: 20px; 
   border-radius: 25px;
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
-  padding: 15px;
+  padding: 5px;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 5%;
@@ -62,7 +62,8 @@ body {
 
 .deleteButton {
   margin-left: 35%;
-  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: -28%;
   cursor: pointer;
   background-color: rgb(215, 250, 238);
   font-weight: bold;
