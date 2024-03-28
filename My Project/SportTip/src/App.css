@@ -26,7 +26,7 @@ body {
 }
 
 .containerSaved .containerItem {
-  width: calc(33.33% - 20px); 
+  width: calc(28% - 20px); 
   background-color: rgb(215, 250, 238);
   margin-bottom: 20px; 
   border-radius: 25px;
@@ -63,7 +63,7 @@ body {
 .deleteButton {
   margin-left: 35%;
   margin-bottom: 2%;
-  margin-right: -28%;
+  margin-right: -15%;
   cursor: pointer;
   background-color: rgb(215, 250, 238);
   font-weight: bold;
