@@ -193,6 +193,66 @@ const data: DataItem[] = [
     description:
       "Uyku saatlerinizi düzenli tutun, hafta içi ve hafta sonu farklı saatlerde uyumaktan kaçının. Düzenli bir uyku programı vücudunuzun saatlik ritmini dengeleyebilir.",
   },
+  {
+    id: 31,
+    title: "Antrenman",
+    description:
+      "Düzenli olarak dinlenme günleri planlayın. Kasların iyileşmesine ve büyümesine izin vermek için dinlenme günleri çok önemlidir.",
+  },
+  {
+    id: 32,
+    title: "Uyku Düzeni",
+    description:
+      "Stresi azaltmak için günlük bir günlük tutun. Duygularınızı ifade etmek ve endişelerinizi yazılı olarak ifade etmek, zihinsel rahatlamaya yardımcı olabilir.",
+  },
+  {
+    id: 33,
+    title: "Beslenme",
+    description:
+      "Kahvaltıyı atlamayın, gününüzü sağlıklı bir başlangıçla başlatın. Protein, lif ve sağlıklı yağ içeren bir kahvaltı, enerjinizi artırır ve tok hissetmenizi sağlar.",
+  },
+  {
+    id: 34,
+    title: "Antrenman",
+    description:
+      "Bir egzersiz günlüğü tutun ve ilerlemenizi takip edin. Egzersiz yapma sıklığınızı, süresini ve yoğunluğunu kaydetmek, hedeflerinize ulaşmanıza yardımcı olabilir.",
+  },
+  {
+    id: 35,
+    title: "Uyku Düzeni",
+    description:
+      "Uykusuzlukla başa çıkmak için gevşeme tekniklerini uygulayın. Derin nefes alma, kas gevşetme egzersizleri veya görselleştirme teknikleri, uykusuzlukla mücadele etmenize yardımcı olabilir.",
+  },
+  {
+    id: 36,
+    title: "Beslenme",
+    description:
+      "Fast food ve işlenmiş gıdaları sınırlayın. Bu tür gıdalar genellikle yüksek kalorili ve düşük besin değerine sahiptir, bu nedenle sağlıklı bir diyet için bunları azaltın.",
+  },
+  {
+    id: 37,
+    title: "Antrenman",
+    description:
+      "Spor salonunda veya evde egzersiz yaparken çeşitli ekipmanları kullanın. Dumbbell, barbell, direnç bantları ve egzersiz topu gibi ekipmanlar, farklı kas gruplarını hedeflemenize yardımcı olabilir.",
+  },
+  {
+    id: 38,
+    title: "Uyku Düzeni",
+    description:
+      "Uykuya dalmakta zorlanıyorsanız, rahatlatıcı bir uyku rutini oluşturun. Yatmadan önce kitap okumak, hafif müzik dinlemek veya sıcak bir içecek içmek, uykuya geçmenizi kolaylaştırabilir.",
+  },
+  {
+    id: 39,
+    title: "Beslenme",
+    description:
+      "Öğünlerinizde renkli ve çeşitli gıdaları tercih edin. Farklı renkteki meyve ve sebzeler, çeşitli besin maddeleri sağlar ve yemeğinizi görsel olarak daha çekici hale getirir.",
+  },
+  {
+    id: 40,
+    title: "Antrenman",
+    description:
+      "Arkadaşlarınızla veya ailenizle birlikte egzersiz yapın. Egzersiz yaparken sosyal destek almak, motivasyonunuzu artırır ve egzersizi daha keyifli hale getirebilir.",
+  },
 ];
 
 const DataPage: React.FC = () => {
