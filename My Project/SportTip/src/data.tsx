@@ -275,6 +275,14 @@ const DataPage: React.FC = () => {
     setCurrentData(data[randomIndex]);
   }
 
+  function getRandomDataTwo() {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * data.length);
+    } while (randomIndex === currentData.id); // İkinci verinin birinci veri ile aynı olmamasını sağlamak için
+    setCurrentDataTwo(data[randomIndex]);
+  }
+
   return (
     <div className="dataMain" style={{ backgroundColor: BackGroundColor }}>
       <div key={currentData.id}>
@@ -286,14 +294,17 @@ const DataPage: React.FC = () => {
       </div>
       <div key={currentDataTwo.id}>
         <div className="container">
-          <h2>{currentData.title}</h2>
-          <p>{currentData.description}</p>
+          <h2>{currentDataTwo.title}</h2>
+          <p>{currentDataTwo.description}</p>
         </div>
-        <SavePage data={currentData} />
+        <SavePage data={currentDataTwo} />
       </div>
       <div className="active">
         <button className="randomSuggestionsButton" onClick={getRandomData}>
           Random Öneri
+        </button>
+        <button className="randomSuggestionsButton" onClick={getRandomDataTwo}>
+          Random Öneri (İkinci)
         </button>
         <button className="backgroundColorButton" onClick={changeButton}>
           Change Background Color
@@ -304,3 +315,4 @@ const DataPage: React.FC = () => {
 };
 
 export default DataPage;
+

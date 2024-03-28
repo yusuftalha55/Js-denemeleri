@@ -12,7 +12,7 @@ body {
 .container {
   background-color: rgb(215, 250, 238);
   margin-left: 40%;
-  margin-top: 15%;
+  margin-top: 8%;
   width: 350px;
   height: 150px;
   border-radius: 25px;
@@ -114,6 +114,7 @@ body {
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
+  margin-left: 5%;
 }
 
 .backgroundColorButton {
