@@ -1,14 +1,16 @@
 import React, { useState, createContext, useContext } from "react";
 import "./App.css";
 import SavePage from "./save";
-import { ChangeBackGroundColor, SavedInformations } from "./DarkModeToggleButton";
+import {
+  ChangeBackGroundColor,
+  SavedInformations,
+} from "./DarkModeToggleButton";
 
 export interface DataItem {
   id: number;
   title: string;
   description: string;
 }
-
 
 const data: DataItem[] = [
   {
@@ -131,6 +133,66 @@ const data: DataItem[] = [
     description:
       "Stres yönetimi tekniklerini uygulayarak uyku kalitesini artırın. Stres, uyku kalitesini olumsuz etkiler, bu nedenle yoga, meditasyon veya masaj gibi stres azaltıcı aktiviteleri deneyin.",
   },
+  {
+    id: 21,
+    title: "Uyku Düzeni",
+    description:
+      "Yatak odanızı sade ve rahatlatıcı bir şekilde düzenleyin. Karmaşık veya uyarıcı unsurları azaltarak, daha huzurlu bir uyku ortamı oluşturabilirsiniz.",
+  },
+  {
+    id: 22,
+    title: "Beslenme",
+    description:
+      "Protein açısından zengin yiyecekler tüketin. Protein, kas gelişimini destekler ve tokluk hissini artırarak atıştırmalık ihtiyacını azaltır.",
+  },
+  {
+    id: 23,
+    title: "Antrenman",
+    description:
+      "Yüksek yoğunluklu interval antrenmanlarını (HIIT) deneyin. Kısa süreli ancak yoğun egzersizler, metabolizmayı hızlandırır ve yağ yakımını artırır.",
+  },
+  {
+    id: 24,
+    title: "Uyku Düzeni",
+    description:
+      "Kafein ve alkol tüketimini sınırlayın, özellikle uyku öncesinde. Bu maddeler uykusuzluğa ve uykunun kalitesinin düşmesine neden olabilir.",
+  },
+  {
+    id: 25,
+    title: "Beslenme",
+    description:
+      "Sağlıklı yağları diyetinize dahil edin. Avokado, somon ve zeytinyağı gibi sağlıklı yağlar, beyin fonksiyonlarını destekler ve doygunluk sağlar.",
+  },
+  {
+    id: 26,
+    title: "Antrenman",
+    description:
+      "Günlük hedefler belirleyin ve ilerlemenizi takip edin. Küçük hedefler belirlemek, motivasyonunuzu artırır ve başarı hissi yaratır.",
+  },
+  {
+    id: 27,
+    title: "Uyku Düzeni",
+    description:
+      "Uykuya geçmeden önce rahatlama teknikleri uygulayın. Sıcak bir duş almak veya hafif bir meditasyon yapmak, uyku öncesinde gevşemenize yardımcı olabilir.",
+  },
+  {
+    id: 28,
+    title: "Beslenme",
+    description:
+      "Yiyecek etiketlerini dikkatlice okuyun ve işlenmiş gıdalardan kaçının. Taze ve doğal gıdalar, sağlıklı bir beslenme için daha iyidir.",
+  },
+  {
+    id: 29,
+    title: "Antrenman",
+    description:
+      "Egzersiz yaparken doğru formu koruyun. Yanlış form sakatlanmalara ve etkinin azalmasına neden olabilir, bu nedenle doğru teknikleri öğrenin.",
+  },
+  {
+    id: 30,
+    title: "Uyku Düzeni",
+    description:
+      "Uyku saatlerinizi düzenli tutun, hafta içi ve hafta sonu farklı saatlerde uyumaktan kaçının. Düzenli bir uyku programı vücudunuzun saatlik ritmini dengeleyebilir.",
+  },
 ];
 
 const DataPage: React.FC = () => {
@@ -138,8 +200,8 @@ const DataPage: React.FC = () => {
   const { BackGroundColor, setBackGroundColor } = useContext(
     ChangeBackGroundColor
   );
-  const { savedCurrentData, setSavedCurrentData} = useContext(SavedInformations);
-  
+  const { savedCurrentData, setSavedCurrentData } =
+    useContext(SavedInformations);
 
   function changeButton() {
     const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
@@ -162,14 +224,10 @@ const DataPage: React.FC = () => {
         <SavePage data={currentData} />
       </div>
       <div className="active">
-        <button className="randomSuggestionsButton"
-          onClick={getRandomData}
-        >
+        <button className="randomSuggestionsButton" onClick={getRandomData}>
           Random Öneri
         </button>
-        <button className="backgroundColorButton"
-          onClick={changeButton}
-        >
+        <button className="backgroundColorButton" onClick={changeButton}>
           Change Background Color
         </button>
       </div>
