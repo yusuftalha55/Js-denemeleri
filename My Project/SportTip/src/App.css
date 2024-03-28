@@ -20,27 +20,28 @@ body {
 }
 
 .containerSaved {
-  background-color: rgb(215, 250, 238);
-  margin-left: 40%;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  width: 350px;
-  height: 150px;
-  border-radius: 25px;
-  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.containerItem {
+.containerSaved .containerItem {
+  width: calc(33.33% - 20px); 
   background-color: rgb(215, 250, 238);
-  margin-top: 25%;
-  margin-bottom: 5%;
-  width: 350px;
-  height: 150px;
+  margin-bottom: 20px; 
   border-radius: 25px;
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
+  padding: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
 }
 
-.containerItem p {
+.containerSaved .containerItem h3 {
+  margin-top: 0;
+}
+
+.containerSaved .containerItem p {
   height: 100px;
 }
 
