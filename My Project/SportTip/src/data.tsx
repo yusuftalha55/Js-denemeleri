@@ -5,6 +5,7 @@ import {
   ChangeBackGroundColor,
   SavedInformations,
 } from "./DarkModeToggleButton";
+import BodyIndex from "./BodyMassIndex";
 
 export interface DataItem {
   id: number;
@@ -309,6 +310,9 @@ const DataPage: React.FC = () => {
         <button className="backgroundColorButton" onClick={changeButton}>
           Change Background Color
         </button>
+      </div>
+      <div className="MainBodyClass">
+        <BodyIndex/>
       </div>
     </div>
   );
