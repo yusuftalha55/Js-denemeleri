@@ -9,8 +9,7 @@ const BodyIndex = () => {
 
 
     function mathButton () {
-        
-
+       setBodyIndex(weight/(height*height));
     }
     return(
         <div className="bodyIndexclass">
