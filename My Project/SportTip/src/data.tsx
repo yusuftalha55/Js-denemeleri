@@ -279,7 +279,7 @@ const DataPage: React.FC = () => {
     let randomIndex;
     do {
       randomIndex = Math.floor(Math.random() * data.length);
-    } while (randomIndex === currentData.id); // İkinci verinin birinci veri ile aynı olmamasını sağlamak için
+    } while (randomIndex === currentData.id); 
     setCurrentDataTwo(data[randomIndex]);
   }
 
