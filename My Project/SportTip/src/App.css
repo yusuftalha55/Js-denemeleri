@@ -94,6 +94,7 @@ body {
   color: rgb(76, 150, 7);
   text-decoration: none;
   font-size: 30px;
+  margin-right: 23%;
 }
 
 .navlinkContact:hover {
@@ -116,6 +117,10 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-left: 5%;
+}
+
+.active {
+  margin-left: 30%;
 }
 
 .backgroundColorButton {
