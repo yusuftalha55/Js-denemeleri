@@ -133,6 +133,12 @@ body {
 .bodyIndexclass {
   width: 350px;
   height: 350px;
+  background-color: #18c208;
+  box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5) ;
+  border-radius: 15px;
+  position: fixed;
+  top: 0;
+  margin-top: 5%;
 }
 
 

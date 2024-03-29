@@ -4,7 +4,9 @@ import "./App.css";
 const BodyIndex = () => {
     return(
         <div className="bodyIndexclass">
-            <button>safsaf</button>
+            <div className="inputBodyClass">
+            
+            </div>
         </div>
     )
 }
