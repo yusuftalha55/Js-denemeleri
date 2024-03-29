@@ -11,9 +11,9 @@ body {
 
 .container {
   background-color: rgb(215, 250, 238);
-  margin-left: 60%;
+  margin-left: 50%;
   margin-top: 8%;
-  width: 350px;
+  width: calc(40% - 20px); 
   height: 150px;
   border-radius: 25px;
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
@@ -137,7 +137,7 @@ body {
 }
 
 .bodyIndexclass {
-  width: 500px;
+  width: calc(40% - 20px);  
   height: 350px;
   background-color: rgb(215, 250, 238);
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5) ;
