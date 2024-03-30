@@ -80,12 +80,13 @@ body {
 }
 
 .navlinkHome {
-  margin-right: 15%;
+  margin-right: 7%;
   font-weight: bold;
   margin-top: 15%;
   color: rgb(76, 150, 7);
   text-decoration: none;
   font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navlinkContact {
@@ -94,7 +95,8 @@ body {
   color: rgb(76, 150, 7);
   text-decoration: none;
   font-size: 30px;
-  margin-right: 23%;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 25%;
 }
 
 .navlinkContact:hover {
