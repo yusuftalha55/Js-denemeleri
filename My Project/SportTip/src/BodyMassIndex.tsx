@@ -23,7 +23,7 @@ const BodyIndex = () => {
                 <h3>Kilonuzu giriniz</h3>
                 <input className="bodyIndexInputClassWeight" type="number" min={0} value={weight} onChange={(e)=> setWeight(e.target.value)}/>
             </div>
-            <button onClick={mathButton}>Hesapla</button>
+            <button className="calculateButtonClass" onClick={mathButton}>Hesapla</button>
             <div className="output">
                 <h3>Vücut kitle endeksiniz: {bodyIndex}</h3>
             </div>
