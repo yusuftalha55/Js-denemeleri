@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 import {
   ChangeBackGroundColor,
   SavedInformations,
-} from "../DarkModeToggleButton";
-import { DataItem } from "../data";
-import { MainSavedData } from "../DarkModeToggleButton";
-import "../App.css";
+} from "./DarkModeToggleButton";
+import { DataItem } from "./data";
+import { MainSavedData } from "./DarkModeToggleButton";
+import "./App.css";
 
 const Root: React.FC<{ data: DataItem }> = (props) => {
   const { BackGroundColor, setBackGroundColor } = useContext(

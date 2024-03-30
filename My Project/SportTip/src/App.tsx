@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import DataPage from "./data";
-import Root from "./pages/SavedSuggestions";
+import Root from "./SavedSuggestions";
 import { ChangeBackGroundColor } from "./DarkModeToggleButton";
 import { SavedInformations, MainSavedData } from "./DarkModeToggleButton";
 import { DataItem } from "./data";
