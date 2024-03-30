@@ -19,7 +19,7 @@ const BodyIndex = () => {
             <h1>Vücut Kitle Endeksi</h1>
             <div className="inputBodyClass">
                 <h3>Boyunuzu giriniz</h3>
-                <input className="bodyIndexInputHeightClass" type="number" min={0} value={height} onChange={(e)=> setHeight(e.target.value)}/>
+                <input className="bodyIndexInputClassHeight" type="number" min={0} value={height} onChange={(e)=> setHeight(e.target.value)}/>
                 <h3>Kilonuzu giriniz</h3>
                 <input className="bodyIndexInputClassWeight" type="number" min={0} value={weight} onChange={(e)=> setWeight(e.target.value)}/>
             </div>
