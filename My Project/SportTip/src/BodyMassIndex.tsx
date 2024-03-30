@@ -9,7 +9,10 @@ const BodyIndex = () => {
 
 
     function mathButton () {
-       setBodyIndex(weight/(height*height));
+       const parsedWeight = parseFloat(weight);
+       const parsedHeight = parseFloat(height);
+       const parsedResult = parsedWeight/((parsedHeight/100) * (parsedHeight/100));
+       setBodyIndex(parsedResult);
     }
     return(
         <div className="bodyIndexclass">
