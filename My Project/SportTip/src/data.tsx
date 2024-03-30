@@ -266,7 +266,7 @@ const DataPage: React.FC = () => {
     useContext(SavedInformations);
 
   function changeButton() {
-    const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
+    const newColor = BackGroundColor === "#f8f9fa" ? "#404040" : "#f8f9fa";
     document.body.style.backgroundColor = newColor;
     setBackGroundColor(newColor);
   }

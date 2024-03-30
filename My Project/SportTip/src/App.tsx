@@ -8,7 +8,7 @@ import { SavedInformations, MainSavedData } from "./DarkModeToggleButton";
 import { DataItem } from "./data";
 
 function App() {
-  const [BackGroundColor, setBackGroundColor] = useState("#faebd7");
+  const [BackGroundColor, setBackGroundColor] = useState("#f8f9fa");
   const [savedCurrentData, setSavedCurrentData] = useState();
   const [savedData, setSavedData] = useState<DataItem[]>([]);
 
