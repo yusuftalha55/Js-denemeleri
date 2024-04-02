@@ -14,7 +14,7 @@ const Root: React.FC<{ data: DataItem }> = (props) => {
   const { savedData, setSavedData } = useContext(MainSavedData);
 
   function changeButton() {
-    const newColor = BackGroundColor === "#faebd7" ? "#404040" : "#faebd7";
+    const newColor = BackGroundColor === "#D1DBBD" ? "#193441" : "#D1DBBD";
     document.body.style.backgroundColor = newColor;
     setBackGroundColor(newColor);
   }
