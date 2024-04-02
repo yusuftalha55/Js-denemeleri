@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background-color:#f8f9fa;
+  background-color:#C5D7ED;
   margin-left: 50%;
   margin-top: 8%;
   width: calc(40% - 20px); 
@@ -27,7 +27,7 @@ body {
 
 .containerSaved .containerItem {
   width: calc(28% - 20px); 
-  background-color:#f8f9fa;
+  background-color:#C5D7ED;
   margin-bottom: 20px; 
   border-radius: 25px;
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5);
@@ -138,7 +138,7 @@ body {
 .bodyIndexclass {
   width: calc(40% - 20px);  
   height: calc(40% - 20px);
-  background-color:#f8f9fa;
+  background-color:#C5D7ED;
   box-shadow: 5px 3px 15px rgba(209, 1, 1, 0.5) ;
   border-radius: 15px;
   position: fixed;
