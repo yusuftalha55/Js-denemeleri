@@ -12,12 +12,12 @@ export default function Home() {
       </li>
       <li>
         <h2>
-          <Link href="/pages">About Us</Link>
+          <Link href="/about">About Us</Link>
         </h2>
       </li>
       <li>
         <h2>
-          <Link href="/pages">Blog Post</Link>
+          <Link href="/blog">Blog Post</Link>
         </h2>
       </li>
     </ul>

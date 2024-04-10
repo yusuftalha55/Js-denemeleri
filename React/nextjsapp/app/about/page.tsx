@@ -7,7 +7,7 @@ export default function About () {
             <h1>
                 <Link href="/">Ana Sayfa</Link>
             </h1>
-            <h2>News</h2>
+            <h2>About</h2>
         </main>
     );
 }
