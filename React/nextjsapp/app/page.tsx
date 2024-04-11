@@ -2,8 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { ChangeBackGroundColor } from "./globalState";
-import React, {useState, useEffect} from "react";
+
 
 export default function Home() {
   // const [backGroundColor, setBackGroundColor] = useState("#D1DBBD");
