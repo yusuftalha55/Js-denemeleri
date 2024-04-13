@@ -8,10 +8,10 @@ export default function BlogPost () {
 
     return (
         <main style={{backgroundColor:backGroundColor}}>
-            <h1>
+            <h1 style={{backgroundColor:backGroundColor}}>
                 <Link href="/">Ana Sayfa</Link>
             </h1>
-            <h2>Blog Post</h2>
+            <h2 style={{backgroundColor:backGroundColor}}>Blog Post</h2>
         </main>
     );
 }
