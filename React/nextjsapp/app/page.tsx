@@ -12,7 +12,7 @@ export default function Home() {
 
 
   return (
-    <ChangeBackGroundColor.Provider>
+    <ChangeBackGroundColor.Provider value={{backGroundColor, setBackGroundColor}}>
     <ul style={{backgroundColor: backGroundColor}}>
       <li>
         <h2>
