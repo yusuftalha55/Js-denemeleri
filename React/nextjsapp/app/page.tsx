@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import { ChangeBackGroundColor } from "./globalState";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
 
 
   return (
+    <ChangeBackGroundColor.Provider>
     <ul style={{backgroundColor: backGroundColor}}>
       <li>
         <h2>
@@ -28,5 +30,6 @@ export default function Home() {
         </h2>
       </li>
     </ul>
+    </ChangeBackGroundColor.Provider>
   );
 }
