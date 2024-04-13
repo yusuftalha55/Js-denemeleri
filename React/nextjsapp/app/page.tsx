@@ -1,16 +1,17 @@
-// @ts-nocheck
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { useState } from "react";
 
 
 export default function Home() {
-  // const [backGroundColor, setBackGroundColor] = useState("#D1DBBD");
+  const [backGroundColor, setBackGroundColor] = useState("#D1DBBD");
 
 
 
   return (
-    <ul>
+    <ul style={{backgroundColor: backGroundColor}}>
       <li>
         <h2>
           <Link href="/">Home</Link>
