@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
+import { ChangeBackGroundColor } from "../globalState";
 
 export default function About () {
+    const { BackGroundColor, setBackGroundColor} = useContext( ChangeBackGroundColor);
     return (
-        <main>
+        <main style={{ backgroundColor:BackGroundColor}}>
             <h1>
                 <Link href="/">Ana Sayfa</Link>
                 
