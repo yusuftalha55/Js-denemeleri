@@ -7,13 +7,13 @@ import { ChangeBackGroundColor } from "./globalState";
 
 
 export default function Home() {
-  const [backGroundColor, setBackGroundColor] = useState("#D1DBBD");
+  const [BackGroundColor, setBackGroundColor] = useState("#D1DBBD");
 
 
 
   return (
-    <ChangeBackGroundColor.Provider value={{backGroundColor, setBackGroundColor}}>
-    <ul style={{backgroundColor: backGroundColor}}>
+    <ChangeBackGroundColor.Provider value={{BackGroundColor, setBackGroundColor}}>
+    <ul style={{backgroundColor: BackGroundColor}}>
       <li>
         <h2>
           <Link href="/">Home</Link>
