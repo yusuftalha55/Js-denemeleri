@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { ChangeBackGroundColor } from "./globalState";
+import "./globals.css";
 
 
 export default function Home() {
