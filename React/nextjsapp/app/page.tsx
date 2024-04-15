@@ -21,7 +21,7 @@ export default function Home() {
       value={{ BackGroundColor, setBackGroundColor }}
     >
       <div>
-        <ul style={{ backgroundColor: BackGroundColor }}>
+        <ul>
           <li>
             <h2>
               <Link href="/">Home</Link>
