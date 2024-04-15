@@ -6,31 +6,42 @@ import { useState } from "react";
 import { ChangeBackGroundColor } from "./globalState";
 import "./globals.css";
 
-
 export default function Home() {
   const [BackGroundColor, setBackGroundColor] = useState("#D1DBBD");
 
 
+  function changeColor() {
+    const newColor = BackGroundColor === "#D1DBBD" ? "#193441" : "#D1DBBD";
+    document.body.style.backgroundColor = newColor;
+    setBackGroundColor(newColor);
+  }
 
   return (
-    <ChangeBackGroundColor.Provider value={{BackGroundColor, setBackGroundColor}}>
-    <ul style={{backgroundColor: BackGroundColor}}>
-      <li>
-        <h2>
-          <Link href="/">Home</Link>
-        </h2>
-      </li>
-      <li>
-        <h2>
-          <Link href="/about">About Us</Link>
-        </h2>
-      </li>
-      <li>
-        <h2>
-          <Link href="/blog">Blog Post</Link>
-        </h2>
-      </li>
-    </ul>
+    <ChangeBackGroundColor.Provider
+      value={{ BackGroundColor, setBackGroundColor }}
+    >
+      <div>
+        <ul style={{ backgroundColor: BackGroundColor }}>
+          <li>
+            <h2>
+              <Link href="/">Home</Link>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <Link href="/about">About Us</Link>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <Link href="/blog">Blog Post</Link>
+            </h2>
+          </li>
+        </ul>
+        <div className="buttonMain">
+          <button onClick={changeColor}>Koyu Mod Aç / Kapa</button>
+        </div>
+      </div>
     </ChangeBackGroundColor.Provider>
   );
 }
