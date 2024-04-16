@@ -9,7 +9,6 @@ import "./globals.css";
 export default function Home() {
   const [BackGroundColor, setBackGroundColor] = useState("#D1DBBD");
 
-
   function changeColor() {
     const newColor = BackGroundColor === "#D1DBBD" ? "#193441" : "#D1DBBD";
     document.body.style.backgroundColor = newColor;
