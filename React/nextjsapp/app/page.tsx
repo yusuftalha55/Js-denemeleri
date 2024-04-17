@@ -11,9 +11,11 @@ export default function Home() {
 
   function changeColor() {
     const newColor = BackGroundColor === "#D1DBBD" ? "#193441" : "#D1DBBD";
+    document.documentElement.style.backgroundColor = newColor;
     document.body.style.backgroundColor = newColor;
     setBackGroundColor(newColor);
-  }
+}
+
 
   return (
     <ChangeBackGroundColor.Provider
