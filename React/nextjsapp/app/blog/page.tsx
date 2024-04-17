@@ -14,11 +14,11 @@ export default function BlogPost() {
   }
 
   return (
-    <main style={{ backgroundColor: BackGroundColor }}>
-      <h1 style={{ backgroundColor: BackGroundColor }}>
+    <main>
+      <h1 >
         <Link href="/">Ana Sayfa</Link>
       </h1>
-      <h2 style={{ backgroundColor: BackGroundColor }}>Blog Post</h2>
+      <h2 >Blog Post</h2>
       <div className="buttonMain">
         <button onClick={changeColor}>Koyu Mod Aç / Kapa</button>
       </div>
