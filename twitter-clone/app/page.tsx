@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <div className="main">
       <div className="sideBar">
-
+        <Link href="/pages/homePage">
+          <img src="img/xLogo.png" alt="Ana Sayfa" />
+        </Link>
       </div>
 
     </div>
