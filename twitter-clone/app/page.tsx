@@ -7,6 +7,9 @@ import { useState } from "react";
 export default function Home() {
   return (
     <div className="main">
+      <div className="sideBar">
+
+      </div>
 
     </div>
   );
