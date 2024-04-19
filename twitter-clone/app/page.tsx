@@ -6,6 +6,7 @@ import { useState } from "react";
 import xLogo from "../app/public/img/xLogo.png";
 import homePage from "../app/public/img/homePage.png";
 import searchButton from "../app/public/img/searchButton.png";
+import notificationButton from "../app/public/img/notification.png";
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
         <div className="sideBarSearchButtonPage">
           <Link href="/pages/searchButtonPage">
             <Image src={searchButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
+        <div className="sideBarNotificationPage">
+          <Link href="/pages/notificationPage">
+            <Image src={notificationButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
       </div>
