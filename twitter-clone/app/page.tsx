@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import xLogo from "../app/public/img/xLogo.png";
 import homePage from "../app/public/img/homePage.png";
+import searchButton from "../app/public/img/searchButton.png";
 
 export default function Home() {
   return (
@@ -18,6 +19,11 @@ export default function Home() {
         <div className="sideBarHomePage">
           <Link href="/pages/homePage">
             <Image src={homePage} width={30} height={25} alt="Ana Sayfa" />
+          </Link>
+        </div>
+        <div className="sideBarSearchButtonPage">
+          <Link href="/pages/homePage">
+            <Image src={searchButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
       </div>
