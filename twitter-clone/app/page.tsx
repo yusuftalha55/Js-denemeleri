@@ -22,7 +22,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="sideBarSearchButtonPage">
-          <Link href="/pages/homePage">
+          <Link href="/pages/searchButtonPage">
             <Image src={searchButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
