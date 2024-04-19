@@ -10,10 +10,9 @@ export default function Home() {
     <div className="main">
       <div className="sideBar">
         <Link href="/pages/homePage">
-        <Image src={xLogo} alt="Ana Sayfa" />
+          <Image src={xLogo} width={30} height={30} alt="Ana Sayfa" />
         </Link>
       </div>
-
     </div>
   );
 }
