@@ -8,6 +8,7 @@ import homePage from "../app/public/img/homePage.png";
 import searchButton from "../app/public/img/searchButton.png";
 import notificationButton from "../app/public/img/notification.png";
 import messageButton from "../app/public/img/message.png";
+import ListsButton from "../app/public/img/lists.png";
 
 export default function Home() {
   return (
@@ -36,6 +37,11 @@ export default function Home() {
         <div className="sideBarMessagesPage">
           <Link href="/pages/messagesPage">
             <Image src={messageButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
+        <div className="sideBarListsPage">
+          <Link href="/pages/listsPage">
+            <Image src={ListsButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
       </div>
