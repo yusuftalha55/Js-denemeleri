@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div className="sideBarGroupsPage">
           <Link href="/pages/groupsPage">
-            <Image src={groupsButton} width={30} height={25} alt="Ara" />
+            <Image src={groupsButton} width={35} height={30} alt="Ara" />
           </Link>
         </div>
         <div className="sideBarProfilesPage">
