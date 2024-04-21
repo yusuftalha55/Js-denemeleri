@@ -9,6 +9,12 @@ import searchButton from "../app/public/img/searchButton.png";
 import notificationButton from "../app/public/img/notification.png";
 import messageButton from "../app/public/img/message.png";
 import ListsButton from "../app/public/img/lists.png";
+import favoritesButton from "../app/public/img/favorites.png";
+import groupsButton from "../app/public/img/groups.png";
+import profilesButton from "../app/public/img/profiles.png";
+import moreButton from "../app/public/img/more.png";
+import sendButton from "../app/public/img/send.png";
+
 
 export default function Home() {
   return (
@@ -46,27 +52,27 @@ export default function Home() {
         </div>
         <div className="sideBarFavoritesPage">
           <Link href="/pages/favoritesPage">
-            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+            <Image src={favoritesButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
         <div className="sideBarGroupsPage">
           <Link href="/pages/groupsPage">
-            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+            <Image src={groupsButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
-        <div className="sideBarprofilesPage">
+        <div className="sideBarProfilesPage">
           <Link href="/pages/profilesPage">
-            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+            <Image src={profilesButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
         <div className="sideBarMorePage">
           <Link href="/pages/morePage">
-            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+            <Image src={moreButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
         <div className="sideBarSendPage">
           <Link href="/pages/sendPage">
-            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+            <Image src={sendButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
       </div>
