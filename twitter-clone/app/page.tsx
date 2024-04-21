@@ -44,6 +44,31 @@ export default function Home() {
             <Image src={ListsButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
+        <div className="sideBarFavoritesPage">
+          <Link href="/pages/favoritesPage">
+            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
+        <div className="sideBarGroupsPage">
+          <Link href="/pages/groupsPage">
+            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
+        <div className="sideBarprofilesPage">
+          <Link href="/pages/profilesPage">
+            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
+        <div className="sideBarMorePage">
+          <Link href="/pages/morePage">
+            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
+        <div className="sideBarSendPage">
+          <Link href="/pages/sendPage">
+            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+          </Link>
+        </div>
       </div>
     </div>
   );
