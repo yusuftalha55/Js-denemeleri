@@ -1,4 +1,49 @@
 .sideBar {
     margin: 2%;
-    margin-left: 8%;
+    margin-left: 6%;
+}
+
+.sideBarHomePage {
+    margin: 2%;
+}
+
+.sideBarSearchButtonPage{
+    margin: 2%;
+}
+
+.sideBarNotificationPage{
+    margin: 2%;
+}
+
+.sideBarMessagesPage{
+    margin: 2%;
+}
+
+.sideBarListsPage{
+    margin: 2%;
+}
+
+.sideBarFavoritesPage{
+    margin: 2%;
+}
+
+.sideBarGroupsPage{
+    margin: 2%;
+}
+
+.sideBarProfilesPage{
+    margin: 2%;
+}
+
+.sideBarMorePage{
+    margin: 2%;
+}
+
+.sideBarSendPage{
+    margin: 1%;
+}
+
+.sideBarSendPageHref {
+    width: 50px;
+    height: 50px;
 }

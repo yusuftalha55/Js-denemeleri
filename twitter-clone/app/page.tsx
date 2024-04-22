@@ -73,7 +73,7 @@ export default function Home() {
         </div>
         <div className="sideBarSendPage">
           <Link href="/pages/sendPage">
-            <Image src={sendButton} width={30} height={25} alt="Ara" />
+            <Image className="sideBarSendPageHref" src={sendButton} width={30} height={25} alt="Ara" />
           </Link>
         </div>
       </div>
