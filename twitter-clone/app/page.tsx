@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import "./globals.css";
 import xLogo from "../app/public/img/xLogo.png";
 import homePage from "../app/public/img/homePage.png";
 import searchButton from "../app/public/img/searchButton.png";
