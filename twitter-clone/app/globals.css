@@ -18,6 +18,13 @@
     margin: 2%;
 }
 
+.sideBarSearchButtonPage:hover::after{
+    content: "Keşfet";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
 .sideBarNotificationPage{
     margin: 2%;
 }
