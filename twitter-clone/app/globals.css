@@ -51,20 +51,56 @@
     margin: 2%;
 }
 
+.sideBarListsPage:hover::after{
+    content: "Listeler";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
 .sideBarFavoritesPage{
     margin: 2%;
+}
+
+.sideBarFavoritesPage:hover::after{
+    content: "Yer İşaretleri";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(100, 100, 100);
+    color: white;
 }
 
 .sideBarGroupsPage{
     margin: 2%;
 }
 
+.sideBarGroupsPage:hover::after{
+    content: "Topluluklar";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    margin-left: 3px;
+}
+
 .sideBarProfilesPage{
     margin: 2%;
 }
 
+.sideBarProfilesPage:hover::after{
+    content: "Profil";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
 .sideBarMorePage{
     margin: 2%;
+}
+
+.sideBarMorePage:hover::after{
+    content: "Daha fazla";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(100, 100, 100);
+    color: white;
 }
 
 .sideBarSendPage{
