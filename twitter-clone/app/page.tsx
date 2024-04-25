@@ -15,6 +15,7 @@ import groupsButton from "../app/public/img/groups.png";
 import profilesButton from "../app/public/img/profiles.png";
 import moreButton from "../app/public/img/more.png";
 import sendButton from "../app/public/img/send.png";
+import MainPage from "./pages/homePage/page";
 
 
 export default function Home() {
@@ -87,7 +88,7 @@ export default function Home() {
       <div className="mainShowActivePage">
         {activePage === "home" && (
           <div>
-            {/* Ana sayfa içeriği burada render edilir */}
+            <MainPage></MainPage>
           </div>
         )}
         {activePage === "search" && (
