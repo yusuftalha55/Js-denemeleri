@@ -20,6 +20,10 @@ import sendButton from "../app/public/img/send.png";
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
 
+  const handlePageChange = (page) => {
+    setActivePage(page);
+  };
+
 
   return (
     <div className="main">
@@ -31,7 +35,7 @@ export default function Home() {
         </div>
         <div className="sideBarHomePage">
           <Link href="/pages/homePage">
-            <Image src={homePage} width={30} height={25} alt="Ana Sayfa" />
+            <Image src={homePage} width={30} height={25} alt="Ana Sayfa" onClick={() => handlePageChange("home")} />
           </Link>
         </div>
         <div className="sideBarSearchButtonPage">
