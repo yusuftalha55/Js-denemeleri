@@ -77,6 +77,12 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <div className="mainShowActivePage">
+        <div>
+          
+
+        </div>
+      </div>
     </div>
   );
 }
