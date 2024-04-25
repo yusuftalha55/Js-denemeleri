@@ -18,12 +18,15 @@ import sendButton from "../app/public/img/send.png";
 
 
 export default function Home() {
+  const [activePage, setActivePage] = useState("home");
+
+
   return (
     <div className="main">
       <div className="sideBar">
         <div className="sideBarHomePage">
           <Link href="/pages/homePage">
-            <Image src={xLogo} width={30} height={25} alt="Ana Sayfa" />
+            <Image src={xLogo} width={30} height={25} alt="Ana Sayfa" onClick={() => handlePageChange("home")}/>
           </Link>
         </div>
         <div className="sideBarHomePage">
@@ -78,10 +81,17 @@ export default function Home() {
         </div>
       </div>
       <div className="mainShowActivePage">
-        <div>
-          
-
-        </div>
+        {activePage === "home" && (
+          <div>
+            {/* Ana sayfa içeriği burada render edilir */}
+          </div>
+        )}
+        {activePage === "search" && (
+          <div>
+            {/* Arama sayfası içeriği burada render edilir */}
+          </div>
+        )}
+        {/* Diğer sayfa içerikleri burada render edilmeli */}
       </div>
     </div>
   );
