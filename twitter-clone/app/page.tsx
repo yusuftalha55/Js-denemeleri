@@ -16,6 +16,7 @@ import profilesButton from "../app/public/img/profiles.png";
 import moreButton from "../app/public/img/more.png";
 import sendButton from "../app/public/img/send.png";
 import MainPage from "./pages/homePage/page";
+import SearchButtonPage from "./pages/searchButtonPage/page";
 
 
 export default function Home() {
@@ -93,7 +94,7 @@ export default function Home() {
         )}
         {activePage === "search" && (
           <div>
-            {/* Arama sayfası içeriği burada render edilir */}
+            <SearchButtonPage></SearchButtonPage>
           </div>
         )}
         {/* Diğer sayfa içerikleri burada render edilmeli */}
