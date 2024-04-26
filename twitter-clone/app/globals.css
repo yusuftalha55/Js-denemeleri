@@ -1,3 +1,5 @@
+         /* SİDEBAR */
+      
 .sideBar {
     margin: 2%;
     margin-left: 6%;
@@ -120,4 +122,16 @@
     width: 50px;
     height: 50px;
 }
+
+
+                   /* MAİN ACTİVE PAGE */
+
+
+.mainShowActivePage {
+    margin-left: 45%;
+    margin-right: 45%;
+    height: 100%;
+    width: 750px;
+    background-color: antiquewhite;
+}                   
 
