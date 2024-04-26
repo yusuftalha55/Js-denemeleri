@@ -20,7 +20,7 @@ import SearchButtonPage from "./pages/searchButtonPage/page";
 
 
 export default function Home() {
-  const [activePage, setActivePage] = useState("home");
+  const [activePage, setActivePage] = useState("searchButton");
 
   const handlePageChange = (page) => {
     setActivePage(page);
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="sideBarSearchButtonPage">
           <Link href="/pages/searchButtonPage">
-            <Image src={searchButton} width={30} height={25} alt="Ara" />
+            <Image src={searchButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarNotificationPage">
