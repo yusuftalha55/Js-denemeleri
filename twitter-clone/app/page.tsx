@@ -20,7 +20,7 @@ import SearchButtonPage from "./pages/searchButtonPage/page";
 
 
 export default function Home() {
-  const [activePage, setActivePage] = useState("searchButton");
+  const [activePage, setActivePage] = useState("home");
 
   const handlePageChange = (page) => {
     setActivePage(page);
