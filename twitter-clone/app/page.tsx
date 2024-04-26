@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import xLogo from "../app/public/img/xLogo.png";
 import homePage from "../app/public/img/homePage.png";
@@ -42,50 +41,52 @@ export default function Home() {
           </button>
         </div>
         <div className="sideBarNotificationPage">
-          <Link href="/pages/notificationPage">
+          <button onClick={() => handlePageChange("notification")}>
             <Image src={notificationButton} width={30} height={25} alt="Bildirimler" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarMessagesPage">
-          <Link href="/pages/messagesPage">
+          <button onClick={() => handlePageChange("messages")}>
             <Image src={messageButton} width={30} height={25} alt="Mesajlar" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarListsPage">
-          <Link href="/pages/listsPage">
+          <button onClick={() => handlePageChange("lists")}>
             <Image src={ListsButton} width={30} height={25} alt="Listeler" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarFavoritesPage">
-          <Link href="/pages/favoritesPage">
+          <button onClick={() => handlePageChange("favorites")}>
             <Image src={favoritesButton} width={30} height={25} alt="Favoriler" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarGroupsPage">
-          <Link href="/pages/groupsPage">
+          <button onClick={() => handlePageChange("groups")}>
             <Image src={groupsButton} width={35} height={30} alt="Gruplar" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarProfilesPage">
-          <Link href="/pages/profilesPage">
+          <button onClick={() => handlePageChange("profiles")}>
             <Image src={profilesButton} width={30} height={25} alt="Profiller" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarMorePage">
-          <Link href="/pages/morePage">
+          <button onClick={() => handlePageChange("more")}>
             <Image src={moreButton} width={30} height={25} alt="Daha Fazla" />
-          </Link>
+          </button>
         </div>
         <div className="sideBarSendPage">
-          <Link href="/pages/sendPage">
+          <button onClick={() => handlePageChange("send")}>
             <Image className="sideBarSendPageHref" src={sendButton} width={30} height={25} alt="Gönder" />
-          </Link>
+          </button>
         </div>
       </div>
       <div className="mainShowActivePage">
         {activePage === "home" && <MainPage />}
         {activePage === "search" && <SearchButtonPage />}
+        {/* Diğer sayfa içerikleri burada render edilmeli */}
       </div>
     </div>
   );
 }
+
