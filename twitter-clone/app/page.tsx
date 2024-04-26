@@ -47,42 +47,42 @@ export default function Home() {
         </div>
         <div className="sideBarNotificationPage">
           <Link href="/pages/notificationPage">
-            <Image src={notificationButton} width={30} height={25} alt="Ara" />
+            <Image src={notificationButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarMessagesPage">
           <Link href="/pages/messagesPage">
-            <Image src={messageButton} width={30} height={25} alt="Ara" />
+            <Image src={messageButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarListsPage">
           <Link href="/pages/listsPage">
-            <Image src={ListsButton} width={30} height={25} alt="Ara" />
+            <Image src={ListsButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarFavoritesPage">
           <Link href="/pages/favoritesPage">
-            <Image src={favoritesButton} width={30} height={25} alt="Ara" />
+            <Image src={favoritesButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarGroupsPage">
           <Link href="/pages/groupsPage">
-            <Image src={groupsButton} width={35} height={30} alt="Ara" />
+            <Image src={groupsButton} width={35} height={30} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarProfilesPage">
           <Link href="/pages/profilesPage">
-            <Image src={profilesButton} width={30} height={25} alt="Ara" />
+            <Image src={profilesButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarMorePage">
           <Link href="/pages/morePage">
-            <Image src={moreButton} width={30} height={25} alt="Ara" />
+            <Image src={moreButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
         <div className="sideBarSendPage">
           <Link href="/pages/sendPage">
-            <Image className="sideBarSendPageHref" src={sendButton} width={30} height={25} alt="Ara" />
+            <Image className="sideBarSendPageHref" src={sendButton} width={30} height={25} alt="Ara" onClick={() => handlePageChange("searchButton")} />
           </Link>
         </div>
       </div>
