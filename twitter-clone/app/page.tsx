@@ -14,6 +14,7 @@ import moreButton from "../app/public/img/more.png";
 import sendButton from "../app/public/img/send.png";
 import MainPage from "./pages/homePage/page"; 
 import SearchButtonPage from "./pages/searchButtonPage/page"; 
+import NotificationPage from "./pages/notificationPage/page";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
@@ -84,6 +85,7 @@ export default function Home() {
       <div className="mainShowActivePage">
         {activePage === "home" && <MainPage />}
         {activePage === "search" && <SearchButtonPage />}
+        {activePage === "notification" && <NotificationPage />}
         {/* Diğer sayfa içerikleri burada render edilmeli */}
       </div>
     </div>
