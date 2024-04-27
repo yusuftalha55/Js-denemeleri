@@ -100,7 +100,6 @@ export default function Home() {
         {activePage === "profiles" && <ProfilesPage />}
         {activePage === "more" && <MorePage />}
         {activePage === "send" && <SendPage />}
-        {/* Diğer sayfa içerikleri burada render edilmeli */}
       </div>
     </div>
   );
