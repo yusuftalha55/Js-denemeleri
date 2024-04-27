@@ -135,5 +135,24 @@
     height: 100%;
     width: 750px;
     background-color: antiquewhite;
-}                   
+}       
+
+.headerMainPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Her sütunun eşit genişliği */
+    grid-gap: 2px; 
+}
+
+.chapterOneMainPage {
+    border: 1px solid black;
+    
+}
+
+.chapterTwoMainPage {
+    border: 1px solid black;
+}
+
+.chapterThreeMainPage {
+    border: 1px solid black;
+}
 

@@ -5,100 +5,15 @@ export default function MainPage() {
   return (
     <div>
       <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>
-
-
-
-
-      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
-      </div>
-      <div className="sendMainPage">
-        <h1>Send</h1>
-      </div>
-      <div className="newFlowMainPage">
-        <h1>Flow</h1>
-      </div>
-      <div className="containersMainPage">
-        <h1>Containers</h1>
-      </div>      <div className="headerMainPage">
-        <h1>Headers</h1>
+        <div className="chapterOneMainPage">
+          <h1>chapterOneMainPage</h1>
+        </div>
+        <div className="chapterTwoMainPage">
+          <h1>chapterTwoMainPage</h1>
+        </div>
+        <div className="chapterThreeMainPage">
+          <h1>chapterThreeMainPage</h1>
+        </div>
       </div>
       <div className="sendMainPage">
         <h1>Send</h1>
