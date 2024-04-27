@@ -3,7 +3,8 @@
 .sideBar {
     margin-top: 5%;
     margin-left: 8%;
-    max-width: 200px;
+    width: 200px;
+    position: fixed
 }
 
 .sideBarHomePage {
