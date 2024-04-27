@@ -17,6 +17,11 @@ import SearchButtonPage from "./pages/searchButtonPage/page";
 import NotificationPage from "./pages/notificationPage/page";
 import MessagePage from "./pages/messagesPage/page";
 import ListsPage from "./pages/listsPage/page";
+import FavoritesPage from "./pages/favoritesPage/page";
+import GroupsPage from "./pages/groupsPage/page";
+import ProfilesPage from "./pages/profilesPage/page";
+import MorePage from "./pages/morePage/page";
+import SendPage from "./pages/sendPage/page";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
@@ -88,10 +93,13 @@ export default function Home() {
         {activePage === "home" && <MainPage />}
         {activePage === "search" && <SearchButtonPage />}
         {activePage === "notification" && <NotificationPage />}
+        {activePage === "messages" && <MessagePage />}
         {activePage === "lists" && <ListsPage />}
-        {activePage === "messages" && <MessagePage />}
-        {activePage === "messages" && <MessagePage />}
-        {activePage === "messages" && <MessagePage />}
+        {activePage === "favorites" && <FavoritesPage />}
+        {activePage === "groups" && <GroupsPage />}
+        {activePage === "profiles" && <ProfilesPage />}
+        {activePage === "more" && <MorePage />}
+        {activePage === "send" && <SendPage />}
         {/* Diğer sayfa içerikleri burada render edilmeli */}
       </div>
     </div>
