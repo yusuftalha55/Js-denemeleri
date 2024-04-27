@@ -1,8 +1,9 @@
          /* SİDEBAR */
       
 .sideBar {
-    margin: 2%;
-    margin-left: 6%;
+    margin-top: 5%;
+    margin-left: 8%;
+    max-width: 200px;
 }
 
 .sideBarHomePage {
@@ -128,7 +129,7 @@
 
 
 .mainShowActivePage {
-    margin-left: 45%;
+    margin-left: 25%;
     margin-right: 45%;
     height: 100%;
     width: 750px;
