@@ -15,6 +15,7 @@ import sendButton from "../app/public/img/send.png";
 import MainPage from "./pages/homePage/page"; 
 import SearchButtonPage from "./pages/searchButtonPage/page"; 
 import NotificationPage from "./pages/notificationPage/page";
+import MessagePage from "./pages/messagesPage/page";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
@@ -86,6 +87,7 @@ export default function Home() {
         {activePage === "home" && <MainPage />}
         {activePage === "search" && <SearchButtonPage />}
         {activePage === "notification" && <NotificationPage />}
+        {activePage === "messages" && <MessagePage />}
         {/* Diğer sayfa içerikleri burada render edilmeli */}
       </div>
     </div>
