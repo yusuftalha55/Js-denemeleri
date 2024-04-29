@@ -1,5 +1,6 @@
 import Home from "@/app/page";
 import React from "react";
+import sendSection from "@/app/components/sendSection";
 
 export default function MainPage() {
   return (
@@ -18,7 +19,7 @@ export default function MainPage() {
         </div>
       </div>
       <div className="sendMainPage">
-        <h1>Send</h1>
+        <sendSection/>
       </div>
       <div className="newFlowMainPage">
         <h1>Flow</h1>
