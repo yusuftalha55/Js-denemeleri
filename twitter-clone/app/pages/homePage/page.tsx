@@ -6,7 +6,7 @@ export default function MainPage() {
     <div>
       <div className="headerMainPage">
         <div className="chapterOneMainPage">
-          <h1>Sana Özel</h1>
+          <button className="chapterOneMainPageButton">Sana Özel</button>
         </div>
         <div className="chapterTwoMainPage">
           <h1>Takip edilenler</h1>
