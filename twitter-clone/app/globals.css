@@ -145,6 +145,7 @@
 
 .chapterOneMainPage {   
     width: 200px;
+    height: 60px;
 }
 
 .chapterOneMainPageButton {
@@ -159,7 +160,6 @@
 }
 
 .chapterTwoMainPage {
-    border: 1px solid black;
     width: 200px;
 }
 
@@ -175,7 +175,17 @@
 }
 
 .chapterThreeMainPage {
-    border: 1px solid black;
     width: 200px;
+}
+
+.chapterThreeMainPageButton {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.chapterThreeMainPageButton:hover {
+    background-color: rgb(247, 242, 242);
+    cursor: pointer;
 }
 
