@@ -133,7 +133,7 @@
     margin-left: 25%;
     margin-right: 45%;
     height: 100%;
-    width: 615px;
+    width: 600px;
     background-color: antiquewhite;
 }       
 
@@ -144,7 +144,7 @@
 }
 
 .chapterOneMainPage {   
-    width: 200px;
+    width: 250px;
     height: 60px;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .chapterTwoMainPage {
-    width: 200px;
+    width: 250px;
 }
 
 .chapterTwoMainPageButton {
@@ -175,7 +175,7 @@
 }
 
 .chapterThreeMainPage {
-    width: 200px;
+    width: 95px;
 }
 
 .chapterThreeMainPageButton {
