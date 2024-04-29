@@ -9,10 +9,12 @@ export default function MainPage() {
           <button className="chapterOneMainPageButton">Sana Özel</button>
         </div>
         <div className="chapterTwoMainPage">
-        <button className="chapterTwoMainPageButton">Sana Özel</button>
+        <button className="chapterTwoMainPageButton">Takip edilenler</button>
         </div>
         <div className="chapterThreeMainPage">
-        <button className="chapterThreeMainPageButton">Sana Özel</button>
+        <button className="chapterThreeMainPageButton">
+          <button className="chapterThreeMainPageButtonInButton"></button>
+        </button>
         </div>
       </div>
       <div className="sendMainPage">
