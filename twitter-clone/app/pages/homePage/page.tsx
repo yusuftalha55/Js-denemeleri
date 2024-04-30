@@ -20,11 +20,13 @@ export default function MainPage() {
           </button>
         </div>
       </div>
+
       <div className="sendMainPage">
         <div className="sendMainPageIn">
           <SendSection />
         </div>
       </div>
+
       <div className="newFlowMainPage">
         <div className="newFlowMainPageIn">
           <h1>Flow</h1>
