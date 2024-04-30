@@ -16,7 +16,9 @@ export default function MainPage() {
           <button className="chapterTwoMainPageButton">Takip edilenler</button>
         </div>
         <div className="chapterThreeMainPage">
-          <button className="chapterThreeMainPageButtonInButton"><Image src={xLogo} width={30} height={25} alt="Ana Sayfa" /></button>
+          <button className="chapterThreeMainPageButtonInButton">
+            <Image src={xLogo} width={30} height={25} alt="Ana Sayfa" />
+          </button>
         </div>
       </div>
       <div className="sendMainPage">

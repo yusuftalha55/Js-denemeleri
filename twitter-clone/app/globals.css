@@ -139,7 +139,7 @@
 
 .headerMainPage {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Her sütunun eşit genişliği */
+    grid-template-columns: 250px 250px 95px;
     grid-gap: 2px; 
 }
 
