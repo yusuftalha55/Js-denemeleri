@@ -176,6 +176,8 @@
 
 .chapterThreeMainPage {
     width: 95px;
+    background-color: white;
+    border-style: solid;
 }
 
 .chapterThreeMainPageButton {
@@ -190,7 +192,8 @@
 }
 
 .chapterThreeMainPageButtonInButton {
-    width: 15px;
-    height: 15px;
+    width: 35px;
+    height: 35px;
+    margin-left: 35%;
 }
 
