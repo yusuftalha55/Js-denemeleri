@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function SendSection() {
   return (
-    <div><h1>sendSection</h1></div>
+    <div className='mainSendSection'>
+      <h1>Send section</h1>
+    </div>
   )
 }

@@ -4,7 +4,6 @@ import React from "react";
 import SendSection from "../../../app/components/sendSection";
 import xLogo from "../../../app/public/img/xLogo.png";
 
-
 export default function MainPage() {
   return (
     <div>
@@ -22,13 +21,20 @@ export default function MainPage() {
         </div>
       </div>
       <div className="sendMainPage">
-        <SendSection/>
+        <div className="sendMainPageIn">
+          <SendSection />
+        </div>
       </div>
       <div className="newFlowMainPage">
-        <h1>Flow</h1>
+        <div className="newFlowMainPageIn">
+          <h1>Flow</h1>
+        </div>
       </div>
+
       <div className="containersMainPage">
-        <h1>Containers</h1>
+        <div className="containersMainPageIn">
+          <h1>Containers</h1>
+        </div>
       </div>
     </div>
   );
