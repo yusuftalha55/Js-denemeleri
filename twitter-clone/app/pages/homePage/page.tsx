@@ -1,7 +1,7 @@
 import Home from "@/app/page";
 import Image from "next/image";
 import React from "react";
-import sendSection from "@/app/components/sendSection";
+import SendSection from "../../../app/components/sendSection";
 import xLogo from "../../../app/public/img/xLogo.png";
 
 
@@ -22,7 +22,7 @@ export default function MainPage() {
         </div>
       </div>
       <div className="sendMainPage">
-        <sendSection />
+        <SendSection/>
       </div>
       <div className="newFlowMainPage">
         <h1>Flow</h1>
