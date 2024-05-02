@@ -206,5 +206,11 @@
 
 .mainSendSectionImgButton {
     margin-top: 2%;
+    border: 0cap;
+    background-color: white;
+}
+
+.mainSendSectionImgButton:hover {
+    cursor: pointer;
 }
 
