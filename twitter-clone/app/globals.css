@@ -220,3 +220,17 @@
     height: 45px;
 }
 
+.mainSendSectionSendButtonIn {
+    border-radius: 15px 15px 15px 15px;
+    background-color: #c5e0ec;
+    margin-left: 75%;
+    margin-top: 3%;
+    width: 110px;
+    height: 40px;
+}
+
+.mainSendSectionSendButtonIn:hover {
+    cursor: pointer;
+    background-color: #7bafc5;
+}
+

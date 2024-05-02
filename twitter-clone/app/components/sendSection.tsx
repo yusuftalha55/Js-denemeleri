@@ -10,6 +10,9 @@ export default function SendSection() {
           <Image className="mainSendSectionImgButtonIn" src={profilePhotos} width={30} height={25} alt="Profil" />
         </button>
       </div>
+      <div className="mainSendSectionSendButton">
+        <button className="mainSendSectionSendButtonIn">Gönder</button>
+      </div>
     </div>
   );
 }
