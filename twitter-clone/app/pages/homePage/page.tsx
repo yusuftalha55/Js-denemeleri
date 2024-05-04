@@ -28,9 +28,7 @@ export default function MainPage() {
       </div>
 
       <div className="newFlowMainPage">
-        <div className="newFlowMainPageIn">
-          <h1>Flow</h1>
-        </div>
+        <button className="newFlowMainPageIn">Yeni gönderileri göster</button>
       </div>
 
       <div className="containersMainPage">

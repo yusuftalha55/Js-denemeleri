@@ -155,7 +155,7 @@
 }
 
 .chapterOneMainPageButton:hover {
-    background-color: rgb(247, 242, 242);
+    background-color: #f2f2f2;
     cursor: pointer;
 }
 
@@ -170,7 +170,7 @@
 }
 
 .chapterTwoMainPageButton:hover {
-    background-color: rgb(247, 242, 242);
+    background-color: #f2f2f2;
     cursor: pointer;
 }
 
@@ -232,5 +232,16 @@
 .mainSendSectionSendButtonIn:hover {
     cursor: pointer;
     background-color: #7bafc5;
+}
+
+.newFlowMainPageIn {
+    width: 600px;
+    height: 50px;
+    background-color: white;
+}
+
+.newFlowMainPageIn:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
 }
 
