@@ -2,7 +2,7 @@ import Home from "@/app/page";
 import Image from "next/image";
 import React from "react";
 import SendSection from "../../../app/components/sendSection";
-import xLogo from "../../../app/public/img/xLogo.png";
+import settings from "../../../app/public/img/settings.png";
 
 export default function MainPage() {
   return (
@@ -16,7 +16,7 @@ export default function MainPage() {
         </div>
         <div className="chapterThreeMainPage">
           <button className="chapterThreeMainPageButtonInButton">
-            <Image src={xLogo} width={30} height={25} alt="Ana Sayfa" />
+            <Image src={settings} className="chapterThreeMainPageButtonInButtonImg" alt="Ana Sayfa" />
           </button>
         </div>
       </div>

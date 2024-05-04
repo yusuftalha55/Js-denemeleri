@@ -186,10 +186,18 @@
     background-color: white;
 }
 
+.chapterThreeMainPageButtonInButtonImg{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
 .chapterThreeMainPageButton:hover {
     background-color: rgb(247, 242, 242);
     cursor: pointer;
 }
+
 
 .chapterThreeMainPageButtonInButton {
     width: 35px;
