@@ -15,7 +15,7 @@ export default function MainPage() {
           <button className="chapterTwoMainPageButton">Takip edilenler</button>
         </div>
         <div className="chapterThreeMainPage">
-          <button className="chapterThreeMainPageButtonInButton">
+          <button className="chapterThreeMainPageButton">
             <Image src={settings} className="chapterThreeMainPageButtonInButtonImg" alt="Ana Sayfa" />
           </button>
         </div>
