@@ -266,3 +266,12 @@
     height: auto;
 }        
 
+        /* SearchSections CSS */
+
+.searchSection {
+    margin-top: 15%;
+    margin-left: 55%;
+    background-color: #7bafc5;
+    width: 150px;
+    height: 150px;
+}
