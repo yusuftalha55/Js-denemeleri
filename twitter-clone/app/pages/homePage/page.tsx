@@ -2,6 +2,7 @@ import Home from "@/app/page";
 import Image from "next/image";
 import React from "react";
 import SendSection from "../../../app/components/sendSection";
+import Containers from "@/app/components/containers";
 import settings from "../../../app/public/img/settings.png";
 
 export default function MainPage() {
@@ -33,7 +34,7 @@ export default function MainPage() {
 
       <div className="containersMainPage">
         <div className="containersMainPageIn">
-          <h1>Containers</h1>
+          <Containers/>
         </div>
       </div>
     </div>
