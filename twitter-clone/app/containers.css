@@ -1,6 +1,8 @@
 .conatinersMain {
     width: auto;
     height: 350px;
+    background-color: white;
+    border: 1px solid #000000;
 }
 
 .conatinersMain:hover {
