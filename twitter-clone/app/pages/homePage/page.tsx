@@ -4,6 +4,7 @@ import React from "react";
 import SendSection from "../../../app/components/sendSection";
 import Containers from "@/app/components/containers";
 import settings from "../../../app/public/img/settings.png";
+import SearchSections from "@/app/components/searchSections";
 
 export default function MainPage() {
   return (
@@ -35,7 +36,18 @@ export default function MainPage() {
       <div className="containersMainPage">
         <div className="containersMainPageIn">
           <Containers/>
+          <Containers/>
+          <Containers/>
+          <Containers/>
+          <Containers/>
+          <Containers/>
+          <Containers/>
+          <Containers/>
         </div>
+      </div>
+
+      <div className="searcSection">
+        <SearchSections/>
       </div>
     </div>
   );
