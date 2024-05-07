@@ -134,8 +134,8 @@
     margin-right: 45%;
     height: 100%;
     width: 600px;
+    max-width: 600px;
     display: inline-block;
-    width: 100%;
 }       
 
 .headerMainPage {
@@ -271,7 +271,7 @@
 
 .searchSection {
     margin-top: 15%;
-    margin-left: 5%;
+    margin-left: 80%;
     background-color: #7bafc5;
     width: 150px;
     height: 150px;
