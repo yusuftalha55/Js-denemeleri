@@ -136,6 +136,7 @@
     width: 600px;
     max-width: 600px;
     display: inline-block;
+    position: fixed;
 }       
 
 .headerMainPage {
@@ -270,10 +271,11 @@
         /* SearchSections CSS */
 
 .searchSection {
-    margin-top: 15%;
-    margin-left: 80%;
+    margin-top: 1%;
+    margin-left: 85%;
     background-color: #7bafc5;
     width: 150px;
     height: 150px;
     display: inline-block;
+    position: fixed;
 }
