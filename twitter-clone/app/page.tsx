@@ -22,6 +22,7 @@ import GroupsPage from "./pages/groupsPage/page";
 import ProfilesPage from "./pages/profilesPage/page";
 import MorePage from "./pages/morePage/page";
 import SendPage from "./pages/sendPage/page";
+import SearchSections from "./components/searchSections";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
@@ -100,6 +101,9 @@ export default function Home() {
         {activePage === "profiles" && <ProfilesPage />}
         {activePage === "more" && <MorePage />}
         {activePage === "send" && <SendPage />}
+      </div>
+      <div className="searcSection">
+        <SearchSections/>
       </div>
     </div>
   );
