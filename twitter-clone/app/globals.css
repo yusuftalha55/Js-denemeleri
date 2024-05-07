@@ -135,6 +135,8 @@
     height: 100%;
     width: 600px;
     background-color: antiquewhite;
+    display: inline-block;
+    width: 100%;
 }       
 
 .headerMainPage {
@@ -274,4 +276,5 @@
     background-color: #7bafc5;
     width: 150px;
     height: 150px;
+    display: inline-block;
 }
