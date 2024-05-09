@@ -267,13 +267,30 @@
 /* SearchSections CSS */
 
 .searchSection {
-  margin-top: 1%;
-  margin-left: 80%;
-  background-color: #7bafc5;
-  width: 200px;
-  height: 150px;
-  display: inline-block;
-  position: fixed;
-}
+    margin-top: 1%;
+    margin-left: 80%;
+    background-color: #7bafc5;
+    width: 200px;
+    height: 150px;
+    position: fixed;
+  }
+  
+  .searchSection div {
+    display: inline-block; /* İçeriği yatay olarak hizalar */
+    vertical-align: middle; /* Dikey olarak ortalar */
+  }
+  
+  .searchSectionSearchButtonImg {
+    display: inline-block;
+    vertical-align: middle; /* Resmi dikey olarak ortalar */
+  }
+  
+  .searchSectionInput {
+    width: 100px;
+    height: 35px;
+    vertical-align: middle; /* Giriş kutusunu dikey olarak resminle hizalar */
+    margin-left: 5px; /* Resmin sağında bir boşluk bırakır */
+  }
+  
 
 
