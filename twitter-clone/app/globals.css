@@ -1,300 +1,296 @@
-         /* SİDEBAR */
-      
+/* SİDEBAR */
+
 .sideBar {
-    margin-top: 5%;
-    margin-left: 20%;
-    width: 200px;
-    position: fixed
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 200px;
+  position: fixed;
 }
 
 .sideBarHomePage {
-    margin: 2%;
+  margin: 2%;
 }
 
-.sideBarHomePage:hover::after{
-    content: "Anasayfa";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarHomePage:hover::after {
+  content: "Anasayfa";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarSearchButtonPage{
-    margin: 2%;
+.sideBarSearchButtonPage {
+  margin: 2%;
 }
 
-.sideBarSearchButtonPage:hover::after{
-    content: "Keşfet";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarSearchButtonPage:hover::after {
+  content: "Keşfet";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarNotificationPage{
-    margin: 2%;
+.sideBarNotificationPage {
+  margin: 2%;
 }
 
-.sideBarNotificationPage:hover::after{
-    content: "Bildirimler";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarNotificationPage:hover::after {
+  content: "Bildirimler";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarMessagesPage{
-    margin: 2%;
+.sideBarMessagesPage {
+  margin: 2%;
 }
 
-.sideBarMessagesPage:hover::after{
-    content: "Mesajlar";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarMessagesPage:hover::after {
+  content: "Mesajlar";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarListsPage{
-    margin: 2%;
+.sideBarListsPage {
+  margin: 2%;
 }
 
-.sideBarListsPage:hover::after{
-    content: "Listeler";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarListsPage:hover::after {
+  content: "Listeler";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarFavoritesPage{
-    margin: 2%;
+.sideBarFavoritesPage {
+  margin: 2%;
 }
 
-.sideBarFavoritesPage:hover::after{
-    content: "Yer İşaretleri";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarFavoritesPage:hover::after {
+  content: "Yer İşaretleri";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarGroupsPage{
-    margin: 2%;
+.sideBarGroupsPage {
+  margin: 2%;
 }
 
-.sideBarGroupsPage:hover::after{
-    content: "Topluluklar";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
-    margin-left: 3px;
+.sideBarGroupsPage:hover::after {
+  content: "Topluluklar";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  margin-left: 3px;
 }
 
-.sideBarProfilesPage{
-    margin: 2%;
+.sideBarProfilesPage {
+  margin: 2%;
 }
 
-.sideBarProfilesPage:hover::after{
-    content: "Profil";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarProfilesPage:hover::after {
+  content: "Profil";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarMorePage{
-    margin: 2%;
+.sideBarMorePage {
+  margin: 2%;
 }
 
-.sideBarMorePage:hover::after{
-    content: "Daha fazla";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarMorePage:hover::after {
+  content: "Daha fazla";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
-.sideBarSendPage{
-    margin: 1%;
-    width: 60px;
-    height: 60px;
+.sideBarSendPage {
+  margin: 1%;
+  width: 60px;
+  height: 60px;
 }
 
-.sideBarSendPage:hover::after{
-    content: "Gönder";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
+.sideBarSendPage:hover::after {
+  content: "Gönder";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(100, 100, 100);
+  color: white;
 }
 
 .sideBarSendPageHref {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-
-                   /* MAİN ACTİVE PAGE */
-
+/* MAİN ACTİVE PAGE */
 
 .mainShowActivePage {
-    margin-left: 30%;
-    margin-right: 45%;
-    height: 100%;
-    width: 600px;
-    max-width: 600px;
-    display: inline-block;
-    position: fixed;
-}       
-
-.headerMainPage {
-    display: grid;
-    grid-template-columns: 250px 250px 95px;
-    grid-gap: 2px; 
+  margin-left: 30%;
+  margin-right: 45%;
+  height: 100%;
+  width: 600px;
+  max-width: 600px;
+  display: inline-block;
+  position: fixed;
 }
 
-.chapterOneMainPage {   
-    width: 250px;
-    height: 60px;
+.headerMainPage {
+  display: grid;
+  grid-template-columns: 250px 250px 95px;
+  grid-gap: 2px;
+}
+
+.chapterOneMainPage {
+  width: 250px;
+  height: 60px;
 }
 
 .chapterOneMainPageButton {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 .chapterOneMainPageButton:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .chapterTwoMainPage {
-    width: 250px;
+  width: 250px;
 }
 
 .chapterTwoMainPageButton {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 .chapterTwoMainPageButton:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .chapterThreeMainPage {
-    width: 95px;
-    background-color: white;
-    border-style: solid;
-    height: 53px;
+  width: 95px;
+  background-color: white;
+  border-style: solid;
+  height: 53px;
 }
 
 .chapterThreeMainPageButton {
-    border: none; 
-    background-color: transparent; 
-    width: 40px;
-    height: 35px;
-    margin-left: 28%;
-    margin-top: 12%;
-    border-radius: 50%;
-
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 35px;
+  margin-left: 28%;
+  margin-top: 12%;
+  border-radius: 50%;
 }
 
-.chapterThreeMainPageButtonInButtonImg{
-    width: 23px;
-    height: auto;
-    text-align: center;
-    background-color: white;
+.chapterThreeMainPageButtonInButtonImg {
+  width: 23px;
+  height: auto;
+  text-align: center;
+  background-color: white;
 }
 
 .chapterThreeMainPageButton:hover {
-    background-color: #f8efef;
-    cursor: pointer;
+  background-color: #f8efef;
+  cursor: pointer;
 }
 
-
 .chapterThreeMainPageButtonInButton {
-    width: 35px;
-    height: 35px;
-    margin-left: 35%;
+  width: 35px;
+  height: 35px;
+  margin-left: 35%;
 }
 
 .mainSendSection {
-    width: 602px;
-    height: 130px;
-    background-color: white;
-    border: 1px solid #000000;
+  width: 602px;
+  height: 130px;
+  background-color: white;
+  border: 1px solid #000000;
 }
 
 .mainSendSectionImgButton {
-    margin-top: 2%;
-    border: 0cap;
-    background-color: white;
+  margin-top: 2%;
+  border: 0cap;
+  background-color: white;
 }
 
 .mainSendSectionImgButton:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .mainSendSectionImgButtonIn {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
 
 .mainSendSectionSendButtonIn {
-    border-radius: 15px 15px 15px 15px;
-    background-color: #c5e0ec;
-    margin-left: 75%;
-    margin-top: 3%;
-    width: 110px;
-    height: 40px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #c5e0ec;
+  margin-left: 75%;
+  margin-top: 3%;
+  width: 110px;
+  height: 40px;
 }
 
 .mainSendSectionSendButtonIn:hover {
-    cursor: pointer;
-    background-color: #7bafc5;
+  cursor: pointer;
+  background-color: #7bafc5;
 }
 
 .newFlowMainPageIn {
-    width: 600px;
-    height: 50px;
-    background-color: white;
+  width: 600px;
+  height: 50px;
+  background-color: white;
 }
 
 .newFlowMainPageIn:hover {
-    cursor: pointer;
-    background-color: #f2f2f2;
+  cursor: pointer;
+  background-color: #f2f2f2;
 }
 
-           /* CONTAİNERS MAİN */
+/* CONTAİNERS MAİN */
 
 .containersMainPageIn {
-    width: 600px;
-    height: auto;
-}        
+  width: 600px;
+  height: auto;
+}
 
-        /* SearchSections CSS */
+/* SearchSections CSS */
 
 .searchSection {
-    margin-top: 1%;
-    margin-left: 80%;
-    background-color: #7bafc5;
-    width: 200px;
-    height: 150px;
-    display: inline-block;
-    position: fixed;
+  margin-top: 1%;
+  margin-left: 80%;
+  background-color: #7bafc5;
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+  position: fixed;
 }
 
 .searchSectionIn {
-    display: inline-block;
+  display: inline-block;
 }
 
-.searchSectionSearchButtonImg{
-    display: inline-block;
-    height: 35px;
+.searchSectionSearchButtonImg {
+  display: inline-block;
+  height: 35px;
 }
 
 .searchSectionButton {
-    display: inline-block;
+  display: inline-block;
 }
 
 .searchSectionInput {
-    /* display: inline-block; */
-    width: 150px;
-    height: 35px;
+  /* display: inline-block; */
+  width: 150px;
+  height: 35px;
 }
