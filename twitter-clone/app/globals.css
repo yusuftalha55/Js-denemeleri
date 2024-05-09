@@ -269,7 +269,7 @@
 .searchSection {
     margin-top: 1%;
     margin-left: 80%;
-    background-color: #7bafc5;
+    /* background-color: #7bafc5; */
     width: 200px;
     height: 150px;
     position: fixed;
@@ -283,13 +283,17 @@
   .searchSectionSearchButtonImg {
     display: inline-block;
     vertical-align: middle; 
+    margin-top: -20%;
+    height: 40px;
+    border-radius: 15px 0 0 15px;
   }
   
   .searchSectionInput {
-    width: 100px;
-    height: 35px;
+    width: 150px;
+    height: 32px;
     vertical-align: middle; 
-    margin-left: 5px; 
+    margin-top: -2%; 
+    border-radius: 0 15px 15px 0;
   }
   
 
