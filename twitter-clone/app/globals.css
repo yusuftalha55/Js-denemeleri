@@ -276,20 +276,20 @@
   }
   
   .searchSection div {
-    display: inline-block; /* İçeriği yatay olarak hizalar */
-    vertical-align: middle; /* Dikey olarak ortalar */
+    display: inline-block; 
+    vertical-align: middle; 
   }
   
   .searchSectionSearchButtonImg {
     display: inline-block;
-    vertical-align: middle; /* Resmi dikey olarak ortalar */
+    vertical-align: middle; 
   }
   
   .searchSectionInput {
     width: 100px;
     height: 35px;
-    vertical-align: middle; /* Giriş kutusunu dikey olarak resminle hizalar */
-    margin-left: 5px; /* Resmin sağında bir boşluk bırakır */
+    vertical-align: middle; 
+    margin-left: 5px; 
   }
   
 
