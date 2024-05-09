@@ -280,6 +280,10 @@
     position: fixed;
 }
 
+.searchSectionIn {
+    display: inline-block;
+}
+
 .searchSectionSearchButtonImg{
     display: inline-block;
     height: 35px;
@@ -287,6 +291,10 @@
 
 .searchSectionButton {
     display: inline-block;
+}
+
+.searchSectionInput {
+    /* display: inline-block; */
     width: 150px;
     height: 35px;
 }

@@ -5,12 +5,12 @@ import searchButton from "../../app/public/img/searchButton.png";
 export default function SearchSections() {
   return (
     <div className='searchSection'>
-      <div>
+      <div className='searchSectionIn'>
         <div className='searchSectionSearchButtonImg'>
           <Image className="searchSectionSearchButtonImg" src={searchButton} width={30} height={25} alt="arama" />
         </div>
         <div className='searchSectionButton'>
-          <input className='searchSectionButton'></input>
+          <input className='searchSectionInput'></input>
         </div>
       </div>
     </div>
