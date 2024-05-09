@@ -10,7 +10,7 @@ export default function SearchSections() {
           <Image className="searchSectionSearchButtonImg" src={searchButton} width={30} height={25} alt="arama" />
         </div>
         <div className='searchSectionButton'>
-          <button className='searchSectionButton'></button>
+          <input className='searchSectionButton'></input>
         </div>
       </div>
     </div>
