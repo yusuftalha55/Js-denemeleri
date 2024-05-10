@@ -4,7 +4,7 @@
   margin-top: 5%;
   margin-left: 20%;
   width: 200px;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .sideBarHomePage {
@@ -134,7 +134,8 @@
   width: 600px;
   max-width: 600px;
   display: inline-block;
-  position: fixed;
+  /* position: fixed; */
+  margin-top: -41%;
 }
 
 .headerMainPage {
@@ -267,12 +268,12 @@
 /* SearchSections CSS */
 
 .searchSection {
-    margin-top: 1%;
+    margin-top: -160%;
     margin-left: 80%;
     /* background-color: #7bafc5; */
     width: 200px;
     height: 150px;
-    position: fixed;
+    /* position: fixed; */
   }
   
   .searchSection div {
