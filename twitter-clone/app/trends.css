@@ -1,0 +1,10 @@
+.trendsMain {
+    background-color: antiquewhite;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 80%;
+    width: 210px;
+    height: 750px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 1%;
+}
