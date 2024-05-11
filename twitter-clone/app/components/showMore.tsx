@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function ShowMore() {
   return (
-    <div>showMore</div>
+    <div className='showMore'>
+        showMore
+    </div>
   )
 }
