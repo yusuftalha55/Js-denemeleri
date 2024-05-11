@@ -4,7 +4,17 @@
     margin-top: 10%;
     margin-left: 75%;
     width: 230px;
-    height: 750px;
+    height: 850px;
     border-radius: 15px 15px 15px 15px;
     padding: 1%;
+}
+
+.trendsContainer {
+    width: 230px;
+    height: 100px;
+}
+
+.trendsContainer:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
 }
