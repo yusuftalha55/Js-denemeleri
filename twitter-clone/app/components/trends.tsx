@@ -1,5 +1,6 @@
 import React from 'react'
 import TrendsContainer from './trendsContainer'
+import ShowMore from './showMore'
 
 export default function Trends() {
   return (
@@ -14,6 +15,7 @@ export default function Trends() {
           <TrendsContainer/>
           <TrendsContainer/>
           <TrendsContainer/>
+          <ShowMore/>
         </div>
     </div>
   )
