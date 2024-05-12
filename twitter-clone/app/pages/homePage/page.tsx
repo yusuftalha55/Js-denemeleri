@@ -46,10 +46,6 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className="messagesHome">
-        <MessagesHome/>
-      </div>
-
     </div>
   );
 }

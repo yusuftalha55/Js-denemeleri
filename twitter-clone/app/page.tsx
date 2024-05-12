@@ -24,6 +24,7 @@ import MorePage from "./pages/morePage/page";
 import SendPage from "./pages/sendPage/page";
 import SearchSections from "./components/searchSections";
 import Trends from "./components/trends";
+import MessagesHome from "./components/messagesHome";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
@@ -108,6 +109,9 @@ export default function Home() {
       </div>
       <div className="trendsMain">
         <Trends/>
+      </div>
+      <div className="messagesHome">
+        <MessagesHome/>
       </div>
     </div>
   );
