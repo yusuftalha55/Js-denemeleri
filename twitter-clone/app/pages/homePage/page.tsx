@@ -4,6 +4,7 @@ import React from "react";
 import SendSection from "../../../app/components/sendSection";
 import Containers from "@/app/components/containers";
 import settings from "../../../app/public/img/settings.png";
+import MessagesHome from "@/app/components/messagesHome";
 
 export default function MainPage() {
   return (
@@ -43,6 +44,10 @@ export default function MainPage() {
           <Containers/>
           <Containers/>
         </div>
+      </div>
+
+      <div className="messagesHome">
+        <MessagesHome/>
       </div>
 
     </div>
