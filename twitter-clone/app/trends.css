@@ -4,14 +4,15 @@
     margin-top: 10%;
     margin-left: 75%;
     width: 230px;
-    height: 1000px;
+    height: 1003px;
     border-radius: 15px 15px 15px 15px;
-    padding: 1%;
+    /* padding: 1%; */
 }
 
 .trendsContainer {
     width: 230px;
     height: 100px;
+    
 }
 
 .trendsContainer:hover {
@@ -19,12 +20,21 @@
     background-color: #f2f2f2;
 }
 
+.trendsContainerIn {
+    margin: 5%;
+}
+
 .showMore {
     width: 230px;
-    height: 100px;
+    height: 49px;
 }
 
 .showMore:hover {
     cursor: pointer;
     background-color: #f2f2f2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.showMoreIn {
+    margin: 5%;
 }
