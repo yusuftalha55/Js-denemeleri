@@ -1,5 +1,10 @@
 .messagesHome {
     width: 320px;
-    height: 60px;
+    height: 65px;
     background-color: antiquewhite;
+    position: absolute;
+    margin-top: 98%;
+    margin-left: 74%;
+    padding: 1%;
+    border-radius: 15px 15px 0 0;
 }
