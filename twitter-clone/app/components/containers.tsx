@@ -10,6 +10,10 @@ export default function Containers() {
         <div className="conatinersMainTime">Time</div>
         <div className="conatinersMainMore">More</div>
       </div>
+      <div className="conatinersMainMiddle">
+        <div className="conatinersMainText">Text</div>
+        <div className="conatinersMainImg">İmg</div>
+      </div>
     </div>
   );
 }
