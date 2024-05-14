@@ -17,6 +17,14 @@
   display: flex;
 }
 
+.conatinersMainLogo,
+.conatinersMainName,
+.conatinersMainTag,
+.conatinersMainTime,
+.conatinersMainMore {
+    margin-left: 2%;
+}
+
 .conatinersMainMiddle {
   flex-grow: 1;
 }
