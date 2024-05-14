@@ -147,8 +147,8 @@
     /* background-color: #7bafc5; */
     width: 200px;
     height: 150px;
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
   }
   
   .searchSection div {

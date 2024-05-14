@@ -4,8 +4,8 @@
     margin-top: 5%;
     margin-left: 15%;
     width: 200px;
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
   }
   
   .sideBarHomePage {

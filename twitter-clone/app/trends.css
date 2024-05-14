@@ -1,6 +1,7 @@
 .trendsMain {
     background-color: antiquewhite;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     margin-top: 10%;
     margin-left: 75%;
     width: 230px;

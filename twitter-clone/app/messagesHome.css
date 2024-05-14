@@ -2,7 +2,7 @@
     width: 320px;
     height: 65px;
     background-color: antiquewhite;
-    position: absolute;
+    position: fixed;
     margin-top: 98%;
     margin-left: 74%;
     padding: 1%;
