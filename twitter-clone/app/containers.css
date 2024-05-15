@@ -41,6 +41,10 @@
   display: flex;
 }
 
-.answer, .rTweet, .like, .views, .favorites {
+.answer, .rTweet, .like, .views {
   margin-left: 5%;
+}
+
+.favorites {
+  margin-left: 15%;
 }
