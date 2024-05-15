@@ -38,3 +38,7 @@
   height: 125px;
   display: flex;
 }
+
+.answer, .rTweet, .like, .views, .favorites {
+  margin-left: 5%;
+}
