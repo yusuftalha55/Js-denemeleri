@@ -12,8 +12,8 @@ import groupsButton from "../app/public/img/groups.png";
 import profilesButton from "../app/public/img/profiles.png";
 import moreButton from "../app/public/img/more.png";
 import sendButton from "../app/public/img/send.png";
-import MainPage from "./pages/homePage/page"; 
-import SearchButtonPage from "./pages/searchButtonPage/page"; 
+import MainPage from "./pages/homePage/page";
+import SearchButtonPage from "./pages/searchButtonPage/page";
 import NotificationPage from "./pages/notificationPage/page";
 import MessagePage from "./pages/messagesPage/page";
 import ListsPage from "./pages/listsPage/page";
@@ -53,7 +53,12 @@ export default function Home() {
         </div>
         <div className="sideBarNotificationPage">
           <button onClick={() => handlePageChange("notification")}>
-            <Image src={notificationButton} width={30} height={25} alt="Bildirimler" />
+            <Image
+              src={notificationButton}
+              width={30}
+              height={25}
+              alt="Bildirimler"
+            />
           </button>
         </div>
         <div className="sideBarMessagesPage">
@@ -68,7 +73,12 @@ export default function Home() {
         </div>
         <div className="sideBarFavoritesPage">
           <button onClick={() => handlePageChange("favorites")}>
-            <Image src={favoritesButton} width={30} height={25} alt="Favoriler" />
+            <Image
+              src={favoritesButton}
+              width={30}
+              height={25}
+              alt="Favoriler"
+            />
           </button>
         </div>
         <div className="sideBarGroupsPage">
@@ -78,7 +88,12 @@ export default function Home() {
         </div>
         <div className="sideBarProfilesPage">
           <button onClick={() => handlePageChange("profiles")}>
-            <Image src={profilesButton} width={30} height={25} alt="Profiller" />
+            <Image
+              src={profilesButton}
+              width={30}
+              height={25}
+              alt="Profiller"
+            />
           </button>
         </div>
         <div className="sideBarMorePage">
@@ -88,7 +103,13 @@ export default function Home() {
         </div>
         <div className="sideBarSendPage">
           <button onClick={() => handlePageChange("send")}>
-            <Image className="sideBarSendPageHref" src={sendButton} width={30} height={25} alt="Gönder" />
+            <Image
+              className="sideBarSendPageHref"
+              src={sendButton}
+              width={30}
+              height={25}
+              alt="Gönder"
+            />
           </button>
         </div>
       </div>
@@ -105,15 +126,22 @@ export default function Home() {
         {activePage === "send" && <SendPage />}
       </div>
       <div className="searcSection">
-        {activePage !== "search" && <SearchSections />}
+        {activePage === "search" ? (
+          <div className="searchSectionActive">
+            <SearchSections />
+          </div>
+        ) : (
+          <div className="searchSectionDefault">
+            <SearchSections />
+          </div>
+        )}
       </div>
       <div className="trendsMain">
-        <Trends/>
+        <Trends />
       </div>
       <div className="messagesHome">
-        <MessagesHome/>
+        <MessagesHome />
       </div>
     </div>
   );
 }
-
