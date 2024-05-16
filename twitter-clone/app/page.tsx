@@ -30,9 +30,6 @@ export default function Home() {
   const [activePage, setActivePage] = useState("home");
 
   const handlePageChange = (page) => {
-    // if(activePage === "search" && <SearchButtonPage />) {
-    //   SearchSections
-    // }
     setActivePage(page);
   };
 
