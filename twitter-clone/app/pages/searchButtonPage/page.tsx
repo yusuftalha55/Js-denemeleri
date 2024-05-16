@@ -1,16 +1,16 @@
-import React from 'react'
-import TrendsContainer from '@/app/components/trendsContainer'
+import React from "react";
+import TrendsContainer from "@/app/components/trendsContainer";
 
 export default function SearchButtonPage() {
   return (
     <div>
-      <div className='trendsContainer'>
-      <TrendsContainer/>
-      <TrendsContainer/>
-      <TrendsContainer/>
-      <TrendsContainer/>
-      <TrendsContainer/>
+      <div>
+        <TrendsContainer />
+        <TrendsContainer />
+        <TrendsContainer />
+        <TrendsContainer />
+        <TrendsContainer />
       </div>
     </div>
-  )
+  );
 }
