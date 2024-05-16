@@ -30,6 +30,9 @@ export default function Home() {
   const [activePage, setActivePage] = useState("home");
 
   const handlePageChange = (page) => {
+    // if(activePage === "search" && <SearchButtonPage />) {
+    //   SearchSections
+    // }
     setActivePage(page);
   };
 
@@ -105,7 +108,7 @@ export default function Home() {
         {activePage === "send" && <SendPage />}
       </div>
       <div className="searcSection">
-        <SearchSections/>
+        {activePage !== "search" && <SearchSections />}
       </div>
       <div className="trendsMain">
         <Trends/>
