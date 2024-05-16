@@ -7,8 +7,6 @@ export default function SearchButtonPage() {
     <div>
       <div>
         <SearchSections/>
-
-
       </div>
       <div>
         <TrendsContainer />
