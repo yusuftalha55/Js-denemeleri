@@ -25,6 +25,7 @@ import SendPage from "./pages/sendPage/page";
 import SearchSections from "./components/searchSections";
 import Trends from "./components/trends";
 import MessagesHome from "./components/messagesHome";
+import SearchButtonSearchSections from "./components/searchButtonPageSearchContainer";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
@@ -125,11 +126,17 @@ export default function Home() {
         {activePage === "more" && <MorePage />}
         {activePage === "send" && <SendPage />}
       </div>
-      {activePage !== "search" && (
-        <div className="searcSection">
-          <SearchSections />
-        </div>
-      )}
+      <div className="searchSection">
+  {activePage === "search" ? (
+    <div className="SearchButtonSearchSections">
+      <SearchButtonSearchSections />
+    </div>
+  ) : (
+    <div className="searchSection">
+      <SearchSections />
+    </div>
+  )}
+</div>
 
       <div className="trendsMain">
         <Trends />

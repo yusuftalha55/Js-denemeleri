@@ -5,6 +5,8 @@ import "./containers.css"
 import "./sideBar.css"
 import "./trends.css"
 import "./messagesHome.css"
+import "./searchAll.css"
+
 
 
 const inter = Inter({ subsets: ["latin"] });
