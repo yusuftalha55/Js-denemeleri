@@ -5,7 +5,7 @@ import SearchSections from "@/app/components/searchSections";
 export default function SearchButtonPage() {
   return (
     <div>
-      <div>
+      <div className="searchSectionInTheSearchButtonPage">
         <SearchSections/>
       </div>
       <div className="trendsContainerSearchButtonPage">
