@@ -11,10 +11,8 @@
 }
 
 .trendsContainer {
-    width: 500px;
-    height: 100px;
-    display: inline-block;
-    
+    width: 230px;
+    height: 100px; 
 }
 
 .trendsContainer:hover {
