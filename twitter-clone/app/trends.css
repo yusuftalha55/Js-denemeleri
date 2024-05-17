@@ -13,7 +13,6 @@
 .trendsContainer {
     width: 230px;
     height: 100px;
-    
 }
 
 .trendsContainer:hover {
@@ -38,4 +37,8 @@
 
 .showMoreIn {
     margin: 5%;
+}
+
+.trendsContainerSearchButtonPage {
+    margin-top: 35%;
 }

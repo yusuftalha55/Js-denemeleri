@@ -125,9 +125,12 @@ export default function Home() {
         {activePage === "more" && <MorePage />}
         {activePage === "send" && <SendPage />}
       </div>
-      <div className="searcSection">
-        <SearchSections/>
-      </div>
+      {activePage !== "search" && (
+        <div className="searcSection">
+          <SearchSections />
+        </div>
+      )}
+
       <div className="trendsMain">
         <Trends />
       </div>
