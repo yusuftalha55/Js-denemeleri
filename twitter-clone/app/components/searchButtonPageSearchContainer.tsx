@@ -4,10 +4,10 @@ import searchButton from "../../app/public/img/searchButton.png";
 
 export default function SearchButtonSearchSections() {
   return (
-    <div>
+    <div className="searchButtonSearchSections">
       <div>
         <Image
-          className="searchSectionSearchButtonImg"
+          className="searchButtonSearchSectionsImg"
           src={searchButton}
           alt="arama"
         />
