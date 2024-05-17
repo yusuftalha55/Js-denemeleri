@@ -126,17 +126,11 @@ export default function Home() {
         {activePage === "more" && <MorePage />}
         {activePage === "send" && <SendPage />}
       </div>
-      <div className="searchSection">
-        {activePage === "search" ? (
-          <div className="SearchButtonSearchSections">
-            <SearchButtonSearchSections />
-          </div>
-        ) : (
-          <div className="searchSection">
-            <SearchSections />
-          </div>
-        )}
-      </div>
+      {activePage !== "search" && (
+        <div className="searcSection">
+          <SearchSections />
+        </div>
+      )}
 
       <div className="trendsMain">
         <Trends />

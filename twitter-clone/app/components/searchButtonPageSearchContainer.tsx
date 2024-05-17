@@ -4,7 +4,7 @@ import searchButton from "../../app/public/img/searchButton.png";
 
 export default function SearchButtonSearchSections() {
   return (
-    <div className="searchSection">
+    <div>
       <div>
         <Image
           className="searchSectionSearchButtonImg"
