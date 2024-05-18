@@ -13,7 +13,7 @@ export default function SearchSections() {
         />
       </div>
       <div>
-        <input className="searchSectionInput"></input>
+        <input placeholder="Ara" className="searchSectionInput"></input>
       </div>
     </div>
   );
