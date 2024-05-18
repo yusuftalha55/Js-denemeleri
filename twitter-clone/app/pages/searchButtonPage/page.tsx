@@ -1,6 +1,7 @@
 import React from "react";
 import TrendsContainer from "@/app/components/trendsContainer";
 import SearchButtonSearchSections from "@/app/components/searchButtonPageSearchContainer";
+import ShowMore from "@/app/components/showMore";
 
 export default function SearchButtonPage() {
   return (
@@ -14,6 +15,7 @@ export default function SearchButtonPage() {
         <TrendsContainer />
         <TrendsContainer />
         <TrendsContainer />
+        <ShowMore/>
       </div>
     </div>
   );
