@@ -13,7 +13,7 @@ export default function SearchButtonSearchSections() {
         />
       </div>
       <div>
-        <input className="searchSectionInput"></input>
+        <input className="searchButtonSearchSectionInput"></input>
       </div>
     </div>
   );

@@ -21,6 +21,7 @@
 }
 
 .searchSectionInput {
+  margin-top: 0%;
   width: 150px;
   height: 32px;
   vertical-align: middle;
@@ -32,13 +33,23 @@
  
 .searchButtonSearchSections {
     background-color: antiquewhite;
-    width: 300px;
-    height: 65px;
+    /* width: 300px;
+    height: 65px; */
+    display: inline-block;
 }      
 
 .searchButtonSearchSectionsImg {
     width: 32px;
     height: 32px;
     display: inline-block;
+}
+
+.searchButtonSearchSectionInput {
+  border-radius: 0 15px 15px 0; 
+  width: 350px;
+  height: 35px;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: -30%;
 }
 
