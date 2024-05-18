@@ -43,13 +43,14 @@
 
 .searchButtonSearchSectionInput {
   border-radius: 0 15px 15px 0;
-  width: 350px;
+  width: 380px;
   height: 35px;
 }
 
 .trendsContainerSearchButtonPage {
   border: 1px solid grey;
   width: 550px;
-  height: 1045px;
+  height: 1150px;
   border-bottom: none;
+  margin-top: 20%;
 }
