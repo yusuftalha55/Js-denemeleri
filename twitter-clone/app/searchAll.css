@@ -75,3 +75,16 @@
   margin-top: 20%;
 }
 
+
+
+
+
+
+.searchSectionInTheSearchButtonPageChapters {
+  display: flex;
+}
+
+.searchButtonPageOptionsChapterOne, .searchButtonPageOptionsChapterTwo, .searchButtonPageOptionsChapterThree, .searchButtonPageOptionsChapterFor, .searchButtonPageOptionsChapterFive {
+  margin-left: 2%;
+}
+
