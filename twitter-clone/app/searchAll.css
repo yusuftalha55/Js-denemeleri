@@ -47,6 +47,22 @@
   height: 35px;
 }
 
+.searchButtonSettings {
+  width: 25px;
+  height: 25px;
+}
+
+.searchButtonSettings:hover {
+  cursor: pointer;
+  background-color: #d1c7c7;
+}
+
+.searchButtonSettingsImg {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+}
+
 .trendsContainerSearchButtonPage {
   border: 1px solid grey;
   width: 550px;

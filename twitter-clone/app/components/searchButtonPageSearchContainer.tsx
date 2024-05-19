@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import searchButton from "../../app/public/img/searchButton.png";
+import settingsButton from "../../app/public/img/settings.png";
 
 export default function SearchButtonSearchSections() {
   return (
@@ -13,7 +14,17 @@ export default function SearchButtonSearchSections() {
         />
       </div>
       <div>
-        <input placeholder="Ara" className="searchButtonSearchSectionInput"></input>
+        <input
+          placeholder="Ara"
+          className="searchButtonSearchSectionInput"
+        ></input>
+      </div>
+      <div className="searchButtonSettings">
+        <Image
+          className="searchButtonSettingsImg"
+          src={settingsButton}
+          alt="arama"
+        />
       </div>
     </div>
   );
