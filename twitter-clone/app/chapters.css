@@ -1,0 +1,18 @@
+
+.searchSectionInTheSearchButtonPageChapters {
+    display: flex;
+  }
+  
+  .searchButtonPageOptionsChapterOne, .searchButtonPageOptionsChapterTwo,
+  .searchButtonPageOptionsChapterThree, .searchButtonPageOptionsChapterFor,
+  .searchButtonPageOptionsChapterFive {
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  
+  .searchButtonPageOptionsChapterOne:hover, .searchButtonPageOptionsChapterTwo:hover,
+  .searchButtonPageOptionsChapterThree:hover, .searchButtonPageOptionsChapterFor:hover,
+  .searchButtonPageOptionsChapterFive:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+  }
