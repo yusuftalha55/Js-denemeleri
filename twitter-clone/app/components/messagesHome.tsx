@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function MessagesHome() {
   return (
-    <div>messagesHome</div>
+    <div>
+      <h3>Mesajlar</h3>
+    </div>
   )
 }
