@@ -48,8 +48,11 @@
 }
 
 .searchButtonSettings {
+  display: flex;
+  align-items: center;
   width: 25px;
   height: 25px;
+  margin-left: 25px; 
 }
 
 .searchButtonSettings:hover {
@@ -58,10 +61,11 @@
 }
 
 .searchButtonSettingsImg {
-  margin-left: 50px;
   width: 20px;
   height: 20px;
 }
+
+/* Diğer stil tanımlamaları */
 
 .trendsContainerSearchButtonPage {
   border: 1px solid grey;
@@ -70,3 +74,4 @@
   border-bottom: none;
   margin-top: 20%;
 }
+
