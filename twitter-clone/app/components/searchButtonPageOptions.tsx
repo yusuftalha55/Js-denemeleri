@@ -4,19 +4,19 @@ export default function SearchButtonPageOptions() {
   return (
     <div className="searchSectionInTheSearchButtonPageChapters">
       <div className="searchButtonPageOptionsChapterOne">
-        searchButtonPageOptionsChapterOne
+        Sana Özel
       </div>
       <div className="searchButtonPageOptionsChapterTwo">
-        searchButtonPageOptionsChapterOne
+        Gündemdekiler
       </div>
       <div className="searchButtonPageOptionsChapterThree">
-        searchButtonPageOptionsChapterOne
+        Haberler
       </div>
       <div className="searchButtonPageOptionsChapterFor">
-        searchButtonPageOptionsChapterOne
+        Spor
       </div>
       <div className="searchButtonPageOptionsChapterFive">
-        searchButtonPageOptionsChapterOne
+        Eğlence
       </div>
     </div>
   );
