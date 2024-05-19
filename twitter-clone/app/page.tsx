@@ -132,9 +132,12 @@ export default function Home() {
         </div>
       )}
 
-      <div className="trendsMain">
-        <Trends />
-      </div>
+      {activePage !== "search" && (
+        <div className="trendsMain">
+          <Trends />
+        </div>
+      )}
+
       <div className="messagesHome">
         <MessagesHome />
       </div>
