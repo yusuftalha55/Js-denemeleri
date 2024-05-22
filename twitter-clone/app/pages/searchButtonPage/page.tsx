@@ -8,18 +8,19 @@ export default function SearchButtonPage() {
   return (
     <div>
       <div className="searchSectionInTheSearchButtonPage">
-        <SearchButtonSearchSections/>
+        <SearchButtonSearchSections />
       </div>
       <div className="searchSectionInTheOptions">
-        <SearchButtonPageOptions/>
+        <SearchButtonPageOptions />
       </div>
       <div className="trendsContainerSearchButtonPage">
+        <h2 style={{marginLeft:10}}>İlgini çekebilecek gündemler</h2>
         <TrendsContainer />
         <TrendsContainer />
         <TrendsContainer />
         <TrendsContainer />
         <TrendsContainer />
-        <ShowMore/>
+        <ShowMore />
       </div>
     </div>
   );
