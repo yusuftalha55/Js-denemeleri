@@ -1,18 +1,79 @@
-
 .searchSectionInTheSearchButtonPageChapters {
-    display: flex;
-  }
-  
-  .searchButtonPageOptionsChapterOne, .searchButtonPageOptionsChapterTwo,
-  .searchButtonPageOptionsChapterThree, .searchButtonPageOptionsChapterFor,
-  .searchButtonPageOptionsChapterFive {
-    margin-left: 2%;
-    margin-top: 2%;
-  }
-  
-  .searchButtonPageOptionsChapterOne:hover, .searchButtonPageOptionsChapterTwo:hover,
-  .searchButtonPageOptionsChapterThree:hover, .searchButtonPageOptionsChapterFor:hover,
-  .searchButtonPageOptionsChapterFive:hover {
-    cursor: pointer;
-    background-color: #f2f2f2;
-  }
+  display: flex;
+  width: 800px;
+}
+
+.searchButtonPageOptionsChapterOne {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center; 
+  height: 100px; 
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+
+.searchButtonPageOptionsChapterTwo{
+  margin-top: 1%;
+  display: flex;
+  justify-content: center; 
+  height: 100px; 
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+
+.searchButtonPageOptionsChapterThree {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center; 
+  height: 100px; 
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+
+.searchButtonPageOptionsChapterFour {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center; 
+  height: 100px; 
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+
+.searchButtonPageOptionsChapterFive {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center; 
+  height: 100px; 
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+
+.searchButtonPageOptionsChapterOne:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.searchButtonPageOptionsChapterTwo:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.searchButtonPageOptionsChapterThree:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.searchButtonPageOptionsChapterFour:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.searchButtonPageOptionsChapterFive:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}

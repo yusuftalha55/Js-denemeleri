@@ -12,7 +12,7 @@ export default function SearchButtonPageOptions() {
       <div className="searchButtonPageOptionsChapterThree">
         Haberler
       </div>
-      <div className="searchButtonPageOptionsChapterFor">
+      <div className="searchButtonPageOptionsChapterFour">
         Spor
       </div>
       <div className="searchButtonPageOptionsChapterFive">
