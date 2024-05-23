@@ -6,7 +6,7 @@ export default function NotificationPage() {
   return (
     <div>
       <div className='NotificationPageTop'>
-        <h2>Bildirimler</h2>
+        <h2 className='NotificationPageTopHeader'>Bildirimler</h2>
         <button className='NotificationPageTopButton'><Image src={settings} alt='settings' className='NotificationPageTopImg'/></button>
       </div>
       <div className='NotificationPageMiddle'>
