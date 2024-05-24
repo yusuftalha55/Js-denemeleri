@@ -1,6 +1,7 @@
 import React from "react";
 import settings from "../../../app/public/img/settings.png";
 import Image from "next/image";
+import NotificationPageContainers from "@/app/components/notificationPageContainers";
 
 export default function NotificationPage() {
   return (
@@ -26,7 +27,11 @@ export default function NotificationPage() {
           Bahsedenler
         </div>
       </div>
-      <div className="NotificationPageBottom">Bildirims</div>
+      <div className="NotificationPageBottom">
+        <NotificationPageContainers/>
+        <NotificationPageContainers/>
+        <NotificationPageContainers/>
+      </div>
     </div>
   );
 }
