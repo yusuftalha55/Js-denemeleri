@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NotificationPage() {
   return (
-    <div>
+    <div className="NotificationPageMain">
       <div className="NotificationPageTop">
         <h2 className="NotificationPageTopHeader">Bildirimler</h2>
         <button className="NotificationPageTopButton">
@@ -17,13 +17,13 @@ export default function NotificationPage() {
       </div>
       <div className="NotificationPageMiddle">
         <div className="NotificationPageMiddleChapterOne">
-          NotificationPageMiddleChapterOne
+          Tümü
         </div>
         <div className="NotificationPageMiddleChapterTwo">
-          NotificationPageMiddleChapterTwo
+          Onaylanmış
         </div>
         <div className="NotificationPageMiddleChapterThree">
-          NotificationPageMiddleChapterThree
+          Bahsedenler
         </div>
       </div>
       <div className="NotificationPageBottom">Bildirims</div>

@@ -1,3 +1,7 @@
+.NotificationPageMain {
+    width: 580px;
+}
+
 .NotificationPageTopImg {
     width: 20px;
     height: 20px;
@@ -20,4 +24,33 @@
 
 .NotificationPageTopHeader {
     display: inline-block;
+}
+
+.NotificationPageMiddle {
+    display: flex;
+    height: 60px;
+}
+
+.NotificationPageMiddleChapterOne {
+    width: 25%;
+    background-color: #f2f2f2;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+
+.NotificationPageMiddleChapterTwo {
+    width: 35%;
+    background-color: aliceblue;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+
+.NotificationPageMiddleChapterThree {
+    width: 35%;
+    background-color: antiquewhite;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
 }
