@@ -5,6 +5,7 @@ import SendSection from "../../../app/components/sendSection";
 import Containers from "@/app/components/containers";
 import settings from "../../../app/public/img/settings.png";
 import MessagesHome from "@/app/components/messagesHome";
+import answer from "../../../app/public/img/answer.png";
 
 export default function MainPage() {
   return (
