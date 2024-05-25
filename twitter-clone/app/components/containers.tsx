@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import answer from "../../app/public/img/answer.png";
+import reTweet from "../../app/public/img/arrow.png";
 
 export default function Containers() {
   return (
@@ -17,8 +18,8 @@ export default function Containers() {
         <div className="conatinersMainImg">İmg</div>
       </div>
       <div className="conatinersMainBottom">
-        <div className="answer"><Image src={answer} className="answerImg" alt="Ana Sayfa" /></div>
-        <div className="rTweet">Yeniden Gönder</div>
+        <div className="answer"><Image src={answer} className="answerImg" alt="answer" /></div>
+        <div className="rTweet"><Image src={reTweet} className="reTweetImg" alt="reTweet" /></div>
         <div className="like">Like</div>
         <div className="views">Views</div>
         <div className="favorites">Favorites</div>
