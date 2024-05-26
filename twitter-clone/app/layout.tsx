@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { useState } from "react";
 import "./globals.css";
 import "./containers.css"
 import "./sideBar.css"
@@ -8,6 +9,7 @@ import "./messagesHome.css"
 import "./searchAll.css"
 import "./chapters.css"
 import "./notificationPage.css"
+import { textContext } from "./components/context";
 
 
 

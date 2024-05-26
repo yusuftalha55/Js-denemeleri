@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import React from "react";
 import Image from "next/image";
 import answer from "../../app/public/img/answer.png";
@@ -8,9 +8,13 @@ import like from "../../app/public/img/like.png";
 import views from "../../app/public/img/statistics.png";
 import favorites from "../../app/public/img/favorites.png";
 import share from "../../app/public/img/share.png";
+import { textContext } from "./context";
 
 export default function Containers() {
   const [viewsCount, setViewsCount] = useState(15);
+  // const [changeTextContext, setChangeTextContext] = useContext(
+  //   textContext
+  // );
   return (
     <div className="conatinersMain">
       <div className="conatinersMainTop">
