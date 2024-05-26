@@ -25,8 +25,8 @@ export default function Containers() {
       <div className="conatinersMainBottom">
         <div className="answer"><Image src={answer} className="answerImg" alt="answer" /></div>
         <div className="rTweet"><Image src={reTweet} className="reTweetImg" alt="reTweet" /></div>
-        <div className="like"><Image src={like} className="likeImg" alt="reTweet" /></div>
-        <div className="views"><div className="like"><Image src={views} className="likeImg" alt="reTweet" /></div>{viewsCount}</div>
+        <div className="like"><Image src={like} className="likeImg" alt="like" /></div>
+        <div className="views"><Image src={views} className="viewsImg" alt="views" />{viewsCount}</div>
         <div className="favorites">Favorites</div>
         <div className="share">Share</div>
       </div>

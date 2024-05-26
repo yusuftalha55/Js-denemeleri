@@ -41,8 +41,13 @@
   display: flex;
 }
 
-.answer, .rTweet, .like, .views {
+.answer, .rTweet, .like {
   margin-left: 5%;
+}
+
+.views {
+  margin-left: 5%;
+  display: flex;
 }
 
 .answerImg {
@@ -56,6 +61,11 @@
 }
 
 .likeImg {
+  height: 20px;
+  width: 20px;
+}
+
+.viewsImg {
   height: 20px;
   width: 20px;
 }
