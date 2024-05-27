@@ -8,6 +8,10 @@ import like from "../../app/public/img/like.png";
 import views from "../../app/public/img/statistics.png";
 import favorites from "../../app/public/img/favorites.png";
 import share from "../../app/public/img/share.png";
+import ronaldo from "../../app/public/img/ronaldo.png";
+import messi from "../../app/public/img/messi.png";
+import kross from "../../app/public/img/kross.png";
+import neymar from "../../app/public/img/neymar.png";
 import { textContext } from "./context";
 
 export default function Containers() {
@@ -18,7 +22,7 @@ export default function Containers() {
   return (
     <div className="conatinersMain">
       <div className="conatinersMainTop">
-        <div className="conatinersMainLogo">Logo</div>
+        <div className="conatinersMainLogo"><Image src={ronaldo} className="conatinersMainLogoImg" alt="answer" /></div>
         <div className="conatinersMainName">Name</div>
         <div className="conatinersMainTag">Tag</div>
         <div className="conatinersMainTime">Time</div>
