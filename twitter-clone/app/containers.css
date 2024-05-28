@@ -1,4 +1,4 @@
-.conatinersMain {
+.containersMain {
   width: auto;
   height: 350px;
   background-color: white;
@@ -7,42 +7,42 @@
   flex-direction: column;
 }
 
-.conatinersMain:hover {
+.containersMain:hover {
   background-color: #f2f2f2;
   cursor: pointer;
 }
 
-.conatinersMainTop {
+.containersMainTop {
   height: 25px;
   display: flex;
 }
 
-.conatinersMainLogoImg {
+.containersMainLogoImg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-.conatinersMainLogo,
-.conatinersMainName,
-.conatinersMainTag,
-.conatinersMainTime,
-.conatinersMainMore {
+.containersMainLogo,
+.containersMainName,
+.containersMainTag,
+.containersMainTime,
+.containersMainMore {
   margin-left: 2%;
 }
 
-.conatinersMainMiddle {
+.containersMainMiddle {
   margin-top: 2%;
   flex-grow: 1;
   height: 800px;
 }
 
-.conatinersMainImg {
+.containersMainImg {
   margin-top: 1%;
   margin-left: 10%;
 }
 
-.conatinersMainBottom {
+.containersMainBottom {
   height: 125px;
   display: flex;
 }

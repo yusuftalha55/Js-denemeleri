@@ -16,30 +16,48 @@ import { textContext } from "./context";
 
 export default function Containers() {
   const [viewsCount, setViewsCount] = useState(15);
-  // const [changeTextContext, setChangeTextContext] = useContext(
-  //   textContext
-  // );
+  const { changeTextContext, setChangeTextContext } = useContext(textContext);
+
   return (
-    <div className="conatinersMain">
-      <div className="conatinersMainTop">
-        <div className="conatinersMainLogo"><Image src={ronaldo} className="conatinersMainLogoImg" alt="answer" /></div>
-        <div className="conatinersMainName">Name</div>
-        <div className="conatinersMainTag">Tag</div>
-        <div className="conatinersMainTime">Time</div>
-        <div className="conatinersMainMore">More</div>
+    <div className="containersMain">
+      <div className="containersMainTop">
+        <div className="containersMainLogo">
+          <Image src={ronaldo} className="containersMainLogoImg" alt="answer" />
+        </div>
+        <div className="containersMainName">Name</div>
+        <div className="containersMainTag">Tag</div>
+        <div className="containersMainTime">Time</div>
+        <div className="containersMainMore">More</div>
       </div>
-      <div className="conatinersMainMiddle">
-        <div className="conatinersMainText">Text</div>
-        <div className="conatinersMainImg">İmg</div>
+      <div className="containersMainMiddle">
+        <div className="containersMainText">{changeTextContext}</div>
+        <div className="containersMainImg">Img</div>
       </div>
-      <div className="conatinersMainBottom">
-        <div className="answer"><Image src={answer} className="answerImg" alt="answer" /></div>
-        <div className="rTweet"><Image src={reTweet} className="reTweetImg" alt="reTweet" /></div>
-        <div className="like"><Image src={like} className="likeImg" alt="like" /></div>
-        <div className="views"><Image src={views} className="viewsImg" alt="views" />{viewsCount}</div>
-        <div className="favorites"><Image src={favorites} className="favoritesImg" alt="views" /></div>
-        <div className="share"><Image src={share} className="shareImg" alt="views" /></div>
+      <div className="containersMainBottom">
+        <div className="answer">
+          <Image src={answer} className="answerImg" alt="answer" />
+        </div>
+        <div className="rTweet">
+          <Image src={reTweet} className="reTweetImg" alt="reTweet" />
+        </div>
+        <div className="like">
+          <Image src={like} className="likeImg" alt="like" />
+        </div>
+        <div className="views">
+          <Image src={views} className="viewsImg" alt="views" />
+          {viewsCount}
+        </div>
+        <div className="favorites">
+          <Image src={favorites} className="favoritesImg" alt="views" />
+        </div>
+        <div className="share">
+          <Image src={share} className="shareImg" alt="views" />
+        </div>
       </div>
     </div>
   );
 }
+
+
+
+

@@ -1,6 +1,7 @@
 "use client";
+import React, { useState } from "react";
 import Image from "next/image";
-import { useState } from "react";
+import { textContext } from "./components/context";
 import xLogo from "../app/public/img/xLogo.png";
 import homePage from "../app/public/img/homePage.png";
 import searchButton from "../app/public/img/searchButton.png";
@@ -25,122 +26,130 @@ import SendPage from "./pages/sendPage/page";
 import SearchSections from "./components/searchSections";
 import Trends from "./components/trends";
 import MessagesHome from "./components/messagesHome";
-import SearchButtonSearchSections from "./components/searchButtonPageSearchContainer";
 
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
+  const [changeTextContext, setChangeTextContext] = useState("TEXT Deneme");
 
   const handlePageChange = (page) => {
     setActivePage(page);
   };
 
   return (
-    <div className="container">
-      <div className="sideBar">
-        <div className="sideBarHomePage">
-          <button onClick={() => handlePageChange("home")}>
-            <Image src={xLogo} width={30} height={25} alt="Ana Sayfa" />
-          </button>
+    <textContext.Provider value={{ changeTextContext, setChangeTextContext }}>
+      <div className="container">
+        <div className="sideBar">
+          <div className="sideBarHomePage">
+            <button onClick={() => handlePageChange("home")}>
+              <Image src={xLogo} width={30} height={25} alt="Ana Sayfa" />
+            </button>
+          </div>
+          <div className="sideBarHomePage">
+            <button onClick={() => handlePageChange("home")}>
+              <Image src={homePage} width={30} height={25} alt="Ana Sayfa" />
+            </button>
+          </div>
+          <div className="sideBarSearchButtonPage">
+            <button onClick={() => handlePageChange("search")}>
+              <Image src={searchButton} width={30} height={25} alt="Ara" />
+            </button>
+          </div>
+          <div className="sideBarNotificationPage">
+            <button onClick={() => handlePageChange("notification")}>
+              <Image
+                src={notificationButton}
+                width={30}
+                height={25}
+                alt="Bildirimler"
+              />
+            </button>
+          </div>
+          <div className="sideBarMessagesPage">
+            <button onClick={() => handlePageChange("messages")}>
+              <Image
+                src={messageButton}
+                width={30}
+                height={25}
+                alt="Mesajlar"
+              />
+            </button>
+          </div>
+          <div className="sideBarListsPage">
+            <button onClick={() => handlePageChange("lists")}>
+              <Image src={ListsButton} width={30} height={25} alt="Listeler" />
+            </button>
+          </div>
+          <div className="sideBarFavoritesPage">
+            <button onClick={() => handlePageChange("favorites")}>
+              <Image
+                src={favoritesButton}
+                width={30}
+                height={25}
+                alt="Favoriler"
+              />
+            </button>
+          </div>
+          <div className="sideBarGroupsPage">
+            <button onClick={() => handlePageChange("groups")}>
+              <Image src={groupsButton} width={35} height={30} alt="Gruplar" />
+            </button>
+          </div>
+          <div className="sideBarProfilesPage">
+            <button onClick={() => handlePageChange("profiles")}>
+              <Image
+                src={profilesButton}
+                width={30}
+                height={25}
+                alt="Profiller"
+              />
+            </button>
+          </div>
+          <div className="sideBarMorePage">
+            <button onClick={() => handlePageChange("more")}>
+              <Image src={moreButton} width={30} height={25} alt="Daha Fazla" />
+            </button>
+          </div>
+          <div className="sideBarSendPage">
+            <button onClick={() => handlePageChange("send")}>
+              <Image
+                className="sideBarSendPageHref"
+                src={sendButton}
+                width={30}
+                height={25}
+                alt="Gönder"
+              />
+            </button>
+          </div>
         </div>
-        <div className="sideBarHomePage">
-          <button onClick={() => handlePageChange("home")}>
-            <Image src={homePage} width={30} height={25} alt="Ana Sayfa" />
-          </button>
+        <div className="mainShowActivePage">
+          {activePage === "home" && <MainPage />}
+          {activePage === "search" && <SearchButtonPage />}
+          {activePage === "notification" && <NotificationPage />}
+          {activePage === "messages" && <MessagePage />}
+          {activePage === "lists" && <ListsPage />}
+          {activePage === "favorites" && <FavoritesPage />}
+          {activePage === "groups" && <GroupsPage />}
+          {activePage === "profiles" && <ProfilesPage />}
+          {activePage === "more" && <MorePage />}
+          {activePage === "send" && <SendPage />}
         </div>
-        <div className="sideBarSearchButtonPage">
-          <button onClick={() => handlePageChange("search")}>
-            <Image src={searchButton} width={30} height={25} alt="Ara" />
-          </button>
-        </div>
-        <div className="sideBarNotificationPage">
-          <button onClick={() => handlePageChange("notification")}>
-            <Image
-              src={notificationButton}
-              width={30}
-              height={25}
-              alt="Bildirimler"
-            />
-          </button>
-        </div>
-        <div className="sideBarMessagesPage">
-          <button onClick={() => handlePageChange("messages")}>
-            <Image src={messageButton} width={30} height={25} alt="Mesajlar" />
-          </button>
-        </div>
-        <div className="sideBarListsPage">
-          <button onClick={() => handlePageChange("lists")}>
-            <Image src={ListsButton} width={30} height={25} alt="Listeler" />
-          </button>
-        </div>
-        <div className="sideBarFavoritesPage">
-          <button onClick={() => handlePageChange("favorites")}>
-            <Image
-              src={favoritesButton}
-              width={30}
-              height={25}
-              alt="Favoriler"
-            />
-          </button>
-        </div>
-        <div className="sideBarGroupsPage">
-          <button onClick={() => handlePageChange("groups")}>
-            <Image src={groupsButton} width={35} height={30} alt="Gruplar" />
-          </button>
-        </div>
-        <div className="sideBarProfilesPage">
-          <button onClick={() => handlePageChange("profiles")}>
-            <Image
-              src={profilesButton}
-              width={30}
-              height={25}
-              alt="Profiller"
-            />
-          </button>
-        </div>
-        <div className="sideBarMorePage">
-          <button onClick={() => handlePageChange("more")}>
-            <Image src={moreButton} width={30} height={25} alt="Daha Fazla" />
-          </button>
-        </div>
-        <div className="sideBarSendPage">
-          <button onClick={() => handlePageChange("send")}>
-            <Image
-              className="sideBarSendPageHref"
-              src={sendButton}
-              width={30}
-              height={25}
-              alt="Gönder"
-            />
-          </button>
-        </div>
-      </div>
-      <div className="mainShowActivePage">
-        {activePage === "home" && <MainPage />}
-        {activePage === "search" && <SearchButtonPage />}
-        {activePage === "notification" && <NotificationPage />}
-        {activePage === "messages" && <MessagePage />}
-        {activePage === "lists" && <ListsPage />}
-        {activePage === "favorites" && <FavoritesPage />}
-        {activePage === "groups" && <GroupsPage />}
-        {activePage === "profiles" && <ProfilesPage />}
-        {activePage === "more" && <MorePage />}
-        {activePage === "send" && <SendPage />}
-      </div>
-      {activePage !== "search" && (
-        <div className="searcSection">
-          <SearchSections />
-        </div>
-      )}
+        {activePage !== "search" && (
+          <div className="searchSection">
+            <SearchSections />
+          </div>
+        )}
 
-      {activePage !== "search" && (
-        <div className="trendsMain">
-          <Trends />
-        </div>
-      )}
+        {activePage !== "search" && (
+          <div className="trendsMain">
+            <Trends />
+          </div>
+        )}
 
-      <div className="messagesHome">
-        <MessagesHome />
+        <div className="messagesHome">
+          <MessagesHome />
+        </div>
       </div>
-    </div>
+    </textContext.Provider>
   );
 }
+
