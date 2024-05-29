@@ -9,12 +9,10 @@ import views from "../../app/public/img/statistics.png";
 import favorites from "../../app/public/img/favorites.png";
 import share from "../../app/public/img/share.png";
 import ronaldo from "../../app/public/img/ronaldo.png";
-import messi from "../../app/public/img/messi.png";
-import kross from "../../app/public/img/kross.png";
-import neymar from "../../app/public/img/neymar.png";
 import { textContext } from "./context";
+import ContainerList from "./containersList";
 
-export default function Containers() {
+export default function Containers({ image }) {
   const [viewsCount, setViewsCount] = useState(15);
   const { changeTextContext, setChangeTextContext } = useContext(textContext);
 
@@ -31,7 +29,10 @@ export default function Containers() {
       </div>
       <div className="containersMainMiddle">
         <div className="containersMainText">{changeTextContext}</div>
-        <div className="containersMainImg">Img</div>
+        <div className="containersMainImg">
+          {/* <Image src={image} className="containersMainImgIn" alt="image" /> */}
+          <ContainerList/>
+        </div>
       </div>
       <div className="containersMainBottom">
         <div className="answer">
@@ -48,16 +49,13 @@ export default function Containers() {
           {viewsCount}
         </div>
         <div className="favorites">
-          <Image src={favorites} className="favoritesImg" alt="views" />
+          <Image src={favorites} className="favoritesImg" alt="favorites" />
         </div>
         <div className="share">
-          <Image src={share} className="shareImg" alt="views" />
+          <Image src={share} className="shareImg" alt="share" />
         </div>
       </div>
     </div>
   );
 }
-
-
-
 
