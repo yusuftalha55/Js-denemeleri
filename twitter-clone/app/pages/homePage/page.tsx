@@ -8,6 +8,7 @@ import MessagesHome from "@/app/components/messagesHome";
 import answer from "../../../app/public/img/answer.png";
 
 export default function MainPage() {
+  const containersArray = Array(5).fill(<Containers/>);
   return (
     <div>
       <div className="headerMainPage">
@@ -36,14 +37,9 @@ export default function MainPage() {
 
       <div className="containersMainPage">
         <div className="containersMainPageIn">
-          <Containers/>
-          <Containers/>
-          <Containers/>
-          <Containers/>
-          <Containers/>
-          <Containers/>
-          <Containers/>
-          <Containers/>
+          {containersArray.map((container, index) => (
+            <React.Fragment key={index}>{container}</React.Fragment>
+          ))}
         </div>
       </div>
 
