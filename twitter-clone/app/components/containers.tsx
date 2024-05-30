@@ -13,10 +13,10 @@ import { textContext } from "./context";
 import warOne from "../../app/public/img/war1.jpg";
 import warTwo from "../../app/public/img/war2.jpg";
 
-export default function Containers() {
+export default function Containers({ image, text }) {
   const [viewsCount, setViewsCount] = useState(15);
-  const {changeTextContext, setChangeTextContext } = useContext(textContext);
-  const [changeImage, setChangeImage] = useState(warOne);
+  const { changeTextContext, setChangeTextContext } = useContext(textContext);
+  const [changeImage, setChangeImage] = useState(image);
 
   return (
     <div className="containersMain">
@@ -30,9 +30,9 @@ export default function Containers() {
         <div className="containersMainMore">More</div>
       </div>
       <div className="containersMainMiddle">
-        <div className="containersMainText">{changeTextContext}</div>
+        <div className="containersMainText">{text}</div>
         <div className="containersMainImg">
-           <Image src={changeImage} className="containersMainImgIn" alt="image" /> 
+          <Image src={changeImage} className="containersMainImgIn" alt="image" />
         </div>
       </div>
       <div className="containersMainBottom">
@@ -59,4 +59,5 @@ export default function Containers() {
     </div>
   );
 }
+
 

@@ -6,9 +6,16 @@ import Containers from "@/app/components/containers";
 import settings from "../../../app/public/img/settings.png";
 import MessagesHome from "@/app/components/messagesHome";
 import answer from "../../../app/public/img/answer.png";
+import warOne from "../../../app/public/img/war1.jpg";
+import warTwo from "../../../app/public/img/war2.jpg";
+
+
+const data = [
+  { image: warOne, text: "Savaş bir felakettir." },
+  { image: warTwo, text: "Barış için dua edin." },
+];
 
 export default function MainPage() {
-  const containersArray = Array(5).fill(<Containers/>);
   return (
     <div>
       <div className="headerMainPage">
@@ -37,12 +44,12 @@ export default function MainPage() {
 
       <div className="containersMainPage">
         <div className="containersMainPageIn">
-          {containersArray.map((container, index) => (
-            <React.Fragment key={index}>{container}</React.Fragment>
+          {data.map((item, index) => (
+            <Containers key={index} image={item.image} text={item.text} />
           ))}
         </div>
       </div>
-
     </div>
   );
 }
+
