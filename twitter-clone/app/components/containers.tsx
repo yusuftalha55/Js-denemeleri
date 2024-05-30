@@ -13,7 +13,7 @@ import { textContext } from "./context";
 import warOne from "../../app/public/img/war1.jpg";
 import warTwo from "../../app/public/img/war2.jpg";
 
-export default function Containers({ image }) {
+export default function Containers() {
   const [viewsCount, setViewsCount] = useState(15);
   const {changeTextContext, setChangeTextContext } = useContext(textContext);
   const [changeImage, setChangeImage] = useState(warOne);
