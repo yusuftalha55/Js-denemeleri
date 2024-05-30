@@ -15,7 +15,8 @@ import warTwo from "../../app/public/img/war2.jpg";
 
 export default function Containers({ image }) {
   const [viewsCount, setViewsCount] = useState(15);
-  const { changeTextContext, setChangeTextContext } = useContext(textContext);
+  const {changeTextContext, setChangeTextContext } = useContext(textContext);
+  const [changeImage, setChangeImage] = useState(warOne);
 
   return (
     <div className="containersMain">
@@ -31,7 +32,7 @@ export default function Containers({ image }) {
       <div className="containersMainMiddle">
         <div className="containersMainText">{changeTextContext}</div>
         <div className="containersMainImg">
-           <Image src={image} className="containersMainImgIn" alt="image" /> 
+           <Image src={changeImage} className="containersMainImgIn" alt="image" /> 
         </div>
       </div>
       <div className="containersMainBottom">
