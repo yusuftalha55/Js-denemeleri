@@ -30,7 +30,7 @@ export default function Containers({ image, text }) {
         <div className="containersMainMore">More</div>
       </div>
       <div className="containersMainMiddle">
-        <div className="containersMainText">{text}</div>
+        <div className="containersMainText"><p style={{marginLeft:10}}>{text}</p></div>
         <div className="containersMainImg">
           <Image src={changeImage} className="containersMainImgIn" alt="image" />
         </div>

@@ -8,11 +8,15 @@ import MessagesHome from "@/app/components/messagesHome";
 import answer from "../../../app/public/img/answer.png";
 import warOne from "../../../app/public/img/war1.jpg";
 import warTwo from "../../../app/public/img/war2.jpg";
+import galata from "../../../app/public/img/galataTower.jpg";
+import sultanAhmet from "../../../app/public/img/sultanahmetCami.jpg";
 
 
 const data = [
   { image: warOne, text: "Savaş bir felakettir." },
   { image: warTwo, text: "Barış için dua edin." },
+  { image: galata, text: "Gökyüzü ve Galata Kulesi." },
+  { image: sultanAhmet, text: "Ne güzel ve büyük bir cami." },
 ];
 
 export default function MainPage() {
