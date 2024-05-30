@@ -10,7 +10,8 @@ import favorites from "../../app/public/img/favorites.png";
 import share from "../../app/public/img/share.png";
 import ronaldo from "../../app/public/img/ronaldo.png";
 import { textContext } from "./context";
-import ContainerList from "./containersList";
+import warOne from "../../app/public/img/war1.jpg";
+import warTwo from "../../app/public/img/war2.jpg";
 
 export default function Containers({ image }) {
   const [viewsCount, setViewsCount] = useState(15);
@@ -30,8 +31,7 @@ export default function Containers({ image }) {
       <div className="containersMainMiddle">
         <div className="containersMainText">{changeTextContext}</div>
         <div className="containersMainImg">
-          {/* <Image src={image} className="containersMainImgIn" alt="image" /> */}
-          <ContainerList/>
+           <Image src={image} className="containersMainImgIn" alt="image" /> 
         </div>
       </div>
       <div className="containersMainBottom">
