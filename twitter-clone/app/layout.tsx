@@ -9,6 +9,7 @@ import "./messagesHome.css"
 import "./searchAll.css"
 import "./chapters.css"
 import "./notificationPage.css"
+import "./profilesPage.css"
 
 
 

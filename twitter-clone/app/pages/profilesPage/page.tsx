@@ -2,6 +2,21 @@ import React from 'react'
 
 export default function ProfilesPage() {
   return (
-    <div>Profiles Page</div>
+    <div className='profilesPageMain'>
+      <div className='profilesPageTop'>
+        <div className='profilesPageTopBackButton'>
+          <h1>asfsafsaf</h1>
+
+        </div>
+        <div className='profilesPageTopProfilesImg'>
+        <h1>asfsafsaf</h1>
+        </div>
+        <div className='profilesPageTopMainSection'>
+        <h1>asfsafsaf</h1>
+        </div>
+
+
+      </div>
+    </div>
   )
 }
