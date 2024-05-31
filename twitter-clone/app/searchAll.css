@@ -1,10 +1,10 @@
 /* SearchSections CSS */
 
 .searchSection {
-  margin-left: 75%;
-  width: 200px;
+  margin-left: 65%;
+  width: 275px;
   height: 150px;
-  position: fixed;
+  display: inline-block;
 }
 
 .searchSection div {
@@ -22,7 +22,7 @@
 
 .searchSectionInput {
   margin-top: 0%;
-  width: 150px;
+  width: 200px;
   height: 32px;
   vertical-align: middle;
   margin-top: -2%;
