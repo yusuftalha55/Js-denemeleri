@@ -7,15 +7,14 @@ export default function ProfilesPage() {
     <div className="profilesPageMain">
       <div className="profilesPageTop">
         <div className="profilesPageTopBackButton">
-          <button>
-            {" "}
+          <button className="profilesPageTopBackButtonAction">
             <Image
               src={back}
               alt="settings"
               className="profilesPageTopBackButtonIn"
             />
           </button>
-          <h1 className="profilesPageTopBackButtonText">Atkosturanadam</h1>
+          <h3 className="profilesPageTopBackButtonText">Atkosturanadam</h3>
         </div>
         <div className="profilesPageTopProfilesImg">
           <h1>asfsafsaf</h1>

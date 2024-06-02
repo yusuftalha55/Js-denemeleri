@@ -1,34 +1,48 @@
 .profilesPageMain {
-    display: flex;
-    width: 650px;
-    margin-left: -10%;
-    flex-direction: column; 
+  display: flex;
+  width: 650px;
+  margin-left: -10%;
+  flex-direction: column;
 }
 
 .profilesPageTop {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .profilesPageTopBackButton {
-    margin-top: -1%;
-    width: 650px;
-    position: fixed;
-    display: flex;
-    align-items: center; 
+  margin-top: -1%;
+  width: 650px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.profilesPageTopBackButton:hover {
+    cursor: pointer;
+}
+
+.profilesPageTopBackButtonAction {
+  background-color: white;
+  border: none;
+}
+
+.profilesPageTopBackButtonAction:hover {
+  cursor: pointer;
 }
 
 .profilesPageTopBackButtonIn {
-    width: 25px;
-    height: 25px;
-    display: flex;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: white;
 }
 
 .profilesPageTopBackButtonText {
-    margin-left: 10px; 
+  margin-left: 10px;
 }
 
 .profilesPageTopProfilesImg {
-    margin-top: 10%;
+  margin-top: 10%;
 }
