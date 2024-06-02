@@ -12,6 +12,8 @@
 }
 
 .profilesPageTopBackButton {
+    margin-top: -1%;
+    width: 650px;
     position: fixed;
     display: flex;
     align-items: center; 
