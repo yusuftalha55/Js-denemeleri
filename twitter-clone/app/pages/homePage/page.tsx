@@ -13,10 +13,10 @@ import sultanAhmet from "../../../app/public/img/sultanahmetCami.jpg";
 
 
 const data = [
-  { image: warOne, text: "Savaş bir felakettir." },
-  { image: warTwo, text: "Barış için dua edin." },
-  { image: galata, text: "Gökyüzü ve Galata Kulesi." },
-  { image: sultanAhmet, text: "Ne güzel ve büyük bir cami." },
+  { image: warOne, text: "Savaş bir felakettir.", nickNameText: "atkosturanadam55" },
+  { image: warTwo, text: "Barış için dua edin.", nickNameText: "atkosturanadam55" },
+  { image: galata, text: "Gökyüzü ve Galata Kulesi.", nickNameText: "atkosturanadam55" },
+  { image: sultanAhmet, text: "Ne güzel ve büyük bir cami.", nickNameText: "atkosturanadam55" },
 ];
 
 export default function MainPage() {
@@ -49,7 +49,7 @@ export default function MainPage() {
       <div className="containersMainPage">
         <div className="containersMainPageIn">
           {data.map((item, index) => (
-            <Containers key={index} image={item.image} text={item.text} />
+            <Containers key={index} image={item.image} text={item.text} nickNameText={item.nickNameText} />
           ))}
         </div>
       </div>

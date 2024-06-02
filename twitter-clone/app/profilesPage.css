@@ -1,5 +1,5 @@
 .profilesPageMain {
     display: flex;
-    background-color: antiquewhite;
-    width:100%;
+    width:650px;
+    margin-left: -10%;
 }

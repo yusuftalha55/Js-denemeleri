@@ -11,7 +11,7 @@ import share from "../../app/public/img/share.png";
 import ronaldo from "../../app/public/img/ronaldo.png";
 import { textContext } from "./context";
 
-export default function Containers({ image, text }) {
+export default function Containers({ image, text, nickNameText }) {
   const [viewsCount, setViewsCount] = useState(15);
   const { changeTextContext, setChangeTextContext } = useContext(textContext);
   const [changeImage, setChangeImage] = useState(image);
@@ -22,7 +22,7 @@ export default function Containers({ image, text }) {
         <div className="containersMainLogo">
           <Image src={ronaldo} className="containersMainLogoImg" alt="answer" />
         </div>
-        <div className="containersMainName">Name</div>
+        <div className="containersMainName">{nickNameText}</div>
         <div className="containersMainTag">Tag</div>
         <div className="containersMainTime">Time</div>
         <div className="containersMainMore">More</div>
@@ -57,5 +57,6 @@ export default function Containers({ image, text }) {
     </div>
   );
 }
+
 
 

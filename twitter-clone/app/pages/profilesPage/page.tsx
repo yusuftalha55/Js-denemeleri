@@ -5,7 +5,7 @@ export default function ProfilesPage() {
     <div className='profilesPageMain'>
       <div className='profilesPageTop'>
         <div className='profilesPageTopBackButton'>
-          <h1>asfsafsaf</h1>
+          <h1>Atkosturanadam</h1>
 
         </div>
         <div className='profilesPageTopProfilesImg'>
