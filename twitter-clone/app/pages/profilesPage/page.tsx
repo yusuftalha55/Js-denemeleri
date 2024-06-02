@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import back from "../../../app/public/img/back.png";
+import profilesImage from "../../../app/public/img/galataTower.jpg";
 
 export default function ProfilesPage() {
   return (
@@ -17,7 +18,11 @@ export default function ProfilesPage() {
           <h3 className="profilesPageTopBackButtonText">Atkosturanadam</h3>
         </div>
         <div className="profilesPageTopProfilesImg">
-          <h1>asfsafsaf</h1>
+        <Image
+              src={profilesImage}
+              alt="settings"
+              className="profilesPageTopProfilesImgIn"
+            />
         </div>
         <div className="profilesPageTopMainSection">
           <h1>asfsafsaf</h1>

@@ -46,3 +46,8 @@
 .profilesPageTopProfilesImg {
   margin-top: 10%;
 }
+
+.profilesPageTopProfilesImgIn {
+    width: 650px;
+    height: 250px;
+}
