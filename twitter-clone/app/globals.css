@@ -95,10 +95,24 @@
   margin-top: 2%;
   border: 0cap;
   background-color: white;
+  display: flex;
 }
 
 .mainSendSectionImgButton:hover {
   cursor: pointer;
+}
+
+.mainSendSectionInputAreaIn {
+  display: flex;
+  width: 450px;
+  max-height: 100px;
+  margin-left: 15%;
+  margin-top: -5%;
+  border: none;
+}
+
+.mainSendSectionInputAreaIn:hover {
+  border-color: white;
 }
 
 .mainSendSectionImgButtonIn {
