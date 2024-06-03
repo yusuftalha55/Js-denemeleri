@@ -1,13 +1,11 @@
 .trendsMain {
     background-color: antiquewhite;
-    /* position: absolute; */
     position: fixed;
     margin-top: 10%;
     margin-left: 75%;
-    width: 230px;
-    height: 1003px;
+    width: 20%;
+    height: 80%;
     border-radius: 15px 15px 15px 15px;
-    /* padding: 1%; */
 }
 
 .trendsContainer {
