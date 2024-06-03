@@ -33,6 +33,9 @@ export default function ProfilesPage() {
               className="profilesPageTopMainSectionProfilesPhotoImg"
             />
           </div>
+          <div className="profilesPageTopMainSectionProfilesSettings">
+            <button className="profilesPageTopMainSectionProfilesSettingsButton"><h3>Profili düzenle</h3></button>
+          </div>
         </div>
       </div>
     </div>
