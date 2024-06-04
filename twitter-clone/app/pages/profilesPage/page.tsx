@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import back from "../../../app/public/img/back.png";
 import profilesImage from "../../../app/public/img/galataTower.jpg";
 import profilesPhoto from "../../../app/public/img/profilePhoto.png";
 
 export default function ProfilesPage() {
+  const [following, setFollowing ] = useState(15);
+  const [followers, setfollowers ] = useState(4);
   return (
     <div className="profilesPageMain">
       <div className="profilesPageTop">
@@ -42,6 +44,10 @@ export default function ProfilesPage() {
         <div className="profilesPageTopMiddle">
           <h2>Atkosturanadam</h2>
           <p>@Atkosturanadam1</p>
+          <div className="followersNumbers">
+            <p className="followersNumbersFollowing">{following} Takip edilen</p>
+            <p className="followersNumbersFollowers">{followers} Takipçi</p>
+          </div>
         </div>
       </div>
     </div>
