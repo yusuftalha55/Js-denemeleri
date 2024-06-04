@@ -74,6 +74,11 @@
   border-radius: 50%;
 }
 
+.profilesPageTopMainSectionProfilesPhotoImg:hover {
+  cursor: pointer;
+  filter:  brightness(0.8);
+}
+
 .profilesPageTopMainSectionProfilesSettings {
   margin-left: 80%;
   margin-top: -7%;
