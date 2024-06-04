@@ -75,10 +75,22 @@
 }
 
 .profilesPageTopMainSectionProfilesSettings {
-
+  margin-left: 80%;
+  margin-top: -7%;
 }
 
-
 .profilesPageTopMainSectionProfilesSettingsButton {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid grey;
+  width: 130px;
+  height: 30px;
+  background-color: white;
+}
 
+.profilesPageTopMainSectionProfilesSettingsButton:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
 }
