@@ -49,6 +49,15 @@ export default function ProfilesPage() {
             <p className="followersNumbersFollowers">{followers} Takipçi</p>
           </div>
         </div>
+        <div className="profilesPageTopBottom">
+          <p>Gönderiler</p>
+          <p>Yanıtlar</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+
+        </div>
       </div>
     </div>
   );
