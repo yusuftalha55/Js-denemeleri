@@ -45,8 +45,8 @@ export default function ProfilesPage() {
           <h2>Atkosturanadam</h2>
           <p>@Atkosturanadam1</p>
           <div className="followersNumbers">
-            <p className="followersNumbersFollowing">{following} Takip edilen</p>
-            <p className="followersNumbersFollowers">{followers} Takipçi</p>
+            <button className="followersNumbersFollowing">{following} Takip edilen</button>
+            <button className="followersNumbersFollowers">{followers} Takipçi</button>
           </div>
         </div>
         <div className="profilesPageTopBottom">

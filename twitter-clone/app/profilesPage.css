@@ -111,6 +111,23 @@
 
 .followersNumbersFollowers {
   margin-left: 5%;
+  background-color: white;
+  border: none;
+}
+
+.followersNumbersFollowing {
+  background-color: white;
+  border: none;
+}
+
+.followersNumbersFollowers:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.followersNumbersFollowing:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .profilesPageTopBottom {
@@ -143,5 +160,3 @@
   cursor: pointer;
   filter: brightness(0.8);
 }
-
-
