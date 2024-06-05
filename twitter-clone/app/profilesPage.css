@@ -111,3 +111,7 @@
 .followersNumbersFollowers {
   margin-left: 5%;
 }
+
+.profilesPageTopBottom {
+  display: flex;
+}
