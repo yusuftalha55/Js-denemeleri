@@ -52,7 +52,7 @@ export default function ProfilesPage() {
         <div className="profilesPageTopBottom">
           <p className="profilesPageTopBottomOne">Gönderiler</p>
           <p className="profilesPageTopBottomTwo">Yanıtlar</p>
-          <p className="profilesPageTopBottomThree">ÖneÇıkanlar</p>
+          <p className="profilesPageTopBottomThree">Öne Çıkanlar</p>
           <p className="profilesPageTopBottomFour">Makaleler</p>
           <p className="profilesPageTopBottomFive">Medya</p>
           <p className="profilesPageTopBottomSix">Beğeni</p>
