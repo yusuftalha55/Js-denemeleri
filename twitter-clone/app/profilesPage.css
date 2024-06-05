@@ -115,3 +115,34 @@
 .profilesPageTopBottom {
   display: flex;
 }
+
+.profilesPageTopBottomOne {
+  margin-left: 2%;
+  background-color: aliceblue;
+}
+
+.profilesPageTopBottomTwo {
+  margin-left: 2%;
+  background-color: aliceblue;
+}
+
+.profilesPageTopBottomThree {
+  margin-left: 2%;
+  width: 100px;
+  background-color: aliceblue;
+}
+
+.profilesPageTopBottomFour {
+  margin-left: 2%;
+  background-color: aliceblue;
+}
+
+.profilesPageTopBottomFive {
+  margin-left: 2%;
+  background-color: aliceblue;
+}
+
+.profilesPageTopBottomSix {
+  margin-left: 2%;
+  background-color: aliceblue;
+}
