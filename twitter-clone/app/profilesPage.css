@@ -4,7 +4,6 @@
   height: 100%;
   margin-left: -10%;
   flex-direction: column;
-  background-color: aliceblue;
   border: 1px solid rgb(212, 210, 210);
 }
 
@@ -135,6 +134,8 @@
 
 .profilesPageTopBottom {
   display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgb(212, 210, 210);
 }
 
 .profilesPageTopBottom p {
