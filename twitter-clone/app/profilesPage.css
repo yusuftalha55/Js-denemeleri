@@ -3,6 +3,7 @@
   width: 650px;
   margin-left: -10%;
   flex-direction: column;
+  background-color: aliceblue;
 }
 
 .profilesPageTop {
