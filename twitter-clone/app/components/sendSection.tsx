@@ -20,6 +20,10 @@ export default function SendSection() {
     setIsFocused(false);
   };
 
+  function changeText () {
+    
+  }
+
   return (
     <div className="mainSendSection">
       <div className="mainSendSectionImg">
@@ -45,7 +49,7 @@ export default function SendSection() {
         </label>
       </div>
       <div className="mainSendSectionSendButton">
-        <button className="mainSendSectionSendButtonIn">Gönder</button>
+        <button onClick={changeText} className="mainSendSectionSendButtonIn">Gönder</button>
       </div>
     </div>
   );
