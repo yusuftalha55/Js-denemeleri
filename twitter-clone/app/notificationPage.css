@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.NotificationPageTop:hover {
+  cursor: pointer;
+}
+
 .NotificationPageTopButton {
   width: 35px;
   height: 35px;
@@ -20,6 +24,7 @@
 
 .NotificationPageTopButton:hover {
   background-color: rgb(233, 233, 233);
+  cursor: pointer;
 }
 
 .NotificationPageTopImg {
