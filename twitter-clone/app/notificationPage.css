@@ -48,7 +48,7 @@
 
 .NotificationPageMiddleChapterOne:hover {
   cursor: pointer;
-  filter: brightness(0.9);
+  filter: brightness(0.95);
 }
 
 .NotificationPageMiddleChapterTwo {
@@ -61,7 +61,7 @@
           /* burada bir sorun var çözemedim */
 .NotificationPageMiddleChapterTwo:hover {
   cursor: pointer;
-  filter: brightness(0.9);
+  filter: brightness(0.95);
 }
 
 .NotificationPageMiddleChapterThree {
@@ -73,5 +73,17 @@
 
 .NotificationPageMiddleChapterThree:hover {
   cursor: pointer;
-  filter: brightness(0.9);
+  filter: brightness(0.95);
+}
+
+.NotificationPageContainersMain {
+  width: 600px;
+  max-height: 150;
+  min-height: 75px;
+  background-color: white;
+}
+
+.NotificationPageContainersMain:hover {
+  cursor: pointer;
+  filter: brightness(0.95);
 }
