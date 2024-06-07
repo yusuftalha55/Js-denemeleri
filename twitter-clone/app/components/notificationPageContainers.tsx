@@ -3,7 +3,7 @@ import React from 'react'
 export default function NotificationPageContainers() {
   return (
     <div className='NotificationPageContainersMain'>
-        notificationPageContainers
+        <button className='NotificationPageContainersMainButton'>notificationPageContainers</button>
     </div>
   )
 }

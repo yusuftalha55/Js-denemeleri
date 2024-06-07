@@ -37,6 +37,7 @@
 
 .NotificationPageMiddle {
   display: flex;
+  border-bottom:  1px solid grey;
 }
 
 .NotificationPageMiddleChapterOne {
@@ -81,6 +82,15 @@
   max-height: 150;
   min-height: 75px;
   background-color: white;
+  border-bottom:  1px solid grey;
+}
+
+.NotificationPageContainersMainButton {
+  width: 600px;
+  max-height: 150;
+  min-height: 100px;
+  background-color: white;
+  border: none;
 }
 
 .NotificationPageContainersMain:hover {
