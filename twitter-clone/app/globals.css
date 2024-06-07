@@ -41,10 +41,10 @@
 }
 
 .mainSendSection {
-  width: 602px;
+  width: 598px;
   height: 130px;
   background-color: white;
-  border: 1px solid #000000;
+  border: 1px solid grey;
 }
 
 .mainSendSectionImgButton {
