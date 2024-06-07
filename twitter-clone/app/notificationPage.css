@@ -48,7 +48,7 @@
 
 .NotificationPageMiddleChapterOne:hover {
   cursor: pointer;
-  filter: brightness(0,9);
+  filter: brightness(0.9);
 }
 
 .NotificationPageMiddleChapterTwo {
@@ -60,7 +60,7 @@
 
 .NotificationPageMiddleChapterTwo:hover {
   cursor: pointer;
-  filter: brightness(0,9);
+  filter: brightness(0.9);
 }
 
 .NotificationPageMiddleChapterThree {
@@ -72,7 +72,7 @@
 
 .NotificationPageMiddleChapterThree:hover {
   cursor: pointer;
-  filter: brightness(0,9);
+  filter: brightness(0.9);
 }
 
 
