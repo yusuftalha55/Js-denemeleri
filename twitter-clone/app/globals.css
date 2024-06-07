@@ -69,6 +69,11 @@
   box-shadow: none; 
 }
 
+.mainSendSectionInputAreaInput {
+  display: flex;
+  margin-top: 5%;
+}
+
 .mainSendSectionInputAreaIn:hover {
   border-color: white;
   outline: none; 
@@ -84,6 +89,10 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
+}
+
+.mainSendSectionSendButton {
+  margin-top: -8%;
 }
 
 .mainSendSectionSendButtonIn {
