@@ -65,14 +65,14 @@
   margin-left: 15%;
   margin-top: -5%;
   border: none;
-  outline: none; /* outline'ı devre dışı bırakır */
-  box-shadow: none; /* box-shadow'u devre dışı bırakır */
+  outline: none; 
+  box-shadow: none; 
 }
 
 .mainSendSectionInputAreaIn:hover {
   border-color: white;
-  outline: none; /* hover durumunda outline'ı devre dışı bırakır */
-  box-shadow: none; /* hover durumunda box-shadow'u devre dışı bırakır */
+  outline: none; 
+  box-shadow: none; 
 }
 
 .mainSendSectionInputAreaIn:focus {
