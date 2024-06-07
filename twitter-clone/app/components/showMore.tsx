@@ -6,7 +6,6 @@ export default function ShowMore() {
       <div className='showMoreIn'>
       showMore
       </div>
-        
     </div>
   )
 }
