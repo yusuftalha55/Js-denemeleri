@@ -1,4 +1,61 @@
 .NotificationPageMain {
+  width: 600px;
+  height: 100%;
+  border: 1px solid grey;
+}
+
+.NotificationPageTop {
+  display: flex;
+}
+
+.NotificationPageTopButton {
+  width: 35px;
+  height: 35px;
+  margin-left: 73%;
+  background-color: white;
+  border: none;
+  margin-top: 2%;
+  border-radius: 50%;
+}
+
+.NotificationPageTopButton:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.NotificationPageTopImg {
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .NotificationPageMain {
   width: 580px;
 }
 
@@ -19,7 +76,6 @@
 
 .NotificationPageTopButton:hover {
   cursor: pointer;
-  background-color: #f2f2f2;
 }
 
 .NotificationPageTopHeader {
@@ -40,7 +96,7 @@
 
 .NotificationPageMiddleChapterOne:hover {
   cursor: pointer;
-  background-color: #f2f2f2;
+  filter: brightness(0,9);
 }
 
 .NotificationPageMiddleChapterTwo {
@@ -71,4 +127,4 @@
 
 .NotificationPageContainersMain {
     min-height: 75px;
-}
+} */
