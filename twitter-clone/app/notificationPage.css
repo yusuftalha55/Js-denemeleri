@@ -35,11 +35,45 @@
   justify-content: center;
 }
 
+.NotificationPageMiddle {
+  display: flex;
+}
 
+.NotificationPageMiddleChapterOne {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  background-color: white;
+}
 
+.NotificationPageMiddleChapterOne:hover {
+  cursor: pointer;
+  filter: brightness(0,9);
+}
 
+.NotificationPageMiddleChapterTwo {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  background-color: white;
+}
 
+.NotificationPageMiddleChapterTwo:hover {
+  cursor: pointer;
+  filter: brightness(0,9);
+}
 
+.NotificationPageMiddleChapterThree {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  background-color: white;
+}
+
+.NotificationPageMiddleChapterThree:hover {
+  cursor: pointer;
+  filter: brightness(0,9);
+}
 
 
 

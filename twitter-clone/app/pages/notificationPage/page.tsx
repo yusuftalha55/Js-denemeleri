@@ -18,13 +18,13 @@ export default function NotificationPage() {
       </div>
       <div className="NotificationPageMiddle">
         <div className="NotificationPageMiddleChapterOne">
-          Tümü
+          <h3>Tümü</h3>
         </div>
         <div className="NotificationPageMiddleChapterTwo">
-          Onaylanmış
+          <h3>Onaylanmış</h3>
         </div>
         <div className="NotificationPageMiddleChapterThree">
-          Bahsedenler
+          <h3>Bahsedenler</h3>
         </div>
       </div>
       <div className="NotificationPageBottom">
