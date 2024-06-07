@@ -58,6 +58,7 @@
   background-color: white;
 }
 
+          /* burada bir sorun var çözemedim */
 .NotificationPageMiddleChapterTwo:hover {
   cursor: pointer;
   filter: brightness(0.9);
