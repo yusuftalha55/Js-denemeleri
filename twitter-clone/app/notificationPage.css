@@ -76,8 +76,7 @@
 
 .NotificationPageContainersMain {
   width: 600px;
-  max-height: 150;
-  min-height: 75px;
+  height: 200px;
   background-color: white;
   border-bottom:  1px solid grey;
 }
@@ -96,7 +95,6 @@
 }
 
 .NotificationPageContainersMainButtonPhotos {
-  margin-top: -1%;
   margin-left: -80%;
 }
 
@@ -123,4 +121,8 @@
 .personİnformationText {
   margin-left: 1%;
   margin-top: 3%;
+}
+
+.NotificationPageContainersMainButtonContent {
+  margin-top: 6%;
 }
