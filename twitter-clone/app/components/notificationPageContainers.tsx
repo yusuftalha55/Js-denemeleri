@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 import heart from "../../app/public/img/kalp.png";
 import galata from "../../app/public/img/galataTower.jpg";
-import messi from "../../app/public/img/messi.png";
+
 
 export default function NotificationPageContainers() {
+  const [person, setPerson] = useState("ahmet");
+
+
   return (
     <div className="NotificationPageContainersMain">
       <button className="NotificationPageContainersMainButton">
@@ -21,6 +24,10 @@ export default function NotificationPageContainers() {
               className="NotificationPageContainersMainButtonProfilePhoto"
             />
           </button>
+        </div>
+        <div className="personİnformation">
+          <h3 className="personİnformationState">{person}</h3>
+          <p className="personİnformationText">yanıtını beğendi</p>
         </div>
       </button>
     </div>

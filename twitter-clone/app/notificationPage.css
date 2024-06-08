@@ -96,7 +96,7 @@
 }
 
 .NotificationPageContainersMainButtonPhotos {
-  margin-top: -6%;
+  margin-top: -1%;
   margin-left: -80%;
 }
 
@@ -114,4 +114,13 @@
 .NotificationPageContainersMainButtonInButton {
   background-color: white;
   border: none;
+}
+
+.personİnformation {
+  display: flex;
+}
+
+.personİnformationText {
+  margin-left: 1%;
+  margin-top: 3%;
 }
