@@ -8,8 +8,20 @@ export default function NotificationPageContainers() {
   return (
     <div className="NotificationPageContainersMain">
       <button className="NotificationPageContainersMainButton">
-        <Image src={heart} alt="beğeni" className="NotificationPageTopImg" />
-        <button><Image src={galata} alt="profilFoto" className="NotificationPageTopImg" /></button>
+        <div className="NotificationPageContainersMainButtonPhotos">
+          <Image
+            src={heart}
+            alt="beğeni"
+            className="NotificationPageContainersMainButtonLike"
+          />
+          <button className="NotificationPageContainersMainButtonInButton">
+            <Image
+              src={galata}
+              alt="profilFoto"
+              className="NotificationPageContainersMainButtonProfilePhoto"
+            />
+          </button>
+        </div>
       </button>
     </div>
   );

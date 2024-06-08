@@ -30,9 +30,6 @@
 .NotificationPageTopImg {
   width: 20px;
   height: 20px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .NotificationPageMiddle {
@@ -96,4 +93,25 @@
 .NotificationPageContainersMain:hover {
   cursor: pointer;
   filter: brightness(0.95);
+}
+
+.NotificationPageContainersMainButtonPhotos {
+  margin-top: -6%;
+  margin-left: -80%;
+}
+
+.NotificationPageContainersMainButtonLike {
+  width: 25px;
+  height: 25px;
+}
+
+.NotificationPageContainersMainButtonProfilePhoto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.NotificationPageContainersMainButtonInButton {
+  background-color: white;
+  border: none;
 }
