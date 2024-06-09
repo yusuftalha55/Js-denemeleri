@@ -83,13 +83,12 @@
 
 .NotificationPageContainersMainButton {
   width: 600px;
-  max-height: 150;
-  min-height: 100px;
+  height: 100%;
   background-color: white;
   border: none;
 }
 
-.NotificationPageContainersMain:hover {
+.NotificationPageContainersMainButton:hover {
   cursor: pointer;
   filter: brightness(0.95);
 }
