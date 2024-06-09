@@ -147,7 +147,8 @@ export default function Home() {
         )}
 
         <div className="messagesHome">
-          <MessagesHome />
+          <h2 className="">Mesajlar</h2>
+          {/* <MessagesHome /> */}
         </div>
       </div>
     </textContext.Provider>
