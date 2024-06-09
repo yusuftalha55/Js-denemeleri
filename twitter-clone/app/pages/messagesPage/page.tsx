@@ -3,7 +3,7 @@ import MessagesHome from '@/app/components/messagesHome'
 
 export default function MessagePage() {
   return (
-    <div>
+    <div className='messageMain'>
       <MessagesHome/>
     </div>
   )

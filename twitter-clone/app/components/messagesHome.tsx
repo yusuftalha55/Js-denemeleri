@@ -26,7 +26,7 @@ export default function MessagesHome() {
       </div>
       <div className='MessagesHomeMainSearch'>
       <textarea
-            className="mainSendSectionInputAreaIn"
+            className="MessagesHomeMainSearchTextArea"
             value={text}
             onChange={(e) => setText(e.target.value)}
             onFocus={handleFocus}
