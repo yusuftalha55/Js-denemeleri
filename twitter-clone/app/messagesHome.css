@@ -15,3 +15,12 @@
 .messagesHome:hover {
     cursor: pointer;
 }
+
+.MessagesHomeMainTop {
+    display: flex;
+}
+
+.MessagesHomeMainTopImgSetting {
+    width: 25px;
+    height: 25px;
+}
