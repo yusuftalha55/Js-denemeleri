@@ -71,3 +71,10 @@
     cursor: pointer !important;
 }
 
+.MessagesHomeMainSearchTextArea {
+    margin-left: 4%;
+    padding: 3%;
+    width: 240px;
+    height: 45px;
+    border-radius: 15px 15px 15px 15px;
+}

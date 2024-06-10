@@ -4,11 +4,11 @@ import setting from "../../app/public/img/settings.png";
 import message from "../../app/public/img/message.png";
 
 export default function MessagesHome() {
-  const [text, setText] = useState("Neler oluyor?");
+  const [text, setText] = useState("Direkt mesajlarda ara");
   const [isTextAreaFocus, setIsTextAreaFocus] = useState(true);
 
   const handleFocus = () => {
-    if (text === "Neler oluyor?") {
+    if (text === "Direkt mesajlarda ara") {
       setText("");
     }
     setIsTextAreaFocus(true);
@@ -16,7 +16,7 @@ export default function MessagesHome() {
 
   const handleBlur = () => {
     if (text === "") {
-      setText("Neler oluyor?");
+      setText("Direkt mesajlarda ara");
     }
     setIsTextAreaFocus(false);
   };
