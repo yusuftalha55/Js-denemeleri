@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Messages from "./messages";
 import setting from "../../app/public/img/settings.png";
 import message from "../../app/public/img/message.png";
 
@@ -48,6 +49,11 @@ export default function MessagesHome() {
           onFocus={handleFocus}
           onBlur={handleBlur}
         />
+      </div>
+      <div className="messagesArea">
+        <Messages />
+        <Messages />
+        <Messages />
       </div>
     </div>
   );
