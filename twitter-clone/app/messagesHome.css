@@ -41,6 +41,11 @@
     height: 30px;
 }
 
+.MessagesHomeMainTopImgSetting {
+    width: 25px;
+    height: 25px;
+}
+
 .MessagesHomeMainTopButtonMessage {
     background-color: white;
     border: none;
@@ -50,7 +55,10 @@
     height: 30px;
 }
 
-.MessagesHomeMainTopImgSetting {
-    width: 25px;
-    height: 25px;
+.MessagesHomeMainTopButtonMessage:hover {
+    cursor: pointer;
+}
+
+.MessagesHomeMainTopButtonSetting:hover {
+    cursor: pointer;
 }
