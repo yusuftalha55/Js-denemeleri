@@ -1,7 +1,7 @@
 .messageMain {
     margin-top: -1.5%;
     height: 100%;
-    width: 300px;
+    width: 400px;
     border: 1px solid rgb(212, 210, 210);
     margin-left: -5%;
 }
@@ -25,7 +25,7 @@
 }
 
 .MessagesHomeMain {
-    width: 300px;
+    width: 400px;
     height: 100%;
     border: 1px solid rgb(212, 210, 210);
 }
@@ -37,7 +37,7 @@
 .MessagesHomeMainTopButtonSetting {
     background-color: white;
     border: none;
-    margin-left: 44%;
+    margin-left: 60%;
     margin-top: 5%;
     width: 30px;
     height: 30px;
@@ -74,7 +74,7 @@
 .MessagesHomeMainSearchTextArea {
     margin-left: 4%;
     padding: 3%;
-    width: 240px;
+    width: 275px;
     height: 45px;
     border-radius: 15px 15px 15px 15px;
 }
