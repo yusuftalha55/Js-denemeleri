@@ -32,6 +32,24 @@
     display: flex;
 }
 
+.MessagesHomeMainTopButtonSetting {
+    background-color: white;
+    border: none;
+    margin-left: 44%;
+    margin-top: 5%;
+    width: 30px;
+    height: 30px;
+}
+
+.MessagesHomeMainTopButtonMessage {
+    background-color: white;
+    border: none;
+    margin-left: 1%;
+    margin-top: 4%;
+    width: 30px;
+    height: 30px;
+}
+
 .MessagesHomeMainTopImgSetting {
     width: 25px;
     height: 25px;

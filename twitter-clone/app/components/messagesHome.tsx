@@ -25,14 +25,14 @@ export default function MessagesHome() {
     <div className="MessagesHomeMain">
       <div className="MessagesHomeMainTop">
         <h3>Mesajlar</h3>
-        <button>
+        <button className="MessagesHomeMainTopButtonSetting">
           <Image
             src={setting}
             className="MessagesHomeMainTopImgSetting"
             alt="answer"
           />
         </button>
-        <button>
+        <button className="MessagesHomeMainTopButtonMessage">
           <Image
             src={message}
             className="MessagesHomeMainTopImgMessage"
