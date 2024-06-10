@@ -2,10 +2,11 @@
 
 .searchSection {
   margin-left: 37%;
-  width: 275px;
+  width: 250px;
   height: 150px;
   display: inline-block;
   position: fixed;
+  z-index: -1; 
 }
 
 .searchSection div {
@@ -19,6 +20,7 @@
   margin-top: -20%;
   height: 40px;
   border-radius: 15px 0 0 15px;
+  width: 30px;
 }
 
 .searchSectionInput {
@@ -53,7 +55,8 @@
   align-items: center;
   width: 25px;
   height: 25px;
-  margin-left: 25px; 
+  margin-left: 25px;
+  z-index: 2; /* Yüksek bir z-index değeri veriyoruz */
 }
 
 .searchButtonSettings:hover {
@@ -74,6 +77,7 @@
   height: 1250px;
   border-bottom: none;
 }
+
 
 
 
