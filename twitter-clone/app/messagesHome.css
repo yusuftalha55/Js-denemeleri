@@ -57,10 +57,12 @@
     width: 30px;
     height: 30px;
     display: inline-block;
+    border-radius: 50%;
 }
 
 .MessagesHomeMainTopButtonMessage:hover {
     cursor: pointer;
+    filter: brightness(0.95);
 }
 
 .MessagesHomeMainTopButtonSetting:hover {
