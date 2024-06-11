@@ -60,15 +60,15 @@
 }
 
 .MessagesHomeMainTopButtonMessage:hover {
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 .MessagesHomeMainTopButtonSetting:hover {
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 .MessagesHomeMainTopImgMessage:hover {
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 .MessagesHomeMainSearchTextArea {
