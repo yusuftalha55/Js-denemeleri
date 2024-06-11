@@ -67,6 +67,7 @@
 
 .MessagesHomeMainTopButtonSetting:hover {
     cursor: pointer;
+    filter: brightness(0.95);
 }
 
 .MessagesHomeMainTopImgMessage:hover {
