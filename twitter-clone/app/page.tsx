@@ -18,7 +18,6 @@ import MainPage from "./pages/homePage/page";
 import SearchButtonPage from "./pages/searchButtonPage/page";
 import NotificationPage from "./pages/notificationPage/page";
 import MessagePage from "./pages/messagesPage/page";
-import ListsPage from "./pages/listsPage/page";
 import FavoritesPage from "./pages/favoritesPage/page";
 import GroupsPage from "./pages/groupsPage/page";
 import ProfilesPage from "./pages/profilesPage/page";
@@ -75,11 +74,6 @@ export default function Home() {
               />
             </button>
           </div>
-          <div className="sideBarListsPage">
-            <button onClick={() => handlePageChange("lists")}>
-              <Image src={ListsButton} width={30} height={25} alt="Listeler" />
-            </button>
-          </div>
           <div className="sideBarFavoritesPage">
             <button onClick={() => handlePageChange("favorites")}>
               <Image
@@ -127,7 +121,6 @@ export default function Home() {
           {activePage === "search" && <SearchButtonPage />}
           {activePage === "notification" && <NotificationPage />}
           {activePage === "messages" && <MessagePage />}
-          {activePage === "lists" && <ListsPage />}
           {activePage === "favorites" && <FavoritesPage />}
           {activePage === "groups" && <GroupsPage />}
           {activePage === "profiles" && <ProfilesPage />}
