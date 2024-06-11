@@ -84,6 +84,7 @@
 
 .messagesContainers {
     margin-top: 5%;
+    padding: 1%;
     width: 400px;
     height: 75px;
 }
@@ -100,4 +101,15 @@
 .messagesContainersTopImg {
     width: 40px;
     height: 40px;
+}
+
+.messagesContainersTopPerson {
+    margin-top: -1px;
+    width: 95px;
+    height: 15px;
+}
+
+.messagesContainersTopNick {
+    width: 80px;
+    margin-top: -1px;
 }

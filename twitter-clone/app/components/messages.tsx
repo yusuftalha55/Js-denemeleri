@@ -7,8 +7,8 @@ export default function Messages() {
     <div className="messagesContainers">
       <div className="messagesContainersTop">
         <Image src={kross} className="messagesContainersTopImg" alt="profilePhoto" />
-        <h4>Ahmet Yılmaz</h4>
-        <p>@ahmet55</p>
+        <h5 className="messagesContainersTopPerson">Ahmet Yılmaz</h5>
+        <p className="messagesContainersTopNick">@ahmet55</p>
       </div>
     </div>
   );
