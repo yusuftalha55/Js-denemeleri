@@ -92,3 +92,12 @@
   cursor: pointer;
   background-color: rgb(228, 227, 227);
 }
+
+.messagesContainersTop {
+    display: flex;
+}
+
+.messagesContainersTopImg {
+    width: 40px;
+    height: 40px;
+}
