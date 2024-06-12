@@ -11,8 +11,8 @@ export default function FavoritesPage() {
         <button className="favoritesPageTopButton">
           <Image
             src={threeDot}
-            className="messagesContainersTopImg"
-            alt="profilePhoto"
+            className="favoritesPageTopButtonImg"
+            alt="threeDot"
           />
         </button>
       </div>

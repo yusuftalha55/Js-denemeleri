@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.favoritesPageTop:hover {
+    cursor: pointer;
+}
+
 .favoritesPageTopH {
     margin-left: 2%;
 }
@@ -19,8 +23,18 @@
 
 .favoritesPageTopButton {
     margin-left: 60%;
+    margin-top: 1%;
     width: 40px;
     height: 40px;
     background-color: white;
     border: none;
+}
+
+.favoritesPageTopButton:hover {
+    cursor: pointer;
+}
+
+.favoritesPageTopButtonImg {
+    width: 25px;
+    height: 25px;
 }
