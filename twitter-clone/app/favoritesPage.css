@@ -13,11 +13,12 @@
 }
 
 .favoritesPageTopNick {
-    margin-left: 2%;
+    margin-left: -18%;
+    margin-top: 8%;
 }
 
 .favoritesPageTopButton {
-    margin-left: 40%;
+    margin-left: 60%;
     width: 40px;
     height: 40px;
     background-color: white;
