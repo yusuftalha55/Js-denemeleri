@@ -1,0 +1,25 @@
+.favoritesPage {
+    margin-top: -2%;
+    height: 100%;
+    border: 1px solid rgb(212, 210, 210);
+}
+
+.favoritesPageTop {
+    display: flex;
+}
+
+.favoritesPageTopH {
+    margin-left: 2%;
+}
+
+.favoritesPageTopNick {
+    margin-left: 2%;
+}
+
+.favoritesPageTopButton {
+    margin-left: 40%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+}
