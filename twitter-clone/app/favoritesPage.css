@@ -1,6 +1,7 @@
 .favoritesPage {
     margin-top: -2%;
     height: 100%;
+    width: 550px;
     border: 1px solid rgb(212, 210, 210);
 }
 
@@ -24,17 +25,19 @@
 .favoritesPageTopButton {
     margin-left: 60%;
     margin-top: 1%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: white;
     border: none;
+    border-radius: 50%;
 }
 
 .favoritesPageTopButton:hover {
     cursor: pointer;
+    filter: brightness(0.95);
 }
 
 .favoritesPageTopButtonImg {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
