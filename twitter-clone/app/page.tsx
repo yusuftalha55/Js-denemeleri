@@ -19,7 +19,6 @@ import SearchButtonPage from "./pages/searchButtonPage/page";
 import NotificationPage from "./pages/notificationPage/page";
 import MessagePage from "./pages/messagesPage/page";
 import FavoritesPage from "./pages/favoritesPage/page";
-import GroupsPage from "./pages/groupsPage/page";
 import ProfilesPage from "./pages/profilesPage/page";
 import MorePage from "./pages/morePage/page";
 import SendPage from "./pages/sendPage/page";
@@ -84,11 +83,6 @@ export default function Home() {
               />
             </button>
           </div>
-          <div className="sideBarGroupsPage">
-            <button onClick={() => handlePageChange("groups")}>
-              <Image src={groupsButton} width={35} height={30} alt="Gruplar" />
-            </button>
-          </div>
           <div className="sideBarProfilesPage">
             <button onClick={() => handlePageChange("profiles")}>
               <Image
@@ -122,7 +116,6 @@ export default function Home() {
           {activePage === "notification" && <NotificationPage />}
           {activePage === "messages" && <MessagePage />}
           {activePage === "favorites" && <FavoritesPage />}
-          {activePage === "groups" && <GroupsPage />}
           {activePage === "profiles" && <ProfilesPage />}
           {activePage === "more" && <MorePage />}
           {activePage === "send" && <SendPage />}
