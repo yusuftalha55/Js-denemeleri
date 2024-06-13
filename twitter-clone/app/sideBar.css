@@ -10,6 +10,7 @@
   
   .sideBarHomePage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarHomePage:hover::after {
@@ -21,6 +22,7 @@
   
   .sideBarSearchButtonPage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarSearchButtonPage:hover::after {
@@ -32,6 +34,7 @@
   
   .sideBarNotificationPage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarNotificationPage:hover::after {
@@ -43,6 +46,7 @@
   
   .sideBarMessagesPage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarMessagesPage:hover::after {
@@ -52,19 +56,9 @@
     color: white;
   }
   
-  .sideBarListsPage {
-    margin: 2%;
-  }
-  
-  .sideBarListsPage:hover::after {
-    content: "Listeler";
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
-  }
-  
   .sideBarFavoritesPage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarFavoritesPage:hover::after {
@@ -74,20 +68,9 @@
     color: white;
   }
   
-  .sideBarGroupsPage {
-    margin: 2%;
-  }
-  
-  .sideBarGroupsPage:hover::after {
-    content: "Topluluklar";
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: rgb(100, 100, 100);
-    color: white;
-    margin-left: 3px;
-  }
-  
   .sideBarProfilesPage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarProfilesPage:hover::after {
@@ -99,6 +82,7 @@
   
   .sideBarMorePage {
     margin: 2%;
+    margin-bottom: 5%;
   }
   
   .sideBarMorePage:hover::after {
