@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { textContext } from "./components/context";
-import ContainerList from "./components/containersList";
 import xLogo from "../app/public/img/xLogo.png";
 import homePage from "../app/public/img/homePage.png";
 import searchButton from "../app/public/img/searchButton.png";
