@@ -28,13 +28,14 @@ import MessagesHome from "./components/messagesHome";
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
   const [changeTextContext, setChangeTextContext] = useState("TEXT Deneme");
+  const [moreClickActive, setMoreClickActive] = useState(false);
 
   const handlePageChange = (page) => {
     setActivePage(page);
   };
 
   const moreClick = () => {
-    <MorePage/>
+    setMoreClickActive(true);
   }
 
   return (
@@ -121,6 +122,7 @@ export default function Home() {
           {activePage === "favorites" && <FavoritesPage />}
           {activePage === "profiles" && <ProfilesPage />}
           {activePage === "send" && <SendPage />}
+          {moreClickActive && <MorePage />}
         </div>
         {activePage !== "search" && (
           <div className="searchSection">
