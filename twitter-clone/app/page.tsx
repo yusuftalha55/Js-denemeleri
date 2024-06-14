@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { textContext } from "./components/context";
 import xLogo from "../app/public/img/xLogo.png";
@@ -28,15 +28,32 @@ import MessagesHome from "./components/messagesHome";
 export default function Home() {
   const [activePage, setActivePage] = useState("home");
   const [changeTextContext, setChangeTextContext] = useState("TEXT Deneme");
-  const [moreClickActive, setMoreClickActive] = useState(false);
+  const [showMorePage, setShowMorePage] = useState(false);
 
   const handlePageChange = (page) => {
     setActivePage(page);
   };
 
-  const moreClick = () => {
-    setMoreClickActive(true);
-  }
+  const moreClick = (e) => {
+    e.stopPropagation(); 
+    setShowMorePage(true);
+  };
+
+  const closeOverlay = () => {
+    setShowMorePage(false);
+  };
+
+  useEffect(() => {
+    if (showMorePage) {
+      document.addEventListener("click", closeOverlay);
+    } else {
+      document.removeEventListener("click", closeOverlay);
+    }
+
+    return () => {
+      document.removeEventListener("click", closeOverlay);
+    };
+  }, [showMorePage]);
 
   return (
     <textContext.Provider value={{ changeTextContext, setChangeTextContext }}>
@@ -122,7 +139,6 @@ export default function Home() {
           {activePage === "favorites" && <FavoritesPage />}
           {activePage === "profiles" && <ProfilesPage />}
           {activePage === "send" && <SendPage />}
-          {moreClickActive && <MorePage />}
         </div>
         {activePage !== "search" && (
           <div className="searchSection">
@@ -140,8 +156,18 @@ export default function Home() {
           <h2 className="">Mesajlar</h2>
           {/* <MessagesHome /> */}
         </div>
+
+        {showMorePage && (
+          <div
+            className="morePageOverlay"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <MorePage />
+          </div>
+        )}
       </div>
     </textContext.Provider>
   );
 }
+
 
