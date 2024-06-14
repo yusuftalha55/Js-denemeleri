@@ -33,6 +33,10 @@ export default function Home() {
     setActivePage(page);
   };
 
+  const moreClick = () => {
+    <MorePage/>
+  }
+
   return (
     <textContext.Provider value={{ changeTextContext, setChangeTextContext }}>
       <div className="container">
@@ -93,7 +97,7 @@ export default function Home() {
             </button>
           </div>
           <div className="sideBarMorePage">
-            <button onClick={() => handlePageChange("more")}>
+            <button onClick={moreClick}>
               <Image src={moreButton} width={30} height={25} alt="Daha Fazla" />
             </button>
           </div>
@@ -116,7 +120,6 @@ export default function Home() {
           {activePage === "messages" && <MessagePage />}
           {activePage === "favorites" && <FavoritesPage />}
           {activePage === "profiles" && <ProfilesPage />}
-          {activePage === "more" && <MorePage />}
           {activePage === "send" && <SendPage />}
         </div>
         {activePage !== "search" && (
