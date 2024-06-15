@@ -9,7 +9,7 @@
   
   .sideBarHomePage {
     margin: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   
   .sideBarHomePage:hover::after {
@@ -21,7 +21,7 @@
   
   .sideBarSearchButtonPage {
     margin: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   
   .sideBarSearchButtonPage:hover::after {
@@ -33,7 +33,7 @@
   
   .sideBarNotificationPage {
     margin: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   
   .sideBarNotificationPage:hover::after {
@@ -45,7 +45,7 @@
   
   .sideBarMessagesPage {
     margin: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   
   .sideBarMessagesPage:hover::after {
@@ -57,7 +57,7 @@
   
   .sideBarFavoritesPage {
     margin: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   
   .sideBarFavoritesPage:hover::after {
@@ -69,7 +69,7 @@
   
   .sideBarProfilesPage {
     margin: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   
   .sideBarProfilesPage:hover::after {
@@ -81,7 +81,7 @@
   
   .sideBarMorePage {
     margin: 2%;
-    margin-bottom: 8%;
+    margin-bottom: 15%;
   }
   
   .sideBarMorePage:hover::after {

@@ -2,7 +2,7 @@
     position: fixed;
     margin-top: 9%;
     margin-left: -10%;
-    width: 230px;
+    width: 250px;
     height: 400px;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
@@ -19,6 +19,12 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    background-color: white;
+}
+
+.morePageMainChapterOne:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
 }
 
 .morePageMainChapterTwo {
@@ -27,6 +33,12 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
+    background-color: white;
+}
+
+.morePageMainChapterTwo:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
 }
 
 .morePageMainChapterThree {
@@ -35,6 +47,12 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
+    background-color: white;
+}
+
+.morePageMainChapterThree:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
 }
 
 .morePageMainChapterFour {
@@ -43,4 +61,10 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
+    background-color: white;
+}
+
+.morePageMainChapterFour:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
 }
