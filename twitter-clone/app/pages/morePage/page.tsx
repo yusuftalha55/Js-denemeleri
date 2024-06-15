@@ -4,16 +4,16 @@ export default function MorePage() {
   return (
     <div className="morePageMain">
       <div className="morePageMainChapterOne">
-        morePageMainChapterOne
+        <h3>Para kazanma</h3>
       </div>
       <div className="morePageMainChapterTwo">
-        morePageMainChapterOne
+        <h3>Reklamlar</h3>
       </div>
       <div className="morePageMainChapterThree">
-        morePageMainChapterOne
+        <h3>Sohbet Odanı oluştur</h3>
       </div>
       <div className="morePageMainChapterFour">
-        morePageMainChapterOne
+        <h3>Ayarlar ve gizlilik</h3>
       </div>
     </div>
   );

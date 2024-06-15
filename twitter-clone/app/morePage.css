@@ -27,6 +27,7 @@
 .morePageMainChapterOne:hover {
   cursor: pointer;
   filter: brightness(0.95);
+  transition: filter 0.3s ease;
 }
 
 .morePageMainChapterTwo {
@@ -41,6 +42,7 @@
 .morePageMainChapterTwo:hover {
   cursor: pointer;
   filter: brightness(0.95);
+  transition: filter 0.3s ease;
 }
 
 .morePageMainChapterThree {
@@ -55,6 +57,7 @@
 .morePageMainChapterThree:hover {
   cursor: pointer;
   filter: brightness(0.95);
+  transition: filter 0.3s ease;
 }
 
 .morePageMainChapterFour {
@@ -70,4 +73,5 @@
 .morePageMainChapterFour:hover {
   cursor: pointer;
   filter: brightness(0.95);
+  transition: filter 0.3s ease;
 }
