@@ -36,14 +36,14 @@ export default function Home() {
   };
 
   const moreClick = (e) => {
-    e.stopPropagation(); 
+    e.stopPropagation();
     setShowMorePage(true);
   };
 
   const sendClick = (e) => {
     e.stopPropagation();
     setShowSendPage(true);
-  }
+  };
 
   const closeOverlay = () => {
     setShowMorePage(false);
@@ -157,7 +157,6 @@ export default function Home() {
           {activePage === "messages" && <MessagePage />}
           {activePage === "favorites" && <FavoritesPage />}
           {activePage === "profiles" && <ProfilesPage />}
-          {activePage === "send" && <SendPage />}
         </div>
         {activePage !== "search" && (
           <div className="searchSection">
@@ -177,16 +176,17 @@ export default function Home() {
         </div>
 
         {showMorePage && (
-          <div
-            className="morePageOverlay"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="morePageOverlay" onClick={(e) => e.stopPropagation()}>
             <MorePage />
+          </div>
+        )}
+
+        {showSendPage && (
+          <div className="morePageOverlay" onClick={(e) => e.stopPropagation()}>
+            <SendPage />
           </div>
         )}
       </div>
     </textContext.Provider>
   );
 }
-
-
