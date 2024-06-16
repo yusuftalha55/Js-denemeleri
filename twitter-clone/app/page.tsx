@@ -29,6 +29,7 @@ export default function Home() {
   const [activePage, setActivePage] = useState("home");
   const [changeTextContext, setChangeTextContext] = useState("TEXT Deneme");
   const [showMorePage, setShowMorePage] = useState(false);
+  const [showSendPage, setShowSendPage] = useState(false);
 
   const handlePageChange = (page) => {
     setActivePage(page);
@@ -39,8 +40,14 @@ export default function Home() {
     setShowMorePage(true);
   };
 
+  const sendClick = (e) => {
+    e.stopPropagation();
+    setShowSendPage(true);
+  }
+
   const closeOverlay = () => {
     setShowMorePage(false);
+    setShowSendPage(false);
   };
 
   useEffect(() => {
@@ -54,6 +61,18 @@ export default function Home() {
       document.removeEventListener("click", closeOverlay);
     };
   }, [showMorePage]);
+
+  useEffect(() => {
+    if (showSendPage) {
+      document.addEventListener("click", closeOverlay);
+    } else {
+      document.removeEventListener("click", closeOverlay);
+    }
+
+    return () => {
+      document.removeEventListener("click", closeOverlay);
+    };
+  }, [showSendPage]);
 
   return (
     <textContext.Provider value={{ changeTextContext, setChangeTextContext }}>
@@ -120,7 +139,7 @@ export default function Home() {
             </button>
           </div>
           <div className="sideBarSendPage">
-            <button onClick={() => handlePageChange("send")}>
+            <button onClick={sendClick}>
               <Image
                 className="sideBarSendPageHref"
                 src={sendButton}
