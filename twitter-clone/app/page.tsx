@@ -182,7 +182,7 @@ export default function Home() {
         )}
 
         {showSendPage && (
-          <div className="morePageOverlay" onClick={(e) => e.stopPropagation()}>
+          <div className="sendPageOverlay" onClick={(e) => e.stopPropagation()}>
             <SendPage />
           </div>
         )}

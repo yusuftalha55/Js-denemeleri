@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SendPage() {
   return (
-    <div className="morePageMain">
+    <div className="sendPageMain">
       <h3>Gönder</h3>
   </div>
   )
