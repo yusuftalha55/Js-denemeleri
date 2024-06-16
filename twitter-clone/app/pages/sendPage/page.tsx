@@ -1,9 +1,27 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import profile from "../../../app/public/img/profilePhoto.png";
 
 export default function SendPage() {
   return (
     <div className="sendPageMain">
-      <h3>Gönder</h3>
-  </div>
-  )
+      <div className="sendPageMainTop">
+        <button className="sendPageMainTopButton"></button>
+      </div>
+
+      <div className="sendPageMainİnput">
+        <Image
+          className="mainSendSectionImgButtonIn"
+          src={profile}
+          width={30}
+          height={25}
+          alt="Profil"
+        />
+      </div>
+
+      <div className="sendPageMainSend">
+        <button className="sendPageMainSendButton">Gönder</button>
+      </div>
+    </div>
+  );
 }
