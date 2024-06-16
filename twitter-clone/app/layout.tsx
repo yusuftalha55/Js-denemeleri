@@ -12,6 +12,8 @@ import "./notificationPage.css"
 import "./profilesPage.css"
 import "./favoritesPage.css"
 import "./morePage.css"
+import "./sendPage.css"
+
 
 
 
