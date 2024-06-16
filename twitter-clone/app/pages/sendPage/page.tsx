@@ -9,7 +9,7 @@ export default function SendPage() {
         <button className="sendPageMainTopButton"></button>
       </div>
 
-      <div className="sendPageMainİnput">
+      <div className="sendPageMainInput">
         <Image
           className="mainSendSectionImgButtonIn"
           src={profile}
