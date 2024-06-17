@@ -32,8 +32,29 @@
     height: 175px;
 }
 
-.sendPageMainTopButtonImg {
+.sendPageMainTopButton {
+    margin-top: 1%;
+    margin-left: 1%;
     background-color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.sendPageMainTopButtonImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.sendPageMainTopButton:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
 }
   
 

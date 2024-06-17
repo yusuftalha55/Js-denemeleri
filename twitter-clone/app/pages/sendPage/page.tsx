@@ -5,21 +5,21 @@ import profile from "../../../app/public/img/profilePhoto.png";
 import exit from "../../../app/public/img/ximg.png";
 
 export default function SendPage() {
-  const [text, setText] = useState('Neler oluyor?');
+  const [text, setText] = useState("Neler oluyor?");
   const [isFocused, setIsFocused] = useState(false);
   const [messages, setMessages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleFocus = () => {
-    if (text === 'Neler oluyor?') {
-      setText('');
+    if (text === "Neler oluyor?") {
+      setText("");
     }
     setIsFocused(true);
   };
 
   const handleBlur = () => {
-    if (text === '') {
-      setText('Neler oluyor?');
+    if (text === "") {
+      setText("Neler oluyor?");
     }
     setIsFocused(false);
   };
@@ -31,27 +31,24 @@ export default function SendPage() {
   };
 
   const handleSend = () => {
-    if (text !== 'Neler oluyor?' || selectedImage) {
+    if (text !== "Neler oluyor?" || selectedImage) {
       setMessages([...messages, { text, image: selectedImage }]);
-      setText('Neler oluyor?');
+      setText("Neler oluyor?");
       setSelectedImage(null);
     }
   };
-
-
-
 
   return (
     <div className="sendPageMain">
       <div className="sendPageMainTop">
         <button className="sendPageMainTopButton">
-        <Image
-          className="sendPageMainTopButtonImg"
-          src={exit}
-          width={30}
-          height={25}
-          alt="exit"
-        />
+          <Image
+            className="sendPageMainTopButtonImg"
+            src={exit}
+            width={30}
+            height={25}
+            alt="exit"
+          />
         </button>
       </div>
 
@@ -63,13 +60,13 @@ export default function SendPage() {
           height={25}
           alt="Profil"
         />
-                  <textarea
-            className="mainSendSectionInputAreaIn"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          />
+        <textarea
+          className="mainSendSectionInputAreaIn"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+        />
       </div>
 
       <div className="sendPageMainSend">
