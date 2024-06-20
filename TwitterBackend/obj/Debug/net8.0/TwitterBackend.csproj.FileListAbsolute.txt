@@ -1,0 +1,15 @@
+D:\YUSUF\Yazılım\TwitterBackend\bin\Debug\net8.0\TwitterBackend.exe
+D:\YUSUF\Yazılım\TwitterBackend\bin\Debug\net8.0\TwitterBackend.deps.json
+D:\YUSUF\Yazılım\TwitterBackend\bin\Debug\net8.0\TwitterBackend.runtimeconfig.json
+D:\YUSUF\Yazılım\TwitterBackend\bin\Debug\net8.0\TwitterBackend.dll
+D:\YUSUF\Yazılım\TwitterBackend\bin\Debug\net8.0\TwitterBackend.pdb
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.AssemblyInfoInputs.cache
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.AssemblyInfo.cs
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.csproj.CoreCompileInputs.cache
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.sourcelink.json
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.dll
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\refint\TwitterBackend.dll
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.pdb
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\TwitterBackend.genruntimeconfig.cache
+D:\YUSUF\Yazılım\TwitterBackend\obj\Debug\net8.0\ref\TwitterBackend.dll
