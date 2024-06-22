@@ -1,15 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace basitwebapi.Controllers 
-
+namespace basitwebapi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-
-    public class OgrenciController : ControllerBase 
+    public class OgrenciController : ControllerBase
     {
         [HttpGet]
-        public string Get(){
+        public string Get()
+        {
             return "1";
         }
     }
