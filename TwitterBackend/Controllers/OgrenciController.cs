@@ -10,9 +10,9 @@ namespace basitwebapi.Controllers
     {
         private static List<Ogrenci> _ogrenciler = new List<Ogrenci>
         {
-            new Ogrenci { Id = 1, Isim = "Ali Veli", Yas = 20, Sinif = "10A" },
-            new Ogrenci { Id = 2, Isim = "Ayşe Yılmaz", Yas = 19, Sinif = "11B" },
-            new Ogrenci { Id = 3, Isim = "Mehmet Demir", Yas = 21, Sinif = "12C" }
+            new Ogrenci { Id = 1, KullaniciAdi = "Ali Veli", Yas = 20, NickName = "10A" },
+            new Ogrenci { Id = 2, KullaniciAdi = "Ayşe Yılmaz", Yas = 19, NickName = "11B" },
+            new Ogrenci { Id = 3, KullaniciAdi = "Mehmet Demir", Yas = 21, NickName = "12C" }
         };
 
         [HttpGet]
