@@ -1,6 +1,6 @@
 namespace basitwebapi.Models
 {
-    public class Ogrenci
+    public class Kullanici
     {
         public int Id { get; set; }
         public string KullaniciAdi { get; set; }
