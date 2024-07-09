@@ -1,0 +1,8 @@
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.csproj.AssemblyReference.cache
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.AssemblyInfoInputs.cache
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.AssemblyInfo.cs
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.csproj.CoreCompileInputs.cache
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.MvcApplicationPartsAssemblyInfo.cache
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.RazorAssemblyInfo.cache
+D:\YUSUF\Yazılım\twitterBackend\obj\Debug\net6.0\twitterBackend.RazorAssemblyInfo.cs
