@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\YUSUF\Yazılım\twitterBackend\Models\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\YUSUF\Yazılım\twitterBackend\Models\.editorconfig" />
+  </ItemGroup>
+
 </Project>
