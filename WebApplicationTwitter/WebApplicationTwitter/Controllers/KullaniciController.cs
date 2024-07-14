@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using WebApplicationTwitter.Data;
+using System.Linq;
 
 namespace WebApplicationTwitter.Controllers
 {
@@ -18,10 +16,12 @@ namespace WebApplicationTwitter.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Kullanici>>> GetKullanicilar()
+        public IActionResult GetKullanicilar()
         {
-            return await _context.Kullanicilar.ToListAsync();
+            var kullanicilar = _context.Kullanicilar.ToList();
+            return Ok(kullanicilar);
         }
     }
 }
+
 

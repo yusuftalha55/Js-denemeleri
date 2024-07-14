@@ -1,6 +1,5 @@
 "use client";
-import { useState, useContext } from "react";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import answer from "../../app/public/img/answer.png";
 import reTweet from "../../app/public/img/arrow.png";
@@ -9,12 +8,23 @@ import views from "../../app/public/img/statistics.png";
 import favorites from "../../app/public/img/favorites.png";
 import share from "../../app/public/img/share.png";
 import ronaldo from "../../app/public/img/ronaldo.png";
-import { textContext } from "./context";
 
-export default function Containers({ image, text, nickNameText }) {
+export default function Containers({ image, text }) {
   const [viewsCount, setViewsCount] = useState(15);
-  const { changeTextContext, setChangeTextContext } = useContext(textContext);
+  const [nickNameText, setNickNameText] = useState("");
   const [changeImage, setChangeImage] = useState(image);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/api/kullanici')
+      .then(response => response.json())
+      .then(data => {
+        const kullanici = data[0]; // Burada örnek olarak ilk kullanıcıyı aldık
+        setNickNameText(kullanici.nickname);
+      })
+      .catch(error => {
+        console.error('There was an error fetching the data!', error);
+      });
+  }, []);
 
   return (
     <div className="containersMain">
@@ -57,6 +67,7 @@ export default function Containers({ image, text, nickNameText }) {
     </div>
   );
 }
+
 
 
 
