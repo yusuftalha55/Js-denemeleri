@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\WebApplicationTwitter",
+    "\\WebApplicationTwitter\\Controllers",
     "\\WebApplicationTwitter\\Data",
     "\\WebApplicationTwitter\\Migrations"
   ],
-  "SelectedNode": "\\WebApplicationTwitter\\Migrations\\AppDbContextModelSnapshot.cs",
+  "SelectedNode": "\\WebApplicationTwitter\\Controllers\\KullaniciController.cs",
   "PreviewInSolutionExplorer": false
 }

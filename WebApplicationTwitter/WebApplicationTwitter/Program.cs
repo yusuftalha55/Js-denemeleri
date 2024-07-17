@@ -6,6 +6,18 @@ builder.Services.AddControllers(); // API endpointleri ekleyin
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase")));
 
+// CORS ekle
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        policyBuilder =>
+        {
+            policyBuilder.WithOrigins("http://localhost:3000") // React uygulamanýzýn çalýþtýðý URL
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,11 +33,16 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// CORS politikasýný kullan
+app.UseCors("AllowReactApp");
+
 app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers(); // API endpointlerini yönlendirin
 
 app.Run();
+
+
 
 

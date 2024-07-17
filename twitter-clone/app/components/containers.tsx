@@ -16,15 +16,17 @@ export default function Containers({ image, text }) {
 
   useEffect(() => {
     fetch('http://localhost:5000/api/kullanici')
-      .then(response => response.json())
-      .then(data => {
-        const kullanici = data[0]; // Burada örnek olarak ilk kullanıcıyı aldık
-        setNickNameText(kullanici.nickname);
-      })
-      .catch(error => {
-        console.error('There was an error fetching the data!', error);
-      });
-  }, []);
+        .then(response => response.json())
+        .then(data => {
+            const kullanici = data[0]; // İlk kullanıcıyı burada örnek olarak alıyoruz
+            setNickNameText(kullanici.nickname);
+        })
+        .catch(error => {
+            console.error("Veri alınırken bir hata oluştu!", error);
+        });
+}, []);
+
+
 
   return (
     <div className="containersMain">
